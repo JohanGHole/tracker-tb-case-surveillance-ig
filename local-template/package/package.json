@@ -1,0 +1,12 @@
+{
+    "name": "dhis2.fhir.template",
+    "version": "0.0.1",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "Local template extension for FHIR IG",
+    "author" : "DHIS2",
+    "base" : "who.template.root",
+    "dependencies" : {
+      "who.template.root" : "current"
+    }
+  }
