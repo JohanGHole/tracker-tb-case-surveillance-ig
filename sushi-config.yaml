@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: tracker.tb.case.surveillance.ig
-canonical: http://example.org/
+canonical: http://example.org
 name: Tracker TB Case Surveillance Implementation Guide
 title: Tracker TB Case Surveillance Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
