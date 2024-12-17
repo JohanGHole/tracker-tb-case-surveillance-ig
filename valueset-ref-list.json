@@ -155,8 +155,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
@@ -192,8 +192,8 @@
       "systems" : ["http://example.org/CodeSystem/tb-lab---sample-quality-cs"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
@@ -205,8 +205,8 @@
       "systems" : ["http://example.org/CodeSystem/tb-lab---sample-status-cs"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
@@ -218,8 +218,8 @@
       "systems" : ["http://example.org/CodeSystem/tb-lab---smear-result-cs"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     }
   ]
 }

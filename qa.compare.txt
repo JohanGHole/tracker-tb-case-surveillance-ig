@@ -4,7 +4,7 @@ TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 err = 6, warn = 127, info = 17
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 275 / 38 / 0
+ Build Errors : 261 / 38 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-rrt---gen---sex-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs : 0 / 3 / 2
@@ -23,11 +23,9 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 1 / 2 / 1
@@ -186,11 +184,6 @@ ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.html#/html/b
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 304, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-PatientExample.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-PatientExample.html#/html/body/div/div/div/p/span/a at Line 240, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-PatientExample.json.html#/html/body/div/div/div/p/span/a at Line 260, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-PatientExample.ttl.html#/html/body/div/div/div/p/span/a at Line 266, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Patient-PatientExample.xml.html#/html/body/div/div/div/p/span/a at Line 254, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-definitions.html#/html/body/div/div/div/p/span/a at Line 487, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -218,15 +211,6 @@ ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 969, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 771, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 893, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient-definitions.html#/html/body/div/div/div/p/span/a at Line 587, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient-examples.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient-mappings.html#/html/body/div/div/div/p/span/a at Line 400, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient-testing.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient.html#/html/body/div/div/div/p/span/a at Line 1644, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.history.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.json.html#/html/body/div/div/div/p/span/a at Line 2501, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1880, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.xml.html#/html/body/div/div/div/p/span/a at Line 2348, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome-definitions.html#/html/body/div/div/div/p/span/a at Line 370, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -356,7 +340,7 @@ ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.html#/html/bod
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 530, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 491, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -449,14 +433,12 @@ WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems
 WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
-== fsh-generated/resources/Patient-PatientExample.json ==
 == fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
 ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json ==
 ERROR: StructureDefinition/DiagnosticLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json ==
 ERROR: StructureDefinition/MonitoringLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
-== fsh-generated/resources/StructureDefinition-MyPatient.json ==
 == fsh-generated/resources/StructureDefinition-Outcome.json ==
 ERROR: StructureDefinition/Outcome: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json ==

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-17T21:48:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-17T21:51:05+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -570,18 +570,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
-       ] ;
-       fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:logical" ]
        ] ) ;
        fhir:reference [
@@ -591,21 +579,6 @@
        fhir:name [ fhir:v "Outcome" ] ;
        fhir:description [ fhir:v "Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Patient/PatientExample> ;
-         fhir:reference [ fhir:v "Patient/PatientExample" ]
-       ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
-       fhir:example [
-         fhir:v "http://example.org/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <http://example.org/StructureDefinition/MyPatient>
-       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

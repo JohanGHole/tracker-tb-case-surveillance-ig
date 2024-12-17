@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-17T21:48:04+00:00",
+  "date" : "2024-12-17T21:51:05+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -658,18 +658,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MyPatient"
-      },
-      "name" : "MyPatient",
-      "description" : "An example profile of the Patient resource.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -678,18 +666,6 @@
       "name" : "Outcome",
       "description" : "Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/PatientExample"
-      },
-      "name" : "PatientExample",
-      "description" : "An example of a patient with a license to krill.",
-      "exampleCanonical" : "http://example.org/StructureDefinition/MyPatient"
     },
     {
       "extension" : [{
