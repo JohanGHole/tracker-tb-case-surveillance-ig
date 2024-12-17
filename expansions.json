@@ -1,0 +1,939 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "9aa9ed55-cadd-408f-89aa-9c8c404f3d60",
+  "meta" : {
+    "lastUpdated" : "2024-12-17T21:06:00.773+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-gen---yes-no-unknown-cs.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/gen---yes-no-unknown-cs-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-gen---yes-no-unknown-cs.html#gen---yes-no-unknown-cs-NO\">NO</a></td><td>http://example.org/CodeSystem/gen---yes-no-unknown-cs</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/gen---yes-no-unknown-cs-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-gen---yes-no-unknown-cs.html#gen---yes-no-unknown-cs-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/gen---yes-no-unknown-cs</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/gen---yes-no-unknown-cs-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-gen---yes-no-unknown-cs.html#gen---yes-no-unknown-cs-YES\">YES</a></td><td>http://example.org/CodeSystem/gen---yes-no-unknown-cs</td><td>Yes</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
+      "version" : "0.1.0",
+      "name" : "GENYesNoUnknownVS",
+      "title" : "GEN - Yes/No/Unknown value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:71258fbb-6460-4dc7-a7e5-302abe263b73",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+          "code" : "NO",
+          "display" : "No"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+          "code" : "UNKNOWN",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+          "code" : "YES",
+          "display" : "Yes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/rrt---gen---sex-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-rrt---gen---sex-cs.html\">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/rrt---gen---sex-cs-FEMALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-rrt---gen---sex-cs.html#rrt---gen---sex-cs-FEMALE\">FEMALE</a></td><td>http://example.org/CodeSystem/rrt---gen---sex-cs</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/rrt---gen---sex-cs-MALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-rrt---gen---sex-cs.html#rrt---gen---sex-cs-MALE\">MALE</a></td><td>http://example.org/CodeSystem/rrt---gen---sex-cs</td><td>Male</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
+      "version" : "0.1.0",
+      "name" : "RRTGENSexVS",
+      "title" : "RRT - GEN - Sex value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:053ceee9-e308-4be4-a37d-331e6846a017",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/rrt---gen---sex-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+          "code" : "FEMALE",
+          "display" : "Female"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+          "code" : "MALE",
+          "display" : "Male"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-susceptible-resistant-indeterminate-cs.html\">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td><td>Indeterminate</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
+      "version" : "0.1.0",
+      "name" : "SusceptibleResistantIndeterminateVS",
+      "title" : "Susceptible/Resistant/Indeterminate value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6d3f8c34-7e36-43be-913d-024871ee4aff",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+          "code" : "SUSCEPTIBLE",
+          "display" : "Susceptible"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+          "code" : "RESISTANT",
+          "display" : "Resistant"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+          "code" : "INDETERMINATE",
+          "display" : "Indeterminate"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---confirmation-method-cs.html\">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---confirmation-method-cs-CLINDX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---confirmation-method-cs.html#tb-cs---confirmation-method-cs-CLINDX\">CLINDX</a></td><td>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---confirmation-method-cs-LABCONF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---confirmation-method-cs.html#tb-cs---confirmation-method-cs-LABCONF\">LABCONF</a></td><td>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</td><td>Bacteriologically confirmed</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSConfirmationMethodVS",
+      "title" : "TB CS - Confirmation method value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:870d0a51-5601-4eb7-829f-7816c037d3ab",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+          "code" : "CLINDX",
+          "display" : "Clinically diagnosed"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+          "code" : "LABCONF",
+          "display" : "Bacteriologically confirmed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---denotification-reasons-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html\">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-NOT_TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-NOT_TB\">NOT_TB</a></td><td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-DUPLICATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-DUPLICATE\">DUPLICATE</a></td><td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td><td>Duplicate</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---denotification-reasons-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSDenotificationReasonsVS",
+      "title" : "TB CS - Denotification reasons value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:68ad6e37-09e4-43b5-9264-89f60dd60f45",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+          "code" : "NOT_TB",
+          "display" : "Not a TB Case"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+          "code" : "DUPLICATE",
+          "display" : "Duplicate"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---resistance-classification-cs.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-DS\">DS</a></td><td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-RR\">RR</a></td><td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-MDR\">MDR</a></td><td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-XDR\">XDR</a></td><td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSResistanceClassificationVS",
+      "title" : "TB CS - Resistance Classification value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:7380e1a6-7d98-4e8e-b2d7-407966028b45",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+          "code" : "DS",
+          "display" : "DS (drug-susceptible TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+          "code" : "RR",
+          "display" : "RR (rifampicin resistant TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+          "code" : "MDR",
+          "display" : "MDR (multidrug resistant TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+          "code" : "XDR",
+          "display" : "XDR (extensive drug resistant TB)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---site-of-disease-cs.html\">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_PULMONARY\">SITE_PULMONARY</a></td><td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_EXTRA_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_EXTRA_PULMONARY\">SITE_EXTRA_PULMONARY</a></td><td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td><td>Extra-pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_BOTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_BOTH\">SITE_BOTH</a></td><td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td><td>Pulmonary and extra-pulmonary</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSSiteOfDiseaseVS",
+      "title" : "TB CS - Site of disease value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5bcb42dd-80ef-4146-8008-af36af68879a",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+          "code" : "SITE_PULMONARY",
+          "display" : "Pulmonary"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+          "code" : "SITE_EXTRA_PULMONARY",
+          "display" : "Extra-pulmonary"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+          "code" : "SITE_BOTH",
+          "display" : "Pulmonary and extra-pulmonary"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---treatment-category-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---treatment-category-cs.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-category-cs-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-category-cs.html#tb-cs---treatment-category-cs-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-category-cs</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-category-cs-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-category-cs.html#tb-cs---treatment-category-cs-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-category-cs</td><td>Second-line Treatment</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-category-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSTreatmentCategoryVS",
+      "title" : "TB CS - Treatment category value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:4a413236-e7bf-4900-9fba-4056a38a4f04",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+          "code" : "FIRST_LINE_TREATMENT",
+          "display" : "First-line Treatment"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+          "code" : "SECOND_LINE_TREATMENT",
+          "display" : "Second-line Treatment"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---treatment-history-cs.html\">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_NEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_NEW\">HISTORY_NEW</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>New</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_RELAPSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_RELAPSE\">HISTORY_RELAPSE</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_FAILED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_FAILED\">HISTORY_FAILED</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP\">HISTORY_LOST_TO_FOLLOWUP</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_OTHER_PREV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_OTHER_PREV\">HISTORY_OTHER_PREV</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_UNKNOWN\">HISTORY_UNKNOWN</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSTreatmentHistoryVS",
+      "title" : "TB CS - Treatment history value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:bb106c01-adfd-44b7-aac5-e98e95c1ce92",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_NEW",
+          "display" : "New"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_RELAPSE",
+          "display" : "Relapse"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_FAILED",
+          "display" : "Treatment after failure"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_LOST_TO_FOLLOWUP",
+          "display" : "Treatment after lost to follow-up"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_OTHER_PREV",
+          "display" : "Other previously treated"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+          "code" : "HISTORY_UNKNOWN",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-cs---treatment-outcome-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html\">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-CURED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-CURED\">CURED</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-COMPLETED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-COMPLETED\">COMPLETED</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-FAILURE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-FAILURE\">FAILURE</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-DIED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-DIED\">DIED</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP\">LOST_TO_FOLLOW_UP</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-NOT_EVALUATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-NOT_EVALUATED\">NOT_EVALUATED</a></td><td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td><td>Not evaluated</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-outcome-vs",
+      "version" : "0.1.0",
+      "name" : "TBCSTreatmentOutcomeVS",
+      "title" : "TB CS - Treatment outcome value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a0c6213d-09bd-439e-87f5-46aa472933c0",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "CURED",
+          "display" : "Cured"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "COMPLETED",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "FAILURE",
+          "display" : "Failed"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "DIED",
+          "display" : "Died"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "LOST_TO_FOLLOW_UP",
+          "display" : "Lost to follow-up"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+          "code" : "NOT_EVALUATED",
+          "display" : "Not evaluated"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---dst-result-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---dst-result-cs.html\">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---dst-result-cs-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---dst-result-cs-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---dst-result-cs-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td><td>Contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---dst-result-cs-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td><td>Indeterminate</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---dst-result-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABDSTResultVS",
+      "title" : "TB-LAB - DST result value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:9d98d145-68e8-4542-90be-265223b1557f",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---dst-result-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+          "code" : "SUSCEPTIBLE",
+          "display" : "Susceptible"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+          "code" : "RESISTANT",
+          "display" : "Resistant"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+          "code" : "CONTAMINATED",
+          "display" : "Contaminated"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+          "code" : "INDETERMINATE",
+          "display" : "Indeterminate"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---final-culture-result-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---final-culture-result-cs.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-MTB\">MTB</a></td><td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-NTM\">NTM</a></td><td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td><td>Contaminated</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---final-culture-result-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABFinalCultureResultVS",
+      "title" : "TB-LAB - Final culture result value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:83742803-43c6-402a-8dca-f78cbac99f5b",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+          "code" : "MTB",
+          "display" : "MTB"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+          "code" : "NTM",
+          "display" : "NTM"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+          "code" : "NO_GROWTH",
+          "display" : "No growth"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+          "code" : "CONTAMINATED",
+          "display" : "Contaminated"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---lpa-specimen-cs.html\">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---lpa-specimen-cs-SPUTUM_SAMPLES_OR_SEDIMENTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---lpa-specimen-cs.html#tb-lab---lpa-specimen-cs-SPUTUM_SAMPLES_OR_SEDIMENTS\">SPUTUM_SAMPLES_OR_SEDIMENTS</a></td><td>http://example.org/CodeSystem/tb-lab---lpa-specimen-cs</td><td>Sputum samples or sediments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---lpa-specimen-cs-MTB_CULTURE_ISOLATES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---lpa-specimen-cs.html#tb-lab---lpa-specimen-cs-MTB_CULTURE_ISOLATES\">MTB_CULTURE_ISOLATES</a></td><td>http://example.org/CodeSystem/tb-lab---lpa-specimen-cs</td><td>MTB culture isolates</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABLPASpecimenVS",
+      "title" : "TB-LAB - LPA specimen value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:81eebb49-ab70-4dd8-9f90-16428b3763db",
+        "timestamp" : "2024-12-17T21:06:19+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+          "code" : "SPUTUM_SAMPLES_OR_SEDIMENTS",
+          "display" : "Sputum samples or sediments"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+          "code" : "MTB_CULTURE_ISOLATES",
+          "display" : "MTB culture isolates"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---mtb-test-result-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html\">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-DETECTED\">DETECTED</a></td><td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-NOT_DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-NOT_DETECTED\">NOT_DETECTED</a></td><td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-ERROR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-ERROR\">ERROR</a></td><td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td><td>Error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-INVALID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-INVALID\">INVALID</a></td><td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-NO_RESULT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-NO_RESULT\">NO_RESULT</a></td><td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td><td>No result</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---mtb-test-result-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABMTBTestResultVS",
+      "title" : "TB-LAB - MTB test result value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:84491775-8c92-4040-b79a-8ea0ffa8ac51",
+        "timestamp" : "2024-12-17T21:06:20+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+          "code" : "DETECTED",
+          "display" : "Detected"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+          "code" : "NOT_DETECTED",
+          "display" : "Not detected"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+          "code" : "ERROR",
+          "display" : "Error"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+          "code" : "INVALID",
+          "display" : "Invalid"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+          "code" : "NO_RESULT",
+          "display" : "No result"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---sample-quality-cs.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---sample-quality-cs-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---sample-quality-cs.html#tb-lab---sample-quality-cs-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/tb-lab---sample-quality-cs</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---sample-quality-cs-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---sample-quality-cs.html#tb-lab---sample-quality-cs-POOR\">POOR</a></td><td>http://example.org/CodeSystem/tb-lab---sample-quality-cs</td><td>Poor (rejected for processing)</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABSampleQualityVS",
+      "title" : "TB-LAB - Sample quality value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e2b54906-634c-45a7-ac9c-567b0aaff79a",
+        "timestamp" : "2024-12-17T21:06:20+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+          "code" : "GOOD",
+          "display" : "Good (accepted for processing)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+          "code" : "POOR",
+          "display" : "Poor (rejected for processing)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---sample-status-cs.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---sample-status-cs-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---sample-status-cs.html#tb-lab---sample-status-cs-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/tb-lab---sample-status-cs</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---sample-status-cs-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---sample-status-cs.html#tb-lab---sample-status-cs-LOST\">LOST</a></td><td>http://example.org/CodeSystem/tb-lab---sample-status-cs</td><td>Sample lost</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABSampleStatusVS",
+      "title" : "TB-LAB - Sample status value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6c93cd2c-ce6a-48a9-93e2-5f683dac598f",
+        "timestamp" : "2024-12-17T21:06:20+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---sample-status-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+          "code" : "RECEIVED",
+          "display" : "Sample received"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+          "code" : "LOST",
+          "display" : "Sample lost"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-tb-lab---smear-result-cs.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---smear-result-cs-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---smear-result-cs-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---smear-result-cs-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---smear-result-cs-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/tb-lab---smear-result-cs-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td><td>Negative</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
+      "version" : "0.1.0",
+      "name" : "TBLABSmearResultVS",
+      "title" : "TB-LAB - Smear result value set",
+      "status" : "draft",
+      "date" : "2024-12-17T21:06:00+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:464d9f90-29a6-4eee-b09b-85ecff358b7a",
+        "timestamp" : "2024-12-17T21:06:20+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/tb-lab---smear-result-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+          "code" : "SCANTY",
+          "display" : "Positive (Scanty)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+          "code" : "1PLUS",
+          "display" : "Positive (+)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+          "code" : "2PLUS",
+          "display" : "Positive (++)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+          "code" : "3PLUS",
+          "display" : "Positive (+++)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+          "code" : "NEGATIVE",
+          "display" : "Negative"
+        }]
+      }
+    }
+  }]
+}

@@ -1,0 +1,81 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"TBTreatment","TBTreatment","","","",0,*,"","","","null {[]} {[]}
+","TB Treatment","TB Treatment","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"TBTreatment.executionDate","TBTreatment.executionDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"TBTreatment.executionDate",0,1,"",""
+"TBTreatment.treatmentRegimen","TBTreatment.treatmentRegimen","","","",0,1,"","","","code {[]} {[]}
+","TB CS - Treatment regimen","TB CS - Treatment regimen","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-category-vs","",,,,"TBTreatment.treatmentRegimen",0,1,"",""
+"TBTreatment.levofloxacinLfx","TBTreatment.levofloxacinLfx","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Lfx","TB CS - Treatment second-line - Lfx","","","","","","","","","",,,,,"",,,,"TBTreatment.levofloxacinLfx",0,1,"",""
+"TBTreatment.moxifloxacinMfx","TBTreatment.moxifloxacinMfx","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Mfx","TB CS - Treatment second-line - Mfx","","","","","","","","","",,,,,"",,,,"TBTreatment.moxifloxacinMfx",0,1,"",""
+"TBTreatment.amikacinAmk","TBTreatment.amikacinAmk","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Amk","TB CS - Treatment second-line - Amk","","","","","","","","","",,,,,"",,,,"TBTreatment.amikacinAmk",0,1,"",""
+"TBTreatment.streptomycinStm","TBTreatment.streptomycinStm","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Stm","TB CS - Treatment second-line - Stm","","","","","","","","","",,,,,"",,,,"TBTreatment.streptomycinStm",0,1,"",""
+"TBTreatment.clofazimineCfz","TBTreatment.clofazimineCfz","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Cfz","TB CS - Treatment second-line - Cfz","","","","","","","","","",,,,,"",,,,"TBTreatment.clofazimineCfz",0,1,"",""
+"TBTreatment.cycloserineCs","TBTreatment.cycloserineCs","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Cs","TB CS - Treatment second-line - Cs","","","","","","","","","",,,,,"",,,,"TBTreatment.cycloserineCs",0,1,"",""
+"TBTreatment.ethionamideEto","TBTreatment.ethionamideEto","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Eto","TB CS - Treatment second-line - Eto","","","","","","","","","",,,,,"",,,,"TBTreatment.ethionamideEto",0,1,"",""
+"TBTreatment.linezolidLzd","TBTreatment.linezolidLzd","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Lzd","TB CS - Treatment second-line - Lzd","","","","","","","","","",,,,,"",,,,"TBTreatment.linezolidLzd",0,1,"",""
+"TBTreatment.prothionamidePto","TBTreatment.prothionamidePto","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Pto","TB CS - Treatment second-line - Pto","","","","","","","","","",,,,,"",,,,"TBTreatment.prothionamidePto",0,1,"",""
+"TBTreatment.terizidoneTrd","TBTreatment.terizidoneTrd","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Trd","TB CS - Treatment second-line - Trd","","","","","","","","","",,,,,"",,,,"TBTreatment.terizidoneTrd",0,1,"",""
+"TBTreatment.firstLineEthambutolEmb","TBTreatment.firstLineEthambutolEmb","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment first-line - Emb","TB CS - Treatment first-line - Emb","","","","","","","","","",,,,,"",,,,"TBTreatment.firstLineEthambutolEmb",0,1,"",""
+"TBTreatment.firstLinePyrazinamidePza","TBTreatment.firstLinePyrazinamidePza","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment first-line - Pza","TB CS - Treatment first-line - Pza","","","","","","","","","",,,,,"",,,,"TBTreatment.firstLinePyrazinamidePza",0,1,"",""
+"TBTreatment.bedaquilineBdq","TBTreatment.bedaquilineBdq","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Bdq","TB CS - Treatment second-line - Bdq","","","","","","","","","",,,,,"",,,,"TBTreatment.bedaquilineBdq",0,1,"",""
+"TBTreatment.delamanidDlm","TBTreatment.delamanidDlm","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Dlm","TB CS - Treatment second-line - Dlm","","","","","","","","","",,,,,"",,,,"TBTreatment.delamanidDlm",0,1,"",""
+"TBTreatment.imipenemCilastatinIpmCln","TBTreatment.imipenemCilastatinIpmCln","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Ipm","TB CS - Treatment second-line - Ipm","","","","","","","","","",,,,,"",,,,"TBTreatment.imipenemCilastatinIpmCln",0,1,"",""
+"TBTreatment.meropenemMpm","TBTreatment.meropenemMpm","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Mpm","TB CS - Treatment second-line - Mpm","","","","","","","","","",,,,,"",,,,"TBTreatment.meropenemMpm",0,1,"",""
+"TBTreatment.pAminosalicylicAcidPas","TBTreatment.pAminosalicylicAcidPas","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - PAS","TB CS - Treatment second-line - PAS","","","","","","","","","",,,,,"",,,,"TBTreatment.pAminosalicylicAcidPas",0,1,"",""
+"TBTreatment.isoniazidInh","TBTreatment.isoniazidInh","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment first-line - Inh","TB CS - Treatment first-line - Inh","","","","","","","","","",,,,,"",,,,"TBTreatment.isoniazidInh",0,1,"",""
+"TBTreatment.other","TBTreatment.other","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Other","TB CS - Treatment second-line - Other","","","","","","","","","",,,,,"",,,,"TBTreatment.other",0,1,"",""
+"TBTreatment.firstLineTreatmentStart","TBTreatment.firstLineTreatmentStart","","","",0,1,"","","","date {[]} {[]}
+","TB CS - First-line treatment start date","TB CS - First-line treatment start date","","","","","","","","","",,,,,"",,,,"TBTreatment.firstLineTreatmentStart",0,1,"",""
+"TBTreatment.otherDrugSpecify","TBTreatment.otherDrugSpecify","","","",0,1,"","","","string {[]} {[]}
+","TB CS - Treatment second-line - Other drug - specify","TB CS - Treatment second-line - Other drug - specify","","","","","","","","","",,,,,"",,,,"TBTreatment.otherDrugSpecify",0,1,"",""
+"TBTreatment.rifampicinRif","TBTreatment.rifampicinRif","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment first-line - Rif","TB CS - Treatment first-line - Rif","","","","","","","","","",,,,,"",,,,"TBTreatment.rifampicinRif",0,1,"",""
+"TBTreatment.amoxicillinClavulanicAcidAmxClv","TBTreatment.amoxicillinClavulanicAcidAmxClv","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Amx/Clv","TB CS - Treatment second-line - Amx/Clv","","","","","","","","","",,,,,"",,,,"TBTreatment.amoxicillinClavulanicAcidAmxClv",0,1,"",""
+"TBTreatment.secondLineTreatmentStart","TBTreatment.secondLineTreatmentStart","","","",0,1,"","","","date {[]} {[]}
+","TB CS - Second-line treatment start date","TB CS - Second-line treatment start date","","","","","","","","","",,,,,"",,,,"TBTreatment.secondLineTreatmentStart",0,1,"",""
+"TBTreatment.capreomycinCap","TBTreatment.capreomycinCap","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Cap","TB CS - Treatment second-line - Cap","","","","","","","","","",,,,,"",,,,"TBTreatment.capreomycinCap",0,1,"",""
+"TBTreatment.secondLineEthambutolEmb","TBTreatment.secondLineEthambutolEmb","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Emb","TB CS - Treatment second-line - Emb","","","","","","","","","",,,,,"",,,,"TBTreatment.secondLineEthambutolEmb",0,1,"",""
+"TBTreatment.kanamycinKan","TBTreatment.kanamycinKan","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Kan","TB CS - Treatment second-line - Kan","","","","","","","","","",,,,,"",,,,"TBTreatment.kanamycinKan",0,1,"",""
+"TBTreatment.pretomanidPa","TBTreatment.pretomanidPa","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Pa","TB CS - Treatment second-line - Pa","","","","","","","","","",,,,,"",,,,"TBTreatment.pretomanidPa",0,1,"",""
+"TBTreatment.SecondLinePyrazinamidePza","TBTreatment.SecondLinePyrazinamidePza","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Treatment second-line - Pza","TB CS - Treatment second-line - Pza","","","","","","","","","",,,,,"",,,,"TBTreatment.SecondLinePyrazinamidePza",0,1,"",""
+"TBTreatment.tickTheBoxToOverwriteThisClassification","TBTreatment.tickTheBoxToOverwriteThisClassification","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Reassign resistance classification","TB CS - Reassign resistance classification","","","","","","","","","",,,,,"",,,,"TBTreatment.tickTheBoxToOverwriteThisClassification",0,1,"",""
+"TBTreatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem","TBTreatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem","","","",0,1,"","","","string {[]} {[]}
+","TB CS - Resistance classification","TB CS - Resistance classification","","","","","","","","","",,,,,"",,,,"TBTreatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem",0,1,"",""
+"TBTreatment.newlyAssignedResistanceClassification","TBTreatment.newlyAssignedResistanceClassification","","","",0,1,"","","","code {[]} {[]}
+","TB CS - Manually assigned resistance classification","TB CS - Manually assigned resistance classification","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---resistance-classification-vs","",,,,"TBTreatment.newlyAssignedResistanceClassification",0,1,"",""
+"TBTreatment.treatmentInitiationDelayDays","TBTreatment.treatmentInitiationDelayDays","","","",0,1,"","","","decimal {[]} {[]}
+","TB CS - Treatment initiation delay (days)","TB CS - Treatment initiation delay (days)","","","","","","","","","",,,,,"",,,,"TBTreatment.treatmentInitiationDelayDays",0,1,"",""
+"TBTreatment.treatmentEpisodeEndDate","TBTreatment.treatmentEpisodeEndDate","","","",0,1,"","","","date {[]} {[]}
+","TB-CS - Treatment episode end date","TB-CS - Treatment episode end date","","","","","","","","","",,,,,"",,,,"TBTreatment.treatmentEpisodeEndDate",0,1,"",""
+"TBTreatment.reasonForEndingCurrentTreatmentEpisode","TBTreatment.reasonForEndingCurrentTreatmentEpisode","","","",0,1,"","","","string {[]} {[]}
+","TB-CS - Treatment episode end comment","TB-CS - Treatment episode end comment","","","","","","","","","",,,,,"",,,,"TBTreatment.reasonForEndingCurrentTreatmentEpisode",0,1,"",""
+"TBTreatment.clickToEndTheCurrentTreatmentEpisode","TBTreatment.clickToEndTheCurrentTreatmentEpisode","","","",0,1,"","","","boolean {[]} {[]}
+","TB-CS - Treatment episode end","TB-CS - Treatment episode end","","","","","","","","","",,,,,"",,,,"TBTreatment.clickToEndTheCurrentTreatmentEpisode",0,1,"",""
+"TBTreatment.outcomeDue","TBTreatment.outcomeDue","","","",0,1,"","","","date {[]} {[]}
+","TB CS - Outcome due date","TB CS - Outcome due date","","","","","","","","","",,,,,"",,,,"TBTreatment.outcomeDue",0,1,"",""

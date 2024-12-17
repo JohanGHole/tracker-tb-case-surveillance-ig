@@ -1,0 +1,251 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
+","Diagnostic laboratory results","Diagnostic laboratory results","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DiagnosticLaboratoryResults.executionDate","DiagnosticLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.executionDate",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Inh (CC)","TB-LAB - Initial DST (solid media) - Inh (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialRifampicinRif","DiagnosticLaboratoryResults.solidInitialRifampicinRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Rif","TB-LAB - Initial DST (solid media) - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialRifampicinRif",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialEthambutolEmb","DiagnosticLaboratoryResults.solidInitialEthambutolEmb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Emb","TB-LAB - Initial DST (solid media) - Emb","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialEthambutolEmb",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialPyrazinamidePza","DiagnosticLaboratoryResults.solidInitialPyrazinamidePza","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Pza","TB-LAB - Initial DST (solid media) - Pza","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialPyrazinamidePza",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialLevofloxacinLfx","DiagnosticLaboratoryResults.solidInitialLevofloxacinLfx","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Lfx","TB-LAB - Initial DST (solid media) - Lfx","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialLevofloxacinLfx",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialMoxifloxacinCriticalConcentrationMfxCc","DiagnosticLaboratoryResults.solidInitialMoxifloxacinCriticalConcentrationMfxCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Mfx (CC)","TB-LAB - Initial DST (solid media) - Mfx (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialMoxifloxacinCriticalConcentrationMfxCc",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialAmikacinAmk","DiagnosticLaboratoryResults.solidInitialAmikacinAmk","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Amk","TB-LAB - Initial DST (solid media) - Amk","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialAmikacinAmk",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialMoxifloxacinClinicalBreakpointMfxCb","DiagnosticLaboratoryResults.solidInitialMoxifloxacinClinicalBreakpointMfxCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Mfx (CB)","TB-LAB - Initial DST (solid media) - Mfx (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialMoxifloxacinClinicalBreakpointMfxCb",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialLinezolidLzd","DiagnosticLaboratoryResults.solidInitialLinezolidLzd","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Lzd","TB-LAB - Initial DST (solid media) - Lzd","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialLinezolidLzd",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialClofazimineCfz","DiagnosticLaboratoryResults.solidInitialClofazimineCfz","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Cfz","TB-LAB - Initial DST (solid media) - Cfz","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialClofazimineCfz",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialBedaquilineBdq","DiagnosticLaboratoryResults.solidInitialBedaquilineBdq","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Bdq","TB-LAB - Initial DST (solid media) - Bdq","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialBedaquilineBdq",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialDelamanidDlm","DiagnosticLaboratoryResults.solidInitialDelamanidDlm","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Dlm","TB-LAB - Initial DST (solid media) - Dlm","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialDelamanidDlm",0,1,"",""
+"DiagnosticLaboratoryResults.solidInitialIsoniazidClinicalBreakpointInhCb","DiagnosticLaboratoryResults.solidInitialIsoniazidClinicalBreakpointInhCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (solid media) - Inh (CB)","TB-LAB - Initial DST (solid media) - Inh (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidInitialIsoniazidClinicalBreakpointInhCb",0,1,"",""
+"DiagnosticLaboratoryResults.dateRifResistanceDetected","DiagnosticLaboratoryResults.dateRifResistanceDetected","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date Rif-resistance detected","TB-LAB - Date Rif-resistance detected","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateRifResistanceDetected",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfSolidCultureResult","DiagnosticLaboratoryResults.dateOfSolidCultureResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Solid culture result date","TB-LAB - Solid culture result date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfSolidCultureResult",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifMtb","DiagnosticLaboratoryResults.xpertMtbRifMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Xpert MTB/RIF result - MTB","TB-LAB - Xpert MTB/RIF result - MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.xpertMtbRifMtb",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifRif","DiagnosticLaboratoryResults.xpertMtbRifRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Xpert MTB/RIF result - Rif","TB-LAB - Xpert MTB/RIF result - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.xpertMtbRifRif",0,1,"",""
+"DiagnosticLaboratoryResults.solidCultureSpecimenNumber","DiagnosticLaboratoryResults.solidCultureSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Solid culture specimen number","TB-LAB - Solid culture specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.solidCultureSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.solidCultureResult","DiagnosticLaboratoryResults.solidCultureResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Solid culture test result","TB-LAB - Solid culture test result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---final-culture-result-vs","",,,,"DiagnosticLaboratoryResults.solidCultureResult",0,1,"",""
+"DiagnosticLaboratoryResults.smearSpecimenNumber","DiagnosticLaboratoryResults.smearSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Smear specimen number","TB-LAB - Smear specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.smearSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifSpecimenNumber","DiagnosticLaboratoryResults.xpertMtbRifSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Xpert MTB/RIF specimen number","TB-LAB - Xpert MTB/RIF specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.xpertMtbRifSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfXpertMtbRifResult","DiagnosticLaboratoryResults.dateOfXpertMtbRifResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Xpert MTB/RIF result date","TB-LAB - Xpert MTB/RIF result date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfXpertMtbRifResult",0,1,"",""
+"DiagnosticLaboratoryResults.sputumSmearMicroscopy","DiagnosticLaboratoryResults.sputumSmearMicroscopy","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Sputum smear microscopy","TB-LAB - Sputum smear microscopy","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.sputumSmearMicroscopy",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRif","DiagnosticLaboratoryResults.xpertMtbRif","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Xpert MTB/RIF","TB-LAB - Xpert MTB/RIF","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.xpertMtbRif",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifUltra","DiagnosticLaboratoryResults.xpertMtbRifUltra","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Xpert MTB/RIF Ultra","TB-LAB - Xpert MTB/RIF Ultra","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.xpertMtbRifUltra",0,1,"",""
+"DiagnosticLaboratoryResults.cultureInLiquidMediaEGMgit","DiagnosticLaboratoryResults.cultureInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Culture in liquid media (e.g. MGIT)","TB-LAB - Culture in liquid media (e.g. MGIT)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.cultureInLiquidMediaEGMgit",0,1,"",""
+"DiagnosticLaboratoryResults.cultureInSolidMediaEGLj","DiagnosticLaboratoryResults.cultureInSolidMediaEGLj","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Culture in solid media (e.g. LJ)","TB-LAB - Culture in solid media (e.g. LJ)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.cultureInSolidMediaEGLj",0,1,"",""
+"DiagnosticLaboratoryResults.initialDstInLiquidMediaEGMgit","DiagnosticLaboratoryResults.initialDstInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Initial DST in liquid media (e.g. MGIT)","TB-LAB - Initial DST in liquid media (e.g. MGIT)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.initialDstInLiquidMediaEGMgit",0,1,"",""
+"DiagnosticLaboratoryResults.initialDstInSolidMediaEGLj","DiagnosticLaboratoryResults.initialDstInSolidMediaEGLj","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Initial DST in solid media (e.g. LJ)","TB-LAB - Initial DST in solid media (e.g. LJ)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.initialDstInSolidMediaEGLj",0,1,"",""
+"DiagnosticLaboratoryResults.subsequentDstInLiquidMediaEGMgit","DiagnosticLaboratoryResults.subsequentDstInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Subsequent DST in liquid media (e.g. MGIT)","TB-LAB - Subsequent DST in liquid media (e.g. MGIT)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.subsequentDstInLiquidMediaEGMgit",0,1,"",""
+"DiagnosticLaboratoryResults.subsequentDstInSolidMediaEGLj","DiagnosticLaboratoryResults.subsequentDstInSolidMediaEGLj","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Subsequent DST in solid media (e.g. LJ)","TB-LAB - Subsequent DST in solid media (e.g. LJ)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.subsequentDstInSolidMediaEGLj",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfFinalInitialDstSolidMediaResults","DiagnosticLaboratoryResults.dateOfFinalInitialDstSolidMediaResults","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of initial DST results (solid media)","TB-LAB - Date of initial DST results (solid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfFinalInitialDstSolidMediaResults",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifUltraSpecimenNumber","DiagnosticLaboratoryResults.xpertMtbRifUltraSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Xpert MTB/RIF Ultra specimen number","TB-LAB - Xpert MTB/RIF Ultra specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.xpertMtbRifUltraSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfXpertMtbRifUltraResult","DiagnosticLaboratoryResults.dateOfXpertMtbRifUltraResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Xpert MTB/RIF Ultra result date","TB-LAB - Xpert MTB/RIF Ultra result date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfXpertMtbRifUltraResult",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifUltraMtb","DiagnosticLaboratoryResults.xpertMtbRifUltraMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Xpert MTB/RIF Ultra result - MTB","TB-LAB - Xpert MTB/RIF Ultra result - MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.xpertMtbRifUltraMtb",0,1,"",""
+"DiagnosticLaboratoryResults.xpertMtbRifUltraRif","DiagnosticLaboratoryResults.xpertMtbRifUltraRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Xpert MTB/RIF Ultra result - Rif","TB-LAB - Xpert MTB/RIF Ultra result - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.xpertMtbRifUltraRif",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfLiquidCultureResult","DiagnosticLaboratoryResults.dateOfLiquidCultureResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Liquid culture result date","TB-LAB - Liquid culture result date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfLiquidCultureResult",0,1,"",""
+"DiagnosticLaboratoryResults.liquidCultureResult","DiagnosticLaboratoryResults.liquidCultureResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Liquid culture test result","TB-LAB - Liquid culture test result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---final-culture-result-vs","",,,,"DiagnosticLaboratoryResults.liquidCultureResult",0,1,"",""
+"DiagnosticLaboratoryResults.liquidCultureSpecimenNumber","DiagnosticLaboratoryResults.liquidCultureSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Liquid culture specimen number","TB-LAB - Liquid culture specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.liquidCultureSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialAmikacinAmk","DiagnosticLaboratoryResults.liquidInitialAmikacinAmk","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Amk","TB-LAB - Initial DST (liquid media) - Amk","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialAmikacinAmk",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialBedaquilineBdq","DiagnosticLaboratoryResults.liquidInitialBedaquilineBdq","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Bdq","TB-LAB - Initial DST (liquid media) - Bdq","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialBedaquilineBdq",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialClofazimineCfz","DiagnosticLaboratoryResults.liquidInitialClofazimineCfz","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Cfz","TB-LAB - Initial DST (liquid media) - Cfz","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialClofazimineCfz",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialDelamanidDlm","DiagnosticLaboratoryResults.liquidInitialDelamanidDlm","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Dlm","TB-LAB - Initial DST (liquid media) - Dlm","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialDelamanidDlm",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialEthambutolEmb","DiagnosticLaboratoryResults.liquidInitialEthambutolEmb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Emb","TB-LAB - Initial DST (liquid media) - Emb","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialEthambutolEmb",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.liquidInitialIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Inh (CC)","TB-LAB - Initial DST (liquid media) - Inh (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialIsoniazidCriticalConcentrationInhCc",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialIsoniazidClinicalBreakpointInhCb","DiagnosticLaboratoryResults.liquidInitialIsoniazidClinicalBreakpointInhCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Inh (CB)","TB-LAB - Initial DST (liquid media) - Inh (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialIsoniazidClinicalBreakpointInhCb",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialLevofloxacinLfx","DiagnosticLaboratoryResults.liquidInitialLevofloxacinLfx","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Lfx","TB-LAB - Initial DST (liquid media) - Lfx","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialLevofloxacinLfx",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialLinezolidLzd","DiagnosticLaboratoryResults.liquidInitialLinezolidLzd","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Lzd","TB-LAB - Initial DST (liquid media) - Lzd","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialLinezolidLzd",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialMoxifloxacinClinicalBreakpointMfxCb","DiagnosticLaboratoryResults.liquidInitialMoxifloxacinClinicalBreakpointMfxCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Mfx (CB)","TB-LAB - Initial DST (liquid media) - Mfx (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialMoxifloxacinClinicalBreakpointMfxCb",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialMoxifloxacinCriticalConcentrationMfxCc","DiagnosticLaboratoryResults.liquidInitialMoxifloxacinCriticalConcentrationMfxCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Mfx (CC)","TB-LAB - Initial DST (liquid media) - Mfx (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialMoxifloxacinCriticalConcentrationMfxCc",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialRifampicinRif","DiagnosticLaboratoryResults.liquidInitialRifampicinRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Rif","TB-LAB - Initial DST (liquid media) - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialRifampicinRif",0,1,"",""
+"DiagnosticLaboratoryResults.liquidInitialPyrazinamidePza","DiagnosticLaboratoryResults.liquidInitialPyrazinamidePza","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Initial DST (liquid media) - Pza","TB-LAB - Initial DST (liquid media) - Pza","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidInitialPyrazinamidePza",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfFinalInitialDstLiquidMediaResults","DiagnosticLaboratoryResults.dateOfFinalInitialDstLiquidMediaResults","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of initial DST results (liquid media)","TB-LAB - Date of initial DST results (liquid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfFinalInitialDstLiquidMediaResults",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfFinalSubsequentDstLiquidMediaResults","DiagnosticLaboratoryResults.dateOfFinalSubsequentDstLiquidMediaResults","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of subsequent DST results (liquid media)","TB-LAB - Date of subsequent DST results (liquid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfFinalSubsequentDstLiquidMediaResults",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfFinalSubsequentDstSolidMediaResults","DiagnosticLaboratoryResults.dateOfFinalSubsequentDstSolidMediaResults","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of subsequent DST results (solid media)","TB-LAB - Date of subsequent DST results (solid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfFinalSubsequentDstSolidMediaResults",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentAmikacinAmk","DiagnosticLaboratoryResults.liquidSubsequentAmikacinAmk","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Amk","TB-LAB - Subsequent DST (liquid media) - Amk","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentAmikacinAmk",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentBedaquilineBdq","DiagnosticLaboratoryResults.liquidSubsequentBedaquilineBdq","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Bdq","TB-LAB - Subsequent DST (liquid media) - Bdq","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentBedaquilineBdq",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentClofazimineCfz","DiagnosticLaboratoryResults.liquidSubsequentClofazimineCfz","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Cfz","TB-LAB - Subsequent DST (liquid media) - Cfz","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentClofazimineCfz",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfSlLpa","DiagnosticLaboratoryResults.dateOfSlLpa","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of SL-LPA","TB-LAB - Date of SL-LPA","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfSlLpa",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfFlLpa","DiagnosticLaboratoryResults.dateOfFlLpa","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of FL-LPA","TB-LAB - Date of FL-LPA","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfFlLpa",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentDelamanidDlm","DiagnosticLaboratoryResults.liquidSubsequentDelamanidDlm","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Dlm","TB-LAB - Subsequent DST (liquid media) - Dlm","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentDelamanidDlm",0,1,"",""
+"DiagnosticLaboratoryResults.slLpa","DiagnosticLaboratoryResults.slLpa","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - SL-LPA","TB-LAB - SL-LPA","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.slLpa",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultAmikacinCapreomycinAmkCap","DiagnosticLaboratoryResults.finalResultAmikacinCapreomycinAmkCap","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA - Amk/Cap","TB-LAB - SL-LPA - Amk/Cap","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultAmikacinCapreomycinAmkCap",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentEthambutolEmb","DiagnosticLaboratoryResults.liquidSubsequentEthambutolEmb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Emb","TB-LAB - Subsequent DST (liquid media) - Emb","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentEthambutolEmb",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultEthambutolEmb","DiagnosticLaboratoryResults.finalResultEthambutolEmb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA - Emb","TB-LAB - SL-LPA - Emb","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultEthambutolEmb",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultFluoroquinolonesFq","DiagnosticLaboratoryResults.finalResultFluoroquinolonesFq","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA - Fq","TB-LAB - SL-LPA - Fq","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultFluoroquinolonesFq",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultKanamycinKan","DiagnosticLaboratoryResults.finalResultKanamycinKan","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA - Kan","TB-LAB - SL-LPA - Kan","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultKanamycinKan",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.liquidSubsequentIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Inh (CC)","TB-LAB - Subsequent DST (liquid media) - Inh (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentIsoniazidCriticalConcentrationInhCc",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentIsoniazidClinicalBreakpointInhCb","DiagnosticLaboratoryResults.liquidSubsequentIsoniazidClinicalBreakpointInhCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Inh (CB)","TB-LAB - Subsequent DST (liquid media) - Inh (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentIsoniazidClinicalBreakpointInhCb",0,1,"",""
+"DiagnosticLaboratoryResults.slLpaMtb","DiagnosticLaboratoryResults.slLpaMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA - MTB","TB-LAB - SL-LPA - MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.slLpaMtb",0,1,"",""
+"DiagnosticLaboratoryResults.slLpaSpecimenNumber","DiagnosticLaboratoryResults.slLpaSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - SL-LPA specimen number","TB-LAB - SL-LPA specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.slLpaSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.flLpa","DiagnosticLaboratoryResults.flLpa","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - FL-LPA","TB-LAB - FL-LPA","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.flLpa",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentLevofloxacinLfx","DiagnosticLaboratoryResults.liquidSubsequentLevofloxacinLfx","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Lfx","TB-LAB - Subsequent DST (liquid media) - Lfx","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentLevofloxacinLfx",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentLinezolidLzd","DiagnosticLaboratoryResults.liquidSubsequentLinezolidLzd","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Lzd","TB-LAB - Subsequent DST (liquid media) - Lzd","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentLinezolidLzd",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultIsoniazidInh","DiagnosticLaboratoryResults.finalResultIsoniazidInh","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - FL-LPA - Inh","TB-LAB - FL-LPA - Inh","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultIsoniazidInh",0,1,"",""
+"DiagnosticLaboratoryResults.flLpaMtb","DiagnosticLaboratoryResults.flLpaMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - FL-LPA - MTB","TB-LAB - FL-LPA - MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.flLpaMtb",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb","DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Mfx (CB)","TB-LAB - Subsequent DST (liquid media) - Mfx (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc","DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Mfx (CC)","TB-LAB - Subsequent DST (liquid media) - Mfx (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfSampleReception","DiagnosticLaboratoryResults.dateOfSampleReception","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of sample reception","TB-LAB - Date of sample reception","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfSampleReception",0,1,"",""
+"DiagnosticLaboratoryResults.dateRifResistanceFirstDetected","DiagnosticLaboratoryResults.dateRifResistanceFirstDetected","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date Rif-resistance first detected","TB-LAB - Date Rif-resistance first detected","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateRifResistanceFirstDetected",0,1,"",""
+"DiagnosticLaboratoryResults.finalResultRifampicinRif","DiagnosticLaboratoryResults.finalResultRifampicinRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - FL-LPA - Rif","TB-LAB - FL-LPA - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.finalResultRifampicinRif",0,1,"",""
+"DiagnosticLaboratoryResults.flLpaSpecimenNumber","DiagnosticLaboratoryResults.flLpaSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - FL-LPA specimen number","TB-LAB - FL-LPA specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.flLpaSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.microscopyResult","DiagnosticLaboratoryResults.microscopyResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Microscopy result","TB-LAB - Microscopy result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---smear-result-vs","",,,,"DiagnosticLaboratoryResults.microscopyResult",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfCultureInoculationLiquidMedia","DiagnosticLaboratoryResults.dateOfCultureInoculationLiquidMedia","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of culture inoculation (liquid media)","TB-LAB - Date of culture inoculation (liquid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfCultureInoculationLiquidMedia",0,1,"",""
+"DiagnosticLaboratoryResults.slLpaSpecimenType","DiagnosticLaboratoryResults.slLpaSpecimenType","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - SL-LPA specimen type","TB-LAB - SL-LPA specimen type","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---lpa-specimen-vs","",,,,"DiagnosticLaboratoryResults.slLpaSpecimenType",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfCultureInoculationSolidMedia","DiagnosticLaboratoryResults.dateOfCultureInoculationSolidMedia","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of culture inoculation (solid media)","TB-LAB - Date of culture inoculation (solid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfCultureInoculationSolidMedia",0,1,"",""
+"DiagnosticLaboratoryResults.sampleQuality","DiagnosticLaboratoryResults.sampleQuality","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Sample quality","TB-LAB - Sample quality","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---sample-quality-vs","",,,,"DiagnosticLaboratoryResults.sampleQuality",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentRifampicinRif","DiagnosticLaboratoryResults.liquidSubsequentRifampicinRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Rif","TB-LAB - Subsequent DST (liquid media) - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentRifampicinRif",0,1,"",""
+"DiagnosticLaboratoryResults.sampleId","DiagnosticLaboratoryResults.sampleId","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Sample ID","TB-LAB - Sample ID","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.sampleId",0,1,"",""
+"DiagnosticLaboratoryResults.flLpaSpecimenType","DiagnosticLaboratoryResults.flLpaSpecimenType","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - FL-LPA specimen type","TB-LAB - FL-LPA specimen type","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---lpa-specimen-vs","",,,,"DiagnosticLaboratoryResults.flLpaSpecimenType",0,1,"",""
+"DiagnosticLaboratoryResults.sampleStatus","DiagnosticLaboratoryResults.sampleStatus","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Sample status","TB-LAB - Sample status","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---sample-status-vs","",,,,"DiagnosticLaboratoryResults.sampleStatus",0,1,"",""
+"DiagnosticLaboratoryResults.initialDstLmSpecimenNumber","DiagnosticLaboratoryResults.initialDstLmSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Initial DST specimen number (liquid media)","TB-LAB - Initial DST specimen number (liquid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.initialDstLmSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.liquidSubsequentPyrazinamidePza","DiagnosticLaboratoryResults.liquidSubsequentPyrazinamidePza","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (liquid media) - Pza","TB-LAB - Subsequent DST (liquid media) - Pza","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.liquidSubsequentPyrazinamidePza",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentAmikacinAmk","DiagnosticLaboratoryResults.solidSubsequentAmikacinAmk","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Amk","TB-LAB - Subsequent DST (solid media) - Amk","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentAmikacinAmk",0,1,"",""
+"DiagnosticLaboratoryResults.initialDstSmSpecimenNumber","DiagnosticLaboratoryResults.initialDstSmSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Initial DST specimen number (solid media)","TB-LAB - Initial DST specimen number (solid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.initialDstSmSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentBedaquilineBdq","DiagnosticLaboratoryResults.solidSubsequentBedaquilineBdq","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Bdq","TB-LAB - Subsequent DST (solid media) - Bdq","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentBedaquilineBdq",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentClofazimineCfz","DiagnosticLaboratoryResults.solidSubsequentClofazimineCfz","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Cfz","TB-LAB - Subsequent DST (solid media) - Cfz","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentClofazimineCfz",0,1,"",""
+"DiagnosticLaboratoryResults.subsequentDstLmSpecimenNumber","DiagnosticLaboratoryResults.subsequentDstLmSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Subsequent DST specimen number (liquid media)","TB-LAB - Subsequent DST specimen number (liquid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.subsequentDstLmSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.subsequentDstSmSpecimenNumber","DiagnosticLaboratoryResults.subsequentDstSmSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Subsequent DST specimen number (solid media)","TB-LAB - Subsequent DST specimen number (solid media)","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.subsequentDstSmSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.tbLamp","DiagnosticLaboratoryResults.tbLamp","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - TB-LAMP","TB-LAB - TB-LAMP","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.tbLamp",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentDelamanidDlm","DiagnosticLaboratoryResults.solidSubsequentDelamanidDlm","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Dlm","TB-LAB - Subsequent DST (solid media) - Dlm","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentDelamanidDlm",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentEthambutolEmb","DiagnosticLaboratoryResults.solidSubsequentEthambutolEmb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Emb","TB-LAB - Subsequent DST (solid media) - Emb","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentEthambutolEmb",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfTbLampResult","DiagnosticLaboratoryResults.dateOfTbLampResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - TB-LAMP date","TB-LAB - TB-LAMP date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfTbLampResult",0,1,"",""
+"DiagnosticLaboratoryResults.tbLampMtb","DiagnosticLaboratoryResults.tbLampMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - TB-LAMP MTB","TB-LAB - TB-LAMP MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.tbLampMtb",0,1,"",""
+"DiagnosticLaboratoryResults.tbLampSpecimenNumber","DiagnosticLaboratoryResults.tbLampSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - TB-LAMP specimen number","TB-LAB - TB-LAMP specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.tbLampSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.lfLam","DiagnosticLaboratoryResults.lfLam","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - LF-LAM","TB-LAB - LF-LAM","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.lfLam",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.solidSubsequentIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Inh (CC)","TB-LAB - Subsequent DST (solid media) - Inh (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentIsoniazidCriticalConcentrationInhCc",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfLfLamResult","DiagnosticLaboratoryResults.dateOfLfLamResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - LF-LAM date","TB-LAB - LF-LAM date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfLfLamResult",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentIsoniazidClinicalBreakpointInhCb","DiagnosticLaboratoryResults.solidSubsequentIsoniazidClinicalBreakpointInhCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Inh (CB)","TB-LAB - Subsequent DST (solid media) - Inh (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentIsoniazidClinicalBreakpointInhCb",0,1,"",""
+"DiagnosticLaboratoryResults.lfLamMtb","DiagnosticLaboratoryResults.lfLamMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - LF-LAM MTB","TB-LAB - LF-LAM MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.lfLamMtb",0,1,"",""
+"DiagnosticLaboratoryResults.lfLamSpecimenNumber","DiagnosticLaboratoryResults.lfLamSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - LF-LAM specimen number","TB-LAB - LF-LAM specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.lfLamSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentLevofloxacinLfx","DiagnosticLaboratoryResults.solidSubsequentLevofloxacinLfx","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Lfx","TB-LAB - Subsequent DST (solid media) - Lfx","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentLevofloxacinLfx",0,1,"",""
+"DiagnosticLaboratoryResults.truenat","DiagnosticLaboratoryResults.truenat","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Truenat","TB-LAB - Truenat","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.truenat",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentLinezolidLzd","DiagnosticLaboratoryResults.solidSubsequentLinezolidLzd","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Lzd","TB-LAB - Subsequent DST (solid media) - Lzd","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentLinezolidLzd",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb","DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Mfx (CB)","TB-LAB - Subsequent DST (solid media) - Mfx (CB)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb",0,1,"",""
+"DiagnosticLaboratoryResults.truenatMtb","DiagnosticLaboratoryResults.truenatMtb","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Truenat result - MTB","TB-LAB - Truenat result - MTB","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---mtb-test-result-vs","",,,,"DiagnosticLaboratoryResults.truenatMtb",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc","DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Mfx (CC)","TB-LAB - Subsequent DST (solid media) - Mfx (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfTruenatResult","DiagnosticLaboratoryResults.dateOfTruenatResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Truenat result date","TB-LAB - Truenat result date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfTruenatResult",0,1,"",""
+"DiagnosticLaboratoryResults.truenatRif","DiagnosticLaboratoryResults.truenatRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Truenat result - Rif","TB-LAB - Truenat result - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/susceptible-resistant-indeterminate-vs","",,,,"DiagnosticLaboratoryResults.truenatRif",0,1,"",""
+"DiagnosticLaboratoryResults.truenatSpecimenNumber","DiagnosticLaboratoryResults.truenatSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Truenat specimen number","TB-LAB - Truenat specimen number","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.truenatSpecimenNumber",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentRifampicinRif","DiagnosticLaboratoryResults.solidSubsequentRifampicinRif","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Rif","TB-LAB - Subsequent DST (solid media) - Rif","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentRifampicinRif",0,1,"",""
+"DiagnosticLaboratoryResults.dateOfMicroscopy","DiagnosticLaboratoryResults.dateOfMicroscopy","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of microscopy","TB-LAB - Date of microscopy","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.dateOfMicroscopy",0,1,"",""
+"DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza","DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Subsequent DST (solid media) - Pza","TB-LAB - Subsequent DST (solid media) - Pza","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza",0,1,"",""

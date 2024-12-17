@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="gen---yes-no-unknown-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet gen---yes-no-unknown-vs</b></p><a name="gen---yes-no-unknown-vs"> </a><a name="hcgen---yes-no-unknown-vs"> </a><a name="gen---yes-no-unknown-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-gen---yes-no-unknown-cs.html"><code>http://example.org/CodeSystem/gen---yes-no-unknown-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/gen---yes-no-unknown-vs"/>
+  <version value="0.1.0"/>
+  <name value="GENYesNoUnknownVS"/>
+  <title value="GEN - Yes/No/Unknown value set"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/gen---yes-no-unknown-cs"/>
+    </include>
+  </compose>
+</ValueSet>

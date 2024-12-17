@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---treatment-outcome-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-cs---treatment-outcome-cs</b></p><a name="tb-cs---treatment-outcome-cs"> </a><a name="hctb-cs---treatment-outcome-cs"> </a><a name="tb-cs---treatment-outcome-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CURED<a name="tb-cs---treatment-outcome-cs-CURED"> </a></td><td>Cured</td></tr><tr><td style="white-space:nowrap">COMPLETED<a name="tb-cs---treatment-outcome-cs-COMPLETED"> </a></td><td>Completed</td></tr><tr><td style="white-space:nowrap">FAILURE<a name="tb-cs---treatment-outcome-cs-FAILURE"> </a></td><td>Failed</td></tr><tr><td style="white-space:nowrap">DIED<a name="tb-cs---treatment-outcome-cs-DIED"> </a></td><td>Died</td></tr><tr><td style="white-space:nowrap">LOST_TO_FOLLOW_UP<a name="tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP"> </a></td><td>Lost to follow-up</td></tr><tr><td style="white-space:nowrap">NOT_EVALUATED<a name="tb-cs---treatment-outcome-cs-NOT_EVALUATED"> </a></td><td>Not evaluated</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSTreatmentOutcomeCS"/>
+  <title value="TB CS - Treatment outcome"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="CURED"/>
+    <display value="Cured"/>
+  </concept>
+  <concept>
+    <code value="COMPLETED"/>
+    <display value="Completed"/>
+  </concept>
+  <concept>
+    <code value="FAILURE"/>
+    <display value="Failed"/>
+  </concept>
+  <concept>
+    <code value="DIED"/>
+    <display value="Died"/>
+  </concept>
+  <concept>
+    <code value="LOST_TO_FOLLOW_UP"/>
+    <display value="Lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="NOT_EVALUATED"/>
+    <display value="Not evaluated"/>
+  </concept>
+</CodeSystem>

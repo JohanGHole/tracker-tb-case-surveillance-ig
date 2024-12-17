@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tb-lab---sample-quality-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tb-lab---sample-quality-vs</b></p><a name=\"tb-lab---sample-quality-vs\"> </a><a name=\"hctb-lab---sample-quality-vs\"> </a><a name=\"tb-lab---sample-quality-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-lab---sample-quality-cs.html\"><code>http://example.org/CodeSystem/tb-lab---sample-quality-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+  "version" : "0.1.0",
+  "name" : "TBLABSampleQualityVS",
+  "title" : "TB-LAB - Sample quality value set",
+  "status" : "draft",
+  "date" : "2024-12-17T21:06:00+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs"
+    }]
+  }
+}

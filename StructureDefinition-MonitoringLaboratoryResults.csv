@@ -1,0 +1,41 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"MonitoringLaboratoryResults","MonitoringLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
+","Monitoring laboratory results","Monitoring laboratory results","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"MonitoringLaboratoryResults.executionDate","MonitoringLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.executionDate",0,1,"",""
+"MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Culture in liquid media (e.g. MGIT)","TB-LAB - Culture in liquid media (e.g. MGIT)","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit",0,1,"",""
+"MonitoringLaboratoryResults.cultureInSolidMediaEGLj","MonitoringLaboratoryResults.cultureInSolidMediaEGLj","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Culture in solid media (e.g. LJ)","TB-LAB - Culture in solid media (e.g. LJ)","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.cultureInSolidMediaEGLj",0,1,"",""
+"MonitoringLaboratoryResults.dateOfCultureInoculationLiquidMedia","MonitoringLaboratoryResults.dateOfCultureInoculationLiquidMedia","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of culture inoculation (liquid media)","TB-LAB - Date of culture inoculation (liquid media)","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfCultureInoculationLiquidMedia",0,1,"",""
+"MonitoringLaboratoryResults.dateOfCultureInoculationSolidMedia","MonitoringLaboratoryResults.dateOfCultureInoculationSolidMedia","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of culture inoculation (solid media)","TB-LAB - Date of culture inoculation (solid media)","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfCultureInoculationSolidMedia",0,1,"",""
+"MonitoringLaboratoryResults.dateOfMicroscopy","MonitoringLaboratoryResults.dateOfMicroscopy","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of microscopy","TB-LAB - Date of microscopy","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfMicroscopy",0,1,"",""
+"MonitoringLaboratoryResults.dateOfSampleReception","MonitoringLaboratoryResults.dateOfSampleReception","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Date of sample reception","TB-LAB - Date of sample reception","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfSampleReception",0,1,"",""
+"MonitoringLaboratoryResults.dateOfLiquidCultureResult","MonitoringLaboratoryResults.dateOfLiquidCultureResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Liquid culture result date","TB-LAB - Liquid culture result date","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfLiquidCultureResult",0,1,"",""
+"MonitoringLaboratoryResults.liquidCultureSpecimenNumber","MonitoringLaboratoryResults.liquidCultureSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Liquid culture specimen number","TB-LAB - Liquid culture specimen number","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.liquidCultureSpecimenNumber",0,1,"",""
+"MonitoringLaboratoryResults.liquidCultureResult","MonitoringLaboratoryResults.liquidCultureResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Liquid culture test result","TB-LAB - Liquid culture test result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---final-culture-result-vs","",,,,"MonitoringLaboratoryResults.liquidCultureResult",0,1,"",""
+"MonitoringLaboratoryResults.microscopyResult","MonitoringLaboratoryResults.microscopyResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Microscopy result","TB-LAB - Microscopy result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---smear-result-vs","",,,,"MonitoringLaboratoryResults.microscopyResult",0,1,"",""
+"MonitoringLaboratoryResults.sampleId","MonitoringLaboratoryResults.sampleId","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Sample ID","TB-LAB - Sample ID","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.sampleId",0,1,"",""
+"MonitoringLaboratoryResults.sampleQuality","MonitoringLaboratoryResults.sampleQuality","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Sample quality","TB-LAB - Sample quality","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---sample-quality-vs","",,,,"MonitoringLaboratoryResults.sampleQuality",0,1,"",""
+"MonitoringLaboratoryResults.sampleStatus","MonitoringLaboratoryResults.sampleStatus","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Sample status","TB-LAB - Sample status","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---sample-status-vs","",,,,"MonitoringLaboratoryResults.sampleStatus",0,1,"",""
+"MonitoringLaboratoryResults.smearSpecimenNumber","MonitoringLaboratoryResults.smearSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Smear specimen number","TB-LAB - Smear specimen number","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.smearSpecimenNumber",0,1,"",""
+"MonitoringLaboratoryResults.dateOfSolidCultureResult","MonitoringLaboratoryResults.dateOfSolidCultureResult","","","",0,1,"","","","date {[]} {[]}
+","TB-LAB - Solid culture result date","TB-LAB - Solid culture result date","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.dateOfSolidCultureResult",0,1,"",""
+"MonitoringLaboratoryResults.solidCultureSpecimenNumber","MonitoringLaboratoryResults.solidCultureSpecimenNumber","","","",0,1,"","","","string {[]} {[]}
+","TB-LAB - Solid culture specimen number","TB-LAB - Solid culture specimen number","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.solidCultureSpecimenNumber",0,1,"",""
+"MonitoringLaboratoryResults.solidCultureResult","MonitoringLaboratoryResults.solidCultureResult","","","",0,1,"","","","code {[]} {[]}
+","TB-LAB - Solid culture test result","TB-LAB - Solid culture test result","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---final-culture-result-vs","",,,,"MonitoringLaboratoryResults.solidCultureResult",0,1,"",""
+"MonitoringLaboratoryResults.sputumSmearMicroscopy","MonitoringLaboratoryResults.sputumSmearMicroscopy","","","",0,1,"","","","boolean {[]} {[]}
+","TB-LAB - Sputum smear microscopy","TB-LAB - Sputum smear microscopy","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.sputumSmearMicroscopy",0,1,"",""

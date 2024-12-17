@@ -1,0 +1,526 @@
+TrackerTBCaseSurveillanceImplementationGuide : Validation Results
+=========================================
+
+err = 6, warn = 133, info = 17
+IG Publisher Version: 1.8.1
+Generated Tue Dec 17 21:06:32 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 275 / 44 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-rrt---gen---sex-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---resistance-classification-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---site-of-disease-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---treatment-category-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---treatment-history-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---treatment-outcome-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---dst-result-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---final-culture-result-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---lpa-specimen-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---mtb-test-result-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---sample-quality-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-rrt---gen---sex-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---resistance-classification-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---site-of-disease-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---treatment-category-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---treatment-history-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-cs---treatment-outcome-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---dst-result-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---final-culture-result-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---lpa-specimen-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---mtb-test-result-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---sample-quality-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---sample-status-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-tb-lab---smear-result-vs : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DiagnosisAndNotification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DiagnosticLaboratoryResults.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MonitoringLaboratoryResults.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TBCaseSurveillance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TBTreatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/gen---yes-no-unknown-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/rrt---gen---sex-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/susceptible-resistant-indeterminate-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---confirmation-method-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---denotification-reasons-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---resistance-classification-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---site-of-disease-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---treatment-category-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---treatment-history-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---treatment-outcome-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---dst-result-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---final-culture-result-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---lpa-specimen-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---mtb-test-result-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---sample-quality-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---sample-status-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---smear-result-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/gen---yes-no-unknown-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rrt---gen---sex-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/susceptible-resistant-indeterminate-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---confirmation-method-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---denotification-reasons-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---resistance-classification-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---site-of-disease-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---treatment-category-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---treatment-history-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---treatment-outcome-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---dst-result-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---final-culture-result-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---lpa-specimen-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---mtb-test-result-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---sample-quality-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---sample-status-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---smear-result-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.json.html#/html/body/div/div/div/p/span/a at Line 296, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.json.html#/html/body/div/div/div/p/span/a at Line 296, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.xml.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---confirmation-method-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---denotification-reasons-cs.xml.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs.html#/html/body/div/div/div/p/span/a at Line 293, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs.json.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---resistance-classification-cs.xml.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs.json.html#/html/body/div/div/div/p/span/a at Line 296, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---site-of-disease-cs.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-category-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs.json.html#/html/body/div/div/div/p/span/a at Line 308, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-history-cs.xml.html#/html/body/div/div/div/p/span/a at Line 302, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs.json.html#/html/body/div/div/div/p/span/a at Line 308, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-cs---treatment-outcome-cs.xml.html#/html/body/div/div/div/p/span/a at Line 302, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs.html#/html/body/div/div/div/p/span/a at Line 293, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---dst-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs.html#/html/body/div/div/div/p/span/a at Line 293, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 300, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---final-culture-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---lpa-specimen-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 304, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---mtb-test-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-quality-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---sample-status-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 304, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-PatientExample.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-PatientExample.html#/html/body/div/div/div/p/span/a at Line 240, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-PatientExample.json.html#/html/body/div/div/div/p/span/a at Line 260, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-PatientExample.ttl.html#/html/body/div/div/div/p/span/a at Line 266, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Patient-PatientExample.xml.html#/html/body/div/div/div/p/span/a at Line 254, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-definitions.html#/html/body/div/div/div/p/span/a at Line 487, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.html#/html/body/div/div/div/p/span/a at Line 1432, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.json.html#/html/body/div/div/div/p/span/a at Line 1039, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 840, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.xml.html#/html/body/div/div/div/p/span/a at Line 965, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-definitions.html#/html/body/div/div/div/p/span/a at Line 1423, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 5774, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 4783, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 3570, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 4408, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-definitions.html#/html/body/div/div/div/p/span/a at Line 478, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 1364, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 968, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 770, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 889, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient-definitions.html#/html/body/div/div/div/p/span/a at Line 587, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient-examples.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient-mappings.html#/html/body/div/div/div/p/span/a at Line 400, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient-testing.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient.html#/html/body/div/div/div/p/span/a at Line 1644, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.history.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.json.html#/html/body/div/div/div/p/span/a at Line 2501, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1880, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MyPatient.profile.xml.html#/html/body/div/div/div/p/span/a at Line 2348, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome-definitions.html#/html/body/div/div/div/p/span/a at Line 370, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.html#/html/body/div/div/div/p/span/a at Line 890, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.json.html#/html/body/div/div/div/p/span/a at Line 572, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 500, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.xml.html#/html/body/div/div/div/p/span/a at Line 532, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-definitions.html#/html/body/div/div/div/p/span/a at Line 469, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.html#/html/body/div/div/div/p/span/a at Line 1308, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.json.html#/html/body/div/div/div/p/span/a at Line 913, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 720, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.xml.html#/html/body/div/div/div/p/span/a at Line 838, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment-definitions.html#/html/body/div/div/div/p/span/a at Line 658, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.html#/html/body/div/div/div/p/span/a at Line 2106, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.json.html#/html/body/div/div/div/p/span/a at Line 1564, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1140, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.xml.html#/html/body/div/div/div/p/span/a at Line 1373, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.xml.html#/html/body/div/div/div/p/span/a at Line 283, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---confirmation-method-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---denotification-reasons-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---resistance-classification-vs.xml.html#/html/body/div/div/div/p/span/a at Line 283, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---site-of-disease-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-category-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-history-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-cs---treatment-outcome-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---dst-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---final-culture-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---lpa-specimen-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---mtb-test-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-quality-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---sample-status-vs.xml.html#/html/body/div/div/div/p/span/a at Line 282, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 512, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs.json ==
+INFORMATION: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-rrt---gen---sex-cs.json ==
+INFORMATION: CodeSystem/rrt---gen---sex-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs.json ==
+INFORMATION: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs.json ==
+INFORMATION: CodeSystem/tb-cs---confirmation-method-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---confirmation-method-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---confirmation-method-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---confirmation-method-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs.json ==
+INFORMATION: CodeSystem/tb-cs---denotification-reasons-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---denotification-reasons-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---denotification-reasons-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---denotification-reasons-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---resistance-classification-cs.json ==
+INFORMATION: CodeSystem/tb-cs---resistance-classification-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---resistance-classification-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---resistance-classification-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---resistance-classification-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---site-of-disease-cs.json ==
+INFORMATION: CodeSystem/tb-cs---site-of-disease-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---site-of-disease-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---site-of-disease-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---site-of-disease-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---treatment-category-cs.json ==
+INFORMATION: CodeSystem/tb-cs---treatment-category-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---treatment-category-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-category-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-category-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---treatment-history-cs.json ==
+INFORMATION: CodeSystem/tb-cs---treatment-history-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---treatment-history-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-history-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-history-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-cs---treatment-outcome-cs.json ==
+INFORMATION: CodeSystem/tb-cs---treatment-outcome-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-cs---treatment-outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-cs---treatment-outcome-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---dst-result-cs.json ==
+INFORMATION: CodeSystem/tb-lab---dst-result-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---dst-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---dst-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---dst-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---final-culture-result-cs.json ==
+INFORMATION: CodeSystem/tb-lab---final-culture-result-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---final-culture-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---final-culture-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---final-culture-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---lpa-specimen-cs.json ==
+INFORMATION: CodeSystem/tb-lab---lpa-specimen-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---lpa-specimen-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---lpa-specimen-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---lpa-specimen-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---mtb-test-result-cs.json ==
+INFORMATION: CodeSystem/tb-lab---mtb-test-result-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---mtb-test-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---mtb-test-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---mtb-test-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---sample-quality-cs.json ==
+INFORMATION: CodeSystem/tb-lab---sample-quality-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---sample-quality-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---sample-quality-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---sample-quality-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs.json ==
+INFORMATION: CodeSystem/tb-lab---sample-status-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---sample-status-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---sample-status-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---sample-status-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs.json ==
+INFORMATION: CodeSystem/tb-lab---smear-result-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
+ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+== fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json ==
+ERROR: StructureDefinition/DiagnosticLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+== fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json ==
+ERROR: StructureDefinition/MonitoringLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/StructureDefinition-Outcome.json ==
+ERROR: StructureDefinition/Outcome: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+== fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json ==
+ERROR: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
+WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
+== fsh-generated/resources/StructureDefinition-TBTreatment.json ==
+ERROR: StructureDefinition/TBTreatment: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
+WARNING: StructureDefinition/TBTreatment: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/TBTreatment: StructureDefinition.differential.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+== fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs.json ==
+WARNING: ValueSet/gen---yes-no-unknown-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/gen---yes-no-unknown-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-rrt---gen---sex-vs.json ==
+WARNING: ValueSet/rrt---gen---sex-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/rrt---gen---sex-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs.json ==
+WARNING: ValueSet/susceptible-resistant-indeterminate-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/susceptible-resistant-indeterminate-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs.json ==
+WARNING: ValueSet/tb-cs---confirmation-method-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---confirmation-method-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs.json ==
+WARNING: ValueSet/tb-cs---denotification-reasons-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---denotification-reasons-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---resistance-classification-vs.json ==
+WARNING: ValueSet/tb-cs---resistance-classification-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---resistance-classification-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---site-of-disease-vs.json ==
+WARNING: ValueSet/tb-cs---site-of-disease-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---site-of-disease-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---treatment-category-vs.json ==
+WARNING: ValueSet/tb-cs---treatment-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---treatment-category-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---treatment-history-vs.json ==
+WARNING: ValueSet/tb-cs---treatment-history-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---treatment-history-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-cs---treatment-outcome-vs.json ==
+WARNING: ValueSet/tb-cs---treatment-outcome-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-cs---treatment-outcome-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---dst-result-vs.json ==
+WARNING: ValueSet/tb-lab---dst-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---dst-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---final-culture-result-vs.json ==
+WARNING: ValueSet/tb-lab---final-culture-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---final-culture-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---lpa-specimen-vs.json ==
+WARNING: ValueSet/tb-lab---lpa-specimen-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---lpa-specimen-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---mtb-test-result-vs.json ==
+WARNING: ValueSet/tb-lab---mtb-test-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---mtb-test-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---sample-quality-vs.json ==
+WARNING: ValueSet/tb-lab---sample-quality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---sample-quality-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---sample-status-vs.json ==
+WARNING: ValueSet/tb-lab---sample-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---sample-status-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tb-lab---smear-result-vs.json ==
+WARNING: ValueSet/tb-lab---smear-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/tb-lab---smear-result-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

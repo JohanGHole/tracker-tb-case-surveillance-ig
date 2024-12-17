@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="rrt---gen---sex-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet rrt---gen---sex-vs</b></p><a name="rrt---gen---sex-vs"> </a><a name="hcrrt---gen---sex-vs"> </a><a name="rrt---gen---sex-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-rrt---gen---sex-cs.html"><code>http://example.org/CodeSystem/rrt---gen---sex-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/rrt---gen---sex-vs"/>
+  <version value="0.1.0"/>
+  <name value="RRTGENSexVS"/>
+  <title value="RRT - GEN - Sex value set"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/rrt---gen---sex-cs"/>
+    </include>
+  </compose>
+</ValueSet>

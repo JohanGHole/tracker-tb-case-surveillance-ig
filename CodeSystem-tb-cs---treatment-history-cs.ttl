@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/tb-cs---treatment-history-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tb-cs---treatment-history-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tb-cs---treatment-history-cs</b></p><a name=\"tb-cs---treatment-history-cs\"> </a><a name=\"hctb-cs---treatment-history-cs\"> </a><a name=\"tb-cs---treatment-history-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---treatment-history-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HISTORY_NEW<a name=\"tb-cs---treatment-history-cs-HISTORY_NEW\"> </a></td><td>New</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_RELAPSE<a name=\"tb-cs---treatment-history-cs-HISTORY_RELAPSE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_FAILED<a name=\"tb-cs---treatment-history-cs-HISTORY_FAILED\"> </a></td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_LOST_TO_FOLLOWUP<a name=\"tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP\"> </a></td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_OTHER_PREV<a name=\"tb-cs---treatment-history-cs-HISTORY_OTHER_PREV\"> </a></td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_UNKNOWN<a name=\"tb-cs---treatment-history-cs-HISTORY_UNKNOWN\"> </a></td><td>Unknown</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/tb-cs---treatment-history-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TBCSTreatmentHistoryCS"] ; # 
+  fhir:title [ fhir:v "TB CS - Treatment history"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-12-17T21:06:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "HISTORY_NEW" ] ;
+     fhir:display [ fhir:v "New" ]
+  ] [
+     fhir:code [ fhir:v "HISTORY_RELAPSE" ] ;
+     fhir:display [ fhir:v "Relapse" ]
+  ] [
+     fhir:code [ fhir:v "HISTORY_FAILED" ] ;
+     fhir:display [ fhir:v "Treatment after failure" ]
+  ] [
+     fhir:code [ fhir:v "HISTORY_LOST_TO_FOLLOWUP" ] ;
+     fhir:display [ fhir:v "Treatment after lost to follow-up" ]
+  ] [
+     fhir:code [ fhir:v "HISTORY_OTHER_PREV" ] ;
+     fhir:display [ fhir:v "Other previously treated" ]
+  ] [
+     fhir:code [ fhir:v "HISTORY_UNKNOWN" ] ;
+     fhir:display [ fhir:v "Unknown" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

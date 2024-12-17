@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-lab---dst-result-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-lab---dst-result-cs</b></p><a name="tb-lab---dst-result-cs"> </a><a name="hctb-lab---dst-result-cs"> </a><a name="tb-lab---dst-result-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-lab---dst-result-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SUSCEPTIBLE<a name="tb-lab---dst-result-cs-SUSCEPTIBLE"> </a></td><td>Susceptible</td></tr><tr><td style="white-space:nowrap">RESISTANT<a name="tb-lab---dst-result-cs-RESISTANT"> </a></td><td>Resistant</td></tr><tr><td style="white-space:nowrap">CONTAMINATED<a name="tb-lab---dst-result-cs-CONTAMINATED"> </a></td><td>Contaminated</td></tr><tr><td style="white-space:nowrap">INDETERMINATE<a name="tb-lab---dst-result-cs-INDETERMINATE"> </a></td><td>Indeterminate</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-lab---dst-result-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBLABDSTResultCS"/>
+  <title value="TB-LAB - DST result"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="SUSCEPTIBLE"/>
+    <display value="Susceptible"/>
+  </concept>
+  <concept>
+    <code value="RESISTANT"/>
+    <display value="Resistant"/>
+  </concept>
+  <concept>
+    <code value="CONTAMINATED"/>
+    <display value="Contaminated"/>
+  </concept>
+  <concept>
+    <code value="INDETERMINATE"/>
+    <display value="Indeterminate"/>
+  </concept>
+</CodeSystem>

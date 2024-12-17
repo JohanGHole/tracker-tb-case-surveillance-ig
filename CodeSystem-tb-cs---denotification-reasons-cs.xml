@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---denotification-reasons-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-cs---denotification-reasons-cs</b></p><a name="tb-cs---denotification-reasons-cs"> </a><a name="hctb-cs---denotification-reasons-cs"> </a><a name="tb-cs---denotification-reasons-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">NOT_TB<a name="tb-cs---denotification-reasons-cs-NOT_TB"> </a></td><td>Not a TB Case</td></tr><tr><td style="white-space:nowrap">DUPLICATE<a name="tb-cs---denotification-reasons-cs-DUPLICATE"> </a></td><td>Duplicate</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSDenotificationReasonsCS"/>
+  <title value="TB CS - Denotification reasons"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="NOT_TB"/>
+    <display value="Not a TB Case"/>
+  </concept>
+  <concept>
+    <code value="DUPLICATE"/>
+    <display value="Duplicate"/>
+  </concept>
+</CodeSystem>

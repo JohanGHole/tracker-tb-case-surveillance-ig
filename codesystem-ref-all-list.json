@@ -1,0 +1,263 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GENYesNoUnknownCS",
+      "title" : "GEN - Yes/No/Unknown",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-gen---yes-no-unknown-vs.html" : "GEN - Yes/No/Unknown value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RRTGENSexCS",
+      "title" : "RRT - GEN - Sex",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-rrt---gen---sex-vs.html" : "RRT - GEN - Sex value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SusceptibleResistantIndeterminateCS",
+      "title" : "Susceptible/Resistant/Indeterminate",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-susceptible-resistant-indeterminate-vs.html" : "Susceptible/Resistant/Indeterminate value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSConfirmationMethodCS",
+      "title" : "TB CS - Confirmation method",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---confirmation-method-vs.html" : "TB CS - Confirmation method value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSDenotificationReasonsCS",
+      "title" : "TB CS - Denotification reasons",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---denotification-reasons-vs.html" : "TB CS - Denotification reasons value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSResistanceClassificationCS",
+      "title" : "TB CS - Resistance Classification",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---resistance-classification-vs.html" : "TB CS - Resistance Classification value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSSiteOfDiseaseCS",
+      "title" : "TB CS - Site of disease",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---site-of-disease-vs.html" : "TB CS - Site of disease value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentCategoryCS",
+      "title" : "TB CS - Treatment category",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---treatment-category-vs.html" : "TB CS - Treatment category value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentHistoryCS",
+      "title" : "TB CS - Treatment history",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---treatment-history-vs.html" : "TB CS - Treatment history value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentOutcomeCS",
+      "title" : "TB CS - Treatment outcome",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---treatment-outcome-vs.html" : "TB CS - Treatment outcome value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABDSTResultCS",
+      "title" : "TB-LAB - DST result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---dst-result-vs.html" : "TB-LAB - DST result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABFinalCultureResultCS",
+      "title" : "TB-LAB - Final culture result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---final-culture-result-vs.html" : "TB-LAB - Final culture result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABLPASpecimenCS",
+      "title" : "TB-LAB - LPA specimen",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---lpa-specimen-vs.html" : "TB-LAB - LPA specimen value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABMTBTestResultCS",
+      "title" : "TB-LAB - MTB test result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---mtb-test-result-vs.html" : "TB-LAB - MTB test result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleQualityCS",
+      "title" : "TB-LAB - Sample quality",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---sample-quality-vs.html" : "TB-LAB - Sample quality value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleStatusCS",
+      "title" : "TB-LAB - Sample status",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---sample-status-vs.html" : "TB-LAB - Sample status value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSmearResultCS",
+      "title" : "TB-LAB - Smear result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---smear-result-vs.html" : "TB-LAB - Smear result value set"
+    },
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "oids" : ["2.16.840.1.113883.4.642.4.424"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    }
+  ]
+}

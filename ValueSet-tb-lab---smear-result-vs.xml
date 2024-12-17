@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tb-lab---smear-result-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tb-lab---smear-result-vs</b></p><a name="tb-lab---smear-result-vs"> </a><a name="hctb-lab---smear-result-vs"> </a><a name="tb-lab---smear-result-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tb-lab---smear-result-cs.html"><code>http://example.org/CodeSystem/tb-lab---smear-result-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/tb-lab---smear-result-vs"/>
+  <version value="0.1.0"/>
+  <name value="TBLABSmearResultVS"/>
+  <title value="TB-LAB - Smear result value set"/>
+  <status value="draft"/>
+  <date value="2024-12-17T21:06:00+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,1759 @@
+{
+  "date" : "Tue, 17 Dec, 2024 21:06:00 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json",
+      "size" : 9444,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 12
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 182
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 925
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 110
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 120
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs.json",
+      "size" : 458,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "scan",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 8
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 35
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 1739
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-rrt---gen---sex-cs.json",
+      "size" : 382,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 59
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs.json",
+      "size" : 563,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 53
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs.json",
+      "size" : 471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 49
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs.json",
+      "size" : 460,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---resistance-classification-cs.json",
+      "size" : 660,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 45
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---site-of-disease-cs.json",
+      "size" : 541,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 43
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---treatment-category-cs.json",
+      "size" : 489,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 37
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---treatment-history-cs.json",
+      "size" : 801,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 40
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-cs---treatment-outcome-cs.json",
+      "size" : 716,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 39
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---dst-result-cs.json",
+      "size" : 571,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 37
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---final-culture-result-cs.json",
+      "size" : 574,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 36
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---lpa-specimen-cs.json",
+      "size" : 481,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 52
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---mtb-test-result-cs.json",
+      "size" : 633,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 43
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---sample-quality-cs.json",
+      "size" : 463,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 32
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs.json",
+      "size" : 429,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 34
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs.json",
+      "size" : 633,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 33
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 249,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json",
+      "size" : 9355,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 469
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 159
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 949
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json",
+      "size" : 61380,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 28
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 63
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 85
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 642
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 37,
+          "length" : 909
+        },
+        {
+          "activity" : "generate2",
+          "start" : 44,
+          "length" : 1525
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 18
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json",
+      "size" : 8723,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 74
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 146
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 284
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 597,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 56
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 261
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 38,
+          "length" : 203
+        },
+        {
+          "activity" : "generate2",
+          "start" : 46,
+          "length" : 851
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-Outcome.json",
+      "size" : 3285,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 69
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 175
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json",
+      "size" : 7931,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 21
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 57
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 139
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 192
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 64,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-TBTreatment.json",
+      "size" : 14725,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 33,
+          "length" : 27
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 107
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 243
+        },
+        {
+          "activity" : "generate2",
+          "start" : 47,
+          "length" : 321
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs.json",
+      "size" : 362,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 79
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 3846
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-rrt---gen---sex-vs.json",
+      "size" : 336,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 68
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs.json",
+      "size" : 440,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 79
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs.json",
+      "size" : 397,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 59
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs.json",
+      "size" : 412,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 47
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---resistance-classification-vs.json",
+      "size" : 427,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 51
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---site-of-disease-vs.json",
+      "size" : 376,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 50
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---treatment-category-vs.json",
+      "size" : 392,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 50
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---treatment-history-vs.json",
+      "size" : 387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-cs---treatment-outcome-vs.json",
+      "size" : 387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 60
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---dst-result-vs.json",
+      "size" : 357,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---final-culture-result-vs.json",
+      "size" : 406,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 55
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---lpa-specimen-vs.json",
+      "size" : 367,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 58
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 58,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---mtb-test-result-vs.json",
+      "size" : 381,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 88
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---sample-quality-vs.json",
+      "size" : 377,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 62
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---sample-status-vs.json",
+      "size" : 372,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 52
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-tb-lab---smear-result-vs.json",
+      "size" : 367,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 34,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 39,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 52,
+          "length" : 56
+        }
+      ]
+    }
+  ]
+}

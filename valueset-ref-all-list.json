@@ -1,0 +1,298 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GENYesNoUnknownVS",
+      "title" : "GEN - Yes/No/Unknown value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/gen---yes-no-unknown-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification",
+      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
+    },
+    {
+      "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RRTGENSexVS",
+      "title" : "RRT - GEN - Sex value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/rrt---gen---sex-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
+    },
+    {
+      "url" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SusceptibleResistantIndeterminateVS",
+      "title" : "Susceptible/Resistant/Indeterminate value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSConfirmationMethodVS",
+      "title" : "TB CS - Confirmation method value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---confirmation-method-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---denotification-reasons-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSDenotificationReasonsVS",
+      "title" : "TB CS - Denotification reasons value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Outcome.html" : "Outcome"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSResistanceClassificationVS",
+      "title" : "TB CS - Resistance Classification value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---resistance-classification-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TBTreatment.html" : "TB Treatment"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSSiteOfDiseaseVS",
+      "title" : "TB CS - Site of disease value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-cs---site-of-disease-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-category-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentCategoryVS",
+      "title" : "TB CS - Treatment category value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---treatment-category-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TBTreatment.html" : "TB Treatment"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentHistoryVS",
+      "title" : "TB CS - Treatment history value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-history-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-cs---treatment-outcome-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentOutcomeVS",
+      "title" : "TB CS - Treatment outcome value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-Outcome.html" : "Outcome"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---dst-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABDSTResultVS",
+      "title" : "TB-LAB - DST result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---dst-result-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---final-culture-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABFinalCultureResultVS",
+      "title" : "TB-LAB - Final culture result value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-lab---final-culture-result-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABLPASpecimenVS",
+      "title" : "TB-LAB - LPA specimen value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---lpa-specimen-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---mtb-test-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABMTBTestResultVS",
+      "title" : "TB-LAB - MTB test result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleQualityVS",
+      "title" : "TB-LAB - Sample quality value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---sample-quality-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleStatusVS",
+      "title" : "TB-LAB - Sample status value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---sample-status-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSmearResultVS",
+      "title" : "TB-LAB - Smear result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-lab---smear-result-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-MyPatient.html" : "MyPatient"
+    }
+  ]
+}

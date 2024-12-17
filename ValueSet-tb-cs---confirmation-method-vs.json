@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tb-cs---confirmation-method-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tb-cs---confirmation-method-vs</b></p><a name=\"tb-cs---confirmation-method-vs\"> </a><a name=\"hctb-cs---confirmation-method-vs\"> </a><a name=\"tb-cs---confirmation-method-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---confirmation-method-cs.html\"><code>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
+  "version" : "0.1.0",
+  "name" : "TBCSConfirmationMethodVS",
+  "title" : "TB CS - Confirmation method value set",
+  "status" : "draft",
+  "date" : "2024-12-17T21:06:00+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs"
+    }]
+  }
+}
