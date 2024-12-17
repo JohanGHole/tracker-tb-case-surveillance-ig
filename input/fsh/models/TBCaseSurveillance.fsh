@@ -1,5 +1,6 @@
 Logical: TBCaseSurveillance
 Title: "TB Case Surveillance"
+Description: "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers."
 Parent: Base
 * enrollmentDate 1..1 date "Placeholder: [Date of data entry in DHIS2]"
 * incidentDate 0..1 date ""

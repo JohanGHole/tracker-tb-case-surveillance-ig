@@ -1,7 +1,7 @@
 Logical: DiagnosticLaboratoryResults
 Title: "Diagnostic laboratory results"
 Parent: Base
-
+Description: "Captures diagnostic test results along with sample information to determine TB infection status."
 * executionDate 0..1 date ""
 * solidInitialIsoniazidCriticalConcentrationInhCc 0..1 code "TB-LAB - Initial DST (solid media) - Inh (CC)"
 * solidInitialIsoniazidCriticalConcentrationInhCc from TBLABDSTResultVS (required)

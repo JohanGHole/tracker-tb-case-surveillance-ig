@@ -1,6 +1,7 @@
 Logical: MonitoringLaboratoryResults
 Title: "Monitoring laboratory results"
 Parent: Base
+Description: "Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases."
 * executionDate 0..1 date ""
 * cultureInLiquidMediaEGMgit 0..1 boolean "TB-LAB - Culture in liquid media (e.g. MGIT)"
 * cultureInSolidMediaEGLj 0..1 boolean "TB-LAB - Culture in solid media (e.g. LJ)"

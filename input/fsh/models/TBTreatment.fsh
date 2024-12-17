@@ -1,6 +1,7 @@
 Logical: TBTreatment
 Title: "TB Treatment"
 Parent: Base
+Description: "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan."
 * executionDate 0..1 date ""
 * treatmentRegimen 0..1 code "TB CS - Treatment regimen"
 * treatmentRegimen from TBCSTreatmentCategoryVS (required)
