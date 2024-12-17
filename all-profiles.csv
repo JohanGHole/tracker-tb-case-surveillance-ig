@@ -1,6 +1,6 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "DiagnosisAndNotification","DiagnosisAndNotification","DiagnosisAndNotification","","","",0,*,"","","","null {[]} {[]}
-","Diagnosis and notification","Diagnosis and notification","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Diagnosis and notification","Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.executionDate","DiagnosisAndNotification.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.executionDate",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}
@@ -42,7 +42,7 @@
 "DiagnosisAndNotification","DiagnosisAndNotification.smoking","DiagnosisAndNotification.smoking","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Risk factor smoking","TB CS - Risk factor smoking","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.smoking",0,1,"",""
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
-","Diagnostic laboratory results","Diagnostic laboratory results","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Diagnostic laboratory results","Captures diagnostic test results along with sample information to determine TB infection status.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults.executionDate","DiagnosticLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.executionDate",0,1,"",""
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
@@ -292,7 +292,7 @@
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza","DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza","","","",0,1,"","","","code {[]} {[]}
 ","TB-LAB - Subsequent DST (solid media) - Pza","TB-LAB - Subsequent DST (solid media) - Pza","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-lab---dst-result-vs","",,,,"DiagnosticLaboratoryResults.solidSubsequentPyrazinamidePza",0,1,"",""
 "MonitoringLaboratoryResults","MonitoringLaboratoryResults","MonitoringLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
-","Monitoring laboratory results","Monitoring laboratory results","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Monitoring laboratory results","Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "MonitoringLaboratoryResults","MonitoringLaboratoryResults.executionDate","MonitoringLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.executionDate",0,1,"",""
 "MonitoringLaboratoryResults","MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}
@@ -497,7 +497,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","replaced-by | replaces | refer | seealso","The type of link between this patient resource and another patient resource.","","","","","","","","","",,"required","The type of link between this patient resource and another patient resource.","http://hl7.org/fhir/ValueSet/link-type|4.0.1","",,,,"Patient.link.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Outcome","Outcome","Outcome","","","",0,*,"","","","null {[]} {[]}
-","Outcome","Outcome","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Outcome","Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Outcome","Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
 "Outcome","Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
@@ -513,7 +513,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Outcome","Outcome.denotifyTheCase","Outcome.denotifyTheCase","","","",0,1,"","","","boolean {[]} {[]}
 ","TB CS - Outcome - Case denotification","TB CS - Outcome - Case denotification","","","","","","","","","",,,,,"",,,,"Outcome.denotifyTheCase",0,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance","TBCaseSurveillance","","","",0,*,"","","","null {[]} {[]}
-","TB Case Surveillance","TB Case Surveillance","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","TB Case Surveillance","Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "TBCaseSurveillance","TBCaseSurveillance.enrollmentDate","TBCaseSurveillance.enrollmentDate","","","",1,1,"","","","date {[]} {[]}
 ","Placeholder: [Date of data entry in DHIS2]","Placeholder: [Date of data entry in DHIS2]","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.enrollmentDate",1,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.incidentDate","TBCaseSurveillance.incidentDate","","","",0,1,"","","","date {[]} {[]}
@@ -551,7 +551,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "TBCaseSurveillance","TBCaseSurveillance.outcome","TBCaseSurveillance.outcome","","","",0,1,"","","","http://example.org/StructureDefinition/Outcome {[]} {[]}
 ","Outcome","Outcome","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.outcome",0,1,"",""
 "TBTreatment","TBTreatment","TBTreatment","","","",0,*,"","","","null {[]} {[]}
-","TB Treatment","TB Treatment","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","TB Treatment","Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "TBTreatment","TBTreatment.executionDate","TBTreatment.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"TBTreatment.executionDate",0,1,"",""
 "TBTreatment","TBTreatment.treatmentRegimen","TBTreatment.treatmentRegimen","","","",0,1,"","","","code {[]} {[]}

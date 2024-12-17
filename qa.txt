@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 6, warn = 133, info = 17
+err = 6, warn = 127, info = 17
 IG Publisher Version: 1.8.1
-Generated Tue Dec 17 21:32:09 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
- Build Errors : 275 / 44 / 0
+Generated Tue Dec 17 21:48:35 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 275 / 38 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-rrt---gen---sex-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs : 0 / 3 / 2
@@ -50,12 +50,6 @@ Generated Tue Dec 17 21:32:09 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/fsh-generated/resources/ValueSet-tb-lab---smear-result-vs : 0 / 2 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DiagnosisAndNotification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DiagnosticLaboratoryResults.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MonitoringLaboratoryResults.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/Outcome.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TBCaseSurveillance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TBTreatment.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/gen---yes-no-unknown-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/rrt---gen---sex-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/susceptible-resistant-indeterminate-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -201,29 +195,29 @@ ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-def
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.html#/html/body/div/div/div/p/span/a at Line 1432, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.html#/html/body/div/div/div/p/span/a at Line 1437, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.json.html#/html/body/div/div/div/p/span/a at Line 1039, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 840, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.xml.html#/html/body/div/div/div/p/span/a at Line 965, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.json.html#/html/body/div/div/div/p/span/a at Line 1040, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 841, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.xml.html#/html/body/div/div/div/p/span/a at Line 969, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-definitions.html#/html/body/div/div/div/p/span/a at Line 1423, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 5774, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 5779, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 4783, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 3570, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 4408, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 4784, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 3571, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 4412, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-definitions.html#/html/body/div/div/div/p/span/a at Line 478, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 1364, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.html#/html/body/div/div/div/p/span/a at Line 1369, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 968, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 770, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 889, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.json.html#/html/body/div/div/div/p/span/a at Line 969, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 771, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MonitoringLaboratoryResults.profile.xml.html#/html/body/div/div/div/p/span/a at Line 893, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MyPatient-definitions.html#/html/body/div/div/div/p/span/a at Line 587, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MyPatient-examples.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MyPatient-mappings.html#/html/body/div/div/div/p/span/a at Line 400, column 108: The link 'license.html' for "License" cannot be resolved
@@ -237,29 +231,29 @@ ERROR: /github/workspace/output/StructureDefinition-Outcome-definitions.html#/ht
 ERROR: /github/workspace/output/StructureDefinition-Outcome-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Outcome.html#/html/body/div/div/div/p/span/a at Line 890, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.html#/html/body/div/div/div/p/span/a at Line 895, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.json.html#/html/body/div/div/div/p/span/a at Line 572, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 500, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.xml.html#/html/body/div/div/div/p/span/a at Line 532, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.json.html#/html/body/div/div/div/p/span/a at Line 573, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 501, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Outcome.profile.xml.html#/html/body/div/div/div/p/span/a at Line 536, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-definitions.html#/html/body/div/div/div/p/span/a at Line 469, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.html#/html/body/div/div/div/p/span/a at Line 1308, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.html#/html/body/div/div/div/p/span/a at Line 1313, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.json.html#/html/body/div/div/div/p/span/a at Line 913, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 720, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.xml.html#/html/body/div/div/div/p/span/a at Line 838, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.json.html#/html/body/div/div/div/p/span/a at Line 914, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 721, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.xml.html#/html/body/div/div/div/p/span/a at Line 842, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-definitions.html#/html/body/div/div/div/p/span/a at Line 658, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-testing.html#/html/body/div/div/div/p/span/a at Line 285, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBTreatment.html#/html/body/div/div/div/p/span/a at Line 2106, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.html#/html/body/div/div/div/p/span/a at Line 2111, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.json.html#/html/body/div/div/div/p/span/a at Line 1564, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1140, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.xml.html#/html/body/div/div/div/p/span/a at Line 1373, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.json.html#/html/body/div/div/div/p/span/a at Line 1565, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1141, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.xml.html#/html/body/div/div/div/p/span/a at Line 1377, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
@@ -362,7 +356,7 @@ ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.html#/html/bod
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 512, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 530, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide

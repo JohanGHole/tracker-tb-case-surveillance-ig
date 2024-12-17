@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "TBTreatment","TBTreatment","","","",0,*,"","","","null {[]} {[]}
-","TB Treatment","TB Treatment","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","TB Treatment","Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "TBTreatment.executionDate","TBTreatment.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"TBTreatment.executionDate",0,1,"",""
 "TBTreatment.treatmentRegimen","TBTreatment.treatmentRegimen","","","",0,1,"","","","code {[]} {[]}

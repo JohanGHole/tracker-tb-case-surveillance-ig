@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "TBCaseSurveillance","TBCaseSurveillance","","","",0,*,"","","","null {[]} {[]}
-","TB Case Surveillance","TB Case Surveillance","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","TB Case Surveillance","Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "TBCaseSurveillance.enrollmentDate","TBCaseSurveillance.enrollmentDate","","","",1,1,"","","","date {[]} {[]}
 ","Placeholder: [Date of data entry in DHIS2]","Placeholder: [Date of data entry in DHIS2]","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.enrollmentDate",1,1,"",""
 "TBCaseSurveillance.incidentDate","TBCaseSurveillance.incidentDate","","","",0,1,"","","","date {[]} {[]}

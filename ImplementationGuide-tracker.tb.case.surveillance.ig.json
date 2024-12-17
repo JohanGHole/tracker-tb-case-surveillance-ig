@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-17T21:31:39+00:00",
+  "date" : "2024-12-17T21:48:04+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -606,6 +606,7 @@
         "reference" : "StructureDefinition/DiagnosisAndNotification"
       },
       "name" : "Diagnosis and notification",
+      "description" : "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.",
       "exampleBoolean" : false
     },
     {
@@ -617,6 +618,7 @@
         "reference" : "StructureDefinition/DiagnosticLaboratoryResults"
       },
       "name" : "Diagnostic laboratory results",
+      "description" : "Captures diagnostic test results along with sample information to determine TB infection status.",
       "exampleBoolean" : false
     },
     {
@@ -650,6 +652,7 @@
         "reference" : "StructureDefinition/MonitoringLaboratoryResults"
       },
       "name" : "Monitoring laboratory results",
+      "description" : "Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.",
       "exampleBoolean" : false
     },
     {
@@ -673,6 +676,7 @@
         "reference" : "StructureDefinition/Outcome"
       },
       "name" : "Outcome",
+      "description" : "Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.",
       "exampleBoolean" : false
     },
     {
@@ -740,6 +744,7 @@
         "reference" : "StructureDefinition/TBCaseSurveillance"
       },
       "name" : "TB Case Surveillance",
+      "description" : "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.",
       "exampleBoolean" : false
     },
     {
@@ -905,6 +910,7 @@
         "reference" : "StructureDefinition/TBTreatment"
       },
       "name" : "TB Treatment",
+      "description" : "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan.",
       "exampleBoolean" : false
     },
     {

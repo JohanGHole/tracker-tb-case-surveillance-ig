@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "MonitoringLaboratoryResults","MonitoringLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
-","Monitoring laboratory results","Monitoring laboratory results","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Monitoring laboratory results","Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "MonitoringLaboratoryResults.executionDate","MonitoringLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"MonitoringLaboratoryResults.executionDate",0,1,"",""
 "MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","MonitoringLaboratoryResults.cultureInLiquidMediaEGMgit","","","",0,1,"","","","boolean {[]} {[]}

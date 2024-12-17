@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "DiagnosisAndNotification","DiagnosisAndNotification","","","",0,*,"","","","null {[]} {[]}
-","Diagnosis and notification","Diagnosis and notification","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Diagnosis and notification","Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosisAndNotification.executionDate","DiagnosisAndNotification.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.executionDate",0,1,"",""
 "DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}

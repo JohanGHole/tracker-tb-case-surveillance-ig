@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-17T21:31:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-17T21:48:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -519,6 +519,7 @@
          fhir:reference [ fhir:v "StructureDefinition/DiagnosisAndNotification" ]
        ] ;
        fhir:name [ fhir:v "Diagnosis and notification" ] ;
+       fhir:description [ fhir:v "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -530,6 +531,7 @@
          fhir:reference [ fhir:v "StructureDefinition/DiagnosticLaboratoryResults" ]
        ] ;
        fhir:name [ fhir:v "Diagnostic laboratory results" ] ;
+       fhir:description [ fhir:v "Captures diagnostic test results along with sample information to determine TB infection status." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -563,6 +565,7 @@
          fhir:reference [ fhir:v "StructureDefinition/MonitoringLaboratoryResults" ]
        ] ;
        fhir:name [ fhir:v "Monitoring laboratory results" ] ;
+       fhir:description [ fhir:v "Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -586,6 +589,7 @@
          fhir:reference [ fhir:v "StructureDefinition/Outcome" ]
        ] ;
        fhir:name [ fhir:v "Outcome" ] ;
+       fhir:description [ fhir:v "Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -656,6 +660,7 @@
          fhir:reference [ fhir:v "StructureDefinition/TBCaseSurveillance" ]
        ] ;
        fhir:name [ fhir:v "TB Case Surveillance" ] ;
+       fhir:description [ fhir:v "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -821,6 +826,7 @@
          fhir:reference [ fhir:v "StructureDefinition/TBTreatment" ]
        ] ;
        fhir:name [ fhir:v "TB Treatment" ] ;
+       fhir:description [ fhir:v "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

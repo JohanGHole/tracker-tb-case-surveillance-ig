@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Outcome","Outcome","","","",0,*,"","","","null {[]} {[]}
-","Outcome","Outcome","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Outcome","Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
 "Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
