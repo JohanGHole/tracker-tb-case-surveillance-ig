@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "GENYesNoUnknownCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem GENYesNoUnknownCS</b></p><a name=\"GENYesNoUnknownCS\"> </a><a name=\"hcGENYesNoUnknownCS\"> </a><a name=\"GENYesNoUnknownCS-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/GENYesNoUnknownCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NO<a name=\"GENYesNoUnknownCS-NO\"> </a></td><td>No</td></tr><tr><td style=\"white-space:nowrap\">UNKNOWN<a name=\"GENYesNoUnknownCS-UNKNOWN\"> </a></td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">YES<a name=\"GENYesNoUnknownCS-YES\"> </a></td><td>Yes</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+  "version" : "0.1.0",
+  "name" : "GENYesNoUnknownCS",
+  "title" : "GEN - Yes/No/Unknown",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-18T15:37:28+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "NO",
+    "display" : "No"
+  },
+  {
+    "code" : "UNKNOWN",
+    "display" : "Unknown"
+  },
+  {
+    "code" : "YES",
+    "display" : "Yes"
+  }]
+}

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+      "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "GENYesNoUnknownCS",
@@ -9,7 +9,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+      "url" : "http://example.org/CodeSystem/RRTGENSexCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "RRTGENSexCS",

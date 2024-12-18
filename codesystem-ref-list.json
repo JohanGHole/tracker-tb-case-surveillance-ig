@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+      "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "GENYesNoUnknownCS",
@@ -9,10 +9,11 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-gen---yes-no-unknown-vs.html" : "GEN - Yes/No/Unknown value set"
+      "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
     },
     {
-      "url" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+      "url" : "http://example.org/CodeSystem/RRTGENSexCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "RRTGENSexCS",
@@ -20,7 +21,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-rrt---gen---sex-vs.html" : "RRT - GEN - Sex value set"
+      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set"
     },
     {
       "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",

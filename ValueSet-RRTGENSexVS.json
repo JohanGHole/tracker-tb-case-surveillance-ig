@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "RRTGENSexVS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet RRTGENSexVS</b></p><a name=\"RRTGENSexVS\"> </a><a name=\"hcRRTGENSexVS\"> </a><a name=\"RRTGENSexVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-RRTGENSexCS.html\"><code>http://example.org/CodeSystem/RRTGENSexCS</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/RRTGENSexVS",
+  "version" : "0.1.0",
+  "name" : "RRTGENSexVS",
+  "title" : "RRT - GEN - Sex value set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-18T15:37:28+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/RRTGENSexCS"
+    }]
+  }
+}

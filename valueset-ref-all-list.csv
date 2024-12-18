@@ -1,6 +1,8 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://example.org/ValueSet/gen---yes-no-unknown-vs,0.1.0,draft,,GENYesNoUnknownVS,GEN - Yes/No/Unknown value set,"","StructureDefinition/TBCaseSurveillance,StructureDefinition/DiagnosisAndNotification","Internal"
-http://example.org/ValueSet/rrt---gen---sex-vs,0.1.0,draft,,RRTGENSexVS,RRT - GEN - Sex value set,"","StructureDefinition/TBCaseSurveillance","Internal"
+http://example.org/ValueSet/GENYesNoUnknownVS,null,active,,GENYesNoUnknownVS,GEN - Yes/No/Unknown value set,"",,"Internal"
+http://example.org/ValueSet/GENYesNoUnknownVS,0.1.0,active,,GENYesNoUnknownVS,GEN - Yes/No/Unknown value set,"","StructureDefinition/TBCaseSurveillance,StructureDefinition/DiagnosisAndNotification","Internal"
+http://example.org/ValueSet/RRTGENSexVS,null,active,,RRTGENSexVS,RRT - GEN - Sex value set,"",,"Internal"
+http://example.org/ValueSet/RRTGENSexVS,0.1.0,active,,RRTGENSexVS,RRT - GEN - Sex value set,"","StructureDefinition/TBCaseSurveillance","Internal"
 http://example.org/ValueSet/susceptible-resistant-indeterminate-vs,0.1.0,draft,,SusceptibleResistantIndeterminateVS,Susceptible/Resistant/Indeterminate value set,"","StructureDefinition/DiagnosticLaboratoryResults","Internal"
 http://example.org/ValueSet/tb-cs---confirmation-method-vs,0.1.0,draft,,TBCSConfirmationMethodVS,TB CS - Confirmation method value set,"","StructureDefinition/DiagnosisAndNotification","Internal"
 http://example.org/ValueSet/tb-cs---denotification-reasons-vs,0.1.0,draft,,TBCSDenotificationReasonsVS,TB CS - Denotification reasons value set,"","StructureDefinition/Outcome","Internal"

@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-17T21:51:05+00:00",
+  "date" : "2024-12-18T15:37:28+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -23,24 +23,28 @@
   "license" : "BSD-3-Clause",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
-    "id" : "hl7tx",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
-    }],
+    "id" : "hl7_terminology",
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-    "packageId" : "hl7.terminology.r4",
-    "version" : "6.1.0"
+    "packageId" : "hl7.terminology",
+    "version" : "5.5.0"
   },
   {
-    "id" : "hl7ext",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-    }],
+    "id" : "hl7_fhir_uv_extensions_r4",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_crmi",
+    "uri" : "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi",
+    "packageId" : "hl7.fhir.uv.crmi",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -627,7 +631,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/gen---yes-no-unknown-cs"
+        "reference" : "CodeSystem/GENYesNoUnknownCS"
       },
       "name" : "GEN - Yes/No/Unknown",
       "exampleBoolean" : false
@@ -638,7 +642,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/gen---yes-no-unknown-vs"
+        "reference" : "ValueSet/GENYesNoUnknownVS"
       },
       "name" : "GEN - Yes/No/Unknown value set",
       "exampleBoolean" : false
@@ -673,7 +677,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/rrt---gen---sex-cs"
+        "reference" : "CodeSystem/RRTGENSexCS"
       },
       "name" : "RRT - GEN - Sex",
       "exampleBoolean" : false
@@ -684,7 +688,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/rrt---gen---sex-vs"
+        "reference" : "ValueSet/RRTGENSexVS"
       },
       "name" : "RRT - GEN - Sex value set",
       "exampleBoolean" : false
@@ -721,6 +725,18 @@
       },
       "name" : "TB Case Surveillance",
       "description" : "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/TBCaseSurveillanceQuestionnaire"
+      },
+      "name" : "TB Case Surveillance Questionnaire",
+      "description" : "A questionnaire for TB Case Surveillance capturing patient demographics and program-specific information.",
       "exampleBoolean" : false
     },
     {

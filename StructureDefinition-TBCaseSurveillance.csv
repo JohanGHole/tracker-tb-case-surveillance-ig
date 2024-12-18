@@ -14,13 +14,13 @@
 "TBCaseSurveillance.givenName","TBCaseSurveillance.givenName","","","",1,1,"","","","string {[]} {[]}
 ","First name","First name","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.givenName",1,1,"",""
 "TBCaseSurveillance.sex","TBCaseSurveillance.sex","","","",1,1,"","","","code {[]} {[]}
-","Biological sex or sex assigned at birth (male, female, unknown).","Biological sex or sex assigned at birth (male, female, unknown).","","","","","","","","","",,"required","","http://example.org/ValueSet/rrt---gen---sex-vs","",,,,"TBCaseSurveillance.sex",1,1,"",""
+","Biological sex or sex assigned at birth (male, female, unknown).","Biological sex or sex assigned at birth (male, female, unknown).","","","","","","","","","",,"required","","http://example.org/ValueSet/RRTGENSexVS","",,,,"TBCaseSurveillance.sex",1,1,"",""
 "TBCaseSurveillance.dateOfBirthIsEstimated","TBCaseSurveillance.dateOfBirthIsEstimated","","","",0,1,"","","","boolean {[]} {[]}
 ","TEA that indicates whether the 'date of birth' recorded is estiimated.","TEA that indicates whether the 'date of birth' recorded is estiimated.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirthIsEstimated",0,1,"",""
 "TBCaseSurveillance.dateOfBirth","TBCaseSurveillance.dateOfBirth","","","",1,1,"","","","date {[]} {[]}
 ","The client's date of birth (DOB) if known","The client's date of birth (DOB) if known","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirth",1,1,"",""
 "TBCaseSurveillance.foreignBorn","TBCaseSurveillance.foreignBorn","","","",0,1,"","","","code {[]} {[]}
-","Foreign-born","Foreign-born","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"TBCaseSurveillance.foreignBorn",0,1,"",""
+","Foreign-born","Foreign-born","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"TBCaseSurveillance.foreignBorn",0,1,"",""
 "TBCaseSurveillance.administrativeAreaOfResidence","TBCaseSurveillance.administrativeAreaOfResidence","","","",0,1,"","","","string {[]} {[]}
 ","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.administrativeAreaOfResidence",0,1,"",""
 "TBCaseSurveillance.homeAddress","TBCaseSurveillance.homeAddress","","","",0,1,"","","","string {[]} {[]}
