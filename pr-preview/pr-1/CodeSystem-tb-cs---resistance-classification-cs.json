@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tb-cs---resistance-classification-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tb-cs---resistance-classification-cs</b></p><a name=\"tb-cs---resistance-classification-cs\"> </a><a name=\"hctb-cs---resistance-classification-cs\"> </a><a name=\"tb-cs---resistance-classification-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DS<a name=\"tb-cs---resistance-classification-cs-DS\"> </a></td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\">RR<a name=\"tb-cs---resistance-classification-cs-RR\"> </a></td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\">MDR<a name=\"tb-cs---resistance-classification-cs-MDR\"> </a></td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\">XDR<a name=\"tb-cs---resistance-classification-cs-XDR\"> </a></td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+  "version" : "0.1.0",
+  "name" : "TBCSResistanceClassificationCS",
+  "title" : "TB CS - Resistance Classification",
+  "status" : "draft",
+  "date" : "2024-12-18T19:13:07+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "DS",
+    "display" : "DS (drug-susceptible TB)"
+  },
+  {
+    "code" : "RR",
+    "display" : "RR (rifampicin resistant TB)"
+  },
+  {
+    "code" : "MDR",
+    "display" : "MDR (multidrug resistant TB)"
+  },
+  {
+    "code" : "XDR",
+    "display" : "XDR (extensive drug resistant TB)"
+  }]
+}

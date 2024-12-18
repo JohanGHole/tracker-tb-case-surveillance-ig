@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tb-lab---lpa-specimen-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tb-lab---lpa-specimen-vs</b></p><a name="tb-lab---lpa-specimen-vs"> </a><a name="hctb-lab---lpa-specimen-vs"> </a><a name="tb-lab---lpa-specimen-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tb-lab---lpa-specimen-cs.html"><code>http://example.org/CodeSystem/tb-lab---lpa-specimen-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/tb-lab---lpa-specimen-vs"/>
+  <version value="0.1.0"/>
+  <name value="TBLABLPASpecimenVS"/>
+  <title value="TB-LAB - LPA specimen value set"/>
+  <status value="draft"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/tb-lab---lpa-specimen-cs"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Outcome","Outcome","","","",0,*,"","","","null {[]} {[]}
+","Outcome","Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
+"Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
+","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentOutcomeVS","",,,,"Outcome.treatmentOutcome",0,1,"",""
+"Outcome.reasonForDenotification","Outcome.reasonForDenotification","","","",0,1,"","","","code {[]} {[]}
+","TB CS - Outcome - Reason for case denotification","TB CS - Outcome - Reason for case denotification","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSDenotificationReasonsVS","",,,,"Outcome.reasonForDenotification",0,1,"",""
+"Outcome.provideDuplicateSRecordNumber","Outcome.provideDuplicateSRecordNumber","","","",0,1,"","","","string {[]} {[]}
+","TB CS - Outcome - Duplicate's record number","TB CS - Outcome - Duplicate's record number","","","","","","","","","",,,,,"",,,,"Outcome.provideDuplicateSRecordNumber",0,1,"",""
+"Outcome.treatmentOutcomeDelayWeeks","Outcome.treatmentOutcomeDelayWeeks","","","",0,1,"","","","decimal {[]} {[]}
+","TB CS - Treatment outcome delay (weeks)","TB CS - Treatment outcome delay (weeks)","","","","","","","","","",,,,,"",,,,"Outcome.treatmentOutcomeDelayWeeks",0,1,"",""
+"Outcome.provideEvidenceForDenotifyingTheCase","Outcome.provideEvidenceForDenotifyingTheCase","","","",0,1,"","","","string {[]} {[]}
+","TB CS - Outcome - Not TB case (explanation)","TB CS - Outcome - Not TB case (explanation)","","","","","","","","","",,,,,"",,,,"Outcome.provideEvidenceForDenotifyingTheCase",0,1,"",""
+"Outcome.denotifyTheCase","Outcome.denotifyTheCase","","","",0,1,"","","","boolean {[]} {[]}
+","TB CS - Outcome - Case denotification","TB CS - Outcome - Case denotification","","","","","","","","","",,,,,"",,,,"Outcome.denotifyTheCase",0,1,"",""

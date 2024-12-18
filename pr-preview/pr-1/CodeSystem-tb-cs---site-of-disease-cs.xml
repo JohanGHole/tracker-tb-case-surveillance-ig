@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---site-of-disease-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-cs---site-of-disease-cs</b></p><a name="tb-cs---site-of-disease-cs"> </a><a name="hctb-cs---site-of-disease-cs"> </a><a name="tb-cs---site-of-disease-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SITE_PULMONARY<a name="tb-cs---site-of-disease-cs-SITE_PULMONARY"> </a></td><td>Pulmonary</td></tr><tr><td style="white-space:nowrap">SITE_EXTRA_PULMONARY<a name="tb-cs---site-of-disease-cs-SITE_EXTRA_PULMONARY"> </a></td><td>Extra-pulmonary</td></tr><tr><td style="white-space:nowrap">SITE_BOTH<a name="tb-cs---site-of-disease-cs-SITE_BOTH"> </a></td><td>Pulmonary and extra-pulmonary</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-cs---site-of-disease-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSSiteOfDiseaseCS"/>
+  <title value="TB CS - Site of disease"/>
+  <status value="draft"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="SITE_PULMONARY"/>
+    <display value="Pulmonary"/>
+  </concept>
+  <concept>
+    <code value="SITE_EXTRA_PULMONARY"/>
+    <display value="Extra-pulmonary"/>
+  </concept>
+  <concept>
+    <code value="SITE_BOTH"/>
+    <display value="Pulmonary and extra-pulmonary"/>
+  </concept>
+</CodeSystem>

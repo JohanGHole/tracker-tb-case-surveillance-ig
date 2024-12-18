@@ -1,0 +1,551 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "TBCaseSurveillance",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition TBCaseSurveillance</b></p><a name=\"TBCaseSurveillance\"> </a><a name=\"hcTBCaseSurveillance\"> </a><a name=\"TBCaseSurveillance-en-US\"> </a><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance\" title=\"Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.\">TBCaseSurveillance</a><a name=\"TBCaseSurveillance\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB Case Surveillance<br/><span style=\"font-weight:bold\">Instances of this logical model are not marked to be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.enrollmentDate\" title=\"Placeholder: [Date of data entry in DHIS2]\">enrollmentDate</a><a name=\"TBCaseSurveillance.enrollmentDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Placeholder: [Date of data entry in DHIS2]</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.incidentDate\">incidentDate</a><a name=\"TBCaseSurveillance.incidentDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.nationalId\" title=\"National unique identifier assigned to the client, if used in the country \">nationalId</a><a name=\"TBCaseSurveillance.nationalId\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">National unique identifier assigned to the client, if used in the country </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.tbRegistrationNumber\" title=\"TB registration number\">tbRegistrationNumber</a><a name=\"TBCaseSurveillance.tbRegistrationNumber\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB registration number</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.familyName\" title=\"Family name or last name of the patient of case.\">familyName</a><a name=\"TBCaseSurveillance.familyName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Family name or last name of the patient of case.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.givenName\" title=\"First name\">givenName</a><a name=\"TBCaseSurveillance.givenName\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">First name</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.sex\" title=\"Biological sex or sex assigned at birth (male, female, unknown).\">sex</a><a name=\"TBCaseSurveillance.sex\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Biological sex or sex assigned at birth (male, female, unknown).<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-RRTGENSexVS.html\" title=\"http://example.org/ValueSet/RRTGENSexVS\">RRT - GEN - Sex value set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.dateOfBirthIsEstimated\" title=\"TEA that indicates whether the 'date of birth' recorded is estiimated.\">dateOfBirthIsEstimated</a><a name=\"TBCaseSurveillance.dateOfBirthIsEstimated\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TEA that indicates whether the 'date of birth' recorded is estiimated.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.dateOfBirth\" title=\"The client's date of birth (DOB) if known\">dateOfBirth</a><a name=\"TBCaseSurveillance.dateOfBirth\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#date\">date</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The client's date of birth (DOB) if known</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.foreignBorn\" title=\"Foreign-born\">foreignBorn</a><a name=\"TBCaseSurveillance.foreignBorn\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Foreign-born<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-GENYesNoUnknownVS.html\" title=\"http://example.org/ValueSet/GENYesNoUnknownVS\">GEN - Yes/No/Unknown value set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.administrativeAreaOfResidence\" title=\"Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.\">administrativeAreaOfResidence</a><a name=\"TBCaseSurveillance.administrativeAreaOfResidence\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.homeAddress\" title=\"Home Address\">homeAddress</a><a name=\"TBCaseSurveillance.homeAddress\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Home Address</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.contactPhoneNumberLocal\" title=\"HIV.A.DE42\">contactPhoneNumberLocal</a><a name=\"TBCaseSurveillance.contactPhoneNumberLocal\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">HIV.A.DE42</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.diagnosisAndNotification\" title=\"Diagnosis and notification\">diagnosisAndNotification</a><a name=\"TBCaseSurveillance.diagnosisAndNotification\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DiagnosisAndNotification.html\">DiagnosisAndNotification</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diagnosis and notification</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.diagnosticLaboratoryResults\" title=\"Diagnostic laboratory results\">diagnosticLaboratoryResults</a><a name=\"TBCaseSurveillance.diagnosticLaboratoryResults\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DiagnosticLaboratoryResults.html\">DiagnosticLaboratoryResults</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diagnostic laboratory results<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.tbTreatment\" title=\"TB Treatment\">tbTreatment</a><a name=\"TBCaseSurveillance.tbTreatment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-TBTreatment.html\">TBTreatment</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">TB Treatment<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.monitoringLaboratoryResults\" title=\"Monitoring laboratory results\">monitoringLaboratoryResults</a><a name=\"TBCaseSurveillance.monitoringLaboratoryResults\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-MonitoringLaboratoryResults.html\">MonitoringLaboratoryResults</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Monitoring laboratory results<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-TBCaseSurveillance-definitions.html#TBCaseSurveillance.outcome\" title=\"Outcome\">outcome</a><a name=\"TBCaseSurveillance.outcome\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-Outcome.html\">Outcome</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Outcome</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://example.org/StructureDefinition/TBCaseSurveillance",
+  "version" : "0.1.0",
+  "name" : "TBCaseSurveillance",
+  "title" : "TB Case Surveillance",
+  "status" : "draft",
+  "date" : "2024-12-18T19:13:07+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "description" : "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://example.org/StructureDefinition/TBCaseSurveillance",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "TBCaseSurveillance",
+      "path" : "TBCaseSurveillance",
+      "short" : "TB Case Surveillance",
+      "definition" : "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "TBCaseSurveillance.enrollmentDate",
+      "path" : "TBCaseSurveillance.enrollmentDate",
+      "short" : "Placeholder: [Date of data entry in DHIS2]",
+      "definition" : "Placeholder: [Date of data entry in DHIS2]",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.enrollmentDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.incidentDate",
+      "path" : "TBCaseSurveillance.incidentDate",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.incidentDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.nationalId",
+      "path" : "TBCaseSurveillance.nationalId",
+      "short" : "National unique identifier assigned to the client, if used in the country ",
+      "definition" : "National unique identifier assigned to the client, if used in the country",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.nationalId",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.tbRegistrationNumber",
+      "path" : "TBCaseSurveillance.tbRegistrationNumber",
+      "short" : "TB registration number",
+      "definition" : "TB registration number",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.tbRegistrationNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.familyName",
+      "path" : "TBCaseSurveillance.familyName",
+      "short" : "Family name or last name of the patient of case.",
+      "definition" : "Family name or last name of the patient of case.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.familyName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.givenName",
+      "path" : "TBCaseSurveillance.givenName",
+      "short" : "First name",
+      "definition" : "First name",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.givenName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.sex",
+      "path" : "TBCaseSurveillance.sex",
+      "short" : "Biological sex or sex assigned at birth (male, female, unknown).",
+      "definition" : "Biological sex or sex assigned at birth (male, female, unknown).",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.sex",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://example.org/ValueSet/RRTGENSexVS"
+      }
+    },
+    {
+      "id" : "TBCaseSurveillance.dateOfBirthIsEstimated",
+      "path" : "TBCaseSurveillance.dateOfBirthIsEstimated",
+      "short" : "TEA that indicates whether the 'date of birth' recorded is estiimated.",
+      "definition" : "TEA that indicates whether the 'date of birth' recorded is estiimated.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.dateOfBirthIsEstimated",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.dateOfBirth",
+      "path" : "TBCaseSurveillance.dateOfBirth",
+      "short" : "The client's date of birth (DOB) if known",
+      "definition" : "The client's date of birth (DOB) if known",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.dateOfBirth",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.foreignBorn",
+      "path" : "TBCaseSurveillance.foreignBorn",
+      "short" : "Foreign-born",
+      "definition" : "Foreign-born",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.foreignBorn",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://example.org/ValueSet/GENYesNoUnknownVS"
+      }
+    },
+    {
+      "id" : "TBCaseSurveillance.administrativeAreaOfResidence",
+      "path" : "TBCaseSurveillance.administrativeAreaOfResidence",
+      "short" : "Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.",
+      "definition" : "Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.administrativeAreaOfResidence",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.homeAddress",
+      "path" : "TBCaseSurveillance.homeAddress",
+      "short" : "Home Address",
+      "definition" : "Home Address",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.homeAddress",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.contactPhoneNumberLocal",
+      "path" : "TBCaseSurveillance.contactPhoneNumberLocal",
+      "short" : "HIV.A.DE42",
+      "definition" : "HIV.A.DE42",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.contactPhoneNumberLocal",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.diagnosisAndNotification",
+      "path" : "TBCaseSurveillance.diagnosisAndNotification",
+      "short" : "Diagnosis and notification",
+      "definition" : "Diagnosis and notification",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.diagnosisAndNotification",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/DiagnosisAndNotification"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.diagnosticLaboratoryResults",
+      "path" : "TBCaseSurveillance.diagnosticLaboratoryResults",
+      "short" : "Diagnostic laboratory results",
+      "definition" : "Diagnostic laboratory results",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "TBCaseSurveillance.diagnosticLaboratoryResults",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/DiagnosticLaboratoryResults"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.tbTreatment",
+      "path" : "TBCaseSurveillance.tbTreatment",
+      "short" : "TB Treatment",
+      "definition" : "TB Treatment",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "TBCaseSurveillance.tbTreatment",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/TBTreatment"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.monitoringLaboratoryResults",
+      "path" : "TBCaseSurveillance.monitoringLaboratoryResults",
+      "short" : "Monitoring laboratory results",
+      "definition" : "Monitoring laboratory results",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "TBCaseSurveillance.monitoringLaboratoryResults",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/MonitoringLaboratoryResults"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.outcome",
+      "path" : "TBCaseSurveillance.outcome",
+      "short" : "Outcome",
+      "definition" : "Outcome",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "TBCaseSurveillance.outcome",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/Outcome"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "TBCaseSurveillance",
+      "path" : "TBCaseSurveillance",
+      "short" : "TB Case Surveillance",
+      "definition" : "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers."
+    },
+    {
+      "id" : "TBCaseSurveillance.enrollmentDate",
+      "path" : "TBCaseSurveillance.enrollmentDate",
+      "short" : "Placeholder: [Date of data entry in DHIS2]",
+      "definition" : "Placeholder: [Date of data entry in DHIS2]",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.incidentDate",
+      "path" : "TBCaseSurveillance.incidentDate",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.nationalId",
+      "path" : "TBCaseSurveillance.nationalId",
+      "short" : "National unique identifier assigned to the client, if used in the country ",
+      "definition" : "National unique identifier assigned to the client, if used in the country ",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.tbRegistrationNumber",
+      "path" : "TBCaseSurveillance.tbRegistrationNumber",
+      "short" : "TB registration number",
+      "definition" : "TB registration number",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.familyName",
+      "path" : "TBCaseSurveillance.familyName",
+      "short" : "Family name or last name of the patient of case.",
+      "definition" : "Family name or last name of the patient of case.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.givenName",
+      "path" : "TBCaseSurveillance.givenName",
+      "short" : "First name",
+      "definition" : "First name",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.sex",
+      "path" : "TBCaseSurveillance.sex",
+      "short" : "Biological sex or sex assigned at birth (male, female, unknown).",
+      "definition" : "Biological sex or sex assigned at birth (male, female, unknown).",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://example.org/ValueSet/RRTGENSexVS"
+      }
+    },
+    {
+      "id" : "TBCaseSurveillance.dateOfBirthIsEstimated",
+      "path" : "TBCaseSurveillance.dateOfBirthIsEstimated",
+      "short" : "TEA that indicates whether the 'date of birth' recorded is estiimated.",
+      "definition" : "TEA that indicates whether the 'date of birth' recorded is estiimated.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "boolean"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.dateOfBirth",
+      "path" : "TBCaseSurveillance.dateOfBirth",
+      "short" : "The client's date of birth (DOB) if known",
+      "definition" : "The client's date of birth (DOB) if known",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.foreignBorn",
+      "path" : "TBCaseSurveillance.foreignBorn",
+      "short" : "Foreign-born",
+      "definition" : "Foreign-born",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://example.org/ValueSet/GENYesNoUnknownVS"
+      }
+    },
+    {
+      "id" : "TBCaseSurveillance.administrativeAreaOfResidence",
+      "path" : "TBCaseSurveillance.administrativeAreaOfResidence",
+      "short" : "Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.",
+      "definition" : "Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.homeAddress",
+      "path" : "TBCaseSurveillance.homeAddress",
+      "short" : "Home Address",
+      "definition" : "Home Address",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.contactPhoneNumberLocal",
+      "path" : "TBCaseSurveillance.contactPhoneNumberLocal",
+      "short" : "HIV.A.DE42",
+      "definition" : "HIV.A.DE42",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.diagnosisAndNotification",
+      "path" : "TBCaseSurveillance.diagnosisAndNotification",
+      "short" : "Diagnosis and notification",
+      "definition" : "Diagnosis and notification",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/DiagnosisAndNotification"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.diagnosticLaboratoryResults",
+      "path" : "TBCaseSurveillance.diagnosticLaboratoryResults",
+      "short" : "Diagnostic laboratory results",
+      "definition" : "Diagnostic laboratory results",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/DiagnosticLaboratoryResults"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.tbTreatment",
+      "path" : "TBCaseSurveillance.tbTreatment",
+      "short" : "TB Treatment",
+      "definition" : "TB Treatment",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/TBTreatment"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.monitoringLaboratoryResults",
+      "path" : "TBCaseSurveillance.monitoringLaboratoryResults",
+      "short" : "Monitoring laboratory results",
+      "definition" : "Monitoring laboratory results",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/MonitoringLaboratoryResults"
+      }]
+    },
+    {
+      "id" : "TBCaseSurveillance.outcome",
+      "path" : "TBCaseSurveillance.outcome",
+      "short" : "Outcome",
+      "definition" : "Outcome",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://example.org/StructureDefinition/Outcome"
+      }]
+    }]
+  }
+}

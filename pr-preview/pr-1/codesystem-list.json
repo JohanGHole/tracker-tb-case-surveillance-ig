@@ -1,0 +1,140 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GENYesNoUnknownCS",
+      "title" : "GEN - Yes/No/Unknown",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/RRTGENSexCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RRTGENSexCS",
+      "title" : "RRT - GEN - Sex",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SusceptibleResistantIndeterminateCS",
+      "title" : "Susceptible/Resistant/Indeterminate",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSConfirmationMethodCS",
+      "title" : "TB CS - Confirmation method",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSDenotificationReasonsCS",
+      "title" : "TB CS - Denotification reasons",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSResistanceClassificationCS",
+      "title" : "TB CS - Resistance Classification",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSSiteOfDiseaseCS",
+      "title" : "TB CS - Site of disease",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentCategoryCS",
+      "title" : "TB CS - Treatment category",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentHistoryCS",
+      "title" : "TB CS - Treatment history",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentOutcomeCS",
+      "title" : "TB CS - Treatment outcome",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABDSTResultCS",
+      "title" : "TB-LAB - DST result",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABFinalCultureResultCS",
+      "title" : "TB-LAB - Final culture result",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABLPASpecimenCS",
+      "title" : "TB-LAB - LPA specimen",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABMTBTestResultCS",
+      "title" : "TB-LAB - MTB test result",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleQualityCS",
+      "title" : "TB-LAB - Sample quality",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleStatusCS",
+      "title" : "TB-LAB - Sample status",
+      "description" : null
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSmearResultCS",
+      "title" : "TB-LAB - Smear result",
+      "description" : null
+    }
+  ]
+}

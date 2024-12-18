@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="RRTGENSexVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet RRTGENSexVS</b></p><a name="RRTGENSexVS"> </a><a name="hcRRTGENSexVS"> </a><a name="RRTGENSexVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-RRTGENSexCS.html"><code>http://example.org/CodeSystem/RRTGENSexCS</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/RRTGENSexVS"/>
+  <version value="0.1.0"/>
+  <name value="RRTGENSexVS"/>
+  <title value="RRT - GEN - Sex value set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/RRTGENSexCS"/>
+    </include>
+  </compose>
+</ValueSet>

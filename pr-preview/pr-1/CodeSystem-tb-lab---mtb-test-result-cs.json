@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tb-lab---mtb-test-result-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tb-lab---mtb-test-result-cs</b></p><a name=\"tb-lab---mtb-test-result-cs\"> </a><a name=\"hctb-lab---mtb-test-result-cs\"> </a><a name=\"tb-lab---mtb-test-result-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DETECTED<a name=\"tb-lab---mtb-test-result-cs-DETECTED\"> </a></td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\">NOT_DETECTED<a name=\"tb-lab---mtb-test-result-cs-NOT_DETECTED\"> </a></td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\">ERROR<a name=\"tb-lab---mtb-test-result-cs-ERROR\"> </a></td><td>Error</td></tr><tr><td style=\"white-space:nowrap\">INVALID<a name=\"tb-lab---mtb-test-result-cs-INVALID\"> </a></td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\">NO_RESULT<a name=\"tb-lab---mtb-test-result-cs-NO_RESULT\"> </a></td><td>No result</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+  "version" : "0.1.0",
+  "name" : "TBLABMTBTestResultCS",
+  "title" : "TB-LAB - MTB test result",
+  "status" : "draft",
+  "date" : "2024-12-18T19:13:07+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "DETECTED",
+    "display" : "Detected"
+  },
+  {
+    "code" : "NOT_DETECTED",
+    "display" : "Not detected"
+  },
+  {
+    "code" : "ERROR",
+    "display" : "Error"
+  },
+  {
+    "code" : "INVALID",
+    "display" : "Invalid"
+  },
+  {
+    "code" : "NO_RESULT",
+    "display" : "No result"
+  }]
+}

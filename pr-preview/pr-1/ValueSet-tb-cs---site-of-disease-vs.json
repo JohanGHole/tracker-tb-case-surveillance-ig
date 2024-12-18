@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tb-cs---site-of-disease-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tb-cs---site-of-disease-vs</b></p><a name=\"tb-cs---site-of-disease-vs\"> </a><a name=\"hctb-cs---site-of-disease-vs\"> </a><a name=\"tb-cs---site-of-disease-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---site-of-disease-cs.html\"><code>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
+  "version" : "0.1.0",
+  "name" : "TBCSSiteOfDiseaseVS",
+  "title" : "TB CS - Site of disease value set",
+  "status" : "draft",
+  "date" : "2024-12-18T19:13:07+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs"
+    }]
+  }
+}

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "susceptible-resistant-indeterminate-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem susceptible-resistant-indeterminate-cs</b></p><a name=\"susceptible-resistant-indeterminate-cs\"> </a><a name=\"hcsusceptible-resistant-indeterminate-cs\"> </a><a name=\"susceptible-resistant-indeterminate-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SUSCEPTIBLE<a name=\"susceptible-resistant-indeterminate-cs-SUSCEPTIBLE\"> </a></td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\">RESISTANT<a name=\"susceptible-resistant-indeterminate-cs-RESISTANT\"> </a></td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\">INDETERMINATE<a name=\"susceptible-resistant-indeterminate-cs-INDETERMINATE\"> </a></td><td>Indeterminate</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SusceptibleResistantIndeterminateCS"] ; # 
+  fhir:title [ fhir:v "Susceptible/Resistant/Indeterminate"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-12-18T19:13:07+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "SUSCEPTIBLE" ] ;
+     fhir:display [ fhir:v "Susceptible" ]
+  ] [
+     fhir:code [ fhir:v "RESISTANT" ] ;
+     fhir:display [ fhir:v "Resistant" ]
+  ] [
+     fhir:code [ fhir:v "INDETERMINATE" ] ;
+     fhir:display [ fhir:v "Indeterminate" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

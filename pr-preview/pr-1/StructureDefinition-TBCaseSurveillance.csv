@@ -1,0 +1,39 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"TBCaseSurveillance","TBCaseSurveillance","","","",0,*,"","","","null {[]} {[]}
+","TB Case Surveillance","Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"TBCaseSurveillance.enrollmentDate","TBCaseSurveillance.enrollmentDate","","","",1,1,"","","","date {[]} {[]}
+","Placeholder: [Date of data entry in DHIS2]","Placeholder: [Date of data entry in DHIS2]","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.enrollmentDate",1,1,"",""
+"TBCaseSurveillance.incidentDate","TBCaseSurveillance.incidentDate","","","",0,1,"","","","date {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.incidentDate",0,1,"",""
+"TBCaseSurveillance.nationalId","TBCaseSurveillance.nationalId","","","",1,1,"","","","string {[]} {[]}
+","National unique identifier assigned to the client, if used in the country ","National unique identifier assigned to the client, if used in the country","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.nationalId",1,1,"",""
+"TBCaseSurveillance.tbRegistrationNumber","TBCaseSurveillance.tbRegistrationNumber","","","",0,1,"","","","string {[]} {[]}
+","TB registration number","TB registration number","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.tbRegistrationNumber",0,1,"",""
+"TBCaseSurveillance.familyName","TBCaseSurveillance.familyName","","","",1,1,"","","","string {[]} {[]}
+","Family name or last name of the patient of case.","Family name or last name of the patient of case.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.familyName",1,1,"",""
+"TBCaseSurveillance.givenName","TBCaseSurveillance.givenName","","","",1,1,"","","","string {[]} {[]}
+","First name","First name","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.givenName",1,1,"",""
+"TBCaseSurveillance.sex","TBCaseSurveillance.sex","","","",1,1,"","","","code {[]} {[]}
+","Biological sex or sex assigned at birth (male, female, unknown).","Biological sex or sex assigned at birth (male, female, unknown).","","","","","","","","","",,"required","","http://example.org/ValueSet/RRTGENSexVS","",,,,"TBCaseSurveillance.sex",1,1,"",""
+"TBCaseSurveillance.dateOfBirthIsEstimated","TBCaseSurveillance.dateOfBirthIsEstimated","","","",0,1,"","","","boolean {[]} {[]}
+","TEA that indicates whether the 'date of birth' recorded is estiimated.","TEA that indicates whether the 'date of birth' recorded is estiimated.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirthIsEstimated",0,1,"",""
+"TBCaseSurveillance.dateOfBirth","TBCaseSurveillance.dateOfBirth","","","",1,1,"","","","date {[]} {[]}
+","The client's date of birth (DOB) if known","The client's date of birth (DOB) if known","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirth",1,1,"",""
+"TBCaseSurveillance.foreignBorn","TBCaseSurveillance.foreignBorn","","","",0,1,"","","","code {[]} {[]}
+","Foreign-born","Foreign-born","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"TBCaseSurveillance.foreignBorn",0,1,"",""
+"TBCaseSurveillance.administrativeAreaOfResidence","TBCaseSurveillance.administrativeAreaOfResidence","","","",0,1,"","","","string {[]} {[]}
+","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.administrativeAreaOfResidence",0,1,"",""
+"TBCaseSurveillance.homeAddress","TBCaseSurveillance.homeAddress","","","",0,1,"","","","string {[]} {[]}
+","Home Address","Home Address","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.homeAddress",0,1,"",""
+"TBCaseSurveillance.contactPhoneNumberLocal","TBCaseSurveillance.contactPhoneNumberLocal","","","",0,1,"","","","string {[]} {[]}
+","HIV.A.DE42","HIV.A.DE42","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.contactPhoneNumberLocal",0,1,"",""
+"TBCaseSurveillance.diagnosisAndNotification","TBCaseSurveillance.diagnosisAndNotification","","","",0,1,"","","","http://example.org/StructureDefinition/DiagnosisAndNotification {[]} {[]}
+","Diagnosis and notification","Diagnosis and notification","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.diagnosisAndNotification",0,1,"",""
+"TBCaseSurveillance.diagnosticLaboratoryResults","TBCaseSurveillance.diagnosticLaboratoryResults","","","",0,*,"","","","http://example.org/StructureDefinition/DiagnosticLaboratoryResults {[]} {[]}
+","Diagnostic laboratory results","Diagnostic laboratory results","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.diagnosticLaboratoryResults",0,*,"",""
+"TBCaseSurveillance.tbTreatment","TBCaseSurveillance.tbTreatment","","","",0,*,"","","","http://example.org/StructureDefinition/TBTreatment {[]} {[]}
+","TB Treatment","TB Treatment","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.tbTreatment",0,*,"",""
+"TBCaseSurveillance.monitoringLaboratoryResults","TBCaseSurveillance.monitoringLaboratoryResults","","","",0,*,"","","","http://example.org/StructureDefinition/MonitoringLaboratoryResults {[]} {[]}
+","Monitoring laboratory results","Monitoring laboratory results","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.monitoringLaboratoryResults",0,*,"",""
+"TBCaseSurveillance.outcome","TBCaseSurveillance.outcome","","","",0,1,"","","","http://example.org/StructureDefinition/Outcome {[]} {[]}
+","Outcome","Outcome","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.outcome",0,1,"",""

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---treatment-category-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tb-cs---treatment-category-vs</b></p><a name="tb-cs---treatment-category-vs"> </a><a name="hctb-cs---treatment-category-vs"> </a><a name="tb-cs---treatment-category-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tb-cs---treatment-category-cs.html"><code>http://example.org/CodeSystem/tb-cs---treatment-category-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/tb-cs---treatment-category-vs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSTreatmentCategoryVS"/>
+  <title value="TB CS - Treatment category value set"/>
+  <status value="draft"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/tb-cs---treatment-category-cs"/>
+    </include>
+  </compose>
+</ValueSet>

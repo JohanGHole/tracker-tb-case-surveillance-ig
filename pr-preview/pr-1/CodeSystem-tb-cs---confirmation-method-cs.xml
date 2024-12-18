@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---confirmation-method-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-cs---confirmation-method-cs</b></p><a name="tb-cs---confirmation-method-cs"> </a><a name="hctb-cs---confirmation-method-cs"> </a><a name="tb-cs---confirmation-method-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CLINDX<a name="tb-cs---confirmation-method-cs-CLINDX"> </a></td><td>Clinically diagnosed</td></tr><tr><td style="white-space:nowrap">LABCONF<a name="tb-cs---confirmation-method-cs-LABCONF"> </a></td><td>Bacteriologically confirmed</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-cs---confirmation-method-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSConfirmationMethodCS"/>
+  <title value="TB CS - Confirmation method"/>
+  <status value="draft"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="CLINDX"/>
+    <display value="Clinically diagnosed"/>
+  </concept>
+  <concept>
+    <code value="LABCONF"/>
+    <display value="Bacteriologically confirmed"/>
+  </concept>
+</CodeSystem>

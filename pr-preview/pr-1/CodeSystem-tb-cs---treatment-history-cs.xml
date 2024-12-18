@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tb-cs---treatment-history-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tb-cs---treatment-history-cs</b></p><a name="tb-cs---treatment-history-cs"> </a><a name="hctb-cs---treatment-history-cs"> </a><a name="tb-cs---treatment-history-cs-en-US"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-cs---treatment-history-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">HISTORY_NEW<a name="tb-cs---treatment-history-cs-HISTORY_NEW"> </a></td><td>New</td></tr><tr><td style="white-space:nowrap">HISTORY_RELAPSE<a name="tb-cs---treatment-history-cs-HISTORY_RELAPSE"> </a></td><td>Relapse</td></tr><tr><td style="white-space:nowrap">HISTORY_FAILED<a name="tb-cs---treatment-history-cs-HISTORY_FAILED"> </a></td><td>Treatment after failure</td></tr><tr><td style="white-space:nowrap">HISTORY_LOST_TO_FOLLOWUP<a name="tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP"> </a></td><td>Treatment after lost to follow-up</td></tr><tr><td style="white-space:nowrap">HISTORY_OTHER_PREV<a name="tb-cs---treatment-history-cs-HISTORY_OTHER_PREV"> </a></td><td>Other previously treated</td></tr><tr><td style="white-space:nowrap">HISTORY_UNKNOWN<a name="tb-cs---treatment-history-cs-HISTORY_UNKNOWN"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
+  <version value="0.1.0"/>
+  <name value="TBCSTreatmentHistoryCS"/>
+  <title value="TB CS - Treatment history"/>
+  <status value="draft"/>
+  <date value="2024-12-18T19:13:07+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="HISTORY_NEW"/>
+    <display value="New"/>
+  </concept>
+  <concept>
+    <code value="HISTORY_RELAPSE"/>
+    <display value="Relapse"/>
+  </concept>
+  <concept>
+    <code value="HISTORY_FAILED"/>
+    <display value="Treatment after failure"/>
+  </concept>
+  <concept>
+    <code value="HISTORY_LOST_TO_FOLLOWUP"/>
+    <display value="Treatment after lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="HISTORY_OTHER_PREV"/>
+    <display value="Other previously treated"/>
+  </concept>
+  <concept>
+    <code value="HISTORY_UNKNOWN"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

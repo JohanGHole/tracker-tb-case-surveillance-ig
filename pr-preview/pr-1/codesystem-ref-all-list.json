@@ -1,0 +1,193 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GENYesNoUnknownCS",
+      "title" : "GEN - Yes/No/Unknown",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/RRTGENSexCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RRTGENSexCS",
+      "title" : "RRT - GEN - Sex",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SusceptibleResistantIndeterminateCS",
+      "title" : "Susceptible/Resistant/Indeterminate",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-susceptible-resistant-indeterminate-vs.html" : "Susceptible/Resistant/Indeterminate value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSConfirmationMethodCS",
+      "title" : "TB CS - Confirmation method",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---confirmation-method-vs.html" : "TB CS - Confirmation method value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSDenotificationReasonsCS",
+      "title" : "TB CS - Denotification reasons",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSResistanceClassificationCS",
+      "title" : "TB CS - Resistance Classification",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---resistance-classification-vs.html" : "TB CS - Resistance Classification value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSSiteOfDiseaseCS",
+      "title" : "TB CS - Site of disease",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---site-of-disease-vs.html" : "TB CS - Site of disease value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentCategoryCS",
+      "title" : "TB CS - Treatment category",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---treatment-category-vs.html" : "TB CS - Treatment category value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentHistoryCS",
+      "title" : "TB CS - Treatment history",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-cs---treatment-history-vs.html" : "TB CS - Treatment history value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSTreatmentOutcomeCS",
+      "title" : "TB CS - Treatment outcome",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABDSTResultCS",
+      "title" : "TB-LAB - DST result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---dst-result-vs.html" : "TB-LAB - DST result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABFinalCultureResultCS",
+      "title" : "TB-LAB - Final culture result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---final-culture-result-vs.html" : "TB-LAB - Final culture result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABLPASpecimenCS",
+      "title" : "TB-LAB - LPA specimen",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---lpa-specimen-vs.html" : "TB-LAB - LPA specimen value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABMTBTestResultCS",
+      "title" : "TB-LAB - MTB test result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---mtb-test-result-vs.html" : "TB-LAB - MTB test result value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleQualityCS",
+      "title" : "TB-LAB - Sample quality",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---sample-quality-vs.html" : "TB-LAB - Sample quality value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSampleStatusCS",
+      "title" : "TB-LAB - Sample status",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---sample-status-vs.html" : "TB-LAB - Sample status value set"
+    },
+    {
+      "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBLABSmearResultCS",
+      "title" : "TB-LAB - Smear result",
+      "description" : null,
+      "uses" : {
+      },
+      "ValueSet-tb-lab---smear-result-vs.html" : "TB-LAB - Smear result value set"
+    }
+  ]
+}

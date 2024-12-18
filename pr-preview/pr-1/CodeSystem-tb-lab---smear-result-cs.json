@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tb-lab---smear-result-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tb-lab---smear-result-cs</b></p><a name=\"tb-lab---smear-result-cs\"> </a><a name=\"hctb-lab---smear-result-cs\"> </a><a name=\"tb-lab---smear-result-cs-en-US\"> </a><p>This  code system <code>http://example.org/CodeSystem/tb-lab---smear-result-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SCANTY<a name=\"tb-lab---smear-result-cs-SCANTY\"> </a></td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\">1PLUS<a name=\"tb-lab---smear-result-cs-1PLUS\"> </a></td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\">2PLUS<a name=\"tb-lab---smear-result-cs-2PLUS\"> </a></td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\">3PLUS<a name=\"tb-lab---smear-result-cs-3PLUS\"> </a></td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\">NEGATIVE<a name=\"tb-lab---smear-result-cs-NEGATIVE\"> </a></td><td>Negative</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+  "version" : "0.1.0",
+  "name" : "TBLABSmearResultCS",
+  "title" : "TB-LAB - Smear result",
+  "status" : "draft",
+  "date" : "2024-12-18T19:13:07+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "SCANTY",
+    "display" : "Positive (Scanty)"
+  },
+  {
+    "code" : "1PLUS",
+    "display" : "Positive (+)"
+  },
+  {
+    "code" : "2PLUS",
+    "display" : "Positive (++)"
+  },
+  {
+    "code" : "3PLUS",
+    "display" : "Positive (+++)"
+  },
+  {
+    "code" : "NEGATIVE",
+    "display" : "Negative"
+  }]
+}
