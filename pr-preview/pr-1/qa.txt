@@ -3,7 +3,7 @@ TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 
 err = 21, warn = 136, info = 15
 IG Publisher Version: 1.8.3
-Generated Wed Dec 18 19:13:55 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+Generated Wed Dec 18 19:24:54 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
  Build Errors : 272 / 38 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 1 / 1 / 4
