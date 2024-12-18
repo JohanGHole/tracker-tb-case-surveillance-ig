@@ -6,9 +6,9 @@
 "DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Registration - Previous treatment history","TB CS - Registration - Previous treatment history","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-history-vs","",,,,"DiagnosisAndNotification.historyOfPreviousTreatment",0,1,"",""
 "DiagnosisAndNotification.hivInfection","DiagnosisAndNotification.hivInfection","","","",0,1,"","","","code {[]} {[]}
-","TB CS - HIV infection","TB CS - HIV infection","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.hivInfection",0,1,"",""
+","TB CS - HIV infection","TB CS - HIV infection","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.hivInfection",0,1,"",""
 "DiagnosisAndNotification.artStarted","DiagnosisAndNotification.artStarted","","","",0,1,"","","","code {[]} {[]}
-","TB CS - ART started","TB CS - ART started","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.artStarted",0,1,"",""
+","TB CS - ART started","TB CS - ART started","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.artStarted",0,1,"",""
 "DiagnosisAndNotification.artStartDate","DiagnosisAndNotification.artStartDate","","","",0,1,"","","","date {[]} {[]}
 ","TB CS - ART start date","TB CS - ART start date","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.artStartDate",0,1,"",""
 "DiagnosisAndNotification.isThisATbDiagnosisDoYouWantToNotifyTheCase","DiagnosisAndNotification.isThisATbDiagnosisDoYouWantToNotifyTheCase","","","",0,1,"","","","boolean {[]} {[]}
@@ -16,11 +16,11 @@
 "DiagnosisAndNotification.diagnosisticNote","DiagnosisAndNotification.diagnosisticNote","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - Diagnostic note","TB CS - Diagnostic note","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.diagnosisticNote",0,1,"",""
 "DiagnosisAndNotification.undernourishment","DiagnosisAndNotification.undernourishment","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor undernourishment","TB CS - Risk factor undernourishment","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.undernourishment",0,1,"",""
+","TB CS - Risk factor undernourishment","TB CS - Risk factor undernourishment","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.undernourishment",0,1,"",""
 "DiagnosisAndNotification.dateOfDiagnosis","DiagnosisAndNotification.dateOfDiagnosis","","","",0,1,"","","","date {[]} {[]}
 ","TB CS - Diagnosis date","TB CS - Diagnosis date","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.dateOfDiagnosis",0,1,"",""
 "DiagnosisAndNotification.secondLineDrugsReceivedPreviously","DiagnosisAndNotification.secondLineDrugsReceivedPreviously","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Registration - Second-line drugs","TB CS - Registration - Second-line drugs","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.secondLineDrugsReceivedPreviously",0,1,"",""
+","TB CS - Registration - Second-line drugs","TB CS - Registration - Second-line drugs","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.secondLineDrugsReceivedPreviously",0,1,"",""
 "DiagnosisAndNotification.confirmationMethod","DiagnosisAndNotification.confirmationMethod","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Confirmation method","TB CS - Confirmation method","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---confirmation-method-vs","",,,,"DiagnosisAndNotification.confirmationMethod",0,1,"",""
 "DiagnosisAndNotification.currentAddressOnMap","DiagnosisAndNotification.currentAddressOnMap","","","",0,1,"","","","string {[]} {[]}
@@ -36,8 +36,8 @@
 "DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold","DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold","","","",0,1,"","","","unsignedInt {[]} {[]}
 ","TB-CS - Household size (contacts)","TB-CS - Household size (contacts)","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold",0,1,"",""
 "DiagnosisAndNotification.harmfulUseOfAlcohol","DiagnosisAndNotification.harmfulUseOfAlcohol","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor alcohol","TB CS - Risk factor alcohol","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.harmfulUseOfAlcohol",0,1,"",""
+","TB CS - Risk factor alcohol","TB CS - Risk factor alcohol","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.harmfulUseOfAlcohol",0,1,"",""
 "DiagnosisAndNotification.diabetes","DiagnosisAndNotification.diabetes","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor diabetes","TB CS - Risk factor diabetes","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.diabetes",0,1,"",""
+","TB CS - Risk factor diabetes","TB CS - Risk factor diabetes","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.diabetes",0,1,"",""
 "DiagnosisAndNotification.smoking","DiagnosisAndNotification.smoking","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor smoking","TB CS - Risk factor smoking","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.smoking",0,1,"",""
+","TB CS - Risk factor smoking","TB CS - Risk factor smoking","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.smoking",0,1,"",""

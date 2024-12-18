@@ -1,12 +1,12 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 20, warn = 141, info = 19
+err = 6, warn = 127, info = 17
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 272 / 38 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 2 / 2 / 5
- /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 2 / 2 / 5
+ Build Errors : 261 / 38 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-rrt---gen---sex-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs : 0 / 3 / 2
@@ -23,15 +23,14 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 8 / 0 / 16
- /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 14 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 6 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 1 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-GENYesNoUnknownVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-RRTGENSexVS : 1 / 1 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-rrt---gen---sex-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs : 0 / 2 / 1
@@ -49,8 +48,8 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/ValueSet-tb-lab---smear-result-vs : 0 / 2 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/GENYesNoUnknownVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/RRTGENSexVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/gen---yes-no-unknown-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/rrt---gen---sex-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/susceptible-resistant-indeterminate-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---confirmation-method-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-cs---denotification-reasons-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -66,8 +65,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---sample-quality-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---sample-status-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/tb-lab---smear-result-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/GENYesNoUnknownCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RRTGENSexCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/gen---yes-no-unknown-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/rrt---gen---sex-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/susceptible-resistant-indeterminate-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---confirmation-method-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-cs---denotification-reasons-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -83,19 +82,18 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---sample-quality-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---sample-status-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/tb-lab---smear-result-cs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 420
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.json.html#/html/body/div/div/div/p/span/a at Line 303, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.ttl.html#/html/body/div/div/div/p/span/a at Line 305, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.xml.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS.json.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS.ttl.html#/html/body/div/div/div/p/span/a at Line 302, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-RRTGENSexCS.xml.html#/html/body/div/div/div/p/span/a at Line 293, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.json.html#/html/body/div/div/div/p/span/a at Line 296, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 297, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-gen---yes-no-unknown-cs.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.json.html#/html/body/div/div/div/p/span/a at Line 292, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 294, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-rrt---gen---sex-cs.xml.html#/html/body/div/div/div/p/span/a at Line 286, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-susceptible-resistant-indeterminate-cs.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
@@ -186,12 +184,6 @@ ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.html#/html/b
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.json.html#/html/body/div/div/div/p/span/a at Line 304, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.ttl.html#/html/body/div/div/div/p/span/a at Line 303, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-tb-lab---smear-result-cs.xml.html#/html/body/div/div/div/p/span/a at Line 298, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.html#/html/body/div/div/div/p/span/a at Line 254, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.json.html#/html/body/div/div/div/p/span/a at Line 435, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.ttl.html#/html/body/div/div/div/p/span/a at Line 415, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.xml.html#/html/body/div/div/div/p/span/a at Line 439, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-definitions.html#/html/body/div/div/div/p/span/a at Line 487, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -200,7 +192,7 @@ ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.htm
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.json.html#/html/body/div/div/div/p/span/a at Line 1040, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 841, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.xml.html#/html/body/div/div/div/p/span/a at Line 955, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification.profile.xml.html#/html/body/div/div/div/p/span/a at Line 969, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-definitions.html#/html/body/div/div/div/p/span/a at Line 1423, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosticLaboratoryResults-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -236,7 +228,7 @@ ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.html#/htm
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.history.html#/html/body/div/div/div/p/span/a at Line 267, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.json.html#/html/body/div/div/div/p/span/a at Line 914, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 721, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.xml.html#/html/body/div/div/div/p/span/a at Line 840, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-TBCaseSurveillance.profile.xml.html#/html/body/div/div/div/p/span/a at Line 842, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-definitions.html#/html/body/div/div/div/p/span/a at Line 658, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -246,22 +238,18 @@ ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.history.
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.json.html#/html/body/div/div/div/p/span/a at Line 1565, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.ttl.html#/html/body/div/div/div/p/span/a at Line 1141, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-TBTreatment.profile.xml.html#/html/body/div/div/div/p/span/a at Line 1377, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.json.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.ttl.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.json.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.ttl.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html#/html/body/div/div/div/p/span/a at Line 307, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.html#/html/body/div/div/div/p/span/a at Line 327, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-gen---yes-no-unknown-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-rrt---gen---sex-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-susceptible-resistant-indeterminate-vs.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
@@ -352,25 +340,23 @@ ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.html#/html/bod
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.json.html#/html/body/div/div/div/p/span/a at Line 287, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.ttl.html#/html/body/div/div/div/p/span/a at Line 289, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-tb-lab---smear-result-vs.xml.html#/html/body/div/div/div/p/span/a at Line 281, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 509, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 491, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-GENYesNoUnknownCS.json ==
-ERROR: CodeSystem/GENYesNoUnknownCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-ERROR: CodeSystem/GENYesNoUnknownCS: CodeSystem: CodeSystem.caseSensitive: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-INFORMATION: CodeSystem/GENYesNoUnknownCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/GENYesNoUnknownCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/GENYesNoUnknownCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-== fsh-generated/resources/CodeSystem-RRTGENSexCS.json ==
-ERROR: CodeSystem/RRTGENSexCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-ERROR: CodeSystem/RRTGENSexCS: CodeSystem: CodeSystem.caseSensitive: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-INFORMATION: CodeSystem/RRTGENSexCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/RRTGENSexCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
-WARNING: CodeSystem/RRTGENSexCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs.json ==
+INFORMATION: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/gen---yes-no-unknown-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-rrt---gen---sex-cs.json ==
+INFORMATION: CodeSystem/rrt---gen---sex-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+WARNING: CodeSystem/rrt---gen---sex-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs.json ==
 INFORMATION: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/susceptible-resistant-indeterminate-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -447,33 +433,8 @@ WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems
 WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 WARNING: CodeSystem/tb-lab---smear-result-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
-== fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json ==
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
 ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[3].binding: The definition for the element 'DiagnosisAndNotification.hivInfection' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[4].binding: The definition for the element 'DiagnosisAndNotification.artStarted' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[8].binding: The definition for the element 'DiagnosisAndNotification.undernourishment' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[10].binding: The definition for the element 'DiagnosisAndNotification.secondLineDrugsReceivedPreviously' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[18].binding: The definition for the element 'DiagnosisAndNotification.harmfulUseOfAlcohol' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[19].binding: The definition for the element 'DiagnosisAndNotification.diabetes' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[20].binding: The definition for the element 'DiagnosisAndNotification.smoking' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[3].binding: The definition for the element 'DiagnosisAndNotification.hivInfection' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[4].binding: The definition for the element 'DiagnosisAndNotification.artStarted' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[8].binding: The definition for the element 'DiagnosisAndNotification.undernourishment' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[10].binding: The definition for the element 'DiagnosisAndNotification.secondLineDrugsReceivedPreviously' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[18].binding: The definition for the element 'DiagnosisAndNotification.harmfulUseOfAlcohol' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[19].binding: The definition for the element 'DiagnosisAndNotification.diabetes' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot.element[20].binding: The definition for the element 'DiagnosisAndNotification.smoking' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json ==
 ERROR: StructureDefinition/DiagnosticLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json ==
@@ -484,20 +445,16 @@ ERROR: StructureDefinition/Outcome: StructureDefinition.snapshot: Constraint fai
 ERROR: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
 WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.differential.element[7].binding: The definition for the element 'TBCaseSurveillance.sex' binds to the value set 'http://example.org/ValueSet/RRTGENSexVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.differential.element[10].binding: The definition for the element 'TBCaseSurveillance.foreignBorn' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot.element[7].binding: The definition for the element 'TBCaseSurveillance.sex' binds to the value set 'http://example.org/ValueSet/RRTGENSexVS' which is experimental, but this structure is not labeled as experimental
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot.element[10].binding: The definition for the element 'TBCaseSurveillance.foreignBorn' binds to the value set 'http://example.org/ValueSet/GENYesNoUnknownVS' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/StructureDefinition-TBTreatment.json ==
 ERROR: StructureDefinition/TBTreatment: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 WARNING: StructureDefinition/TBTreatment: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/TBTreatment: StructureDefinition.differential.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
-== fsh-generated/resources/ValueSet-GENYesNoUnknownVS.json ==
-ERROR: ValueSet/GENYesNoUnknownVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/GENYesNoUnknownVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-== fsh-generated/resources/ValueSet-RRTGENSexVS.json ==
-ERROR: ValueSet/RRTGENSexVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/RRTGENSexVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs.json ==
+WARNING: ValueSet/gen---yes-no-unknown-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/gen---yes-no-unknown-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-rrt---gen---sex-vs.json ==
+WARNING: ValueSet/rrt---gen---sex-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/rrt---gen---sex-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs.json ==
 WARNING: ValueSet/susceptible-resistant-indeterminate-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/susceptible-resistant-indeterminate-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

@@ -1,15 +1,15 @@
 [
   {
-    "id" : "GENYesNoUnknownCS",
+    "id" : "gen---yes-no-unknown-cs",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "url" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
     "version" : "0.1.0",
     "name" : "GENYesNoUnknownCS"
   },
   {
-    "id" : "RRTGENSexCS",
+    "id" : "rrt---gen---sex-cs",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/RRTGENSexCS",
+    "url" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
     "version" : "0.1.0",
     "name" : "RRTGENSexCS"
   },
@@ -126,12 +126,6 @@
     "name" : "TrackerTBCaseSurveillanceImplementationGuide"
   },
   {
-    "id" : "TBCaseSurveillanceQuestionnaire",
-    "type" : "Questionnaire",
-    "url" : "http://example.org/Questionnaire/TBCaseSurveillanceQuestionnaire",
-    "version" : "0.1.0"
-  },
-  {
     "id" : "DiagnosisAndNotification",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/DiagnosisAndNotification",
@@ -174,16 +168,16 @@
     "name" : "TBTreatment"
   },
   {
-    "id" : "GENYesNoUnknownVS",
+    "id" : "gen---yes-no-unknown-vs",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
+    "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
     "version" : "0.1.0",
     "name" : "GENYesNoUnknownVS"
   },
   {
-    "id" : "RRTGENSexVS",
+    "id" : "rrt---gen---sex-vs",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/RRTGENSexVS",
+    "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
     "version" : "0.1.0",
     "name" : "RRTGENSexVS"
   },

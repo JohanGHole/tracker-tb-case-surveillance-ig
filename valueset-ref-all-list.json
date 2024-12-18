@@ -1,44 +1,26 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
-      "version" : null,
-      "status" : "active",
-      "name" : "GENYesNoUnknownVS",
-      "title" : "GEN - Yes/No/Unknown value set",
-      "description" : null,
-      "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"]
-    },
-    {
-      "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
+      "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
       "version" : "0.1.0",
-      "status" : "active",
+      "status" : "draft",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
+      "systems" : ["http://example.org/CodeSystem/gen---yes-no-unknown-cs"],
       "uses" : {
       },
       "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance",
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
     },
     {
-      "url" : "http://example.org/ValueSet/RRTGENSexVS",
-      "version" : null,
-      "status" : "active",
-      "name" : "RRTGENSexVS",
-      "title" : "RRT - GEN - Sex value set",
-      "description" : null,
-      "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"]
-    },
-    {
-      "url" : "http://example.org/ValueSet/RRTGENSexVS",
+      "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
       "version" : "0.1.0",
-      "status" : "active",
+      "status" : "draft",
       "name" : "RRTGENSexVS",
       "title" : "RRT - GEN - Sex value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"],
+      "systems" : ["http://example.org/CodeSystem/rrt---gen---sex-cs"],
       "uses" : {
       },
       "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"

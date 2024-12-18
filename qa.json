@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "tracker.tb.case.surveillance.ig",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 18 Dec, 2024 15:37:28 +0000",
-  "dateISO8601" : "2024-12-18T15:37:28+00:00",
-  "errs" : 20,
-  "warnings" : 141,
-  "hints" : 19,
+  "date" : "Wed, 18 Dec, 2024 18:58:42 +0000",
+  "dateISO8601" : "2024-12-18T18:58:42+00:00",
+  "errs" : 6,
+  "warnings" : 127,
+  "hints" : 17,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2216914640
+  "maxMemory" : 2090946096
 }

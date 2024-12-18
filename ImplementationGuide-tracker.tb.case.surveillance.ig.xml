@@ -10,7 +10,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-12-18T15:37:28+00:00"/>
+  <date value="2024-12-18T18:58:42+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -22,25 +22,21 @@
   <packageId value="tracker.tb.case.surveillance.ig"/>
   <license value="BSD-3-Clause"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn id="hl7_terminology">
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
-    <packageId value="hl7.terminology"/>
-    <version value="5.5.0"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.1.0"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_uv_extensions_r4">
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.1.0"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_uv_crmi">
-    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
-    <packageId value="hl7.fhir.uv.crmi"/>
-    <version value="1.0.0"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_uv_sdc">
-    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
-    <packageId value="hl7.fhir.uv.sdc"/>
-    <version value="3.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -473,7 +469,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/GENYesNoUnknownCS"/>
+        <reference value="CodeSystem/gen---yes-no-unknown-cs"/>
       </reference>
       <name value="GEN - Yes/No/Unknown"/>
       <exampleBoolean value="false"/>
@@ -483,7 +479,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/GENYesNoUnknownVS"/>
+        <reference value="ValueSet/gen---yes-no-unknown-vs"/>
       </reference>
       <name value="GEN - Yes/No/Unknown value set"/>
       <exampleBoolean value="false"/>
@@ -515,7 +511,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/RRTGENSexCS"/>
+        <reference value="CodeSystem/rrt---gen---sex-cs"/>
       </reference>
       <name value="RRT - GEN - Sex"/>
       <exampleBoolean value="false"/>
@@ -525,7 +521,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/RRTGENSexVS"/>
+        <reference value="ValueSet/rrt---gen---sex-vs"/>
       </reference>
       <name value="RRT - GEN - Sex value set"/>
       <exampleBoolean value="false"/>
@@ -559,17 +555,6 @@
       </reference>
       <name value="TB Case Surveillance"/>
       <description value="Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/TBCaseSurveillanceQuestionnaire"/>
-      </reference>
-      <name value="TB Case Surveillance Questionnaire"/>
-      <description value="A questionnaire for TB Case Surveillance capturing patient demographics and program-specific information."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TBLABSampleStatusCS"] ; # 
   fhir:title [ fhir:v "TB-LAB - Sample status"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-18T15:37:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-18T18:58:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

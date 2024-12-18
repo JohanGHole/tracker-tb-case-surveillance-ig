@@ -1,43 +1,42 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json	10936	-	0	0	0	0	0	0	11	204	0	0	0	0	0	0	0	1	0	0	136	232	0	0	0	1	12	0	1
-fsh-generated/resources/CodeSystem-GENYesNoUnknownCS.json	675	4	0	0	1	1	0	0	0	35	0	0	0	0	0	0	0	0	0	0	26	1725	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-RRTGENSexCS.json	597	2	0	0	0	0	0	0	0	32	0	0	0	0	0	0	0	0	0	0	24	71	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs.json	563	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	26	63	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs.json	471	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	28	52	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs.json	460	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	22	53	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-tb-cs---resistance-classification-cs.json	660	2	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	25	53	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-cs---site-of-disease-cs.json	541	2	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	26	50	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-cs---treatment-category-cs.json	489	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	24	45	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-tb-cs---treatment-history-cs.json	801	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	1	0	0	28	46	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-cs---treatment-outcome-cs.json	716	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	28	44	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-lab---dst-result-cs.json	571	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	26	45	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-tb-lab---final-culture-result-cs.json	574	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	43	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-lab---lpa-specimen-cs.json	481	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	18	42	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-lab---mtb-test-result-cs.json	633	2	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	17	45	0	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-tb-lab---sample-quality-cs.json	463	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	44	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs.json	429	2	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	18	42	0	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs.json	633	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	24	42	0	0	0	0	1	0	0
-fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json	4429	2	1	0	0	0	0	0	0	118	0	0	0	0	0	0	0	0	0	0	90	5912	0	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json	9610	5	0	0	0	0	0	9	0	34	0	0	1	0	0	0	0	1	0	0	179	917	0	1	0	0	5	1	0
-fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json	61564	9	0	0	0	0	0	49	0	114	0	0	0	0	0	0	0	1	0	0	941	1596	0	0	0	0	27	0	2
-fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json	8999	3	0	0	0	0	0	25	0	22	0	0	0	0	0	0	0	0	0	0	163	230	0	0	0	0	5	0	0
-fsh-generated/resources/StructureDefinition-Outcome.json	3525	3	0	0	0	0	0	19	0	14	0	0	0	0	0	0	0	0	0	0	74	144	0	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json	8151	3	1	0	0	0	0	22	0	17	0	0	0	0	0	0	0	0	0	0	135	197	0	0	0	0	4	0	1
-fsh-generated/resources/StructureDefinition-TBTreatment.json	14978	4	0	0	0	0	0	57	0	28	0	0	0	0	0	0	0	0	0	0	256	371	0	0	0	0	8	0	0
-fsh-generated/resources/ValueSet-GENYesNoUnknownVS.json	651	3	0	0	0	0	0	0	1	9	0	0	0	0	0	0	0	0	0	0	16	88	0	0	1	0	0	0	0
-fsh-generated/resources/ValueSet-RRTGENSexVS.json	622	2	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	15	98	0	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs.json	440	2	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	15	64	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs.json	397	2	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	14	60	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs.json	412	3	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	14	61	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---resistance-classification-vs.json	427	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	14	79	0	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-tb-cs---site-of-disease-vs.json	376	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	15	58	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---treatment-category-vs.json	392	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	16	50	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---treatment-history-vs.json	387	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	14	56	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-cs---treatment-outcome-vs.json	387	2	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	14	53	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-lab---dst-result-vs.json	357	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	15	62	0	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-tb-lab---final-culture-result-vs.json	406	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	55	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-lab---lpa-specimen-vs.json	367	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	14	48	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-lab---mtb-test-result-vs.json	381	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	19	60	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-lab---sample-quality-vs.json	377	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	14	56	0	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-tb-lab---sample-status-vs.json	372	2	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	13	47	0	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-tb-lab---smear-result-vs.json	367	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	51	0	0	0	0	0	0	0
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json	9822	-	0	0	0	0	0	0	10	394	0	0	0	0	0	0	0	1	0	0	110	195	0	0	0	7	0	1
+fsh-generated/resources/CodeSystem-gen---yes-no-unknown-cs.json	458	3	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	13	1713	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-rrt---gen---sex-cs.json	382	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	11	58	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-susceptible-resistant-indeterminate-cs.json	563	3	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	12	57	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-cs---confirmation-method-cs.json	471	2	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	16	54	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-cs---denotification-reasons-cs.json	460	2	0	0	0	0	0	0	1	16	0	0	0	0	0	0	0	0	0	0	11	51	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-tb-cs---resistance-classification-cs.json	660	2	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	12	49	0	0	1	0	0	0
+fsh-generated/resources/CodeSystem-tb-cs---site-of-disease-cs.json	541	2	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	12	46	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-tb-cs---treatment-category-cs.json	489	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	12	41	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-cs---treatment-history-cs.json	801	2	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	13	44	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-tb-cs---treatment-outcome-cs.json	716	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	15	42	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-tb-lab---dst-result-cs.json	571	12	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	12	41	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-lab---final-culture-result-cs.json	574	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	11	39	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-tb-lab---lpa-specimen-cs.json	481	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	11	38	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-lab---mtb-test-result-cs.json	633	1	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	13	38	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-lab---sample-quality-cs.json	463	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	11	34	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-tb-lab---sample-status-cs.json	429	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	11	36	0	0	0	1	0	1
+fsh-generated/resources/CodeSystem-tb-lab---smear-result-cs.json	633	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	37	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json	9652	3	1	0	0	0	0	12	0	51	0	0	1	0	0	0	0	1	0	0	163	986	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json	61564	8	0	0	1	0	0	65	0	113	0	0	0	0	0	0	0	2	0	0	913	1277	0	0	0	35	0	1
+fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json	8999	3	0	0	0	0	0	20	0	25	0	0	0	0	0	0	0	0	0	0	146	236	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-Outcome.json	3525	2	0	0	0	0	0	11	0	19	0	0	0	0	0	0	0	0	0	0	68	120	0	1	0	2	0	0
+fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json	8164	2	0	0	0	0	0	19	0	22	0	0	0	0	0	0	0	0	0	0	134	179	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-TBTreatment.json	14978	3	1	0	0	0	0	26	0	26	0	0	0	0	0	0	0	1	0	0	249	227	0	0	0	8	0	1
+fsh-generated/resources/ValueSet-gen---yes-no-unknown-vs.json	362	1	0	0	0	0	0	0	0	83	0	0	0	0	0	0	0	0	0	0	10	3961	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-rrt---gen---sex-vs.json	336	2	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	9	70	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-susceptible-resistant-indeterminate-vs.json	440	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	10	70	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---confirmation-method-vs.json	397	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	10	66	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---denotification-reasons-vs.json	412	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	10	55	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-tb-cs---resistance-classification-vs.json	427	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	10	49	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---site-of-disease-vs.json	376	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	12	61	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---treatment-category-vs.json	392	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	13	47	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---treatment-history-vs.json	387	2	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	17	72	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-cs---treatment-outcome-vs.json	387	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	9	50	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-tb-lab---dst-result-vs.json	357	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	11	51	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-lab---final-culture-result-vs.json	406	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	10	45	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-tb-lab---lpa-specimen-vs.json	367	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	10	43	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-tb-lab---mtb-test-result-vs.json	381	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	9	46	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-tb-lab---sample-quality-vs.json	377	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	10	79	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-lab---sample-status-vs.json	372	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	9	35	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-tb-lab---smear-result-vs.json	367	2	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	10	34	0	0	0	1	0	1

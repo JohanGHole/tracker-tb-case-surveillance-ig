@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-18T15:37:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-18T18:58:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -30,37 +30,29 @@
   fhir:license [ fhir:v "BSD-3-Clause"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
-     fhir:id [ fhir:v "hl7_terminology" ] ;
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
      fhir:uri [
        fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
-     fhir:packageId [ fhir:v "hl7.terminology" ] ;
-     fhir:version [ fhir:v "5.5.0" ]
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.1.0" ]
   ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.1.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_crmi" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.crmi" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
-     fhir:uri [
-       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
-     fhir:version [ fhir:v "3.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -547,8 +539,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/GENYesNoUnknownCS> ;
-         fhir:reference [ fhir:v "CodeSystem/GENYesNoUnknownCS" ]
+         fhir:link <http://example.org/CodeSystem/gen---yes-no-unknown-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/gen---yes-no-unknown-cs" ]
        ] ;
        fhir:name [ fhir:v "GEN - Yes/No/Unknown" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -558,8 +550,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/GENYesNoUnknownVS> ;
-         fhir:reference [ fhir:v "ValueSet/GENYesNoUnknownVS" ]
+         fhir:link <http://example.org/ValueSet/gen---yes-no-unknown-vs> ;
+         fhir:reference [ fhir:v "ValueSet/gen---yes-no-unknown-vs" ]
        ] ;
        fhir:name [ fhir:v "GEN - Yes/No/Unknown value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -593,8 +585,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/RRTGENSexCS> ;
-         fhir:reference [ fhir:v "CodeSystem/RRTGENSexCS" ]
+         fhir:link <http://example.org/CodeSystem/rrt---gen---sex-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/rrt---gen---sex-cs" ]
        ] ;
        fhir:name [ fhir:v "RRT - GEN - Sex" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -604,8 +596,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/RRTGENSexVS> ;
-         fhir:reference [ fhir:v "ValueSet/RRTGENSexVS" ]
+         fhir:link <http://example.org/ValueSet/rrt---gen---sex-vs> ;
+         fhir:reference [ fhir:v "ValueSet/rrt---gen---sex-vs" ]
        ] ;
        fhir:name [ fhir:v "RRT - GEN - Sex value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -642,18 +634,6 @@
        ] ;
        fhir:name [ fhir:v "TB Case Surveillance" ] ;
        fhir:description [ fhir:v "Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://example.org/Questionnaire/TBCaseSurveillanceQuestionnaire> ;
-         fhir:reference [ fhir:v "Questionnaire/TBCaseSurveillanceQuestionnaire" ]
-       ] ;
-       fhir:name [ fhir:v "TB Case Surveillance Questionnaire" ] ;
-       fhir:description [ fhir:v "A questionnaire for TB Case Surveillance capturing patient demographics and program-specific information." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
