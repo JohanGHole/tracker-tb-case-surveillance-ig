@@ -2,6 +2,11 @@
 
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="TBCSDenotificationReasonsVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TBCSDenotificationReasonsVS</b></p><a name="TBCSDenotificationReasonsVS"> </a><a name="hcTBCSDenotificationReasonsVS"> </a><a name="TBCSDenotificationReasonsVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tb-cs---denotification-reasons-cs.html"><code>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</code></a></li></ul></div>
   </text>
@@ -9,8 +14,9 @@
   <version value="0.1.0"/>
   <name value="TBCSDenotificationReasonsVS"/>
   <title value="TB CS - Denotification reasons value set"/>
-  <status value="draft"/>
-  <date value="2024-12-19T09:39:03+00:00"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T10:30:07+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

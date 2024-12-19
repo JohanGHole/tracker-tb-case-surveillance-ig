@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-19T09:39:03+00:00",
+  "date" : "2024-12-19T10:30:07+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -891,6 +891,18 @@
         "reference" : "ValueSet/TBCSTreatmentOutcomeVS"
       },
       "name" : "TB CS - Treatment outcome value set",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/TBOutcomeQuestionnaire"
+      },
+      "name" : "TB Outcome Questionnaire",
+      "description" : "A questionnaire for capturing the final outcome of the TB case, including case closure, treatment success, or necessary corrections.",
       "exampleBoolean" : false
     },
     {

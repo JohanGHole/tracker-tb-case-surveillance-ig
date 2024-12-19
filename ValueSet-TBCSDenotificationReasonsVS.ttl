@@ -8,6 +8,18 @@
 <http://example.org/ValueSet/TBCSDenotificationReasonsVS> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "TBCSDenotificationReasonsVS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSDenotificationReasonsVS</b></p><a name=\"TBCSDenotificationReasonsVS\"> </a><a name=\"hcTBCSDenotificationReasonsVS\"> </a><a name=\"TBCSDenotificationReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html\"><code>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</code></a></li></ul></div>"
@@ -16,8 +28,9 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TBCSDenotificationReasonsVS"] ; # 
   fhir:title [ fhir:v "TB CS - Denotification reasons value set"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T09:39:03+00:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-19T10:30:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T09:39:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-19T10:30:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -808,6 +808,18 @@
          fhir:reference [ fhir:v "ValueSet/TBCSTreatmentOutcomeVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment outcome value set" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/TBOutcomeQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/TBOutcomeQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "TB Outcome Questionnaire" ] ;
+       fhir:description [ fhir:v "A questionnaire for capturing the final outcome of the TB case, including case closure, treatment success, or necessary corrections." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

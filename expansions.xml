@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="78706737-7664-4827-acb5-540854d21074"/>
+  <id value="469128f4-2f1f-4fee-9672-fa9d1612e718"/>
   <meta>
-    <lastUpdated value="2024-12-19T09:39:03.580+00:00"/>
+    <lastUpdated value="2024-12-19T10:30:07.157+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -63,8 +63,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:8039f9ee-3afa-4988-994b-15d9055c94fc"/>
-          <timestamp value="2024-12-19T09:39:19+00:00"/>
+          <identifier value="urn:uuid:78669f9c-87bd-429b-a295-d6471ac1a592"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -166,8 +166,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:ef1b53a8-071e-4360-9a3f-e9bb567e4717"/>
-          <timestamp value="2024-12-19T09:39:19+00:00"/>
+          <identifier value="urn:uuid:1769c8df-90d7-4d6d-84f1-d1effcb18570"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -204,6 +204,248 @@
             <system value="http://example.org/CodeSystem/GENYesNoUnknownCS"/>
             <code value="YES"/>
             <display value="Yes"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSTreatmentOutcomeVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-tb-cs---treatment-outcome-cs.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-CURED"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-CURED">CURED</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Cured</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-COMPLETED"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-COMPLETED">COMPLETED</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-FAILURE"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-FAILURE">FAILURE</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Failed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-DIED"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-DIED">DIED</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Died</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP">LOST_TO_FOLLOW_UP</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Lost to follow-up</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-NOT_EVALUATED"> </a>  
+                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-NOT_EVALUATED">NOT_EVALUATED</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>Not evaluated</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSTreatmentOutcomeVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSTreatmentOutcomeVS"/>
+        <title value="TB CS - Treatment outcome value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:1f207fba-15bd-4748-a068-3b995e7c1774"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="CURED"/>
+            <display value="Cured"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="COMPLETED"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="FAILURE"/>
+            <display value="Failed"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="DIED"/>
+            <display value="Died"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="LOST_TO_FOLLOW_UP"/>
+            <display value="Lost to follow-up"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <code value="NOT_EVALUATED"/>
+            <display value="Not evaluated"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-tb-cs---denotification-reasons-cs.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-NOT_TB"> </a>  
+                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-NOT_TB">NOT_TB</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
+                <td>Not a TB Case</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-DUPLICATE"> </a>  
+                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-DUPLICATE">DUPLICATE</a>
+                </td>
+                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
+                <td>Duplicate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSDenotificationReasonsVS"/>
+        <title value="TB CS - Denotification reasons value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:0d015783-b142-40b2-bd38-b289e423d05e"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <code value="NOT_TB"/>
+            <display value="Not a TB Case"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <code value="DUPLICATE"/>
+            <display value="Duplicate"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -274,8 +516,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:ef1b53a8-071e-4360-9a3f-e9bb567e4717"/>
-          <timestamp value="2024-12-19T09:39:19+00:00"/>
+          <identifier value="urn:uuid:1769c8df-90d7-4d6d-84f1-d1effcb18570"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -374,8 +616,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:8039f9ee-3afa-4988-994b-15d9055c94fc"/>
-          <timestamp value="2024-12-19T09:39:19+00:00"/>
+          <identifier value="urn:uuid:78669f9c-87bd-429b-a295-d6471ac1a592"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -416,6 +658,11 @@
     <fullUrl value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -461,11 +708,11 @@
         <version value="0.1.0"/>
         <name value="TBCSDenotificationReasonsVS"/>
         <title value="TB CS - Denotification reasons value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:c2c0a3cf-d704-4d50-9ebc-297e4ec03c1c"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:0d015783-b142-40b2-bd38-b289e423d05e"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -481,7 +728,7 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="warning-experimental"/>
+            <name value="warning-draft"/>
             <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
           </parameter>
           <parameter>
@@ -590,10 +837,9 @@
         <title value="TB CS - Treatment outcome value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:a6d56079-4350-436b-b23b-a737a895152f"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:1f207fba-15bd-4748-a068-3b995e7c1774"/>
+          <timestamp value="2024-12-19T10:30:23+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -708,10 +954,10 @@
         <name value="SusceptibleResistantIndeterminateVS"/>
         <title value="Susceptible/Resistant/Indeterminate value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bffd4645-9725-41c8-b12a-a5a6dfff6bd6"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:da7a6f75-4269-4696-9852-0a95254dd687"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -799,10 +1045,10 @@
         <name value="TBCSConfirmationMethodVS"/>
         <title value="TB CS - Confirmation method value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6cec1a5e-8914-4567-bdcd-52713e7005e4"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:c4a8d84e-8d64-4bc0-9d69-ad498e30b215"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -901,10 +1147,10 @@
         <name value="TBCSResistanceClassificationVS"/>
         <title value="TB CS - Resistance Classification value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:752dc79d-0243-4c1a-b6a5-0e5f9c9f5be0"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:58e44d65-17dd-44b4-a231-d62a412e5832"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1005,10 +1251,10 @@
         <name value="TBCSSiteOfDiseaseVS"/>
         <title value="TB CS - Site of disease value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3aae661c-ce58-4e79-8241-5e1437f2363c"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:e6543ada-38c4-4af7-8bf2-8beab84ca40c"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1096,10 +1342,10 @@
         <name value="TBCSTreatmentCategoryVS"/>
         <title value="TB CS - Treatment category value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1065acec-0bed-49c1-ae8c-a129586c2fef"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:15b1e3f1-99fd-4566-a6c2-3a24286be54e"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1214,10 +1460,10 @@
         <name value="TBCSTreatmentHistoryVS"/>
         <title value="TB CS - Treatment history value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c5ed3dff-c8b2-4505-a211-7b888599ac59"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:ef61e893-c371-4c51-9ee4-dbb243aaa407"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1336,10 +1582,10 @@
         <name value="TBLABDSTResultVS"/>
         <title value="TB-LAB - DST result value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8275db6b-56bf-4a0b-9544-1a62b6bf921b"/>
-          <timestamp value="2024-12-19T09:39:22+00:00"/>
+          <identifier value="urn:uuid:3debb3b0-2dc4-4123-b349-ec8f28cd6f13"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1448,10 +1694,10 @@
         <name value="TBLABFinalCultureResultVS"/>
         <title value="TB-LAB - Final culture result value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:eb235814-6612-4332-8b11-cfb20aa2f181"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:8578492c-dad7-471f-aa91-e9c9a0030b5f"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1544,10 +1790,10 @@
         <name value="TBLABLPASpecimenVS"/>
         <title value="TB-LAB - LPA specimen value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ff65c952-1166-4f51-bddc-fea5883bba33"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:707d3a4c-a1b4-4329-ad9e-50d9fc377c15"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1654,10 +1900,10 @@
         <name value="TBLABMTBTestResultVS"/>
         <title value="TB-LAB - MTB test result value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4e92b1f2-0ba7-4a93-87f9-8df90deb7922"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:22a1358f-8046-471b-9c3c-de5c27d2787e"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1755,10 +2001,10 @@
         <name value="TBLABSampleQualityVS"/>
         <title value="TB-LAB - Sample quality value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3994b38c-eefa-4cae-9db6-6f3e7c1397f6"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:74944091-e108-4c74-b575-bed9649287f9"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1841,10 +2087,10 @@
         <name value="TBLABSampleStatusVS"/>
         <title value="TB-LAB - Sample status value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9496cecc-81da-4d6b-91f2-825c3c3a1694"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:cbcda7ec-4605-4eed-826c-88aa565652cc"/>
+          <timestamp value="2024-12-19T10:30:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1951,10 +2197,10 @@
         <name value="TBLABSmearResultVS"/>
         <title value="TB-LAB - Smear result value set"/>
         <status value="draft"/>
-        <date value="2024-12-19T09:39:03+00:00"/>
+        <date value="2024-12-19T10:30:07+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f2e17b27-d651-417d-8bda-e4446de8b939"/>
-          <timestamp value="2024-12-19T09:39:23+00:00"/>
+          <identifier value="urn:uuid:7fe36776-8977-4538-b477-1b15938a77be"/>
+          <timestamp value="2024-12-19T10:30:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

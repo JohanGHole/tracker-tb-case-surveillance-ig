@@ -21,8 +21,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set",
-      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set"
+      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set",
+      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set"
     },
     {
       "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
@@ -55,6 +55,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
       "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
     },
     {
@@ -110,7 +111,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
     },
     {
       "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",

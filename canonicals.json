@@ -132,6 +132,12 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "TBOutcomeQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/TBOutcomeQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "DiagnosisAndNotification",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/DiagnosisAndNotification",

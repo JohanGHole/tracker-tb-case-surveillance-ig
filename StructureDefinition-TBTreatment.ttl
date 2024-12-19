@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TBTreatment"] ; # 
   fhir:title [ fhir:v "TB Treatment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T09:39:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-19T10:30:07+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

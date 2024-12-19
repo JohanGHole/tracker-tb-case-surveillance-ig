@@ -21,7 +21,7 @@
     {
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
       "description" : null,

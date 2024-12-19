@@ -45,8 +45,19 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSDenotificationReasonsVS",
+      "title" : "TB CS - Denotification reasons value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
+      ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
       "description" : null,
@@ -56,6 +67,15 @@
       "uses" : {
       },
       "StructureDefinition-Outcome.html" : "Outcome"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSTreatmentOutcomeVS",
+      "title" : "TB CS - Treatment outcome value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",

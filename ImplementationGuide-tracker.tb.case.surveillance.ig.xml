@@ -10,7 +10,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-12-19T09:39:03+00:00"/>
+  <date value="2024-12-19T10:30:07+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -710,6 +710,17 @@
         <reference value="ValueSet/TBCSTreatmentOutcomeVS"/>
       </reference>
       <name value="TB CS - Treatment outcome value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/TBOutcomeQuestionnaire"/>
+      </reference>
+      <name value="TB Outcome Questionnaire"/>
+      <description value="A questionnaire for capturing the final outcome of the TB case, including case closure, treatment success, or necessary corrections."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
