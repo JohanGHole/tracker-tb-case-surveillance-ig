@@ -29,20 +29,8 @@ jobs:
           args: java -jar ./input-cache/publisher.jar publisher -ig .
           
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           publish_branch: gh-pages
-      
-      - name: Deploy PR Preview
-        if: github.event_name == 'pull_request'
-        uses: rossjrw/pr-preview-action@v1
-        with:
-          source-dir: ./output
-          preview-branch: pr-preview
-          deploy-repo: ${{ github.repository }}
-          token: ${{ secrets.GITHUB_TOKEN }}
-          clean: true
-        
