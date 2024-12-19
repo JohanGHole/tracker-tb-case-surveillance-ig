@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TBLABLPASpecimenCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem TBLABLPASpecimenCS</b></p><a name="TBLABLPASpecimenCS"> </a><a name="hcTBLABLPASpecimenCS"> </a><a name="TBLABLPASpecimenCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABLPASpecimenCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SPUTUM_SAMPLES_OR_SEDIMENTS<a name="TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS"> </a></td><td>Sputum samples or sediments</td></tr><tr><td style="white-space:nowrap">MTB_CULTURE_ISOLATES<a name="TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES"> </a></td><td>MTB culture isolates</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
+  <version value="0.1.0"/>
+  <name value="TBLABLPASpecimenCS"/>
+  <title value="TB-LAB - LPA specimen"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="SPUTUM_SAMPLES_OR_SEDIMENTS"/>
+    <display value="Sputum samples or sediments"/>
+  </concept>
+  <concept>
+    <code value="MTB_CULTURE_ISOLATES"/>
+    <display value="MTB culture isolates"/>
+  </concept>
+</CodeSystem>

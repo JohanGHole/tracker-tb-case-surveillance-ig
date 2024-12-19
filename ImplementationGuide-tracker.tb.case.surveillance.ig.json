@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-19T10:30:07+00:00",
+  "date" : "2024-12-19T14:33:50+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -699,7 +699,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/susceptible-resistant-indeterminate-cs"
+        "reference" : "CodeSystem/SusceptibleResistantIndeterminateCS"
       },
       "name" : "Susceptible/Resistant/Indeterminate",
       "exampleBoolean" : false
@@ -710,7 +710,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/susceptible-resistant-indeterminate-vs"
+        "reference" : "ValueSet/SusceptibleResistantIndeterminateVS"
       },
       "name" : "Susceptible/Resistant/Indeterminate value set",
       "exampleBoolean" : false
@@ -745,7 +745,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---confirmation-method-cs"
+        "reference" : "CodeSystem/TBCSConfirmationMethodCS"
       },
       "name" : "TB CS - Confirmation method",
       "exampleBoolean" : false
@@ -756,7 +756,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-cs---confirmation-method-vs"
+        "reference" : "ValueSet/TBCSConfirmationMethodVS"
       },
       "name" : "TB CS - Confirmation method value set",
       "exampleBoolean" : false
@@ -767,7 +767,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---denotification-reasons-cs"
+        "reference" : "CodeSystem/TBCSDenotificationReasonsCS"
       },
       "name" : "TB CS - Denotification reasons",
       "exampleBoolean" : false
@@ -789,7 +789,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---resistance-classification-cs"
+        "reference" : "CodeSystem/TBCSResistanceClassificationCS"
       },
       "name" : "TB CS - Resistance Classification",
       "exampleBoolean" : false
@@ -800,7 +800,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-cs---resistance-classification-vs"
+        "reference" : "ValueSet/TBCSResistanceClassificationVS"
       },
       "name" : "TB CS - Resistance Classification value set",
       "exampleBoolean" : false
@@ -811,7 +811,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---site-of-disease-cs"
+        "reference" : "CodeSystem/TBCSSiteOfDiseaseCS"
       },
       "name" : "TB CS - Site of disease",
       "exampleBoolean" : false
@@ -822,7 +822,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-cs---site-of-disease-vs"
+        "reference" : "ValueSet/TBCSSiteOfDiseaseVS"
       },
       "name" : "TB CS - Site of disease value set",
       "exampleBoolean" : false
@@ -833,7 +833,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---treatment-category-cs"
+        "reference" : "CodeSystem/TBCSTreatmentCategoryCS"
       },
       "name" : "TB CS - Treatment category",
       "exampleBoolean" : false
@@ -844,7 +844,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-cs---treatment-category-vs"
+        "reference" : "ValueSet/TBCSTreatmentCategoryVS"
       },
       "name" : "TB CS - Treatment category value set",
       "exampleBoolean" : false
@@ -855,7 +855,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---treatment-history-cs"
+        "reference" : "CodeSystem/TBCSTreatmentHistoryCS"
       },
       "name" : "TB CS - Treatment history",
       "exampleBoolean" : false
@@ -866,7 +866,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-cs---treatment-history-vs"
+        "reference" : "ValueSet/TBCSTreatmentHistoryVS"
       },
       "name" : "TB CS - Treatment history value set",
       "exampleBoolean" : false
@@ -877,7 +877,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-cs---treatment-outcome-cs"
+        "reference" : "CodeSystem/TBCSTreatmentOutcomeCS"
       },
       "name" : "TB CS - Treatment outcome",
       "exampleBoolean" : false
@@ -923,7 +923,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---dst-result-cs"
+        "reference" : "CodeSystem/TBLABDSTResultCS"
       },
       "name" : "TB-LAB - DST result",
       "exampleBoolean" : false
@@ -934,7 +934,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---dst-result-vs"
+        "reference" : "ValueSet/TBLABDSTResultVS"
       },
       "name" : "TB-LAB - DST result value set",
       "exampleBoolean" : false
@@ -945,7 +945,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---final-culture-result-cs"
+        "reference" : "CodeSystem/TBLABFinalCultureResultCS"
       },
       "name" : "TB-LAB - Final culture result",
       "exampleBoolean" : false
@@ -956,7 +956,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---final-culture-result-vs"
+        "reference" : "ValueSet/TBLABFinalCultureResultVS"
       },
       "name" : "TB-LAB - Final culture result value set",
       "exampleBoolean" : false
@@ -967,7 +967,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---lpa-specimen-cs"
+        "reference" : "CodeSystem/TBLABLPASpecimenCS"
       },
       "name" : "TB-LAB - LPA specimen",
       "exampleBoolean" : false
@@ -978,7 +978,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---lpa-specimen-vs"
+        "reference" : "ValueSet/TBLABLPASpecimenVS"
       },
       "name" : "TB-LAB - LPA specimen value set",
       "exampleBoolean" : false
@@ -989,7 +989,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---mtb-test-result-cs"
+        "reference" : "CodeSystem/TBLABMTBTestResultCS"
       },
       "name" : "TB-LAB - MTB test result",
       "exampleBoolean" : false
@@ -1000,7 +1000,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---mtb-test-result-vs"
+        "reference" : "ValueSet/TBLABMTBTestResultVS"
       },
       "name" : "TB-LAB - MTB test result value set",
       "exampleBoolean" : false
@@ -1011,7 +1011,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---sample-quality-cs"
+        "reference" : "CodeSystem/TBLABSampleQualityCS"
       },
       "name" : "TB-LAB - Sample quality",
       "exampleBoolean" : false
@@ -1022,7 +1022,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---sample-quality-vs"
+        "reference" : "ValueSet/TBLABSampleQualityVS"
       },
       "name" : "TB-LAB - Sample quality value set",
       "exampleBoolean" : false
@@ -1033,7 +1033,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---sample-status-cs"
+        "reference" : "CodeSystem/TBLABSampleStatusCS"
       },
       "name" : "TB-LAB - Sample status",
       "exampleBoolean" : false
@@ -1044,7 +1044,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---sample-status-vs"
+        "reference" : "ValueSet/TBLABSampleStatusVS"
       },
       "name" : "TB-LAB - Sample status value set",
       "exampleBoolean" : false
@@ -1055,7 +1055,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/tb-lab---smear-result-cs"
+        "reference" : "CodeSystem/TBLABSmearResultCS"
       },
       "name" : "TB-LAB - Smear result",
       "exampleBoolean" : false
@@ -1066,7 +1066,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tb-lab---smear-result-vs"
+        "reference" : "ValueSet/TBLABSmearResultVS"
       },
       "name" : "TB-LAB - Smear result value set",
       "exampleBoolean" : false

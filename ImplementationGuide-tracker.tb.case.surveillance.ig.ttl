@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T10:30:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-19T14:33:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -615,8 +615,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/susceptible-resistant-indeterminate-cs" ]
+         fhir:link <http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS> ;
+         fhir:reference [ fhir:v "CodeSystem/SusceptibleResistantIndeterminateCS" ]
        ] ;
        fhir:name [ fhir:v "Susceptible/Resistant/Indeterminate" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -626,8 +626,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/susceptible-resistant-indeterminate-vs> ;
-         fhir:reference [ fhir:v "ValueSet/susceptible-resistant-indeterminate-vs" ]
+         fhir:link <http://example.org/ValueSet/SusceptibleResistantIndeterminateVS> ;
+         fhir:reference [ fhir:v "ValueSet/SusceptibleResistantIndeterminateVS" ]
        ] ;
        fhir:name [ fhir:v "Susceptible/Resistant/Indeterminate value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -661,8 +661,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---confirmation-method-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---confirmation-method-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSConfirmationMethodCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSConfirmationMethodCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Confirmation method" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -672,8 +672,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-cs---confirmation-method-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-cs---confirmation-method-vs" ]
+         fhir:link <http://example.org/ValueSet/TBCSConfirmationMethodVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBCSConfirmationMethodVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Confirmation method value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -683,8 +683,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---denotification-reasons-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---denotification-reasons-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSDenotificationReasonsCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSDenotificationReasonsCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Denotification reasons" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -705,8 +705,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---resistance-classification-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---resistance-classification-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSResistanceClassificationCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSResistanceClassificationCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Resistance Classification" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -716,8 +716,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-cs---resistance-classification-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-cs---resistance-classification-vs" ]
+         fhir:link <http://example.org/ValueSet/TBCSResistanceClassificationVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBCSResistanceClassificationVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Resistance Classification value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -727,8 +727,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---site-of-disease-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---site-of-disease-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSSiteOfDiseaseCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSSiteOfDiseaseCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Site of disease" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -738,8 +738,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-cs---site-of-disease-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-cs---site-of-disease-vs" ]
+         fhir:link <http://example.org/ValueSet/TBCSSiteOfDiseaseVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBCSSiteOfDiseaseVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Site of disease value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -749,8 +749,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---treatment-category-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---treatment-category-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSTreatmentCategoryCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentCategoryCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment category" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -760,8 +760,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-cs---treatment-category-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-cs---treatment-category-vs" ]
+         fhir:link <http://example.org/ValueSet/TBCSTreatmentCategoryVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBCSTreatmentCategoryVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment category value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -771,8 +771,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---treatment-history-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---treatment-history-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSTreatmentHistoryCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentHistoryCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment history" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -782,8 +782,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-cs---treatment-history-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-cs---treatment-history-vs" ]
+         fhir:link <http://example.org/ValueSet/TBCSTreatmentHistoryVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBCSTreatmentHistoryVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment history value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -793,8 +793,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-cs---treatment-outcome-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-cs---treatment-outcome-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBCSTreatmentOutcomeCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentOutcomeCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment outcome" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -839,8 +839,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---dst-result-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---dst-result-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABDSTResultCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABDSTResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - DST result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -850,8 +850,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---dst-result-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---dst-result-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABDSTResultVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABDSTResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - DST result value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -861,8 +861,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---final-culture-result-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---final-culture-result-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABFinalCultureResultCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABFinalCultureResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Final culture result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -872,8 +872,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---final-culture-result-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---final-culture-result-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABFinalCultureResultVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABFinalCultureResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Final culture result value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -883,8 +883,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---lpa-specimen-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---lpa-specimen-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABLPASpecimenCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABLPASpecimenCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - LPA specimen" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -894,8 +894,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---lpa-specimen-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---lpa-specimen-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABLPASpecimenVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABLPASpecimenVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - LPA specimen value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -905,8 +905,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---mtb-test-result-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---mtb-test-result-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABMTBTestResultCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABMTBTestResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - MTB test result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -916,8 +916,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---mtb-test-result-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---mtb-test-result-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABMTBTestResultVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABMTBTestResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - MTB test result value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -927,8 +927,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---sample-quality-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---sample-quality-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABSampleQualityCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABSampleQualityCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample quality" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -938,8 +938,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---sample-quality-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---sample-quality-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABSampleQualityVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABSampleQualityVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample quality value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -949,8 +949,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---sample-status-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---sample-status-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABSampleStatusCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABSampleStatusCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample status" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -960,8 +960,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---sample-status-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---sample-status-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABSampleStatusVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABSampleStatusVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample status value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -971,8 +971,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/CodeSystem/tb-lab---smear-result-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/tb-lab---smear-result-cs" ]
+         fhir:link <http://example.org/CodeSystem/TBLABSmearResultCS> ;
+         fhir:reference [ fhir:v "CodeSystem/TBLABSmearResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Smear result" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -982,8 +982,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://example.org/ValueSet/tb-lab---smear-result-vs> ;
-         fhir:reference [ fhir:v "ValueSet/tb-lab---smear-result-vs" ]
+         fhir:link <http://example.org/ValueSet/TBLABSmearResultVS> ;
+         fhir:reference [ fhir:v "ValueSet/TBLABSmearResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Smear result value set" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]

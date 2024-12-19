@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TBLABSmearResultCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem TBLABSmearResultCS</b></p><a name="TBLABSmearResultCS"> </a><a name="hcTBLABSmearResultCS"> </a><a name="TBLABSmearResultCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABSmearResultCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SCANTY<a name="TBLABSmearResultCS-SCANTY"> </a></td><td>Positive (Scanty)</td></tr><tr><td style="white-space:nowrap">1PLUS<a name="TBLABSmearResultCS-1PLUS"> </a></td><td>Positive (+)</td></tr><tr><td style="white-space:nowrap">2PLUS<a name="TBLABSmearResultCS-2PLUS"> </a></td><td>Positive (++)</td></tr><tr><td style="white-space:nowrap">3PLUS<a name="TBLABSmearResultCS-3PLUS"> </a></td><td>Positive (+++)</td></tr><tr><td style="white-space:nowrap">NEGATIVE<a name="TBLABSmearResultCS-NEGATIVE"> </a></td><td>Negative</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+  <version value="0.1.0"/>
+  <name value="TBLABSmearResultCS"/>
+  <title value="TB-LAB - Smear result"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="SCANTY"/>
+    <display value="Positive (Scanty)"/>
+  </concept>
+  <concept>
+    <code value="1PLUS"/>
+    <display value="Positive (+)"/>
+  </concept>
+  <concept>
+    <code value="2PLUS"/>
+    <display value="Positive (++)"/>
+  </concept>
+  <concept>
+    <code value="3PLUS"/>
+    <display value="Positive (+++)"/>
+  </concept>
+  <concept>
+    <code value="NEGATIVE"/>
+    <display value="Negative"/>
+  </concept>
+</CodeSystem>

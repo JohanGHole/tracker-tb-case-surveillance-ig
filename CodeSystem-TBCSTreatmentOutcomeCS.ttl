@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/TBCSTreatmentOutcomeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TBCSTreatmentOutcomeCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSTreatmentOutcomeCS</b></p><a name=\"TBCSTreatmentOutcomeCS\"> </a><a name=\"hcTBCSTreatmentOutcomeCS\"> </a><a name=\"TBCSTreatmentOutcomeCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CURED<a name=\"TBCSTreatmentOutcomeCS-CURED\"> </a></td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\">COMPLETED<a name=\"TBCSTreatmentOutcomeCS-COMPLETED\"> </a></td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\">FAILURE<a name=\"TBCSTreatmentOutcomeCS-FAILURE\"> </a></td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\">DIED<a name=\"TBCSTreatmentOutcomeCS-DIED\"> </a></td><td>Died</td></tr><tr><td style=\"white-space:nowrap\">LOST_TO_FOLLOW_UP<a name=\"TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\"> </a></td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\">NOT_EVALUATED<a name=\"TBCSTreatmentOutcomeCS-NOT_EVALUATED\"> </a></td><td>Not evaluated</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TBCSTreatmentOutcomeCS"] ; # 
+  fhir:title [ fhir:v "TB CS - Treatment outcome"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-19T14:33:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "CURED" ] ;
+     fhir:display [ fhir:v "Cured" ]
+  ] [
+     fhir:code [ fhir:v "COMPLETED" ] ;
+     fhir:display [ fhir:v "Completed" ]
+  ] [
+     fhir:code [ fhir:v "FAILURE" ] ;
+     fhir:display [ fhir:v "Failed" ]
+  ] [
+     fhir:code [ fhir:v "DIED" ] ;
+     fhir:display [ fhir:v "Died" ]
+  ] [
+     fhir:code [ fhir:v "LOST_TO_FOLLOW_UP" ] ;
+     fhir:display [ fhir:v "Lost to follow-up" ]
+  ] [
+     fhir:code [ fhir:v "NOT_EVALUATED" ] ;
+     fhir:display [ fhir:v "Not evaluated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBLABSampleQualityCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBLABSampleQualityCS</b></p><a name=\"TBLABSampleQualityCS\"> </a><a name=\"hcTBLABSampleQualityCS\"> </a><a name=\"TBLABSampleQualityCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABSampleQualityCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">GOOD<a name=\"TBLABSampleQualityCS-GOOD\"> </a></td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\">POOR<a name=\"TBLABSampleQualityCS-POOR\"> </a></td><td>Poor (rejected for processing)</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
+  "version" : "0.1.0",
+  "name" : "TBLABSampleQualityCS",
+  "title" : "TB-LAB - Sample quality",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "GOOD",
+    "display" : "Good (accepted for processing)"
+  },
+  {
+    "code" : "POOR",
+    "display" : "Poor (rejected for processing)"
+  }]
+}

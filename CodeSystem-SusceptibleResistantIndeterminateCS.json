@@ -1,0 +1,42 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SusceptibleResistantIndeterminateCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SusceptibleResistantIndeterminateCS</b></p><a name=\"SusceptibleResistantIndeterminateCS\"> </a><a name=\"hcSusceptibleResistantIndeterminateCS\"> </a><a name=\"SusceptibleResistantIndeterminateCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SUSCEPTIBLE<a name=\"SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\"> </a></td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\">RESISTANT<a name=\"SusceptibleResistantIndeterminateCS-RESISTANT\"> </a></td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\">INDETERMINATE<a name=\"SusceptibleResistantIndeterminateCS-INDETERMINATE\"> </a></td><td>Indeterminate</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+  "version" : "0.1.0",
+  "name" : "SusceptibleResistantIndeterminateCS",
+  "title" : "Susceptible/Resistant/Indeterminate",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  {
+    "code" : "RESISTANT",
+    "display" : "Resistant"
+  },
+  {
+    "code" : "INDETERMINATE",
+    "display" : "Indeterminate"
+  }]
+}

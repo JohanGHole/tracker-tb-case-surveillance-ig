@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TBCSTreatmentOutcomeCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem TBCSTreatmentOutcomeCS</b></p><a name="TBCSTreatmentOutcomeCS"> </a><a name="hcTBCSTreatmentOutcomeCS"> </a><a name="TBCSTreatmentOutcomeCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CURED<a name="TBCSTreatmentOutcomeCS-CURED"> </a></td><td>Cured</td></tr><tr><td style="white-space:nowrap">COMPLETED<a name="TBCSTreatmentOutcomeCS-COMPLETED"> </a></td><td>Completed</td></tr><tr><td style="white-space:nowrap">FAILURE<a name="TBCSTreatmentOutcomeCS-FAILURE"> </a></td><td>Failed</td></tr><tr><td style="white-space:nowrap">DIED<a name="TBCSTreatmentOutcomeCS-DIED"> </a></td><td>Died</td></tr><tr><td style="white-space:nowrap">LOST_TO_FOLLOW_UP<a name="TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP"> </a></td><td>Lost to follow-up</td></tr><tr><td style="white-space:nowrap">NOT_EVALUATED<a name="TBCSTreatmentOutcomeCS-NOT_EVALUATED"> </a></td><td>Not evaluated</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
+  <version value="0.1.0"/>
+  <name value="TBCSTreatmentOutcomeCS"/>
+  <title value="TB CS - Treatment outcome"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="CURED"/>
+    <display value="Cured"/>
+  </concept>
+  <concept>
+    <code value="COMPLETED"/>
+    <display value="Completed"/>
+  </concept>
+  <concept>
+    <code value="FAILURE"/>
+    <display value="Failed"/>
+  </concept>
+  <concept>
+    <code value="DIED"/>
+    <display value="Died"/>
+  </concept>
+  <concept>
+    <code value="LOST_TO_FOLLOW_UP"/>
+    <display value="Lost to follow-up"/>
+  </concept>
+  <concept>
+    <code value="NOT_EVALUATED"/>
+    <display value="Not evaluated"/>
+  </concept>
+</CodeSystem>

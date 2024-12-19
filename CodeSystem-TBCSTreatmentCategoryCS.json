@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBCSTreatmentCategoryCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSTreatmentCategoryCS</b></p><a name=\"TBCSTreatmentCategoryCS\"> </a><a name=\"hcTBCSTreatmentCategoryCS\"> </a><a name=\"TBCSTreatmentCategoryCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FIRST_LINE_TREATMENT<a name=\"TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a></td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\">SECOND_LINE_TREATMENT<a name=\"TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a></td><td>Second-line Treatment</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
+  "version" : "0.1.0",
+  "name" : "TBCSTreatmentCategoryCS",
+  "title" : "TB CS - Treatment category",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "FIRST_LINE_TREATMENT",
+    "display" : "First-line Treatment"
+  },
+  {
+    "code" : "SECOND_LINE_TREATMENT",
+    "display" : "Second-line Treatment"
+  }]
+}

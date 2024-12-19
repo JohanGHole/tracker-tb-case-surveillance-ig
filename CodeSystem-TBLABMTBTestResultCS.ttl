@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/CodeSystem/TBLABMTBTestResultCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TBLABMTBTestResultCS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem>
+     ] [
+       fhir:v "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBLABMTBTestResultCS</b></p><a name=\"TBLABMTBTestResultCS\"> </a><a name=\"hcTBLABMTBTestResultCS\"> </a><a name=\"TBLABMTBTestResultCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABMTBTestResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DETECTED<a name=\"TBLABMTBTestResultCS-DETECTED\"> </a></td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\">NOT_DETECTED<a name=\"TBLABMTBTestResultCS-NOT_DETECTED\"> </a></td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\">ERROR<a name=\"TBLABMTBTestResultCS-ERROR\"> </a></td><td>Error</td></tr><tr><td style=\"white-space:nowrap\">INVALID<a name=\"TBLABMTBTestResultCS-INVALID\"> </a></td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\">NO_RESULT<a name=\"TBLABMTBTestResultCS-NO_RESULT\"> </a></td><td>No result</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/TBLABMTBTestResultCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TBLABMTBTestResultCS"] ; # 
+  fhir:title [ fhir:v "TB-LAB - MTB test result"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-19T14:33:50+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DETECTED" ] ;
+     fhir:display [ fhir:v "Detected" ]
+  ] [
+     fhir:code [ fhir:v "NOT_DETECTED" ] ;
+     fhir:display [ fhir:v "Not detected" ]
+  ] [
+     fhir:code [ fhir:v "ERROR" ] ;
+     fhir:display [ fhir:v "Error" ]
+  ] [
+     fhir:code [ fhir:v "INVALID" ] ;
+     fhir:display [ fhir:v "Invalid" ]
+  ] [
+     fhir:code [ fhir:v "NO_RESULT" ] ;
+     fhir:display [ fhir:v "No result" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

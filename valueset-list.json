@@ -19,15 +19,71 @@
       "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"]
     },
     {
+      "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "SusceptibleResistantIndeterminateVS",
+      "title" : "Susceptible/Resistant/Indeterminate value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"
+      ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSConfirmationMethodVS",
+      "title" : "TB CS - Confirmation method value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSConfirmationMethodCS"]
+    },
+    {
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
       "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSDenotificationReasonsCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSResistanceClassificationVS",
+      "title" : "TB CS - Resistance Classification value set",
+      "description" : null,
       "systems" : [
-        "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
+        "http://example.org/CodeSystem/TBCSResistanceClassificationCS"
       ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSSiteOfDiseaseVS",
+      "title" : "TB CS - Site of disease value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSTreatmentCategoryVS",
+      "title" : "TB CS - Treatment category value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentCategoryCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSTreatmentHistoryVS",
+      "title" : "TB CS - Treatment history value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentHistoryCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
@@ -36,134 +92,70 @@
       "name" : "TBCSTreatmentOutcomeVS",
       "title" : "TB CS - Treatment outcome value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
+      "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
       "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SusceptibleResistantIndeterminateVS",
-      "title" : "Susceptible/Resistant/Indeterminate value set",
-      "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"
-      ]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSConfirmationMethodVS",
-      "title" : "TB CS - Confirmation method value set",
-      "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/tb-cs---confirmation-method-cs"
-      ]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSResistanceClassificationVS",
-      "title" : "TB CS - Resistance Classification value set",
-      "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/tb-cs---resistance-classification-cs"
-      ]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSSiteOfDiseaseVS",
-      "title" : "TB CS - Site of disease value set",
-      "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-cs---site-of-disease-cs"]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---treatment-category-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSTreatmentCategoryVS",
-      "title" : "TB CS - Treatment category value set",
-      "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/tb-cs---treatment-category-cs"
-      ]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSTreatmentHistoryVS",
-      "title" : "TB CS - Treatment history value set",
-      "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-history-cs"]
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-lab---dst-result-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABDSTResultVS",
       "title" : "TB-LAB - DST result value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---dst-result-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABDSTResultCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---final-culture-result-vs",
+      "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
       "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/tb-lab---final-culture-result-cs"
-      ]
+      "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
+      "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABLPASpecimenVS",
       "title" : "TB-LAB - LPA specimen value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---lpa-specimen-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABLPASpecimenCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---mtb-test-result-vs",
+      "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABMTBTestResultVS",
       "title" : "TB-LAB - MTB test result value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABMTBTestResultCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+      "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---sample-quality-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
+      "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---sample-status-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"]
     },
     {
-      "url" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
+      "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-lab---smear-result-cs"]
+      "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"]
     }
   ]
 }

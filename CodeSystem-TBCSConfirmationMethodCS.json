@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBCSConfirmationMethodCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSConfirmationMethodCS</b></p><a name=\"TBCSConfirmationMethodCS\"> </a><a name=\"hcTBCSConfirmationMethodCS\"> </a><a name=\"TBCSConfirmationMethodCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSConfirmationMethodCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CLINDX<a name=\"TBCSConfirmationMethodCS-CLINDX\"> </a></td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\">LABCONF<a name=\"TBCSConfirmationMethodCS-LABCONF\"> </a></td><td>Bacteriologically confirmed</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
+  "version" : "0.1.0",
+  "name" : "TBCSConfirmationMethodCS",
+  "title" : "TB CS - Confirmation method",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "CLINDX",
+    "display" : "Clinically diagnosed"
+  },
+  {
+    "code" : "LABCONF",
+    "display" : "Bacteriologically confirmed"
+  }]
+}

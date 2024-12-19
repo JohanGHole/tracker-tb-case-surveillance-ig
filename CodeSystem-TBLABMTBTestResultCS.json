@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBLABMTBTestResultCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBLABMTBTestResultCS</b></p><a name=\"TBLABMTBTestResultCS\"> </a><a name=\"hcTBLABMTBTestResultCS\"> </a><a name=\"TBLABMTBTestResultCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABMTBTestResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DETECTED<a name=\"TBLABMTBTestResultCS-DETECTED\"> </a></td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\">NOT_DETECTED<a name=\"TBLABMTBTestResultCS-NOT_DETECTED\"> </a></td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\">ERROR<a name=\"TBLABMTBTestResultCS-ERROR\"> </a></td><td>Error</td></tr><tr><td style=\"white-space:nowrap\">INVALID<a name=\"TBLABMTBTestResultCS-INVALID\"> </a></td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\">NO_RESULT<a name=\"TBLABMTBTestResultCS-NO_RESULT\"> </a></td><td>No result</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+  "version" : "0.1.0",
+  "name" : "TBLABMTBTestResultCS",
+  "title" : "TB-LAB - MTB test result",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "DETECTED",
+    "display" : "Detected"
+  },
+  {
+    "code" : "NOT_DETECTED",
+    "display" : "Not detected"
+  },
+  {
+    "code" : "ERROR",
+    "display" : "Error"
+  },
+  {
+    "code" : "INVALID",
+    "display" : "Invalid"
+  },
+  {
+    "code" : "NO_RESULT",
+    "display" : "No result"
+  }]
+}

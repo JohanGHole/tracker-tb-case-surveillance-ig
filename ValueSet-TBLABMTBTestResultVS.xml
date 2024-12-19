@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TBLABMTBTestResultVS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TBLABMTBTestResultVS</b></p><a name="TBLABMTBTestResultVS"> </a><a name="hcTBLABMTBTestResultVS"> </a><a name="TBLABMTBTestResultVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-TBLABMTBTestResultCS.html"><code>http://example.org/CodeSystem/TBLABMTBTestResultCS</code></a></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/TBLABMTBTestResultVS"/>
+  <version value="0.1.0"/>
+  <name value="TBLABMTBTestResultVS"/>
+  <title value="TB-LAB - MTB test result value set"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -14,107 +14,107 @@
     "name" : "RRTGENSexCS"
   },
   {
-    "id" : "susceptible-resistant-indeterminate-cs",
+    "id" : "SusceptibleResistantIndeterminateCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+    "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
     "version" : "0.1.0",
     "name" : "SusceptibleResistantIndeterminateCS"
   },
   {
-    "id" : "tb-cs---confirmation-method-cs",
+    "id" : "TBCSConfirmationMethodCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+    "url" : "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
     "version" : "0.1.0",
     "name" : "TBCSConfirmationMethodCS"
   },
   {
-    "id" : "tb-cs---denotification-reasons-cs",
+    "id" : "TBCSDenotificationReasonsCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+    "url" : "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
     "version" : "0.1.0",
     "name" : "TBCSDenotificationReasonsCS"
   },
   {
-    "id" : "tb-cs---resistance-classification-cs",
+    "id" : "TBCSResistanceClassificationCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+    "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
     "version" : "0.1.0",
     "name" : "TBCSResistanceClassificationCS"
   },
   {
-    "id" : "tb-cs---site-of-disease-cs",
+    "id" : "TBCSSiteOfDiseaseCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+    "url" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
     "version" : "0.1.0",
     "name" : "TBCSSiteOfDiseaseCS"
   },
   {
-    "id" : "tb-cs---treatment-category-cs",
+    "id" : "TBCSTreatmentCategoryCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+    "url" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
     "version" : "0.1.0",
     "name" : "TBCSTreatmentCategoryCS"
   },
   {
-    "id" : "tb-cs---treatment-history-cs",
+    "id" : "TBCSTreatmentHistoryCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+    "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
     "version" : "0.1.0",
     "name" : "TBCSTreatmentHistoryCS"
   },
   {
-    "id" : "tb-cs---treatment-outcome-cs",
+    "id" : "TBCSTreatmentOutcomeCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+    "url" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
     "version" : "0.1.0",
     "name" : "TBCSTreatmentOutcomeCS"
   },
   {
-    "id" : "tb-lab---dst-result-cs",
+    "id" : "TBLABDSTResultCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+    "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
     "version" : "0.1.0",
     "name" : "TBLABDSTResultCS"
   },
   {
-    "id" : "tb-lab---final-culture-result-cs",
+    "id" : "TBLABFinalCultureResultCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+    "url" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
     "version" : "0.1.0",
     "name" : "TBLABFinalCultureResultCS"
   },
   {
-    "id" : "tb-lab---lpa-specimen-cs",
+    "id" : "TBLABLPASpecimenCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+    "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
     "version" : "0.1.0",
     "name" : "TBLABLPASpecimenCS"
   },
   {
-    "id" : "tb-lab---mtb-test-result-cs",
+    "id" : "TBLABMTBTestResultCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+    "url" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
     "version" : "0.1.0",
     "name" : "TBLABMTBTestResultCS"
   },
   {
-    "id" : "tb-lab---sample-quality-cs",
+    "id" : "TBLABSampleQualityCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+    "url" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
     "version" : "0.1.0",
     "name" : "TBLABSampleQualityCS"
   },
   {
-    "id" : "tb-lab---sample-status-cs",
+    "id" : "TBLABSampleStatusCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+    "url" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
     "version" : "0.1.0",
     "name" : "TBLABSampleStatusCS"
   },
   {
-    "id" : "tb-lab---smear-result-cs",
+    "id" : "TBLABSmearResultCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+    "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
     "version" : "0.1.0",
     "name" : "TBLABSmearResultCS"
   },
@@ -194,11 +194,53 @@
     "name" : "RRTGENSexVS"
   },
   {
+    "id" : "SusceptibleResistantIndeterminateVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
+    "version" : "0.1.0",
+    "name" : "SusceptibleResistantIndeterminateVS"
+  },
+  {
+    "id" : "TBCSConfirmationMethodVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
+    "version" : "0.1.0",
+    "name" : "TBCSConfirmationMethodVS"
+  },
+  {
     "id" : "TBCSDenotificationReasonsVS",
     "type" : "ValueSet",
     "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
     "version" : "0.1.0",
     "name" : "TBCSDenotificationReasonsVS"
+  },
+  {
+    "id" : "TBCSResistanceClassificationVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+    "version" : "0.1.0",
+    "name" : "TBCSResistanceClassificationVS"
+  },
+  {
+    "id" : "TBCSSiteOfDiseaseVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
+    "version" : "0.1.0",
+    "name" : "TBCSSiteOfDiseaseVS"
+  },
+  {
+    "id" : "TBCSTreatmentCategoryVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+    "version" : "0.1.0",
+    "name" : "TBCSTreatmentCategoryVS"
+  },
+  {
+    "id" : "TBCSTreatmentHistoryVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
+    "version" : "0.1.0",
+    "name" : "TBCSTreatmentHistoryVS"
   },
   {
     "id" : "TBCSTreatmentOutcomeVS",
@@ -208,93 +250,51 @@
     "name" : "TBCSTreatmentOutcomeVS"
   },
   {
-    "id" : "susceptible-resistant-indeterminate-vs",
+    "id" : "TBLABDSTResultVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
-    "version" : "0.1.0",
-    "name" : "SusceptibleResistantIndeterminateVS"
-  },
-  {
-    "id" : "tb-cs---confirmation-method-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSConfirmationMethodVS"
-  },
-  {
-    "id" : "tb-cs---resistance-classification-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSResistanceClassificationVS"
-  },
-  {
-    "id" : "tb-cs---site-of-disease-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---site-of-disease-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSSiteOfDiseaseVS"
-  },
-  {
-    "id" : "tb-cs---treatment-category-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---treatment-category-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSTreatmentCategoryVS"
-  },
-  {
-    "id" : "tb-cs---treatment-history-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSTreatmentHistoryVS"
-  },
-  {
-    "id" : "tb-lab---dst-result-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---dst-result-vs",
+    "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
     "version" : "0.1.0",
     "name" : "TBLABDSTResultVS"
   },
   {
-    "id" : "tb-lab---final-culture-result-vs",
+    "id" : "TBLABFinalCultureResultVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---final-culture-result-vs",
+    "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
     "version" : "0.1.0",
     "name" : "TBLABFinalCultureResultVS"
   },
   {
-    "id" : "tb-lab---lpa-specimen-vs",
+    "id" : "TBLABLPASpecimenVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---lpa-specimen-vs",
+    "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
     "version" : "0.1.0",
     "name" : "TBLABLPASpecimenVS"
   },
   {
-    "id" : "tb-lab---mtb-test-result-vs",
+    "id" : "TBLABMTBTestResultVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---mtb-test-result-vs",
+    "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
     "version" : "0.1.0",
     "name" : "TBLABMTBTestResultVS"
   },
   {
-    "id" : "tb-lab---sample-quality-vs",
+    "id" : "TBLABSampleQualityVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---sample-quality-vs",
+    "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
     "version" : "0.1.0",
     "name" : "TBLABSampleQualityVS"
   },
   {
-    "id" : "tb-lab---sample-status-vs",
+    "id" : "TBLABSampleStatusVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---sample-status-vs",
+    "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
     "version" : "0.1.0",
     "name" : "TBLABSampleStatusVS"
   },
   {
-    "id" : "tb-lab---smear-result-vs",
+    "id" : "TBLABSmearResultVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-lab---smear-result-vs",
+    "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
     "version" : "0.1.0",
     "name" : "TBLABSmearResultVS"
   }

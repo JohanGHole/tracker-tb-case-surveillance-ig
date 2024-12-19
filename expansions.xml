@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="469128f4-2f1f-4fee-9672-fa9d1612e718"/>
+  <id value="a87e7a4a-086b-491d-abc6-6b573959fd69"/>
   <meta>
-    <lastUpdated value="2024-12-19T10:30:07.157+00:00"/>
+    <lastUpdated value="2024-12-19T14:33:50.744+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -63,8 +63,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:78669f9c-87bd-429b-a295-d6471ac1a592"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -166,8 +166,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:1769c8df-90d7-4d6d-84f1-d1effcb18570"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -225,7 +225,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---treatment-outcome-cs.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBCSTreatmentOutcomeCS.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
             <table class="codes">
@@ -242,50 +242,50 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-CURED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-CURED">CURED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED">CURED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Cured</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-COMPLETED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-COMPLETED">COMPLETED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED">COMPLETED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Completed</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-FAILURE"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-FAILURE">FAILURE</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE">FAILURE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Failed</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-DIED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-DIED">DIED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED">DIED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Died</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP">LOST_TO_FOLLOW_UP</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP">LOST_TO_FOLLOW_UP</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Lost to follow-up</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-NOT_EVALUATED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-NOT_EVALUATED">NOT_EVALUATED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED">NOT_EVALUATED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Not evaluated</td>
               </tr>
             </table>
@@ -298,8 +298,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:1f207fba-15bd-4748-a068-3b995e7c1774"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -316,39 +316,39 @@
           </parameter>
           <parameter>
             <name value="warning-draft"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="CURED"/>
             <display value="Cured"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="COMPLETED"/>
             <display value="Completed"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="FAILURE"/>
             <display value="Failed"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="DIED"/>
             <display value="Died"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="LOST_TO_FOLLOW_UP"/>
             <display value="Lost to follow-up"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="NOT_EVALUATED"/>
             <display value="Not evaluated"/>
           </contains>
@@ -372,7 +372,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---denotification-reasons-cs.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBCSDenotificationReasonsCS.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -389,18 +389,18 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-NOT_TB"> </a>  
-                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-NOT_TB">NOT_TB</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB"> </a>  
+                  <a href="CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB">NOT_TB</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
+                <td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td>
                 <td>Not a TB Case</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-DUPLICATE"> </a>  
-                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-DUPLICATE">DUPLICATE</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE"> </a>  
+                  <a href="CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE">DUPLICATE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
+                <td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td>
                 <td>Duplicate</td>
               </tr>
             </table>
@@ -413,8 +413,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:0d015783-b142-40b2-bd38-b289e423d05e"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -431,19 +431,19 @@
           </parameter>
           <parameter>
             <name value="warning-draft"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
             <code value="NOT_TB"/>
             <display value="Not a TB Case"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
             <code value="DUPLICATE"/>
             <display value="Duplicate"/>
           </contains>
@@ -516,8 +516,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:1769c8df-90d7-4d6d-84f1-d1effcb18570"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -616,8 +616,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:78669f9c-87bd-429b-a295-d6471ac1a592"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -655,7 +655,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+    <fullUrl value="http://example.org/ValueSet/SusceptibleResistantIndeterminateVS"/>
     <resource>
       <ValueSet>
         <meta>
@@ -670,7 +670,116 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---denotification-reasons-cs.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE">SUSCEPTIBLE</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Susceptible</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT">RESISTANT</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Resistant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE">INDETERMINATE</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Indeterminate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/SusceptibleResistantIndeterminateVS"/>
+        <version value="0.1.0"/>
+        <name value="SusceptibleResistantIndeterminateVS"/>
+        <title value="Susceptible/Resistant/Indeterminate value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:551323fb-e2fb-44cc-8ec9-3f8c73c1a5c3"/>
+          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="SUSCEPTIBLE"/>
+            <display value="Susceptible"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="RESISTANT"/>
+            <display value="Resistant"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="INDETERMINATE"/>
+            <display value="Indeterminate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSConfirmationMethodVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSConfirmationMethodCS.html">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -687,32 +796,33 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-NOT_TB"> </a>  
-                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-NOT_TB">NOT_TB</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-CLINDX"> </a>  
+                  <a href="CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-CLINDX">CLINDX</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
-                <td>Not a TB Case</td>
+                <td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td>
+                <td>Clinically diagnosed</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---denotification-reasons-cs-DUPLICATE"> </a>  
-                  <a href="CodeSystem-tb-cs---denotification-reasons-cs.html#tb-cs---denotification-reasons-cs-DUPLICATE">DUPLICATE</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-LABCONF"> </a>  
+                  <a href="CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-LABCONF">LABCONF</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</td>
-                <td>Duplicate</td>
+                <td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td>
+                <td>Bacteriologically confirmed</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+        <url value="http://example.org/ValueSet/TBCSConfirmationMethodVS"/>
         <version value="0.1.0"/>
-        <name value="TBCSDenotificationReasonsVS"/>
-        <title value="TB CS - Denotification reasons value set"/>
+        <name value="TBCSConfirmationMethodVS"/>
+        <title value="TB CS - Confirmation method value set"/>
         <status value="active"/>
         <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0d015783-b142-40b2-bd38-b289e423d05e"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:68d66b64-1bb5-4a34-aad2-17c4e3b2f7f3"/>
+          <timestamp value="2024-12-19T14:34:10+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -729,21 +839,591 @@
           </parameter>
           <parameter>
             <name value="warning-draft"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSConfirmationMethodCS|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSConfirmationMethodCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSConfirmationMethodCS"/>
+            <code value="CLINDX"/>
+            <display value="Clinically diagnosed"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSConfirmationMethodCS"/>
+            <code value="LABCONF"/>
+            <display value="Bacteriologically confirmed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSDenotificationReasonsCS.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB"> </a>  
+                  <a href="CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB">NOT_TB</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td>
+                <td>Not a TB Case</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE"> </a>  
+                  <a href="CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE">DUPLICATE</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td>
+                <td>Duplicate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSDenotificationReasonsVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSDenotificationReasonsVS"/>
+        <title value="TB CS - Denotification reasons value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
             <code value="NOT_TB"/>
             <display value="Not a TB Case"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
             <code value="DUPLICATE"/>
             <display value="Duplicate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSResistanceClassificationVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSResistanceClassificationCS.html">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS">DS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>DS (drug-susceptible TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR">RR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>RR (rifampicin resistant TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR">MDR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>MDR (multidrug resistant TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR">XDR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>XDR (extensive drug resistant TB)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSResistanceClassificationVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSResistanceClassificationVS"/>
+        <title value="TB CS - Resistance Classification value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2c8e944f-5170-43e5-a405-06c7198e3b77"/>
+          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="DS"/>
+            <display value="DS (drug-susceptible TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="RR"/>
+            <display value="RR (rifampicin resistant TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="MDR"/>
+            <display value="MDR (multidrug resistant TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="XDR"/>
+            <display value="XDR (extensive drug resistant TB)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSSiteOfDiseaseVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSSiteOfDiseaseCS.html">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_PULMONARY"> </a>  
+                  <a href="CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_PULMONARY">SITE_PULMONARY</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td>
+                <td>Pulmonary</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY"> </a>  
+                  <a href="CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY">SITE_EXTRA_PULMONARY</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td>
+                <td>Extra-pulmonary</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_BOTH"> </a>  
+                  <a href="CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_BOTH">SITE_BOTH</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td>
+                <td>Pulmonary and extra-pulmonary</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSSiteOfDiseaseVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSSiteOfDiseaseVS"/>
+        <title value="TB CS - Site of disease value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:6d379221-ba6c-4f14-b8dd-d816ce16cd33"/>
+          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"/>
+            <code value="SITE_PULMONARY"/>
+            <display value="Pulmonary"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"/>
+            <code value="SITE_EXTRA_PULMONARY"/>
+            <display value="Extra-pulmonary"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"/>
+            <code value="SITE_BOTH"/>
+            <display value="Pulmonary and extra-pulmonary"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSTreatmentCategoryVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSTreatmentCategoryCS.html">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT">FIRST_LINE_TREATMENT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td>
+                <td>First-line Treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT">SECOND_LINE_TREATMENT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td>
+                <td>Second-line Treatment</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSTreatmentCategoryVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSTreatmentCategoryVS"/>
+        <title value="TB CS - Treatment category value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c8d9fdb6-8fca-4bd1-9369-21f0550854a4"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS"/>
+            <code value="FIRST_LINE_TREATMENT"/>
+            <display value="First-line Treatment"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS"/>
+            <code value="SECOND_LINE_TREATMENT"/>
+            <display value="Second-line Treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSTreatmentHistoryVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSTreatmentHistoryCS.html">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 6 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_NEW"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_NEW">HISTORY_NEW</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>New</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_RELAPSE"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_RELAPSE">HISTORY_RELAPSE</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>Relapse</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_FAILED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_FAILED">HISTORY_FAILED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>Treatment after failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP">HISTORY_LOST_TO_FOLLOWUP</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>Treatment after lost to follow-up</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV">HISTORY_OTHER_PREV</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>Other previously treated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_UNKNOWN"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_UNKNOWN">HISTORY_UNKNOWN</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSTreatmentHistoryVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSTreatmentHistoryVS"/>
+        <title value="TB CS - Treatment history value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:bbb5948b-e5a3-4f0f-ada4-9acb7766ce6d"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <total value="6"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_NEW"/>
+            <display value="New"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_RELAPSE"/>
+            <display value="Relapse"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_FAILED"/>
+            <display value="Treatment after failure"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_LOST_TO_FOLLOWUP"/>
+            <display value="Treatment after lost to follow-up"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_OTHER_PREV"/>
+            <display value="Other previously treated"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
+            <code value="HISTORY_UNKNOWN"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -765,7 +1445,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---treatment-outcome-cs.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBCSTreatmentOutcomeCS.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
             <table class="codes">
@@ -782,50 +1462,50 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-CURED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-CURED">CURED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED">CURED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Cured</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-COMPLETED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-COMPLETED">COMPLETED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED">COMPLETED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Completed</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-FAILURE"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-FAILURE">FAILURE</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE">FAILURE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Failed</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-DIED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-DIED">DIED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED">DIED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Died</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-LOST_TO_FOLLOW_UP">LOST_TO_FOLLOW_UP</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP">LOST_TO_FOLLOW_UP</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Lost to follow-up</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-outcome-cs-NOT_EVALUATED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-outcome-cs.html#tb-cs---treatment-outcome-cs-NOT_EVALUATED">NOT_EVALUATED</a>
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED">NOT_EVALUATED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td>
                 <td>Not evaluated</td>
               </tr>
             </table>
@@ -838,8 +1518,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:1f207fba-15bd-4748-a068-3b995e7c1774"/>
-          <timestamp value="2024-12-19T10:30:23+00:00"/>
+          <identifier value="urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d"/>
+          <timestamp value="2024-12-19T14:34:07+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -856,39 +1536,39 @@
           </parameter>
           <parameter>
             <name value="warning-draft"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="CURED"/>
             <display value="Cured"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="COMPLETED"/>
             <display value="Completed"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="FAILURE"/>
             <display value="Failed"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="DIED"/>
             <display value="Died"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="LOST_TO_FOLLOW_UP"/>
             <display value="Lost to follow-up"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
             <code value="NOT_EVALUATED"/>
             <display value="Not evaluated"/>
           </contains>
@@ -897,9 +1577,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/susceptible-resistant-indeterminate-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABDSTResultVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -907,192 +1592,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-susceptible-resistant-indeterminate-cs.html">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 3 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-SUSCEPTIBLE"> </a>  
-                  <a href="CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-SUSCEPTIBLE">SUSCEPTIBLE</a>
-                </td>
-                <td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td>
-                <td>Susceptible</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-RESISTANT"> </a>  
-                  <a href="CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-RESISTANT">RESISTANT</a>
-                </td>
-                <td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td>
-                <td>Resistant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs-INDETERMINATE"> </a>  
-                  <a href="CodeSystem-susceptible-resistant-indeterminate-cs.html#susceptible-resistant-indeterminate-cs-INDETERMINATE">INDETERMINATE</a>
-                </td>
-                <td>http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs</td>
-                <td>Indeterminate</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/susceptible-resistant-indeterminate-vs"/>
-        <version value="0.1.0"/>
-        <name value="SusceptibleResistantIndeterminateVS"/>
-        <title value="Susceptible/Resistant/Indeterminate value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:da7a6f75-4269-4696-9852-0a95254dd687"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="3"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"/>
-            <code value="SUSCEPTIBLE"/>
-            <display value="Susceptible"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"/>
-            <code value="RESISTANT"/>
-            <display value="Resistant"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs"/>
-            <code value="INDETERMINATE"/>
-            <display value="Indeterminate"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-cs---confirmation-method-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---confirmation-method-cs.html">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---confirmation-method-cs-CLINDX"> </a>  
-                  <a href="CodeSystem-tb-cs---confirmation-method-cs.html#tb-cs---confirmation-method-cs-CLINDX">CLINDX</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</td>
-                <td>Clinically diagnosed</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---confirmation-method-cs-LABCONF"> </a>  
-                  <a href="CodeSystem-tb-cs---confirmation-method-cs.html#tb-cs---confirmation-method-cs-LABCONF">LABCONF</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---confirmation-method-cs</td>
-                <td>Bacteriologically confirmed</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/tb-cs---confirmation-method-vs"/>
-        <version value="0.1.0"/>
-        <name value="TBCSConfirmationMethodVS"/>
-        <title value="TB CS - Confirmation method value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:c4a8d84e-8d64-4bc0-9d69-ad498e30b215"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---confirmation-method-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---confirmation-method-cs"/>
-            <code value="CLINDX"/>
-            <display value="Clinically diagnosed"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---confirmation-method-cs"/>
-            <code value="LABCONF"/>
-            <display value="Bacteriologically confirmed"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-cs---resistance-classification-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---resistance-classification-cs.html">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABDSTResultCS.html">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -1109,483 +1609,49 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-DS"> </a>  
-                  <a href="CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-DS">DS</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE">SUSCEPTIBLE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td>
-                <td>DS (drug-susceptible TB)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-RR"> </a>  
-                  <a href="CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-RR">RR</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td>
-                <td>RR (rifampicin resistant TB)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-MDR"> </a>  
-                  <a href="CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-MDR">MDR</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td>
-                <td>MDR (multidrug resistant TB)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---resistance-classification-cs-XDR"> </a>  
-                  <a href="CodeSystem-tb-cs---resistance-classification-cs.html#tb-cs---resistance-classification-cs-XDR">XDR</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---resistance-classification-cs</td>
-                <td>XDR (extensive drug resistant TB)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/tb-cs---resistance-classification-vs"/>
-        <version value="0.1.0"/>
-        <name value="TBCSResistanceClassificationVS"/>
-        <title value="TB CS - Resistance Classification value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:58e44d65-17dd-44b4-a231-d62a412e5832"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="4"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---resistance-classification-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---resistance-classification-cs"/>
-            <code value="DS"/>
-            <display value="DS (drug-susceptible TB)"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---resistance-classification-cs"/>
-            <code value="RR"/>
-            <display value="RR (rifampicin resistant TB)"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---resistance-classification-cs"/>
-            <code value="MDR"/>
-            <display value="MDR (multidrug resistant TB)"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---resistance-classification-cs"/>
-            <code value="XDR"/>
-            <display value="XDR (extensive drug resistant TB)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-cs---site-of-disease-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---site-of-disease-cs.html">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 3 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_PULMONARY"> </a>  
-                  <a href="CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_PULMONARY">SITE_PULMONARY</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td>
-                <td>Pulmonary</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_EXTRA_PULMONARY"> </a>  
-                  <a href="CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_EXTRA_PULMONARY">SITE_EXTRA_PULMONARY</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td>
-                <td>Extra-pulmonary</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---site-of-disease-cs-SITE_BOTH"> </a>  
-                  <a href="CodeSystem-tb-cs---site-of-disease-cs.html#tb-cs---site-of-disease-cs-SITE_BOTH">SITE_BOTH</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---site-of-disease-cs</td>
-                <td>Pulmonary and extra-pulmonary</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/tb-cs---site-of-disease-vs"/>
-        <version value="0.1.0"/>
-        <name value="TBCSSiteOfDiseaseVS"/>
-        <title value="TB CS - Site of disease value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:e6543ada-38c4-4af7-8bf2-8beab84ca40c"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="3"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---site-of-disease-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---site-of-disease-cs"/>
-            <code value="SITE_PULMONARY"/>
-            <display value="Pulmonary"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---site-of-disease-cs"/>
-            <code value="SITE_EXTRA_PULMONARY"/>
-            <display value="Extra-pulmonary"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---site-of-disease-cs"/>
-            <code value="SITE_BOTH"/>
-            <display value="Pulmonary and extra-pulmonary"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-cs---treatment-category-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---treatment-category-cs.html">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 2 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-category-cs-FIRST_LINE_TREATMENT"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-category-cs.html#tb-cs---treatment-category-cs-FIRST_LINE_TREATMENT">FIRST_LINE_TREATMENT</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-category-cs</td>
-                <td>First-line Treatment</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-category-cs-SECOND_LINE_TREATMENT"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-category-cs.html#tb-cs---treatment-category-cs-SECOND_LINE_TREATMENT">SECOND_LINE_TREATMENT</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-category-cs</td>
-                <td>Second-line Treatment</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/tb-cs---treatment-category-vs"/>
-        <version value="0.1.0"/>
-        <name value="TBCSTreatmentCategoryVS"/>
-        <title value="TB CS - Treatment category value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:15b1e3f1-99fd-4566-a6c2-3a24286be54e"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="2"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-category-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-category-cs"/>
-            <code value="FIRST_LINE_TREATMENT"/>
-            <display value="First-line Treatment"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-category-cs"/>
-            <code value="SECOND_LINE_TREATMENT"/>
-            <display value="Second-line Treatment"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-cs---treatment-history-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-cs---treatment-history-cs.html">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 6 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_NEW"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_NEW">HISTORY_NEW</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>New</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_RELAPSE"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_RELAPSE">HISTORY_RELAPSE</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>Relapse</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_FAILED"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_FAILED">HISTORY_FAILED</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>Treatment after failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_LOST_TO_FOLLOWUP">HISTORY_LOST_TO_FOLLOWUP</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>Treatment after lost to follow-up</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_OTHER_PREV"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_OTHER_PREV">HISTORY_OTHER_PREV</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>Other previously treated</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-cs---treatment-history-cs-HISTORY_UNKNOWN"> </a>  
-                  <a href="CodeSystem-tb-cs---treatment-history-cs.html#tb-cs---treatment-history-cs-HISTORY_UNKNOWN">HISTORY_UNKNOWN</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-cs---treatment-history-cs</td>
-                <td>Unknown</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://example.org/ValueSet/tb-cs---treatment-history-vs"/>
-        <version value="0.1.0"/>
-        <name value="TBCSTreatmentHistoryVS"/>
-        <title value="TB CS - Treatment history value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:ef61e893-c371-4c51-9ee4-dbb243aaa407"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
-          <total value="6"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-cs---treatment-history-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_NEW"/>
-            <display value="New"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_RELAPSE"/>
-            <display value="Relapse"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_FAILED"/>
-            <display value="Treatment after failure"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_LOST_TO_FOLLOWUP"/>
-            <display value="Treatment after lost to follow-up"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_OTHER_PREV"/>
-            <display value="Other previously treated"/>
-          </contains>
-          <contains>
-            <system value="http://example.org/CodeSystem/tb-cs---treatment-history-cs"/>
-            <code value="HISTORY_UNKNOWN"/>
-            <display value="Unknown"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---dst-result-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
-            </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---dst-result-cs.html">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 4 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---dst-result-cs-SUSCEPTIBLE"> </a>  
-                  <a href="CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-SUSCEPTIBLE">SUSCEPTIBLE</a>
-                </td>
-                <td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
                 <td>Susceptible</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---dst-result-cs-RESISTANT"> </a>  
-                  <a href="CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-RESISTANT">RESISTANT</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT">RESISTANT</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
                 <td>Resistant</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---dst-result-cs-CONTAMINATED"> </a>  
-                  <a href="CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-CONTAMINATED">CONTAMINATED</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED">CONTAMINATED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
                 <td>Contaminated</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---dst-result-cs-INDETERMINATE"> </a>  
-                  <a href="CodeSystem-tb-lab---dst-result-cs.html#tb-lab---dst-result-cs-INDETERMINATE">INDETERMINATE</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE">INDETERMINATE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---dst-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
                 <td>Indeterminate</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---dst-result-vs"/>
+        <url value="http://example.org/ValueSet/TBLABDSTResultVS"/>
         <version value="0.1.0"/>
         <name value="TBLABDSTResultVS"/>
         <title value="TB-LAB - DST result value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3debb3b0-2dc4-4123-b349-ec8f28cd6f13"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:df49bb30-3d12-45bd-acfe-ae2adad4f530"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1601,26 +1667,30 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---dst-result-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---dst-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
             <code value="SUSCEPTIBLE"/>
             <display value="Susceptible"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---dst-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
             <code value="RESISTANT"/>
             <display value="Resistant"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---dst-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
             <code value="CONTAMINATED"/>
             <display value="Contaminated"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---dst-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
             <code value="INDETERMINATE"/>
             <display value="Indeterminate"/>
           </contains>
@@ -1629,9 +1699,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---final-culture-result-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1639,7 +1714,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---final-culture-result-cs.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABFinalCultureResultCS.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -1656,48 +1731,49 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-MTB"> </a>  
-                  <a href="CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-MTB">MTB</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB">MTB</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
                 <td>MTB</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-NTM"> </a>  
-                  <a href="CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-NTM">NTM</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM">NTM</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
                 <td>NTM</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-NO_GROWTH"> </a>  
-                  <a href="CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-NO_GROWTH">NO_GROWTH</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH">NO_GROWTH</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
                 <td>No growth</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---final-culture-result-cs-CONTAMINATED"> </a>  
-                  <a href="CodeSystem-tb-lab---final-culture-result-cs.html#tb-lab---final-culture-result-cs-CONTAMINATED">CONTAMINATED</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED">CONTAMINATED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---final-culture-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
                 <td>Contaminated</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---final-culture-result-vs"/>
+        <url value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
         <version value="0.1.0"/>
         <name value="TBLABFinalCultureResultVS"/>
         <title value="TB-LAB - Final culture result value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8578492c-dad7-471f-aa91-e9c9a0030b5f"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:af309bfa-d5d3-45f8-89d0-d84dcf20a928"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1713,26 +1789,30 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---final-culture-result-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---final-culture-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
             <code value="MTB"/>
             <display value="MTB"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---final-culture-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
             <code value="NTM"/>
             <display value="NTM"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---final-culture-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
             <code value="NO_GROWTH"/>
             <display value="No growth"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---final-culture-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
             <code value="CONTAMINATED"/>
             <display value="Contaminated"/>
           </contains>
@@ -1741,9 +1821,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---lpa-specimen-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABLPASpecimenVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1751,7 +1836,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---lpa-specimen-cs.html">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABLPASpecimenCS.html">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -1768,32 +1853,33 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---lpa-specimen-cs-SPUTUM_SAMPLES_OR_SEDIMENTS"> </a>  
-                  <a href="CodeSystem-tb-lab---lpa-specimen-cs.html#tb-lab---lpa-specimen-cs-SPUTUM_SAMPLES_OR_SEDIMENTS">SPUTUM_SAMPLES_OR_SEDIMENTS</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS"> </a>  
+                  <a href="CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS">SPUTUM_SAMPLES_OR_SEDIMENTS</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---lpa-specimen-cs</td>
+                <td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td>
                 <td>Sputum samples or sediments</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---lpa-specimen-cs-MTB_CULTURE_ISOLATES"> </a>  
-                  <a href="CodeSystem-tb-lab---lpa-specimen-cs.html#tb-lab---lpa-specimen-cs-MTB_CULTURE_ISOLATES">MTB_CULTURE_ISOLATES</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES"> </a>  
+                  <a href="CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES">MTB_CULTURE_ISOLATES</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---lpa-specimen-cs</td>
+                <td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td>
                 <td>MTB culture isolates</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---lpa-specimen-vs"/>
+        <url value="http://example.org/ValueSet/TBLABLPASpecimenVS"/>
         <version value="0.1.0"/>
         <name value="TBLABLPASpecimenVS"/>
         <title value="TB-LAB - LPA specimen value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:707d3a4c-a1b4-4329-ad9e-50d9fc377c15"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:bfe0dd69-b8d5-4638-88b7-d67bb3596feb"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1809,16 +1895,20 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---lpa-specimen-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---lpa-specimen-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
             <code value="SPUTUM_SAMPLES_OR_SEDIMENTS"/>
             <display value="Sputum samples or sediments"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---lpa-specimen-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
             <code value="MTB_CULTURE_ISOLATES"/>
             <display value="MTB culture isolates"/>
           </contains>
@@ -1827,9 +1917,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---mtb-test-result-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABMTBTestResultVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1837,7 +1932,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---mtb-test-result-cs.html">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABMTBTestResultCS.html">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -1854,56 +1949,57 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-DETECTED"> </a>  
-                  <a href="CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-DETECTED">DETECTED</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED">DETECTED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
                 <td>Detected</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-NOT_DETECTED"> </a>  
-                  <a href="CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-NOT_DETECTED">NOT_DETECTED</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED">NOT_DETECTED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
                 <td>Not detected</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-ERROR"> </a>  
-                  <a href="CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-ERROR">ERROR</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR">ERROR</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
                 <td>Error</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-INVALID"> </a>  
-                  <a href="CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-INVALID">INVALID</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID">INVALID</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
                 <td>Invalid</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---mtb-test-result-cs-NO_RESULT"> </a>  
-                  <a href="CodeSystem-tb-lab---mtb-test-result-cs.html#tb-lab---mtb-test-result-cs-NO_RESULT">NO_RESULT</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT">NO_RESULT</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---mtb-test-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
                 <td>No result</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---mtb-test-result-vs"/>
+        <url value="http://example.org/ValueSet/TBLABMTBTestResultVS"/>
         <version value="0.1.0"/>
         <name value="TBLABMTBTestResultVS"/>
         <title value="TB-LAB - MTB test result value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:22a1358f-8046-471b-9c3c-de5c27d2787e"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:956c5664-d4d1-4b5f-9a26-16c7c91b7756"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1919,31 +2015,35 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
             <code value="DETECTED"/>
             <display value="Detected"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
             <code value="NOT_DETECTED"/>
             <display value="Not detected"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
             <code value="ERROR"/>
             <display value="Error"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
             <code value="INVALID"/>
             <display value="Invalid"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---mtb-test-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
             <code value="NO_RESULT"/>
             <display value="No result"/>
           </contains>
@@ -1952,9 +2052,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---sample-quality-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABSampleQualityVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1962,7 +2067,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---sample-quality-cs.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABSampleQualityCS.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -1979,32 +2084,33 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---sample-quality-cs-GOOD"> </a>  
-                  <a href="CodeSystem-tb-lab---sample-quality-cs.html#tb-lab---sample-quality-cs-GOOD">GOOD</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD"> </a>  
+                  <a href="CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD">GOOD</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---sample-quality-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSampleQualityCS</td>
                 <td>Good (accepted for processing)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---sample-quality-cs-POOR"> </a>  
-                  <a href="CodeSystem-tb-lab---sample-quality-cs.html#tb-lab---sample-quality-cs-POOR">POOR</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR"> </a>  
+                  <a href="CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR">POOR</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---sample-quality-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSampleQualityCS</td>
                 <td>Poor (rejected for processing)</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---sample-quality-vs"/>
+        <url value="http://example.org/ValueSet/TBLABSampleQualityVS"/>
         <version value="0.1.0"/>
         <name value="TBLABSampleQualityVS"/>
         <title value="TB-LAB - Sample quality value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:74944091-e108-4c74-b575-bed9649287f9"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:9f3df469-5bbb-4bcd-ac55-77a4bbba8886"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2020,16 +2126,20 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---sample-quality-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---sample-quality-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSampleQualityCS"/>
             <code value="GOOD"/>
             <display value="Good (accepted for processing)"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---sample-quality-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSampleQualityCS"/>
             <code value="POOR"/>
             <display value="Poor (rejected for processing)"/>
           </contains>
@@ -2038,9 +2148,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---sample-status-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABSampleStatusVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2048,7 +2163,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---sample-status-cs.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABSampleStatusCS.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
             <table class="codes">
@@ -2065,32 +2180,33 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---sample-status-cs-RECEIVED"> </a>  
-                  <a href="CodeSystem-tb-lab---sample-status-cs.html#tb-lab---sample-status-cs-RECEIVED">RECEIVED</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED"> </a>  
+                  <a href="CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED">RECEIVED</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---sample-status-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSampleStatusCS</td>
                 <td>Sample received</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---sample-status-cs-LOST"> </a>  
-                  <a href="CodeSystem-tb-lab---sample-status-cs.html#tb-lab---sample-status-cs-LOST">LOST</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST"> </a>  
+                  <a href="CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST">LOST</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---sample-status-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSampleStatusCS</td>
                 <td>Sample lost</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---sample-status-vs"/>
+        <url value="http://example.org/ValueSet/TBLABSampleStatusVS"/>
         <version value="0.1.0"/>
         <name value="TBLABSampleStatusVS"/>
         <title value="TB-LAB - Sample status value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:cbcda7ec-4605-4eed-826c-88aa565652cc"/>
-          <timestamp value="2024-12-19T10:30:27+00:00"/>
+          <identifier value="urn:uuid:36f14d54-1143-46d9-a94c-ec4c9f2b6ebc"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2106,16 +2222,20 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---sample-status-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---sample-status-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSampleStatusCS"/>
             <code value="RECEIVED"/>
             <display value="Sample received"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---sample-status-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSampleStatusCS"/>
             <code value="LOST"/>
             <display value="Sample lost"/>
           </contains>
@@ -2124,9 +2244,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/ValueSet/tb-lab---smear-result-vs"/>
+    <fullUrl value="http://example.org/ValueSet/TBLABSmearResultVS"/>
     <resource>
       <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2134,7 +2259,7 @@
               <b>Generated Narrative: ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-tb-lab---smear-result-cs.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-TBLABSmearResultCS.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -2151,56 +2276,57 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---smear-result-cs-SCANTY"> </a>  
-                  <a href="CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-SCANTY">SCANTY</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY">SCANTY</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
                 <td>Positive (Scanty)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---smear-result-cs-1PLUS"> </a>  
-                  <a href="CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-1PLUS">1PLUS</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS">1PLUS</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
                 <td>Positive (+)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---smear-result-cs-2PLUS"> </a>  
-                  <a href="CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-2PLUS">2PLUS</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS">2PLUS</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
                 <td>Positive (++)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---smear-result-cs-3PLUS"> </a>  
-                  <a href="CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-3PLUS">3PLUS</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS">3PLUS</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
                 <td>Positive (+++)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="x-http://example.org/CodeSystem/tb-lab---smear-result-cs-NEGATIVE"> </a>  
-                  <a href="CodeSystem-tb-lab---smear-result-cs.html#tb-lab---smear-result-cs-NEGATIVE">NEGATIVE</a>
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE">NEGATIVE</a>
                 </td>
-                <td>http://example.org/CodeSystem/tb-lab---smear-result-cs</td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
                 <td>Negative</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://example.org/ValueSet/tb-lab---smear-result-vs"/>
+        <url value="http://example.org/ValueSet/TBLABSmearResultVS"/>
         <version value="0.1.0"/>
         <name value="TBLABSmearResultVS"/>
         <title value="TB-LAB - Smear result value set"/>
-        <status value="draft"/>
-        <date value="2024-12-19T10:30:07+00:00"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7fe36776-8977-4538-b477-1b15938a77be"/>
-          <timestamp value="2024-12-19T10:30:28+00:00"/>
+          <identifier value="urn:uuid:8b179160-950c-4ab3-8202-c91694eb90d3"/>
+          <timestamp value="2024-12-19T14:34:11+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2216,31 +2342,35 @@
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://example.org/CodeSystem/tb-lab---smear-result-cs|0.1.0"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
             <code value="SCANTY"/>
             <display value="Positive (Scanty)"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
             <code value="1PLUS"/>
             <display value="Positive (+)"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
             <code value="2PLUS"/>
             <display value="Positive (++)"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
             <code value="3PLUS"/>
             <display value="Positive (+++)"/>
           </contains>
           <contains>
-            <system value="http://example.org/CodeSystem/tb-lab---smear-result-cs"/>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
             <code value="NEGATIVE"/>
             <display value="Negative"/>
           </contains>

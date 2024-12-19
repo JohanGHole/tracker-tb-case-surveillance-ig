@@ -22,7 +22,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSDenotificationReasonsVS</b></p><a name=\"TBCSDenotificationReasonsVS\"> </a><a name=\"hcTBCSDenotificationReasonsVS\"> </a><a name=\"TBCSDenotificationReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html\"><code>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSDenotificationReasonsVS</b></p><a name=\"TBCSDenotificationReasonsVS\"> </a><a name=\"hcTBCSDenotificationReasonsVS\"> </a><a name=\"TBCSDenotificationReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-TBCSDenotificationReasonsCS.html\"><code>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ValueSet/TBCSDenotificationReasonsVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -30,7 +30,7 @@
   fhir:title [ fhir:v "TB CS - Denotification reasons value set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-12-19T10:30:07+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-19T14:33:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -41,7 +41,7 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "http://example.org/CodeSystem/TBCSDenotificationReasonsCS"^^xsd:anyURI ]
      ] )
   ] . # 
 

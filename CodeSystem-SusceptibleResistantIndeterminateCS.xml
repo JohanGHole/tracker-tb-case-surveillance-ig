@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SusceptibleResistantIndeterminateCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem SusceptibleResistantIndeterminateCS</b></p><a name="SusceptibleResistantIndeterminateCS"> </a><a name="hcSusceptibleResistantIndeterminateCS"> </a><a name="SusceptibleResistantIndeterminateCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SUSCEPTIBLE<a name="SusceptibleResistantIndeterminateCS-SUSCEPTIBLE"> </a></td><td>Susceptible</td></tr><tr><td style="white-space:nowrap">RESISTANT<a name="SusceptibleResistantIndeterminateCS-RESISTANT"> </a></td><td>Resistant</td></tr><tr><td style="white-space:nowrap">INDETERMINATE<a name="SusceptibleResistantIndeterminateCS-INDETERMINATE"> </a></td><td>Indeterminate</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+  <version value="0.1.0"/>
+  <name value="SusceptibleResistantIndeterminateCS"/>
+  <title value="Susceptible/Resistant/Indeterminate"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="SUSCEPTIBLE"/>
+    <display value="Susceptible"/>
+  </concept>
+  <concept>
+    <code value="RESISTANT"/>
+    <display value="Resistant"/>
+  </concept>
+  <concept>
+    <code value="INDETERMINATE"/>
+    <display value="Indeterminate"/>
+  </concept>
+</CodeSystem>

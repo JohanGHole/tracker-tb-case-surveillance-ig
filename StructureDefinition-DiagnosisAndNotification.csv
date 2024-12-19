@@ -4,7 +4,7 @@
 "DiagnosisAndNotification.executionDate","DiagnosisAndNotification.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.executionDate",0,1,"",""
 "DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Registration - Previous treatment history","TB CS - Registration - Previous treatment history","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-history-vs","",,,,"DiagnosisAndNotification.historyOfPreviousTreatment",0,1,"",""
+","TB CS - Registration - Previous treatment history","TB CS - Registration - Previous treatment history","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentHistoryVS","",,,,"DiagnosisAndNotification.historyOfPreviousTreatment",0,1,"",""
 "DiagnosisAndNotification.hivInfection","DiagnosisAndNotification.hivInfection","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - HIV infection","TB CS - HIV infection","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.hivInfection",0,1,"",""
 "DiagnosisAndNotification.artStarted","DiagnosisAndNotification.artStarted","","","",0,1,"","","","code {[]} {[]}
@@ -22,11 +22,11 @@
 "DiagnosisAndNotification.secondLineDrugsReceivedPreviously","DiagnosisAndNotification.secondLineDrugsReceivedPreviously","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Registration - Second-line drugs","TB CS - Registration - Second-line drugs","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.secondLineDrugsReceivedPreviously",0,1,"",""
 "DiagnosisAndNotification.confirmationMethod","DiagnosisAndNotification.confirmationMethod","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Confirmation method","TB CS - Confirmation method","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---confirmation-method-vs","",,,,"DiagnosisAndNotification.confirmationMethod",0,1,"",""
+","TB CS - Confirmation method","TB CS - Confirmation method","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSConfirmationMethodVS","",,,,"DiagnosisAndNotification.confirmationMethod",0,1,"",""
 "DiagnosisAndNotification.currentAddressOnMap","DiagnosisAndNotification.currentAddressOnMap","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - Current address - coordinates","TB CS - Current address - coordinates","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.currentAddressOnMap",0,1,"",""
 "DiagnosisAndNotification.siteOfDisease","DiagnosisAndNotification.siteOfDisease","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Site of disease","TB CS - Site of disease","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---site-of-disease-vs","",,,,"DiagnosisAndNotification.siteOfDisease",0,1,"",""
+","TB CS - Site of disease","TB CS - Site of disease","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSSiteOfDiseaseVS","",,,,"DiagnosisAndNotification.siteOfDisease",0,1,"",""
 "DiagnosisAndNotification.artPatientId","DiagnosisAndNotification.artPatientId","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - ART patient ID","TB CS - ART patient ID","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.artPatientId",0,1,"",""
 "DiagnosisAndNotification.dateOfNotification","DiagnosisAndNotification.dateOfNotification","","","",0,1,"","","","date {[]} {[]}

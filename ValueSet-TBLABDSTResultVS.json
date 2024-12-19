@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TBLABDSTResultVS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBLABDSTResultVS</b></p><a name=\"TBLABDSTResultVS\"> </a><a name=\"hcTBLABDSTResultVS\"> </a><a name=\"TBLABDSTResultVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-TBLABDSTResultCS.html\"><code>http://example.org/CodeSystem/TBLABDSTResultCS</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
+  "version" : "0.1.0",
+  "name" : "TBLABDSTResultVS",
+  "title" : "TB-LAB - DST result value set",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/TBLABDSTResultCS"
+    }]
+  }
+}

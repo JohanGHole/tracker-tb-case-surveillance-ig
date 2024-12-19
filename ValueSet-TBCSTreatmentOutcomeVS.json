@@ -8,7 +8,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSTreatmentOutcomeVS</b></p><a name=\"TBCSTreatmentOutcomeVS\"> </a><a name=\"hcTBCSTreatmentOutcomeVS\"> </a><a name=\"TBCSTreatmentOutcomeVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---treatment-outcome-cs.html\"><code>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSTreatmentOutcomeVS</b></p><a name=\"TBCSTreatmentOutcomeVS\"> </a><a name=\"hcTBCSTreatmentOutcomeVS\"> </a><a name=\"TBCSTreatmentOutcomeVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html\"><code>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</code></a></li></ul></div>"
   },
   "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
   "version" : "0.1.0",
@@ -16,7 +16,7 @@
   "title" : "TB CS - Treatment outcome value set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2024-12-19T10:30:07+00:00",
+  "date" : "2024-12-19T14:33:50+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -27,7 +27,7 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"
+      "system" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"
     }]
   }
 }

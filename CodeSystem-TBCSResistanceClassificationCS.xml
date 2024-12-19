@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="TBCSResistanceClassificationCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem TBCSResistanceClassificationCS</b></p><a name="TBCSResistanceClassificationCS"> </a><a name="hcTBCSResistanceClassificationCS"> </a><a name="TBCSResistanceClassificationCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSResistanceClassificationCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DS<a name="TBCSResistanceClassificationCS-DS"> </a></td><td>DS (drug-susceptible TB)</td></tr><tr><td style="white-space:nowrap">RR<a name="TBCSResistanceClassificationCS-RR"> </a></td><td>RR (rifampicin resistant TB)</td></tr><tr><td style="white-space:nowrap">MDR<a name="TBCSResistanceClassificationCS-MDR"> </a></td><td>MDR (multidrug resistant TB)</td></tr><tr><td style="white-space:nowrap">XDR<a name="TBCSResistanceClassificationCS-XDR"> </a></td><td>XDR (extensive drug resistant TB)</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+  <version value="0.1.0"/>
+  <name value="TBCSResistanceClassificationCS"/>
+  <title value="TB CS - Resistance Classification"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="DS"/>
+    <display value="DS (drug-susceptible TB)"/>
+  </concept>
+  <concept>
+    <code value="RR"/>
+    <display value="RR (rifampicin resistant TB)"/>
+  </concept>
+  <concept>
+    <code value="MDR"/>
+    <display value="MDR (multidrug resistant TB)"/>
+  </concept>
+  <concept>
+    <code value="XDR"/>
+    <display value="XDR (extensive drug resistant TB)"/>
+  </concept>
+</CodeSystem>

@@ -8,7 +8,7 @@
     <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TBCSTreatmentOutcomeVS</b></p><a name="TBCSTreatmentOutcomeVS"> </a><a name="hcTBCSTreatmentOutcomeVS"> </a><a name="TBCSTreatmentOutcomeVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tb-cs---treatment-outcome-cs.html"><code>http://example.org/CodeSystem/tb-cs---treatment-outcome-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet TBCSTreatmentOutcomeVS</b></p><a name="TBCSTreatmentOutcomeVS"> </a><a name="hcTBCSTreatmentOutcomeVS"> </a><a name="TBCSTreatmentOutcomeVS-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-TBCSTreatmentOutcomeCS.html"><code>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</code></a></li></ul></div>
   </text>
   <url value="http://example.org/ValueSet/TBCSTreatmentOutcomeVS"/>
   <version value="0.1.0"/>
@@ -16,7 +16,7 @@
   <title value="TB CS - Treatment outcome value set"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2024-12-19T10:30:07+00:00"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -27,7 +27,7 @@
   </contact>
   <compose>
     <include>
-      <system value="http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"/>
+      <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
     </include>
   </compose>
 </ValueSet>

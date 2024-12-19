@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBCSResistanceClassificationCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSResistanceClassificationCS</b></p><a name=\"TBCSResistanceClassificationCS\"> </a><a name=\"hcTBCSResistanceClassificationCS\"> </a><a name=\"TBCSResistanceClassificationCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSResistanceClassificationCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">DS<a name=\"TBCSResistanceClassificationCS-DS\"> </a></td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\">RR<a name=\"TBCSResistanceClassificationCS-RR\"> </a></td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\">MDR<a name=\"TBCSResistanceClassificationCS-MDR\"> </a></td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\">XDR<a name=\"TBCSResistanceClassificationCS-XDR\"> </a></td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+  "version" : "0.1.0",
+  "name" : "TBCSResistanceClassificationCS",
+  "title" : "TB CS - Resistance Classification",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "DS",
+    "display" : "DS (drug-susceptible TB)"
+  },
+  {
+    "code" : "RR",
+    "display" : "RR (rifampicin resistant TB)"
+  },
+  {
+    "code" : "MDR",
+    "display" : "MDR (multidrug resistant TB)"
+  },
+  {
+    "code" : "XDR",
+    "display" : "XDR (extensive drug resistant TB)"
+  }]
+}

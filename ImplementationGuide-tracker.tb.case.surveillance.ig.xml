@@ -10,7 +10,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2024-12-19T10:30:07+00:00"/>
+  <date value="2024-12-19T14:33:50+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -535,7 +535,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/susceptible-resistant-indeterminate-cs"/>
+        <reference value="CodeSystem/SusceptibleResistantIndeterminateCS"/>
       </reference>
       <name value="Susceptible/Resistant/Indeterminate"/>
       <exampleBoolean value="false"/>
@@ -545,7 +545,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/susceptible-resistant-indeterminate-vs"/>
+        <reference value="ValueSet/SusceptibleResistantIndeterminateVS"/>
       </reference>
       <name value="Susceptible/Resistant/Indeterminate value set"/>
       <exampleBoolean value="false"/>
@@ -577,7 +577,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---confirmation-method-cs"/>
+        <reference value="CodeSystem/TBCSConfirmationMethodCS"/>
       </reference>
       <name value="TB CS - Confirmation method"/>
       <exampleBoolean value="false"/>
@@ -587,7 +587,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-cs---confirmation-method-vs"/>
+        <reference value="ValueSet/TBCSConfirmationMethodVS"/>
       </reference>
       <name value="TB CS - Confirmation method value set"/>
       <exampleBoolean value="false"/>
@@ -597,7 +597,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---denotification-reasons-cs"/>
+        <reference value="CodeSystem/TBCSDenotificationReasonsCS"/>
       </reference>
       <name value="TB CS - Denotification reasons"/>
       <exampleBoolean value="false"/>
@@ -617,7 +617,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---resistance-classification-cs"/>
+        <reference value="CodeSystem/TBCSResistanceClassificationCS"/>
       </reference>
       <name value="TB CS - Resistance Classification"/>
       <exampleBoolean value="false"/>
@@ -627,7 +627,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-cs---resistance-classification-vs"/>
+        <reference value="ValueSet/TBCSResistanceClassificationVS"/>
       </reference>
       <name value="TB CS - Resistance Classification value set"/>
       <exampleBoolean value="false"/>
@@ -637,7 +637,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---site-of-disease-cs"/>
+        <reference value="CodeSystem/TBCSSiteOfDiseaseCS"/>
       </reference>
       <name value="TB CS - Site of disease"/>
       <exampleBoolean value="false"/>
@@ -647,7 +647,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-cs---site-of-disease-vs"/>
+        <reference value="ValueSet/TBCSSiteOfDiseaseVS"/>
       </reference>
       <name value="TB CS - Site of disease value set"/>
       <exampleBoolean value="false"/>
@@ -657,7 +657,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---treatment-category-cs"/>
+        <reference value="CodeSystem/TBCSTreatmentCategoryCS"/>
       </reference>
       <name value="TB CS - Treatment category"/>
       <exampleBoolean value="false"/>
@@ -667,7 +667,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-cs---treatment-category-vs"/>
+        <reference value="ValueSet/TBCSTreatmentCategoryVS"/>
       </reference>
       <name value="TB CS - Treatment category value set"/>
       <exampleBoolean value="false"/>
@@ -677,7 +677,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---treatment-history-cs"/>
+        <reference value="CodeSystem/TBCSTreatmentHistoryCS"/>
       </reference>
       <name value="TB CS - Treatment history"/>
       <exampleBoolean value="false"/>
@@ -687,7 +687,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-cs---treatment-history-vs"/>
+        <reference value="ValueSet/TBCSTreatmentHistoryVS"/>
       </reference>
       <name value="TB CS - Treatment history value set"/>
       <exampleBoolean value="false"/>
@@ -697,7 +697,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-cs---treatment-outcome-cs"/>
+        <reference value="CodeSystem/TBCSTreatmentOutcomeCS"/>
       </reference>
       <name value="TB CS - Treatment outcome"/>
       <exampleBoolean value="false"/>
@@ -739,7 +739,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---dst-result-cs"/>
+        <reference value="CodeSystem/TBLABDSTResultCS"/>
       </reference>
       <name value="TB-LAB - DST result"/>
       <exampleBoolean value="false"/>
@@ -749,7 +749,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---dst-result-vs"/>
+        <reference value="ValueSet/TBLABDSTResultVS"/>
       </reference>
       <name value="TB-LAB - DST result value set"/>
       <exampleBoolean value="false"/>
@@ -759,7 +759,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---final-culture-result-cs"/>
+        <reference value="CodeSystem/TBLABFinalCultureResultCS"/>
       </reference>
       <name value="TB-LAB - Final culture result"/>
       <exampleBoolean value="false"/>
@@ -769,7 +769,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---final-culture-result-vs"/>
+        <reference value="ValueSet/TBLABFinalCultureResultVS"/>
       </reference>
       <name value="TB-LAB - Final culture result value set"/>
       <exampleBoolean value="false"/>
@@ -779,7 +779,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---lpa-specimen-cs"/>
+        <reference value="CodeSystem/TBLABLPASpecimenCS"/>
       </reference>
       <name value="TB-LAB - LPA specimen"/>
       <exampleBoolean value="false"/>
@@ -789,7 +789,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---lpa-specimen-vs"/>
+        <reference value="ValueSet/TBLABLPASpecimenVS"/>
       </reference>
       <name value="TB-LAB - LPA specimen value set"/>
       <exampleBoolean value="false"/>
@@ -799,7 +799,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---mtb-test-result-cs"/>
+        <reference value="CodeSystem/TBLABMTBTestResultCS"/>
       </reference>
       <name value="TB-LAB - MTB test result"/>
       <exampleBoolean value="false"/>
@@ -809,7 +809,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---mtb-test-result-vs"/>
+        <reference value="ValueSet/TBLABMTBTestResultVS"/>
       </reference>
       <name value="TB-LAB - MTB test result value set"/>
       <exampleBoolean value="false"/>
@@ -819,7 +819,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---sample-quality-cs"/>
+        <reference value="CodeSystem/TBLABSampleQualityCS"/>
       </reference>
       <name value="TB-LAB - Sample quality"/>
       <exampleBoolean value="false"/>
@@ -829,7 +829,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---sample-quality-vs"/>
+        <reference value="ValueSet/TBLABSampleQualityVS"/>
       </reference>
       <name value="TB-LAB - Sample quality value set"/>
       <exampleBoolean value="false"/>
@@ -839,7 +839,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---sample-status-cs"/>
+        <reference value="CodeSystem/TBLABSampleStatusCS"/>
       </reference>
       <name value="TB-LAB - Sample status"/>
       <exampleBoolean value="false"/>
@@ -849,7 +849,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---sample-status-vs"/>
+        <reference value="ValueSet/TBLABSampleStatusVS"/>
       </reference>
       <name value="TB-LAB - Sample status value set"/>
       <exampleBoolean value="false"/>
@@ -859,7 +859,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/tb-lab---smear-result-cs"/>
+        <reference value="CodeSystem/TBLABSmearResultCS"/>
       </reference>
       <name value="TB-LAB - Smear result"/>
       <exampleBoolean value="false"/>
@@ -869,7 +869,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/tb-lab---smear-result-vs"/>
+        <reference value="ValueSet/TBLABSmearResultVS"/>
       </reference>
       <name value="TB-LAB - Smear result value set"/>
       <exampleBoolean value="false"/>

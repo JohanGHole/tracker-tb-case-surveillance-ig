@@ -17,7 +17,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs",
+      "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "SusceptibleResistantIndeterminateCS",
@@ -25,7 +25,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---confirmation-method-cs",
+      "url" : "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSConfirmationMethodCS",
@@ -33,7 +33,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs",
+      "url" : "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSDenotificationReasonsCS",
@@ -41,7 +41,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---resistance-classification-cs",
+      "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSResistanceClassificationCS",
@@ -49,7 +49,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---site-of-disease-cs",
+      "url" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSSiteOfDiseaseCS",
@@ -57,7 +57,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---treatment-category-cs",
+      "url" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSTreatmentCategoryCS",
@@ -65,7 +65,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---treatment-history-cs",
+      "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSTreatmentHistoryCS",
@@ -73,7 +73,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-cs---treatment-outcome-cs",
+      "url" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBCSTreatmentOutcomeCS",
@@ -81,7 +81,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---dst-result-cs",
+      "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABDSTResultCS",
@@ -89,7 +89,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---final-culture-result-cs",
+      "url" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABFinalCultureResultCS",
@@ -97,7 +97,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---lpa-specimen-cs",
+      "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABLPASpecimenCS",
@@ -105,7 +105,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---mtb-test-result-cs",
+      "url" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABMTBTestResultCS",
@@ -113,7 +113,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---sample-quality-cs",
+      "url" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABSampleQualityCS",
@@ -121,7 +121,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---sample-status-cs",
+      "url" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABSampleStatusCS",
@@ -129,7 +129,7 @@
       "description" : null
     },
     {
-      "url" : "http://example.org/CodeSystem/tb-lab---smear-result-cs",
+      "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TBLABSmearResultCS",

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TBLABSampleStatusCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBLABSampleStatusCS</b></p><a name=\"TBLABSampleStatusCS\"> </a><a name=\"hcTBLABSampleStatusCS\"> </a><a name=\"TBLABSampleStatusCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBLABSampleStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RECEIVED<a name=\"TBLABSampleStatusCS-RECEIVED\"> </a></td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\">LOST<a name=\"TBLABSampleStatusCS-LOST\"> </a></td><td>Sample lost</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
+  "version" : "0.1.0",
+  "name" : "TBLABSampleStatusCS",
+  "title" : "TB-LAB - Sample status",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T14:33:50+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "RECEIVED",
+    "display" : "Sample received"
+  },
+  {
+    "code" : "LOST",
+    "display" : "Sample lost"
+  }]
+}
