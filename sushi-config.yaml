@@ -15,9 +15,16 @@ copyrightYear: 2024+
 releaseLabel: ci-build
 license: BSD-3-Clause
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+dependencies:
+  hl7.terminology: 5.5.0
+  hl7.fhir.uv.extensions.r4: 5.1.0
+  hl7.fhir.uv.crmi: 1.0.0
+  hl7.fhir.uv.sdc: 3.0.0
+
 publisher:
   name: DHIS2
   url: http://dhis2.org
+  
 menu:
   Home: index.html
   Artifacts: artifacts.html
