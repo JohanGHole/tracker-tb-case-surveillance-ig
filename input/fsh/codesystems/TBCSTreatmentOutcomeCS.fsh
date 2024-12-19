@@ -1,5 +1,4 @@
 CodeSystem: TBCSTreatmentOutcomeCS
-Id: tb-cs---treatment-outcome-cs
 Title: "TB CS - Treatment outcome"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"

@@ -1,6 +1,9 @@
 CodeSystem: TBCSTreatmentHistoryCS
-Id: tb-cs---treatment-history-cs
 Title: "TB CS - Treatment history"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
+* ^experimental = true
+* ^caseSensitive = true
 * #"HISTORY_NEW" "New"
 * #"HISTORY_RELAPSE" "Relapse"
 * #"HISTORY_FAILED" "Treatment after failure"

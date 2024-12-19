@@ -1,5 +1,4 @@
 CodeSystem: TBCSDenotificationReasonsCS
-Id: tb-cs---denotification-reasons-cs
 Title: "TB CS - Denotification reasons"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
