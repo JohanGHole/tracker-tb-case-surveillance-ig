@@ -1,6 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://example.org/CodeSystem/gen---yes-no-unknown-cs,0.1.0,draft,,GENYesNoUnknownCS,GEN - Yes/No/Unknown,"",
-http://example.org/CodeSystem/rrt---gen---sex-cs,0.1.0,draft,,RRTGENSexCS,RRT - GEN - Sex,"",
+http://example.org/CodeSystem/GENYesNoUnknownCS,0.1.0,draft,,GENYesNoUnknownCS,GEN - Yes/No/Unknown,"",
+http://example.org/CodeSystem/RRTGENSexCS,0.1.0,draft,,RRTGENSexCS,RRT - GEN - Sex,"",
 http://example.org/CodeSystem/susceptible-resistant-indeterminate-cs,0.1.0,draft,,SusceptibleResistantIndeterminateCS,Susceptible/Resistant/Indeterminate,"",
 http://example.org/CodeSystem/tb-cs---confirmation-method-cs,0.1.0,draft,,TBCSConfirmationMethodCS,TB CS - Confirmation method,"",
 http://example.org/CodeSystem/tb-cs---denotification-reasons-cs,0.1.0,draft,,TBCSDenotificationReasonsCS,TB CS - Denotification reasons,"",

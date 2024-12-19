@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "TBCSDenotificationReasonsVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TBCSDenotificationReasonsVS</b></p><a name=\"TBCSDenotificationReasonsVS\"> </a><a name=\"hcTBCSDenotificationReasonsVS\"> </a><a name=\"TBCSDenotificationReasonsVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-tb-cs---denotification-reasons-cs.html\"><code>http://example.org/CodeSystem/tb-cs---denotification-reasons-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
+  "version" : "0.1.0",
+  "name" : "TBCSDenotificationReasonsVS",
+  "title" : "TB CS - Denotification reasons value set",
+  "status" : "draft",
+  "date" : "2024-12-19T09:39:03+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
+    }]
+  }
+}

@@ -4,9 +4,9 @@
 "Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
 "Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-outcome-vs","",,,,"Outcome.treatmentOutcome",0,1,"",""
+","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentOutcomeVS","",,,,"Outcome.treatmentOutcome",0,1,"",""
 "Outcome.reasonForDenotification","Outcome.reasonForDenotification","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Outcome - Reason for case denotification","TB CS - Outcome - Reason for case denotification","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---denotification-reasons-vs","",,,,"Outcome.reasonForDenotification",0,1,"",""
+","TB CS - Outcome - Reason for case denotification","TB CS - Outcome - Reason for case denotification","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSDenotificationReasonsVS","",,,,"Outcome.reasonForDenotification",0,1,"",""
 "Outcome.provideDuplicateSRecordNumber","Outcome.provideDuplicateSRecordNumber","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - Outcome - Duplicate's record number","TB CS - Outcome - Duplicate's record number","","","","","","","","","",,,,,"",,,,"Outcome.provideDuplicateSRecordNumber",0,1,"",""
 "Outcome.treatmentOutcomeDelayWeeks","Outcome.treatmentOutcomeDelayWeeks","","","",0,1,"","","","decimal {[]} {[]}

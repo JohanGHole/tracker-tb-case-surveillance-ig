@@ -1,29 +1,73 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
+      "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
+      "version" : null,
+      "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/gen---yes-no-unknown-cs"],
+      "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "GENYesNoUnknownVS",
+      "title" : "GEN - Yes/No/Unknown value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
       "uses" : {
       },
       "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance",
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
     },
     {
-      "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
+      "url" : "http://example.org/ValueSet/RRTGENSexVS",
+      "version" : null,
+      "status" : "active",
       "name" : "RRTGENSexVS",
       "title" : "RRT - GEN - Sex value set",
       "description" : null,
-      "systems" : ["http://example.org/CodeSystem/rrt---gen---sex-cs"],
+      "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/RRTGENSexVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RRTGENSexVS",
+      "title" : "RRT - GEN - Sex value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"],
       "uses" : {
       },
       "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TBCSDenotificationReasonsVS",
+      "title" : "TB CS - Denotification reasons value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Outcome.html" : "Outcome"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "TBCSTreatmentOutcomeVS",
+      "title" : "TB CS - Treatment outcome value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-Outcome.html" : "Outcome"
     },
     {
       "url" : "http://example.org/ValueSet/susceptible-resistant-indeterminate-vs",
@@ -52,20 +96,6 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---denotification-reasons-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSDenotificationReasonsVS",
-      "title" : "TB CS - Denotification reasons value set",
-      "description" : null,
-      "systems" : [
-        "http://example.org/CodeSystem/tb-cs---denotification-reasons-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Outcome.html" : "Outcome"
     },
     {
       "url" : "http://example.org/ValueSet/tb-cs---resistance-classification-vs",
@@ -118,18 +148,6 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
-    },
-    {
-      "url" : "http://example.org/ValueSet/tb-cs---treatment-outcome-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TBCSTreatmentOutcomeVS",
-      "title" : "TB CS - Treatment outcome value set",
-      "description" : null,
-      "systems" : ["http://example.org/CodeSystem/tb-cs---treatment-outcome-cs"],
-      "uses" : {
-      },
-      "StructureDefinition-Outcome.html" : "Outcome"
     },
     {
       "url" : "http://example.org/ValueSet/tb-lab---dst-result-vs",

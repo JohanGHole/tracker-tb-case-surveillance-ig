@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="RRTGENSexCS"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem RRTGENSexCS</b></p><a name="RRTGENSexCS"> </a><a name="hcRRTGENSexCS"> </a><a name="RRTGENSexCS-en-US"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/RRTGENSexCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">FEMALE<a name="RRTGENSexCS-FEMALE"> </a></td><td>Female</td></tr><tr><td style="white-space:nowrap">MALE<a name="RRTGENSexCS-MALE"> </a></td><td>Male</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/RRTGENSexCS"/>
+  <version value="0.1.0"/>
+  <name value="RRTGENSexCS"/>
+  <title value="RRT - GEN - Sex"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2024-12-19T09:39:03+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="FEMALE"/>
+    <display value="Female"/>
+  </concept>
+  <concept>
+    <code value="MALE"/>
+    <display value="Male"/>
+  </concept>
+</CodeSystem>

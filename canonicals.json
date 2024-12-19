@@ -1,15 +1,15 @@
 [
   {
-    "id" : "gen---yes-no-unknown-cs",
+    "id" : "GENYesNoUnknownCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/gen---yes-no-unknown-cs",
+    "url" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
     "version" : "0.1.0",
     "name" : "GENYesNoUnknownCS"
   },
   {
-    "id" : "rrt---gen---sex-cs",
+    "id" : "RRTGENSexCS",
     "type" : "CodeSystem",
-    "url" : "http://example.org/CodeSystem/rrt---gen---sex-cs",
+    "url" : "http://example.org/CodeSystem/RRTGENSexCS",
     "version" : "0.1.0",
     "name" : "RRTGENSexCS"
   },
@@ -126,6 +126,12 @@
     "name" : "TrackerTBCaseSurveillanceImplementationGuide"
   },
   {
+    "id" : "TBCaseSurveillanceQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/TBCaseSurveillanceQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "DiagnosisAndNotification",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/DiagnosisAndNotification",
@@ -168,18 +174,32 @@
     "name" : "TBTreatment"
   },
   {
-    "id" : "gen---yes-no-unknown-vs",
+    "id" : "GENYesNoUnknownVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/gen---yes-no-unknown-vs",
+    "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
     "version" : "0.1.0",
     "name" : "GENYesNoUnknownVS"
   },
   {
-    "id" : "rrt---gen---sex-vs",
+    "id" : "RRTGENSexVS",
     "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/rrt---gen---sex-vs",
+    "url" : "http://example.org/ValueSet/RRTGENSexVS",
     "version" : "0.1.0",
     "name" : "RRTGENSexVS"
+  },
+  {
+    "id" : "TBCSDenotificationReasonsVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
+    "version" : "0.1.0",
+    "name" : "TBCSDenotificationReasonsVS"
+  },
+  {
+    "id" : "TBCSTreatmentOutcomeVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
+    "version" : "0.1.0",
+    "name" : "TBCSTreatmentOutcomeVS"
   },
   {
     "id" : "susceptible-resistant-indeterminate-vs",
@@ -194,13 +214,6 @@
     "url" : "http://example.org/ValueSet/tb-cs---confirmation-method-vs",
     "version" : "0.1.0",
     "name" : "TBCSConfirmationMethodVS"
-  },
-  {
-    "id" : "tb-cs---denotification-reasons-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---denotification-reasons-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSDenotificationReasonsVS"
   },
   {
     "id" : "tb-cs---resistance-classification-vs",
@@ -229,13 +242,6 @@
     "url" : "http://example.org/ValueSet/tb-cs---treatment-history-vs",
     "version" : "0.1.0",
     "name" : "TBCSTreatmentHistoryVS"
-  },
-  {
-    "id" : "tb-cs---treatment-outcome-vs",
-    "type" : "ValueSet",
-    "url" : "http://example.org/ValueSet/tb-cs---treatment-outcome-vs",
-    "version" : "0.1.0",
-    "name" : "TBCSTreatmentOutcomeVS"
   },
   {
     "id" : "tb-lab---dst-result-vs",

@@ -6,9 +6,9 @@
 "DiagnosisAndNotification","DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Registration - Previous treatment history","TB CS - Registration - Previous treatment history","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-history-vs","",,,,"DiagnosisAndNotification.historyOfPreviousTreatment",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.hivInfection","DiagnosisAndNotification.hivInfection","","","",0,1,"","","","code {[]} {[]}
-","TB CS - HIV infection","TB CS - HIV infection","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.hivInfection",0,1,"",""
+","TB CS - HIV infection","TB CS - HIV infection","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.hivInfection",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.artStarted","DiagnosisAndNotification.artStarted","","","",0,1,"","","","code {[]} {[]}
-","TB CS - ART started","TB CS - ART started","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.artStarted",0,1,"",""
+","TB CS - ART started","TB CS - ART started","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.artStarted",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.artStartDate","DiagnosisAndNotification.artStartDate","","","",0,1,"","","","date {[]} {[]}
 ","TB CS - ART start date","TB CS - ART start date","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.artStartDate",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.isThisATbDiagnosisDoYouWantToNotifyTheCase","DiagnosisAndNotification.isThisATbDiagnosisDoYouWantToNotifyTheCase","","","",0,1,"","","","boolean {[]} {[]}
@@ -16,11 +16,11 @@
 "DiagnosisAndNotification","DiagnosisAndNotification.diagnosisticNote","DiagnosisAndNotification.diagnosisticNote","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - Diagnostic note","TB CS - Diagnostic note","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.diagnosisticNote",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.undernourishment","DiagnosisAndNotification.undernourishment","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor undernourishment","TB CS - Risk factor undernourishment","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.undernourishment",0,1,"",""
+","TB CS - Risk factor undernourishment","TB CS - Risk factor undernourishment","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.undernourishment",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.dateOfDiagnosis","DiagnosisAndNotification.dateOfDiagnosis","","","",0,1,"","","","date {[]} {[]}
 ","TB CS - Diagnosis date","TB CS - Diagnosis date","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.dateOfDiagnosis",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.secondLineDrugsReceivedPreviously","DiagnosisAndNotification.secondLineDrugsReceivedPreviously","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Registration - Second-line drugs","TB CS - Registration - Second-line drugs","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.secondLineDrugsReceivedPreviously",0,1,"",""
+","TB CS - Registration - Second-line drugs","TB CS - Registration - Second-line drugs","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.secondLineDrugsReceivedPreviously",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.confirmationMethod","DiagnosisAndNotification.confirmationMethod","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Confirmation method","TB CS - Confirmation method","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---confirmation-method-vs","",,,,"DiagnosisAndNotification.confirmationMethod",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.currentAddressOnMap","DiagnosisAndNotification.currentAddressOnMap","","","",0,1,"","","","string {[]} {[]}
@@ -36,11 +36,11 @@
 "DiagnosisAndNotification","DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold","DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold","","","",0,1,"","","","unsignedInt {[]} {[]}
 ","TB-CS - Household size (contacts)","TB-CS - Household size (contacts)","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.harmfulUseOfAlcohol","DiagnosisAndNotification.harmfulUseOfAlcohol","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor alcohol","TB CS - Risk factor alcohol","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.harmfulUseOfAlcohol",0,1,"",""
+","TB CS - Risk factor alcohol","TB CS - Risk factor alcohol","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.harmfulUseOfAlcohol",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.diabetes","DiagnosisAndNotification.diabetes","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor diabetes","TB CS - Risk factor diabetes","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.diabetes",0,1,"",""
+","TB CS - Risk factor diabetes","TB CS - Risk factor diabetes","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.diabetes",0,1,"",""
 "DiagnosisAndNotification","DiagnosisAndNotification.smoking","DiagnosisAndNotification.smoking","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Risk factor smoking","TB CS - Risk factor smoking","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"DiagnosisAndNotification.smoking",0,1,"",""
+","TB CS - Risk factor smoking","TB CS - Risk factor smoking","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"DiagnosisAndNotification.smoking",0,1,"",""
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
 ","Diagnostic laboratory results","Captures diagnostic test results along with sample information to determine TB infection status.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults.executionDate","DiagnosticLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
@@ -336,9 +336,9 @@
 "Outcome","Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
 ","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
 "Outcome","Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---treatment-outcome-vs","",,,,"Outcome.treatmentOutcome",0,1,"",""
+","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentOutcomeVS","",,,,"Outcome.treatmentOutcome",0,1,"",""
 "Outcome","Outcome.reasonForDenotification","Outcome.reasonForDenotification","","","",0,1,"","","","code {[]} {[]}
-","TB CS - Outcome - Reason for case denotification","TB CS - Outcome - Reason for case denotification","","","","","","","","","",,"required","","http://example.org/ValueSet/tb-cs---denotification-reasons-vs","",,,,"Outcome.reasonForDenotification",0,1,"",""
+","TB CS - Outcome - Reason for case denotification","TB CS - Outcome - Reason for case denotification","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSDenotificationReasonsVS","",,,,"Outcome.reasonForDenotification",0,1,"",""
 "Outcome","Outcome.provideDuplicateSRecordNumber","Outcome.provideDuplicateSRecordNumber","","","",0,1,"","","","string {[]} {[]}
 ","TB CS - Outcome - Duplicate's record number","TB CS - Outcome - Duplicate's record number","","","","","","","","","",,,,,"",,,,"Outcome.provideDuplicateSRecordNumber",0,1,"",""
 "Outcome","Outcome.treatmentOutcomeDelayWeeks","Outcome.treatmentOutcomeDelayWeeks","","","",0,1,"","","","decimal {[]} {[]}
@@ -362,13 +362,13 @@
 "TBCaseSurveillance","TBCaseSurveillance.givenName","TBCaseSurveillance.givenName","","","",1,1,"","","","string {[]} {[]}
 ","First name","First name","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.givenName",1,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.sex","TBCaseSurveillance.sex","","","",1,1,"","","","code {[]} {[]}
-","Biological sex or sex assigned at birth (male, female, unknown).","Biological sex or sex assigned at birth (male, female, unknown).","","","","","","","","","",,"required","","http://example.org/ValueSet/rrt---gen---sex-vs","",,,,"TBCaseSurveillance.sex",1,1,"",""
+","Biological sex or sex assigned at birth (male, female, unknown).","Biological sex or sex assigned at birth (male, female, unknown).","","","","","","","","","",,"required","","http://example.org/ValueSet/RRTGENSexVS","",,,,"TBCaseSurveillance.sex",1,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.dateOfBirthIsEstimated","TBCaseSurveillance.dateOfBirthIsEstimated","","","",0,1,"","","","boolean {[]} {[]}
 ","TEA that indicates whether the 'date of birth' recorded is estiimated.","TEA that indicates whether the 'date of birth' recorded is estiimated.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirthIsEstimated",0,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.dateOfBirth","TBCaseSurveillance.dateOfBirth","","","",1,1,"","","","date {[]} {[]}
 ","The client's date of birth (DOB) if known","The client's date of birth (DOB) if known","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.dateOfBirth",1,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.foreignBorn","TBCaseSurveillance.foreignBorn","","","",0,1,"","","","code {[]} {[]}
-","Foreign-born","Foreign-born","","","","","","","","","",,"required","","http://example.org/ValueSet/gen---yes-no-unknown-vs","",,,,"TBCaseSurveillance.foreignBorn",0,1,"",""
+","Foreign-born","Foreign-born","","","","","","","","","",,"required","","http://example.org/ValueSet/GENYesNoUnknownVS","",,,,"TBCaseSurveillance.foreignBorn",0,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.administrativeAreaOfResidence","TBCaseSurveillance.administrativeAreaOfResidence","","","",0,1,"","","","string {[]} {[]}
 ","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","Person's administrative residence (e.g. district, community) recorded from the adminstrative/Organisational unit hierarchy. Recording the person's asminstrative area of residence using OU type facilitates analysis and aggregation through the OU hierarchy.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.administrativeAreaOfResidence",0,1,"",""
 "TBCaseSurveillance","TBCaseSurveillance.homeAddress","TBCaseSurveillance.homeAddress","","","",0,1,"","","","string {[]} {[]}

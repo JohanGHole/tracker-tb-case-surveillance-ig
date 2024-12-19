@@ -1,0 +1,38 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "RRTGENSexCS",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem RRTGENSexCS</b></p><a name=\"RRTGENSexCS\"> </a><a name=\"hcRRTGENSexCS\"> </a><a name=\"RRTGENSexCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/RRTGENSexCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FEMALE<a name=\"RRTGENSexCS-FEMALE\"> </a></td><td>Female</td></tr><tr><td style=\"white-space:nowrap\">MALE<a name=\"RRTGENSexCS-MALE\"> </a></td><td>Male</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/RRTGENSexCS",
+  "version" : "0.1.0",
+  "name" : "RRTGENSexCS",
+  "title" : "RRT - GEN - Sex",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2024-12-19T09:39:03+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "FEMALE",
+    "display" : "Female"
+  },
+  {
+    "code" : "MALE",
+    "display" : "Male"
+  }]
+}
