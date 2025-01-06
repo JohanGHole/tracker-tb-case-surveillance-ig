@@ -126,6 +126,12 @@
     "name" : "TrackerTBCaseSurveillanceImplementationGuide"
   },
   {
+    "id" : "MonitoringLaboratoryResultsQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/MonitoringLaboratoryResultsQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "TBCaseSurveillanceQuestionnaire",
     "type" : "Questionnaire",
     "url" : "http://example.org/Questionnaire/TBCaseSurveillanceQuestionnaire",

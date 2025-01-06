@@ -55,8 +55,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
-      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
+      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
+      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
@@ -90,8 +90,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
-      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
+      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
+      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
@@ -113,8 +113,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
-      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
@@ -136,7 +136,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
+      "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
@@ -169,7 +170,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set"
+      "ValueSet-TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
@@ -180,7 +182,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
+      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
@@ -191,7 +194,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
+      "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
     }
   ]
 }

@@ -19,8 +19,8 @@
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
       "uses" : {
       },
-      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance",
-      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification",
+      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
     },
     {
       "url" : "http://example.org/ValueSet/RRTGENSexVS",
@@ -195,6 +195,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABFinalCultureResultVS",
+      "title" : "TB-LAB - Final culture result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
@@ -203,8 +212,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
@@ -232,6 +241,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSampleQualityVS",
+      "title" : "TB-LAB - Sample quality value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
@@ -240,8 +258,17 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSampleStatusVS",
+      "title" : "TB-LAB - Sample status value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
@@ -253,8 +280,17 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSmearResultVS",
+      "title" : "TB-LAB - Smear result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
@@ -266,8 +302,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     }
   ]
 }

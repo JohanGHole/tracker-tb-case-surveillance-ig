@@ -10,7 +10,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-01-06T08:12:15+00:00"/>
+  <date value="2025-01-06T08:51:53+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -497,6 +497,17 @@
       </reference>
       <name value="Monitoring laboratory results"/>
       <description value="Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MonitoringLaboratoryResultsQuestionnaire"/>
+      </reference>
+      <name value="Monitoring Laboratory Results Questionnaire"/>
+      <description value="A questionnaire for capturing laboratory test results to monitor treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

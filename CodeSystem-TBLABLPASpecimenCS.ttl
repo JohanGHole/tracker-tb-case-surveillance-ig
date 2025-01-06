@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "TB-LAB - LPA specimen"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T08:12:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T08:51:53+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

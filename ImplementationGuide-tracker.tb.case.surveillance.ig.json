@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2025-01-06T08:12:15+00:00",
+  "date" : "2025-01-06T08:51:53+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -657,6 +657,18 @@
       },
       "name" : "Monitoring laboratory results",
       "description" : "Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MonitoringLaboratoryResultsQuestionnaire"
+      },
+      "name" : "Monitoring Laboratory Results Questionnaire",
+      "description" : "A questionnaire for capturing laboratory test results to monitor treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.",
       "exampleBoolean" : false
     },
     {

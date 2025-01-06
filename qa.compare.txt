@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 64, warn = 268, info = 6
+err = 78, warn = 268, info = 8
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 294 / 38 / 0
+ Build Errors : 309 / 38 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 1 / 1 / 4
@@ -23,6 +23,7 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 14 / 0 / 24
  /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 8 / 0 / 16
  /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 8 / 0 / 16
  /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 8 / 0 / 16
@@ -88,6 +89,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 411
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 420
 ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 413
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 429
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
@@ -190,6 +192,12 @@ ERROR: /github/workspace/output/CodeSystem-TBLABSmearResultCS.html#/html/body/di
 ERROR: /github/workspace/output/CodeSystem-TBLABSmearResultCS.json.html#/html/body/div/div/div/p/span/a at Line 312, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-TBLABSmearResultCS.ttl.html#/html/body/div/div/div/p/span/a at Line 312, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-TBLABSmearResultCS.xml.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.html#/html/body/div/div/div/p/span/a at Line 260, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.json.html#/html/body/div/div/div/p/span/a at Line 526, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.ttl.html#/html/body/div/div/div/p/span/a at Line 492, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.xml.html#/html/body/div/div/div/p/span/a at Line 537, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire.html#/html/body/div/div/div/p/span/a at Line 254, column 108: The link 'license.html' for "License" cannot be resolved
@@ -268,6 +276,14 @@ ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.html#/html/body/div/d
 ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.json.html#/html/body/div/div/div/p/span/a at Line 295, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.ttl.html#/html/body/div/div/div/p/span/a at Line 299, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-GENYesNoUnknownVS.xml.html#/html/body/div/div/div/p/span/a at Line 290, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html#/html/body/div/div/div/p/span/a at Line 307, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html#/html/body/div/div/div/p/span/a at Line 307, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html#/html/body/div/div/div/p/span/a at Line 307, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html#/html/body/div/div/div/p/span/a at Line 307, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-RRTGENSexVS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-RRTGENSexVS.html#/html/body/div/div/div/p/span/a at Line 326, column 108: The link 'license.html' for "License" cannot be resolved
@@ -376,7 +392,7 @@ ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSResistance
 ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 526, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 535, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -435,6 +451,23 @@ WARNING: CodeSystem/TBLABSampleStatusCS: CodeSystem: Published code systems SHOU
 ERROR: CodeSystem/TBLABSmearResultCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
 WARNING: CodeSystem/TBLABSmearResultCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
+== fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.json ==
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
+ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
+INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json ==
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
