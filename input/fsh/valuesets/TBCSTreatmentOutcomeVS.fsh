@@ -6,4 +6,6 @@ Description: "Value set for DHIS2 'Treatment outcome' option set."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
 * ^experimental = true
+* ^version = "1.0.0"
+* ^date = "2025-01-06"
 * codes from system TBCSTreatmentOutcomeCS

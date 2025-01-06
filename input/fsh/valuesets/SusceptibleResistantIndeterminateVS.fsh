@@ -6,4 +6,6 @@ Description: "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option s
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
 * ^status = #active
 * ^experimental = true
+* ^version = "1.0.0"
+* ^date = "2025-01-06"
 * codes from system SusceptibleResistantIndeterminateCS
