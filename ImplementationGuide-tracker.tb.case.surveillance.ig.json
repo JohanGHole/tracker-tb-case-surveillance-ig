@@ -1,6 +1,10 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "tracker.tb.case.surveillance.ig",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide"]
+  },
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tracker.tb.case.surveillance.ig</b></p><a name=\"tracker.tb.case.surveillance.ig\"> </a><a name=\"hctracker.tb.case.surveillance.ig\"> </a><a name=\"tracker.tb.case.surveillance.ig-en-US\"> </a><h2>TrackerTBCaseSurveillanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig</pre></div>"
@@ -10,7 +14,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2025-01-06T11:54:23+00:00",
+  "date" : "2025-01-06T12:46:13+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -20,7 +24,7 @@
     }]
   }],
   "packageId" : "tracker.tb.case.surveillance.ig",
-  "license" : "BSD-3-Clause",
+  "license" : "CC-BY-SA-3.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7_terminology",
@@ -1134,7 +1138,43 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "license.html"
+          }],
+          "nameUrl" : "license.html",
+          "title" : "License",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "indices.html"
+        }],
+        "nameUrl" : "indices.html",
+        "title" : "Indices",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "artifacts.html"
+          }],
+          "nameUrl" : "artifacts.html",
+          "title" : "Artifact Index",
+          "generation" : "html"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "maps.html"
+          }],
+          "nameUrl" : "maps.html",
+          "title" : "Mappings",
+          "generation" : "markdown"
+        }]
       }]
     },
     "parameter" : [{

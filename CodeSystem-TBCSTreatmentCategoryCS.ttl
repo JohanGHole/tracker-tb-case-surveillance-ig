@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "TB CS - Treatment category"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T11:54:23+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T12:46:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
