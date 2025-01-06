@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2025-01-06T08:51:53+00:00",
+  "date" : "2025-01-06T11:12:04+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -623,6 +623,18 @@
       },
       "name" : "Diagnostic laboratory results",
       "description" : "Captures diagnostic test results along with sample information to determine TB infection status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DiagnosticLaboratoryResultsQuestionnaire"
+      },
+      "name" : "Diagnostic Laboratory Results Questionnaire",
+      "description" : "A questionnaire for capturing diagnostic test results and sample information to determine TB infection status.",
       "exampleBoolean" : false
     },
     {

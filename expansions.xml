@@ -1,11 +1,374 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="17a0fcf7-dde2-4567-b8d4-b11925c2d906"/>
+  <id value="2074fc2d-40d7-4177-b94f-f260d63cdb03"/>
   <meta>
-    <lastUpdated value="2025-01-06T08:51:53.123+00:00"/>
+    <lastUpdated value="2025-01-06T11:12:04.646+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABDSTResultVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABDSTResultCS.html">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE">SUSCEPTIBLE</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
+                <td>Susceptible</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT">RESISTANT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
+                <td>Resistant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED">CONTAMINATED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
+                <td>Contaminated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE"> </a>  
+                  <a href="CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE">INDETERMINATE</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABDSTResultCS</td>
+                <td>Indeterminate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABDSTResultVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABDSTResultVS"/>
+        <title value="TB-LAB - DST result value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:a10b4244-ba82-4663-b6b0-62239daab0cd"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
+            <code value="SUSCEPTIBLE"/>
+            <display value="Susceptible"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
+            <code value="RESISTANT"/>
+            <display value="Resistant"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
+            <code value="CONTAMINATED"/>
+            <display value="Contaminated"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
+            <code value="INDETERMINATE"/>
+            <display value="Indeterminate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/SusceptibleResistantIndeterminateVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE">SUSCEPTIBLE</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Susceptible</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT">RESISTANT</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Resistant</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE"> </a>  
+                  <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE">INDETERMINATE</a>
+                </td>
+                <td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td>
+                <td>Indeterminate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/SusceptibleResistantIndeterminateVS"/>
+        <version value="0.1.0"/>
+        <name value="SusceptibleResistantIndeterminateVS"/>
+        <title value="Susceptible/Resistant/Indeterminate value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:198f3ef8-03c6-41dc-af59-c5a03d28ebb8"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="SUSCEPTIBLE"/>
+            <display value="Susceptible"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="RESISTANT"/>
+            <display value="Resistant"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
+            <code value="INDETERMINATE"/>
+            <display value="Indeterminate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABMTBTestResultVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABMTBTestResultCS.html">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED">DETECTED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
+                <td>Detected</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED">NOT_DETECTED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
+                <td>Not detected</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR">ERROR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
+                <td>Error</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID">INVALID</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
+                <td>Invalid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT"> </a>  
+                  <a href="CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT">NO_RESULT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td>
+                <td>No result</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABMTBTestResultVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABMTBTestResultVS"/>
+        <title value="TB-LAB - MTB test result value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:5ef19a15-6500-4cfd-a373-dac633694d8c"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+            <code value="DETECTED"/>
+            <display value="Detected"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+            <code value="NOT_DETECTED"/>
+            <display value="Not detected"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+            <code value="ERROR"/>
+            <display value="Error"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+            <code value="INVALID"/>
+            <display value="Invalid"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
+            <code value="NO_RESULT"/>
+            <display value="No result"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
     <resource>
@@ -79,8 +442,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:ace56cce-900e-4d51-b2ca-2df4a5025497"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:58d5414f-061a-447e-96ef-d3d418a32667"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -208,8 +571,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:da90b56d-d31a-48b3-a7fa-8b85529611e1"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:a707d65b-c74a-4544-885e-f7c893010490"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -318,8 +681,548 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:25a11ebe-a448-40e7-b52f-0bc7b1ea0c65"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:f67c1540-a0dd-4943-b116-f52ad6e5451f"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSampleQualityCS"/>
+            <code value="GOOD"/>
+            <display value="Good (accepted for processing)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSampleQualityCS"/>
+            <code value="POOR"/>
+            <display value="Poor (rejected for processing)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABLPASpecimenVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABLPASpecimenCS.html">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS"> </a>  
+                  <a href="CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS">SPUTUM_SAMPLES_OR_SEDIMENTS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td>
+                <td>Sputum samples or sediments</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES"> </a>  
+                  <a href="CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES">MTB_CULTURE_ISOLATES</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td>
+                <td>MTB culture isolates</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABLPASpecimenVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABLPASpecimenVS"/>
+        <title value="TB-LAB - LPA specimen value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:d014948f-9825-4aca-8820-3edb9dbd10d9"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
+            <code value="SPUTUM_SAMPLES_OR_SEDIMENTS"/>
+            <display value="Sputum samples or sediments"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
+            <code value="MTB_CULTURE_ISOLATES"/>
+            <display value="MTB culture isolates"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABSampleStatusVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABSampleStatusCS.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED"> </a>  
+                  <a href="CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED">RECEIVED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSampleStatusCS</td>
+                <td>Sample received</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST"> </a>  
+                  <a href="CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST">LOST</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSampleStatusCS</td>
+                <td>Sample lost</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABSampleStatusVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABSampleStatusVS"/>
+        <title value="TB-LAB - Sample status value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:c76241f4-19e6-4455-9110-93eae158904b"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSampleStatusCS"/>
+            <code value="RECEIVED"/>
+            <display value="Sample received"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSampleStatusCS"/>
+            <code value="LOST"/>
+            <display value="Sample lost"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABFinalCultureResultCS.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB">MTB</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
+                <td>MTB</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM">NTM</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
+                <td>NTM</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH">NO_GROWTH</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
+                <td>No growth</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED"> </a>  
+                  <a href="CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED">CONTAMINATED</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td>
+                <td>Contaminated</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABFinalCultureResultVS"/>
+        <title value="TB-LAB - Final culture result value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:58d5414f-061a-447e-96ef-d3d418a32667"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
+            <code value="MTB"/>
+            <display value="MTB"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
+            <code value="NTM"/>
+            <display value="NTM"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
+            <code value="NO_GROWTH"/>
+            <display value="No growth"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
+            <code value="CONTAMINATED"/>
+            <display value="Contaminated"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABSmearResultVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABSmearResultCS.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY">SCANTY</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
+                <td>Positive (Scanty)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS">1PLUS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
+                <td>Positive (+)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS">2PLUS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
+                <td>Positive (++)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS">3PLUS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
+                <td>Positive (+++)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE"> </a>  
+                  <a href="CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE">NEGATIVE</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSmearResultCS</td>
+                <td>Negative</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABSmearResultVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABSmearResultVS"/>
+        <title value="TB-LAB - Smear result value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:a707d65b-c74a-4544-885e-f7c893010490"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+            <code value="SCANTY"/>
+            <display value="Positive (Scanty)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+            <code value="1PLUS"/>
+            <display value="Positive (+)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+            <code value="2PLUS"/>
+            <display value="Positive (++)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+            <code value="3PLUS"/>
+            <display value="Positive (+++)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
+            <code value="NEGATIVE"/>
+            <display value="Negative"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBLABSampleQualityVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBLABSampleQualityCS.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD"> </a>  
+                  <a href="CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD">GOOD</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSampleQualityCS</td>
+                <td>Good (accepted for processing)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR"> </a>  
+                  <a href="CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR">POOR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBLABSampleQualityCS</td>
+                <td>Poor (rejected for processing)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBLABSampleQualityVS"/>
+        <version value="0.1.0"/>
+        <name value="TBLABSampleQualityVS"/>
+        <title value="TB-LAB - Sample quality value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:f67c1540-a0dd-4943-b116-f52ad6e5451f"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -413,8 +1316,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:a5bd25d3-5d58-4f7b-be9d-e0d6886b6539"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:c76241f4-19e6-4455-9110-93eae158904b"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -508,8 +1411,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:94380bdc-26e6-486e-b2b7-721bc0bb30a3"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:62164d1c-686c-4d98-9294-799389fc4eaf"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -611,8 +1514,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:323a994e-e922-407c-b2cf-ef94efa04046"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:a8375cfa-9a03-4ec4-b9c7-c34ab3f46a60"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -743,8 +1646,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2209e2e6-9027-42f3-b12c-3e7f9f67273e"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:392c78ca-81cc-4656-aca3-7348dbb758f7"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -858,8 +1761,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:8d05964e-c19b-4393-abc5-9ee9fed715ce"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:d97c89cc-92c3-43c3-bf23-1bd34bf0456c"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -953,8 +1856,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2041b7db-ddad-42d2-bbdb-41a1d92e5281"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:32978a2f-2f24-48eb-9ec3-a396293ff3f9"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1064,8 +1967,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:d9e51044-ebf5-4913-bc2a-afe03433b58b"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:0f2a7632-7616-44d2-9547-f03e66fa230f"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1177,8 +2080,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:323a994e-e922-407c-b2cf-ef94efa04046"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:a8375cfa-9a03-4ec4-b9c7-c34ab3f46a60"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1277,8 +2180,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:94380bdc-26e6-486e-b2b7-721bc0bb30a3"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:62164d1c-686c-4d98-9294-799389fc4eaf"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1379,10 +2282,9 @@
         <title value="Susceptible/Resistant/Indeterminate value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6810acd8-424b-4848-bcee-ad799877f1fd"/>
-          <timestamp value="2025-01-06T08:52:15+00:00"/>
+          <identifier value="urn:uuid:198f3ef8-03c6-41dc-af59-c5a03d28ebb8"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1480,10 +2382,10 @@
         <title value="TB CS - Confirmation method value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
+        <date value="2025-01-06T11:12:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:967ecdbe-e9a1-4ca3-a54f-1566a7c8682e"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:20c43298-4c36-4687-9dcf-4e53114753ed"/>
+          <timestamp value="2025-01-06T11:12:27+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1577,8 +2479,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:8d05964e-c19b-4393-abc5-9ee9fed715ce"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:d97c89cc-92c3-43c3-bf23-1bd34bf0456c"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1688,8 +2590,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:d9e51044-ebf5-4913-bc2a-afe03433b58b"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:0f2a7632-7616-44d2-9547-f03e66fa230f"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1800,10 +2702,10 @@
         <title value="TB CS - Site of disease value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
+        <date value="2025-01-06T11:12:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:0e48d618-135c-4054-82d5-45c09f616e2d"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:6bb8f35a-b057-4a6d-ad47-96af051f3cb0"/>
+          <timestamp value="2025-01-06T11:12:27+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1902,8 +2804,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2041b7db-ddad-42d2-bbdb-41a1d92e5281"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:32978a2f-2f24-48eb-9ec3-a396293ff3f9"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2028,10 +2930,10 @@
         <title value="TB CS - Treatment history value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
+        <date value="2025-01-06T11:12:04+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d3b50876-8ee1-46c5-ad84-e1960dd4ae0a"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:047f51a8-1478-4ae2-b12e-1e7bf2c2bfe9"/>
+          <timestamp value="2025-01-06T11:12:28+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2177,8 +3079,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2209e2e6-9027-42f3-b12c-3e7f9f67273e"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:392c78ca-81cc-4656-aca3-7348dbb758f7"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2307,10 +3209,9 @@
         <title value="TB-LAB - DST result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:d0694596-2cb6-478a-9f85-28b925c27ce6"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:a10b4244-ba82-4663-b6b0-62239daab0cd"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2430,8 +3331,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:ace56cce-900e-4d51-b2ca-2df4a5025497"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:58d5414f-061a-447e-96ef-d3d418a32667"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2534,10 +3435,9 @@
         <title value="TB-LAB - LPA specimen value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:47ef6535-3787-4a38-9ded-edd745b92ac8"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:d014948f-9825-4aca-8820-3edb9dbd10d9"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2654,10 +3554,9 @@
         <title value="TB-LAB - MTB test result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2025-01-06T08:51:53+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c985e8a0-7c4f-4511-93f5-cbabb10fb764"/>
-          <timestamp value="2025-01-06T08:52:16+00:00"/>
+          <identifier value="urn:uuid:5ef19a15-6500-4cfd-a373-dac633694d8c"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2766,8 +3665,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:25a11ebe-a448-40e7-b52f-0bc7b1ea0c65"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:f67c1540-a0dd-4943-b116-f52ad6e5451f"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2861,8 +3760,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:a5bd25d3-5d58-4f7b-be9d-e0d6886b6539"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:c76241f4-19e6-4455-9110-93eae158904b"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2980,8 +3879,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:da90b56d-d31a-48b3-a7fa-8b85529611e1"/>
-          <timestamp value="2025-01-06T08:52:12+00:00"/>
+          <identifier value="urn:uuid:a707d65b-c74a-4544-885e-f7c893010490"/>
+          <timestamp value="2025-01-06T11:12:24+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

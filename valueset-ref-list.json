@@ -45,6 +45,17 @@
     },
     {
       "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "SusceptibleResistantIndeterminateVS",
+      "title" : "Susceptible/Resistant/Indeterminate value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"
+      ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "SusceptibleResistantIndeterminateVS",
@@ -183,6 +194,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABDSTResultVS",
+      "title" : "TB-LAB - DST result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABDSTResultCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABDSTResultVS",
@@ -192,6 +212,15 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABFinalCultureResultVS",
+      "title" : "TB-LAB - Final culture result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
@@ -217,6 +246,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABLPASpecimenVS",
+      "title" : "TB-LAB - LPA specimen value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABLPASpecimenCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABLPASpecimenVS",
@@ -229,6 +267,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABMTBTestResultVS",
+      "title" : "TB-LAB - MTB test result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABMTBTestResultCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABMTBTestResultVS",
@@ -238,6 +285,15 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSampleQualityVS",
+      "title" : "TB-LAB - Sample quality value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
@@ -272,6 +328,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSampleStatusVS",
+      "title" : "TB-LAB - Sample status value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
@@ -282,6 +347,15 @@
       },
       "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
       "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBLABSmearResultVS",
+      "title" : "TB-LAB - Smear result value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",

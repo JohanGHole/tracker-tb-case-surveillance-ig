@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-06T08:51:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T11:12:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -540,6 +540,18 @@
        ] ;
        fhir:name [ fhir:v "Diagnostic laboratory results" ] ;
        fhir:description [ fhir:v "Captures diagnostic test results along with sample information to determine TB infection status." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/DiagnosticLaboratoryResultsQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/DiagnosticLaboratoryResultsQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnostic Laboratory Results Questionnaire" ] ;
+       fhir:description [ fhir:v "A questionnaire for capturing diagnostic test results and sample information to determine TB infection status." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

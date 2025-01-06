@@ -9,8 +9,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
+      "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",
@@ -33,6 +33,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_SusceptibleResistantIndeterminateVS.html" : "Susceptible/Resistant/Indeterminate value set",
       "ValueSet-SusceptibleResistantIndeterminateVS.html" : "Susceptible/Resistant/Indeterminate value set"
     },
     {
@@ -55,8 +56,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
-      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
+      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
@@ -67,8 +68,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set",
-      "ValueSet-TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set"
+      "ValueSet-TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set",
+      "ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
@@ -90,8 +91,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
-      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
+      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
+      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
@@ -113,8 +114,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
-      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
@@ -125,6 +126,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABDSTResultVS.html" : "TB-LAB - DST result value set",
       "ValueSet-TBLABDSTResultVS.html" : "TB-LAB - DST result value set"
     },
     {
@@ -136,8 +138,9 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
       "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
@@ -148,6 +151,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABLPASpecimenVS.html" : "TB-LAB - LPA specimen value set",
       "ValueSet-TBLABLPASpecimenVS.html" : "TB-LAB - LPA specimen value set"
     },
     {
@@ -159,6 +163,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set",
       "ValueSet-TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set"
     },
     {
@@ -171,6 +176,7 @@
       "uses" : {
       },
       "ValueSet-TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set"
     },
     {
@@ -182,8 +188,9 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
+      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
@@ -194,6 +201,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
       "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
     }
