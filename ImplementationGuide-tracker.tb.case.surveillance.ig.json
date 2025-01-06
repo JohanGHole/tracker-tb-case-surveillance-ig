@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2025-01-06T11:12:04+00:00",
+  "date" : "2025-01-06T11:34:04+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -610,6 +610,18 @@
         "reference" : "StructureDefinition/DiagnosisAndNotification"
       },
       "name" : "Diagnosis and notification",
+      "description" : "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/DiagnosisAndNotificationQuestionnaire"
+      },
+      "name" : "Diagnosis and Notification Questionnaire",
       "description" : "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.",
       "exampleBoolean" : false
     },

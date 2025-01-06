@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-06T11:12:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T11:34:04+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -527,6 +527,18 @@
          fhir:reference [ fhir:v "StructureDefinition/DiagnosisAndNotification" ]
        ] ;
        fhir:name [ fhir:v "Diagnosis and notification" ] ;
+       fhir:description [ fhir:v "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/DiagnosisAndNotificationQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/DiagnosisAndNotificationQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosis and Notification Questionnaire" ] ;
        fhir:description [ fhir:v "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

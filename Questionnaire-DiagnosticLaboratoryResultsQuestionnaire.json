@@ -172,7 +172,7 @@
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2025-01-06T11:12:04+00:00",
+  "date" : "2025-01-06T11:34:04+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",

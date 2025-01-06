@@ -11,6 +11,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "GENYesNoUnknownVS",
+      "title" : "GEN - Yes/No/Unknown value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
@@ -67,6 +76,15 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSConfirmationMethodVS",
+      "title" : "TB CS - Confirmation method value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSConfirmationMethodCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
@@ -128,6 +146,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSSiteOfDiseaseVS",
+      "title" : "TB CS - Site of disease value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBCSSiteOfDiseaseVS",
@@ -158,6 +185,15 @@
       "uses" : {
       },
       "StructureDefinition-TBTreatment.html" : "TB Treatment"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSTreatmentHistoryVS",
+      "title" : "TB CS - Treatment history value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentHistoryCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",

@@ -10,7 +10,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-01-06T11:12:04+00:00"/>
+  <date value="2025-01-06T11:34:04+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -454,6 +454,17 @@
         <reference value="StructureDefinition/DiagnosisAndNotification"/>
       </reference>
       <name value="Diagnosis and notification"/>
+      <description value="Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DiagnosisAndNotificationQuestionnaire"/>
+      </reference>
+      <name value="Diagnosis and Notification Questionnaire"/>
       <description value="Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases."/>
       <exampleBoolean value="false"/>
     </resource>
