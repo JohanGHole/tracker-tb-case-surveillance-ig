@@ -1,5 +1,6 @@
 ValueSet: TBLABSampleStatusVS
 Title: "TB-LAB - Sample status value set"
+Description: "Value set for DHIS2 'Sample status' option set."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"

@@ -1,5 +1,6 @@
 ValueSet: TBCSSiteOfDiseaseVS
 Title: "TB CS - Site of disease value set"
+Description: "Value set for DHIS2 'Site of disease' option set."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
