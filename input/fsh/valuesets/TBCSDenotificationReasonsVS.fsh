@@ -1,4 +1,8 @@
 ValueSet: TBCSDenotificationReasonsVS
-Id: tb-cs---denotification-reasons-vs
 Title: "TB CS - Denotification reasons value set"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"
+* ^status = #active
+* ^experimental = true
 * codes from system TBCSDenotificationReasonsCS

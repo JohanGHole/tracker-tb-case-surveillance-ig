@@ -1,5 +1,8 @@
 CodeSystem: TBLABSampleQualityCS
-Id: tb-lab---sample-quality-cs
 Title: "TB-LAB - Sample quality"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
+* ^experimental = true
+* ^caseSensitive = true
 * #"GOOD" "Good (accepted for processing)"
 * #"POOR" "Poor (rejected for processing)"

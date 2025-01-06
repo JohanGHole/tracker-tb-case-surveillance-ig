@@ -1,5 +1,8 @@
 CodeSystem: TBLABLPASpecimenCS
-Id: tb-lab---lpa-specimen-cs
 Title: "TB-LAB - LPA specimen"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
+* ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
+* ^experimental = true
+* ^caseSensitive = true
 * #"SPUTUM_SAMPLES_OR_SEDIMENTS" "Sputum samples or sediments"
 * #"MTB_CULTURE_ISOLATES" "MTB culture isolates"
