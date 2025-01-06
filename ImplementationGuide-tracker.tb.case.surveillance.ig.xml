@@ -14,7 +14,7 @@
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-01-06T13:14:19+00:00"/>
+  <date value="2025-01-06T13:23:20+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -502,6 +502,7 @@
         <reference value="CodeSystem/GENYesNoUnknownCS"/>
       </reference>
       <name value="GEN - Yes/No/Unknown"/>
+      <description value="Code system for 'Yes/No/Unknown' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -555,6 +556,7 @@
         <reference value="CodeSystem/RRTGENSexCS"/>
       </reference>
       <name value="RRT - GEN - Sex"/>
+      <description value="Code system for DHIS2 'Sex' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -575,6 +577,7 @@
         <reference value="CodeSystem/SusceptibleResistantIndeterminateCS"/>
       </reference>
       <name value="Susceptible/Resistant/Indeterminate"/>
+      <description value="Code system for DHIS2 'Susceptible/Resistant/Indeterminate' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -617,6 +620,7 @@
         <reference value="CodeSystem/TBCSConfirmationMethodCS"/>
       </reference>
       <name value="TB CS - Confirmation method"/>
+      <description value="Code system for DHIS2 'Confirmation method' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -637,6 +641,7 @@
         <reference value="CodeSystem/TBCSDenotificationReasonsCS"/>
       </reference>
       <name value="TB CS - Denotification reasons"/>
+      <description value="Code system for DHIS2 'Denotification reasons' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -657,6 +662,7 @@
         <reference value="CodeSystem/TBCSResistanceClassificationCS"/>
       </reference>
       <name value="TB CS - Resistance Classification"/>
+      <description value="Code system for DHIS2 'Resistance Classification' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -677,6 +683,7 @@
         <reference value="CodeSystem/TBCSSiteOfDiseaseCS"/>
       </reference>
       <name value="TB CS - Site of disease"/>
+      <description value="Code system for DHIS2 'Site of disease' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -697,6 +704,7 @@
         <reference value="CodeSystem/TBCSTreatmentCategoryCS"/>
       </reference>
       <name value="TB CS - Treatment category"/>
+      <description value="Code system for DHIS2 'Treatment category' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -717,6 +725,7 @@
         <reference value="CodeSystem/TBCSTreatmentHistoryCS"/>
       </reference>
       <name value="TB CS - Treatment history"/>
+      <description value="Code system for DHIS2 'Treatment history' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -737,6 +746,7 @@
         <reference value="CodeSystem/TBCSTreatmentOutcomeCS"/>
       </reference>
       <name value="TB CS - Treatment outcome"/>
+      <description value="Code system for DHIS2 'Treatment outcome' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -790,6 +800,7 @@
         <reference value="CodeSystem/TBLABDSTResultCS"/>
       </reference>
       <name value="TB-LAB - DST result"/>
+      <description value="Code system for DHIS2 'DST result' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -810,6 +821,7 @@
         <reference value="CodeSystem/TBLABFinalCultureResultCS"/>
       </reference>
       <name value="TB-LAB - Final culture result"/>
+      <description value="Code system for DHIS2 'Final culture result' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -830,6 +842,7 @@
         <reference value="CodeSystem/TBLABLPASpecimenCS"/>
       </reference>
       <name value="TB-LAB - LPA specimen"/>
+      <description value="Code system for DHIS2 'LPA specimen' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -850,6 +863,7 @@
         <reference value="CodeSystem/TBLABMTBTestResultCS"/>
       </reference>
       <name value="TB-LAB - MTB test result"/>
+      <description value="Code system for DHIS2 'MTB test result' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -870,6 +884,7 @@
         <reference value="CodeSystem/TBLABSampleQualityCS"/>
       </reference>
       <name value="TB-LAB - Sample quality"/>
+      <description value="Code system for DHIS2 'Sample quality' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -890,6 +905,7 @@
         <reference value="CodeSystem/TBLABSampleStatusCS"/>
       </reference>
       <name value="TB-LAB - Sample status"/>
+      <description value="Code system for DHIS2 'Sample status' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -910,6 +926,7 @@
         <reference value="CodeSystem/TBLABSmearResultCS"/>
       </reference>
       <name value="TB-LAB - Smear result"/>
+      <description value="Code system for DHIS2 'Smear result' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

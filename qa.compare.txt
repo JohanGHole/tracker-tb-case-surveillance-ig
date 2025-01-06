@@ -1,27 +1,27 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 120, warn = 268, info = 12
+err = 103, warn = 234, info = 12
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 6 / 38 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSConfirmationMethodCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSDenotificationReasonsCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSResistanceClassificationCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSSiteOfDiseaseCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentCategoryCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentHistoryCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentOutcomeCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABDSTResultCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABFinalCultureResultCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABLPASpecimenCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABMTBTestResultCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleQualityCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 1 / 1 / 4
- /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 1 / 1 / 4
+ Build Errors : 6 / 21 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSConfirmationMethodCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSDenotificationReasonsCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSResistanceClassificationCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSSiteOfDiseaseCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentCategoryCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentHistoryCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBCSTreatmentOutcomeCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABDSTResultCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABFinalCultureResultCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABLPASpecimenCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABMTBTestResultCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleQualityCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 0 / 0 / 4
+ /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 14 / 0 / 24
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 26 / 0 / 40
@@ -71,23 +71,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSampleQualityVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSampleStatusVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSmearResultVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/GENYesNoUnknownCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/RRTGENSexCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/SusceptibleResistantIndeterminateCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSConfirmationMethodCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSDenotificationReasonsCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSResistanceClassificationCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSSiteOfDiseaseCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSTreatmentCategoryCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSTreatmentHistoryCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBCSTreatmentOutcomeCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABDSTResultCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABFinalCultureResultCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABLPASpecimenCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABMTBTestResultCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABSampleQualityCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABSampleStatusCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABSmearResultCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 411
 ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 426
 ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 429
@@ -99,56 +82,22 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-GENYesNoUnknownCS.json ==
-ERROR: CodeSystem/GENYesNoUnknownCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/GENYesNoUnknownCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-RRTGENSexCS.json ==
-ERROR: CodeSystem/RRTGENSexCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/RRTGENSexCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS.json ==
-ERROR: CodeSystem/SusceptibleResistantIndeterminateCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/SusceptibleResistantIndeterminateCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSConfirmationMethodCS.json ==
-ERROR: CodeSystem/TBCSConfirmationMethodCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSConfirmationMethodCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSDenotificationReasonsCS.json ==
-ERROR: CodeSystem/TBCSDenotificationReasonsCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSDenotificationReasonsCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSResistanceClassificationCS.json ==
-ERROR: CodeSystem/TBCSResistanceClassificationCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSResistanceClassificationCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSSiteOfDiseaseCS.json ==
-ERROR: CodeSystem/TBCSSiteOfDiseaseCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSSiteOfDiseaseCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSTreatmentCategoryCS.json ==
-ERROR: CodeSystem/TBCSTreatmentCategoryCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSTreatmentCategoryCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSTreatmentHistoryCS.json ==
-ERROR: CodeSystem/TBCSTreatmentHistoryCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSTreatmentHistoryCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBCSTreatmentOutcomeCS.json ==
-ERROR: CodeSystem/TBCSTreatmentOutcomeCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBCSTreatmentOutcomeCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABDSTResultCS.json ==
-ERROR: CodeSystem/TBLABDSTResultCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABDSTResultCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABFinalCultureResultCS.json ==
-ERROR: CodeSystem/TBLABFinalCultureResultCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABFinalCultureResultCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABLPASpecimenCS.json ==
-ERROR: CodeSystem/TBLABLPASpecimenCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABLPASpecimenCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABMTBTestResultCS.json ==
-ERROR: CodeSystem/TBLABMTBTestResultCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABMTBTestResultCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABSampleQualityCS.json ==
-ERROR: CodeSystem/TBLABSampleQualityCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABSampleQualityCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABSampleStatusCS.json ==
-ERROR: CodeSystem/TBLABSampleStatusCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABSampleStatusCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-TBLABSmearResultCS.json ==
-ERROR: CodeSystem/TBLABSmearResultCS: CodeSystem: CodeSystem.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem|1.0.0)
-WARNING: CodeSystem/TBLABSmearResultCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
 ERROR: ImplementationGuide/tracker.tb.case.surveillance.ig: ImplementationGuide: ImplementationGuide.experimental: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|1.0.0)
 ERROR: ImplementationGuide/tracker.tb.case.surveillance.ig: ImplementationGuide: ImplementationGuide.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|1.0.0)

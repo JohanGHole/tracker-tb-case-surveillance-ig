@@ -15,7 +15,7 @@
   <title value="TB-LAB - Sample status"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-06T13:14:19+00:00"/>
+  <date value="2025-01-06T13:23:20+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -24,6 +24,7 @@
       <value value="http://dhis2.org"/>
     </telecom>
   </contact>
+  <description value="Code system for DHIS2 'Sample status' option set."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="2"/>

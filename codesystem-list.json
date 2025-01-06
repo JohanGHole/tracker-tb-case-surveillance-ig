@@ -6,7 +6,7 @@
       "status" : "draft",
       "name" : "GENYesNoUnknownCS",
       "title" : "GEN - Yes/No/Unknown",
-      "description" : null
+      "description" : "Code system for 'Yes/No/Unknown' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",
@@ -14,7 +14,7 @@
       "status" : "draft",
       "name" : "RRTGENSexCS",
       "title" : "RRT - GEN - Sex",
-      "description" : null
+      "description" : "Code system for DHIS2 'Sex' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
@@ -22,7 +22,7 @@
       "status" : "draft",
       "name" : "SusceptibleResistantIndeterminateCS",
       "title" : "Susceptible/Resistant/Indeterminate",
-      "description" : null
+      "description" : "Code system for DHIS2 'Susceptible/Resistant/Indeterminate' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
@@ -30,7 +30,7 @@
       "status" : "draft",
       "name" : "TBCSConfirmationMethodCS",
       "title" : "TB CS - Confirmation method",
-      "description" : null
+      "description" : "Code system for DHIS2 'Confirmation method' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
@@ -38,7 +38,7 @@
       "status" : "draft",
       "name" : "TBCSDenotificationReasonsCS",
       "title" : "TB CS - Denotification reasons",
-      "description" : null
+      "description" : "Code system for DHIS2 'Denotification reasons' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
@@ -46,7 +46,7 @@
       "status" : "draft",
       "name" : "TBCSResistanceClassificationCS",
       "title" : "TB CS - Resistance Classification",
-      "description" : null
+      "description" : "Code system for DHIS2 'Resistance Classification' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
@@ -54,7 +54,7 @@
       "status" : "draft",
       "name" : "TBCSSiteOfDiseaseCS",
       "title" : "TB CS - Site of disease",
-      "description" : null
+      "description" : "Code system for DHIS2 'Site of disease' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
@@ -62,7 +62,7 @@
       "status" : "draft",
       "name" : "TBCSTreatmentCategoryCS",
       "title" : "TB CS - Treatment category",
-      "description" : null
+      "description" : "Code system for DHIS2 'Treatment category' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
@@ -70,7 +70,7 @@
       "status" : "draft",
       "name" : "TBCSTreatmentHistoryCS",
       "title" : "TB CS - Treatment history",
-      "description" : null
+      "description" : "Code system for DHIS2 'Treatment history' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
@@ -78,7 +78,7 @@
       "status" : "draft",
       "name" : "TBCSTreatmentOutcomeCS",
       "title" : "TB CS - Treatment outcome",
-      "description" : null
+      "description" : "Code system for DHIS2 'Treatment outcome' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
@@ -86,7 +86,7 @@
       "status" : "draft",
       "name" : "TBLABDSTResultCS",
       "title" : "TB-LAB - DST result",
-      "description" : null
+      "description" : "Code system for DHIS2 'DST result' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
@@ -94,7 +94,7 @@
       "status" : "draft",
       "name" : "TBLABFinalCultureResultCS",
       "title" : "TB-LAB - Final culture result",
-      "description" : null
+      "description" : "Code system for DHIS2 'Final culture result' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
@@ -102,7 +102,7 @@
       "status" : "draft",
       "name" : "TBLABLPASpecimenCS",
       "title" : "TB-LAB - LPA specimen",
-      "description" : null
+      "description" : "Code system for DHIS2 'LPA specimen' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
@@ -110,7 +110,7 @@
       "status" : "draft",
       "name" : "TBLABMTBTestResultCS",
       "title" : "TB-LAB - MTB test result",
-      "description" : null
+      "description" : "Code system for DHIS2 'MTB test result' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
@@ -118,7 +118,7 @@
       "status" : "draft",
       "name" : "TBLABSampleQualityCS",
       "title" : "TB-LAB - Sample quality",
-      "description" : null
+      "description" : "Code system for DHIS2 'Sample quality' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
@@ -126,7 +126,7 @@
       "status" : "draft",
       "name" : "TBLABSampleStatusCS",
       "title" : "TB-LAB - Sample status",
-      "description" : null
+      "description" : "Code system for DHIS2 'Sample status' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
@@ -134,7 +134,7 @@
       "status" : "draft",
       "name" : "TBLABSmearResultCS",
       "title" : "TB-LAB - Smear result",
-      "description" : null
+      "description" : "Code system for DHIS2 'Smear result' option set."
     }
   ]
 }

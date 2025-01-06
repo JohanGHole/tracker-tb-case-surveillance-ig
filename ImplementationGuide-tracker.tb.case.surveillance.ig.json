@@ -14,7 +14,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2025-01-06T13:14:19+00:00",
+  "date" : "2025-01-06T13:23:20+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -662,6 +662,7 @@
         "reference" : "CodeSystem/GENYesNoUnknownCS"
       },
       "name" : "GEN - Yes/No/Unknown",
+      "description" : "Code system for 'Yes/No/Unknown' option set.",
       "exampleBoolean" : false
     },
     {
@@ -720,6 +721,7 @@
         "reference" : "CodeSystem/RRTGENSexCS"
       },
       "name" : "RRT - GEN - Sex",
+      "description" : "Code system for DHIS2 'Sex' option set.",
       "exampleBoolean" : false
     },
     {
@@ -742,6 +744,7 @@
         "reference" : "CodeSystem/SusceptibleResistantIndeterminateCS"
       },
       "name" : "Susceptible/Resistant/Indeterminate",
+      "description" : "Code system for DHIS2 'Susceptible/Resistant/Indeterminate' option set.",
       "exampleBoolean" : false
     },
     {
@@ -788,6 +791,7 @@
         "reference" : "CodeSystem/TBCSConfirmationMethodCS"
       },
       "name" : "TB CS - Confirmation method",
+      "description" : "Code system for DHIS2 'Confirmation method' option set.",
       "exampleBoolean" : false
     },
     {
@@ -810,6 +814,7 @@
         "reference" : "CodeSystem/TBCSDenotificationReasonsCS"
       },
       "name" : "TB CS - Denotification reasons",
+      "description" : "Code system for DHIS2 'Denotification reasons' option set.",
       "exampleBoolean" : false
     },
     {
@@ -832,6 +837,7 @@
         "reference" : "CodeSystem/TBCSResistanceClassificationCS"
       },
       "name" : "TB CS - Resistance Classification",
+      "description" : "Code system for DHIS2 'Resistance Classification' option set.",
       "exampleBoolean" : false
     },
     {
@@ -854,6 +860,7 @@
         "reference" : "CodeSystem/TBCSSiteOfDiseaseCS"
       },
       "name" : "TB CS - Site of disease",
+      "description" : "Code system for DHIS2 'Site of disease' option set.",
       "exampleBoolean" : false
     },
     {
@@ -876,6 +883,7 @@
         "reference" : "CodeSystem/TBCSTreatmentCategoryCS"
       },
       "name" : "TB CS - Treatment category",
+      "description" : "Code system for DHIS2 'Treatment category' option set.",
       "exampleBoolean" : false
     },
     {
@@ -898,6 +906,7 @@
         "reference" : "CodeSystem/TBCSTreatmentHistoryCS"
       },
       "name" : "TB CS - Treatment history",
+      "description" : "Code system for DHIS2 'Treatment history' option set.",
       "exampleBoolean" : false
     },
     {
@@ -920,6 +929,7 @@
         "reference" : "CodeSystem/TBCSTreatmentOutcomeCS"
       },
       "name" : "TB CS - Treatment outcome",
+      "description" : "Code system for DHIS2 'Treatment outcome' option set.",
       "exampleBoolean" : false
     },
     {
@@ -978,6 +988,7 @@
         "reference" : "CodeSystem/TBLABDSTResultCS"
       },
       "name" : "TB-LAB - DST result",
+      "description" : "Code system for DHIS2 'DST result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1000,6 +1011,7 @@
         "reference" : "CodeSystem/TBLABFinalCultureResultCS"
       },
       "name" : "TB-LAB - Final culture result",
+      "description" : "Code system for DHIS2 'Final culture result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1022,6 +1034,7 @@
         "reference" : "CodeSystem/TBLABLPASpecimenCS"
       },
       "name" : "TB-LAB - LPA specimen",
+      "description" : "Code system for DHIS2 'LPA specimen' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1044,6 +1057,7 @@
         "reference" : "CodeSystem/TBLABMTBTestResultCS"
       },
       "name" : "TB-LAB - MTB test result",
+      "description" : "Code system for DHIS2 'MTB test result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1066,6 +1080,7 @@
         "reference" : "CodeSystem/TBLABSampleQualityCS"
       },
       "name" : "TB-LAB - Sample quality",
+      "description" : "Code system for DHIS2 'Sample quality' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1088,6 +1103,7 @@
         "reference" : "CodeSystem/TBLABSampleStatusCS"
       },
       "name" : "TB-LAB - Sample status",
+      "description" : "Code system for DHIS2 'Sample status' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1110,6 +1126,7 @@
         "reference" : "CodeSystem/TBLABSmearResultCS"
       },
       "name" : "TB-LAB - Smear result",
+      "description" : "Code system for DHIS2 'Smear result' option set.",
       "exampleBoolean" : false
     },
     {

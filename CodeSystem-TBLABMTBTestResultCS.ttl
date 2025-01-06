@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "TB-LAB - MTB test result"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T13:14:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:23:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -36,6 +36,7 @@
        fhir:value [ fhir:v "http://dhis2.org" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Code system for DHIS2 'MTB test result' option set."] ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 

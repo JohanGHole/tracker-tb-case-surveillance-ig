@@ -15,7 +15,7 @@
   "title" : "TB-LAB - Sample quality",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-06T13:14:19+00:00",
+  "date" : "2025-01-06T13:23:20+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -24,6 +24,7 @@
       "value" : "http://dhis2.org"
     }]
   }],
+  "description" : "Code system for DHIS2 'Sample quality' option set.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 2,

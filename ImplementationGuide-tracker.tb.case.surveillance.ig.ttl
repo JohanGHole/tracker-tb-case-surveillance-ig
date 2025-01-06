@@ -26,7 +26,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-06T13:14:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:23:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -584,6 +584,7 @@
          fhir:reference [ fhir:v "CodeSystem/GENYesNoUnknownCS" ]
        ] ;
        fhir:name [ fhir:v "GEN - Yes/No/Unknown" ] ;
+       fhir:description [ fhir:v "Code system for 'Yes/No/Unknown' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -642,6 +643,7 @@
          fhir:reference [ fhir:v "CodeSystem/RRTGENSexCS" ]
        ] ;
        fhir:name [ fhir:v "RRT - GEN - Sex" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Sex' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -664,6 +666,7 @@
          fhir:reference [ fhir:v "CodeSystem/SusceptibleResistantIndeterminateCS" ]
        ] ;
        fhir:name [ fhir:v "Susceptible/Resistant/Indeterminate" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Susceptible/Resistant/Indeterminate' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -710,6 +713,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSConfirmationMethodCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Confirmation method" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Confirmation method' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -732,6 +736,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSDenotificationReasonsCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Denotification reasons" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Denotification reasons' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -754,6 +759,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSResistanceClassificationCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Resistance Classification" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Resistance Classification' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -776,6 +782,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSSiteOfDiseaseCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Site of disease" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Site of disease' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -798,6 +805,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentCategoryCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment category" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Treatment category' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -820,6 +828,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentHistoryCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment history" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Treatment history' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -842,6 +851,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBCSTreatmentOutcomeCS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment outcome" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Treatment outcome' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -900,6 +910,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABDSTResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - DST result" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'DST result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -922,6 +933,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABFinalCultureResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Final culture result" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Final culture result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -944,6 +956,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABLPASpecimenCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - LPA specimen" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'LPA specimen' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -966,6 +979,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABMTBTestResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - MTB test result" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'MTB test result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -988,6 +1002,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABSampleQualityCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample quality" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Sample quality' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1010,6 +1025,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABSampleStatusCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample status" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Sample status' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1032,6 +1048,7 @@
          fhir:reference [ fhir:v "CodeSystem/TBLABSmearResultCS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Smear result" ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Smear result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
