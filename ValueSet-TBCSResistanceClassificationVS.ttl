@@ -30,7 +30,7 @@
   fhir:title [ fhir:v "TB CS - Resistance Classification value set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T11:34:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T11:54:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
