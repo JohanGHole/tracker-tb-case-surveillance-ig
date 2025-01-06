@@ -149,6 +149,7 @@
       <title value="TB-LAB - DST result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'DST result' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABDSTResultCS"/>
@@ -169,6 +170,7 @@
       <title value="Susceptible/Resistant/Indeterminate value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"/>
@@ -189,6 +191,7 @@
       <title value="TB-LAB - MTB test result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'MTB test result' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABMTBTestResultCS"/>
@@ -209,6 +212,7 @@
       <title value="TB-LAB - Final culture result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Final culture result' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABFinalCultureResultCS"/>
@@ -229,6 +233,7 @@
       <title value="TB-LAB - Smear result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Smear result' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABSmearResultCS"/>
@@ -249,6 +254,7 @@
       <title value="TB-LAB - Sample quality value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Sample quality' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABSampleQualityCS"/>
@@ -269,6 +275,7 @@
       <title value="TB-LAB - LPA specimen value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'LPA specimen' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABLPASpecimenCS"/>
@@ -289,6 +296,7 @@
       <title value="TB-LAB - Sample status value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Sample status' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBLABSampleStatusCS"/>
@@ -303,7 +311,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <subjectType value="Patient"/>
-  <date value="2025-01-06T13:44:48+00:00"/>
+  <date value="2025-01-06T13:48:57+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

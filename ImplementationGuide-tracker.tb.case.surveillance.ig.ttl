@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T13:44:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:48:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -598,6 +598,7 @@
          fhir:reference [ fhir:v "ValueSet/GENYesNoUnknownVS" ]
        ] ;
        fhir:name [ fhir:v "GEN - Yes/No/Unknown value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Yes/No/Unknown' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -657,6 +658,7 @@
          fhir:reference [ fhir:v "ValueSet/RRTGENSexVS" ]
        ] ;
        fhir:name [ fhir:v "RRT - GEN - Sex value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Sex' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -680,6 +682,7 @@
          fhir:reference [ fhir:v "ValueSet/SusceptibleResistantIndeterminateVS" ]
        ] ;
        fhir:name [ fhir:v "Susceptible/Resistant/Indeterminate value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -727,6 +730,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSConfirmationMethodVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Confirmation method value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Confirmation method' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -750,6 +754,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSDenotificationReasonsVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Denotification reasons value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Denotification reasons' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -773,6 +778,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSResistanceClassificationVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Resistance Classification value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Resistance Classification' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -796,6 +802,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSSiteOfDiseaseVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Site of disease value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Site of disease' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -819,6 +826,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSTreatmentCategoryVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment category value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Treatment category' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -842,6 +850,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSTreatmentHistoryVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment history value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Treatment history' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -865,6 +874,7 @@
          fhir:reference [ fhir:v "ValueSet/TBCSTreatmentOutcomeVS" ]
        ] ;
        fhir:name [ fhir:v "TB CS - Treatment outcome value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Treatment outcome' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -924,6 +934,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABDSTResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - DST result value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'DST result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -947,6 +958,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABFinalCultureResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Final culture result value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Final culture result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -970,6 +982,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABLPASpecimenVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - LPA specimen value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'LPA specimen' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -993,6 +1006,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABMTBTestResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - MTB test result value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'MTB test result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1016,6 +1030,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABSampleQualityVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample quality value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Sample quality' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1039,6 +1054,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABSampleStatusVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Sample status value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Sample status' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1062,6 +1078,7 @@
          fhir:reference [ fhir:v "ValueSet/TBLABSmearResultVS" ]
        ] ;
        fhir:name [ fhir:v "TB-LAB - Smear result value set" ] ;
+       fhir:description [ fhir:v "Value set for DHIS2 'Smear result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

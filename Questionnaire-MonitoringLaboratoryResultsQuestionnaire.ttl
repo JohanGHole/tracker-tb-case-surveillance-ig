@@ -45,6 +45,7 @@
      fhir:title [ fhir:v "TB-LAB - Final culture result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Final culture result' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBLABFinalCultureResultCS"^^xsd:anyURI ]
@@ -70,6 +71,7 @@
      fhir:title [ fhir:v "TB-LAB - Smear result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Smear result' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBLABSmearResultCS"^^xsd:anyURI ]
@@ -95,6 +97,7 @@
      fhir:title [ fhir:v "TB-LAB - Sample quality value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Sample quality' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBLABSampleQualityCS"^^xsd:anyURI ]
@@ -120,6 +123,7 @@
      fhir:title [ fhir:v "TB-LAB - Sample status value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Sample status' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBLABSampleStatusCS"^^xsd:anyURI ]
@@ -135,7 +139,7 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
-  fhir:date [ fhir:v "2025-01-06T13:44:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:48:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

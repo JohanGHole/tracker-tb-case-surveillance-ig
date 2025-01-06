@@ -15,7 +15,7 @@
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-06T13:44:48+00:00",
+  "date" : "2025-01-06T13:48:57+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -676,6 +676,7 @@
         "reference" : "ValueSet/GENYesNoUnknownVS"
       },
       "name" : "GEN - Yes/No/Unknown value set",
+      "description" : "Value set for DHIS2 'Yes/No/Unknown' option set.",
       "exampleBoolean" : false
     },
     {
@@ -735,6 +736,7 @@
         "reference" : "ValueSet/RRTGENSexVS"
       },
       "name" : "RRT - GEN - Sex value set",
+      "description" : "Value set for DHIS2 'Sex' option set.",
       "exampleBoolean" : false
     },
     {
@@ -758,6 +760,7 @@
         "reference" : "ValueSet/SusceptibleResistantIndeterminateVS"
       },
       "name" : "Susceptible/Resistant/Indeterminate value set",
+      "description" : "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set.",
       "exampleBoolean" : false
     },
     {
@@ -805,6 +808,7 @@
         "reference" : "ValueSet/TBCSConfirmationMethodVS"
       },
       "name" : "TB CS - Confirmation method value set",
+      "description" : "Value set for DHIS2 'Confirmation method' option set.",
       "exampleBoolean" : false
     },
     {
@@ -828,6 +832,7 @@
         "reference" : "ValueSet/TBCSDenotificationReasonsVS"
       },
       "name" : "TB CS - Denotification reasons value set",
+      "description" : "Value set for DHIS2 'Denotification reasons' option set.",
       "exampleBoolean" : false
     },
     {
@@ -851,6 +856,7 @@
         "reference" : "ValueSet/TBCSResistanceClassificationVS"
       },
       "name" : "TB CS - Resistance Classification value set",
+      "description" : "Value set for DHIS2 'Resistance Classification' option set.",
       "exampleBoolean" : false
     },
     {
@@ -874,6 +880,7 @@
         "reference" : "ValueSet/TBCSSiteOfDiseaseVS"
       },
       "name" : "TB CS - Site of disease value set",
+      "description" : "Value set for DHIS2 'Site of disease' option set.",
       "exampleBoolean" : false
     },
     {
@@ -897,6 +904,7 @@
         "reference" : "ValueSet/TBCSTreatmentCategoryVS"
       },
       "name" : "TB CS - Treatment category value set",
+      "description" : "Value set for DHIS2 'Treatment category' option set.",
       "exampleBoolean" : false
     },
     {
@@ -920,6 +928,7 @@
         "reference" : "ValueSet/TBCSTreatmentHistoryVS"
       },
       "name" : "TB CS - Treatment history value set",
+      "description" : "Value set for DHIS2 'Treatment history' option set.",
       "exampleBoolean" : false
     },
     {
@@ -943,6 +952,7 @@
         "reference" : "ValueSet/TBCSTreatmentOutcomeVS"
       },
       "name" : "TB CS - Treatment outcome value set",
+      "description" : "Value set for DHIS2 'Treatment outcome' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1002,6 +1012,7 @@
         "reference" : "ValueSet/TBLABDSTResultVS"
       },
       "name" : "TB-LAB - DST result value set",
+      "description" : "Value set for DHIS2 'DST result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1025,6 +1036,7 @@
         "reference" : "ValueSet/TBLABFinalCultureResultVS"
       },
       "name" : "TB-LAB - Final culture result value set",
+      "description" : "Value set for DHIS2 'Final culture result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1048,6 +1060,7 @@
         "reference" : "ValueSet/TBLABLPASpecimenVS"
       },
       "name" : "TB-LAB - LPA specimen value set",
+      "description" : "Value set for DHIS2 'LPA specimen' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1071,6 +1084,7 @@
         "reference" : "ValueSet/TBLABMTBTestResultVS"
       },
       "name" : "TB-LAB - MTB test result value set",
+      "description" : "Value set for DHIS2 'MTB test result' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1094,6 +1108,7 @@
         "reference" : "ValueSet/TBLABSampleQualityVS"
       },
       "name" : "TB-LAB - Sample quality value set",
+      "description" : "Value set for DHIS2 'Sample quality' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1117,6 +1132,7 @@
         "reference" : "ValueSet/TBLABSampleStatusVS"
       },
       "name" : "TB-LAB - Sample status value set",
+      "description" : "Value set for DHIS2 'Sample status' option set.",
       "exampleBoolean" : false
     },
     {
@@ -1140,6 +1156,7 @@
         "reference" : "ValueSet/TBLABSmearResultVS"
       },
       "name" : "TB-LAB - Smear result value set",
+      "description" : "Value set for DHIS2 'Smear result' option set.",
       "exampleBoolean" : false
     }],
     "page" : {

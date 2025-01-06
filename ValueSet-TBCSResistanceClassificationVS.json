@@ -16,7 +16,7 @@
   "title" : "TB CS - Resistance Classification value set",
   "status" : "active",
   "experimental" : true,
-  "date" : "2025-01-06T13:44:48+00:00",
+  "date" : "2025-01-06T13:48:57+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -25,6 +25,7 @@
       "value" : "http://dhis2.org"
     }]
   }],
+  "description" : "Value set for DHIS2 'Resistance Classification' option set.",
   "compose" : {
     "include" : [{
       "system" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS"

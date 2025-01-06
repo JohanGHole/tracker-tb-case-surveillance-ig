@@ -24,6 +24,7 @@
     "title" : "RRT - GEN - Sex value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Sex' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/RRTGENSexCS"
@@ -43,6 +44,7 @@
     "title" : "GEN - Yes/No/Unknown value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Yes/No/Unknown' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS"
@@ -58,7 +60,7 @@
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2025-01-06T13:44:48+00:00",
+  "date" : "2025-01-06T13:48:57+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",

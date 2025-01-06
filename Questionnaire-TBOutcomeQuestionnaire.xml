@@ -32,6 +32,7 @@
       <title value="TB CS - Treatment outcome value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Treatment outcome' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"/>
@@ -52,6 +53,7 @@
       <title value="TB CS - Denotification reasons value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Denotification reasons' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
@@ -66,7 +68,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <subjectType value="Patient"/>
-  <date value="2025-01-06T13:44:48+00:00"/>
+  <date value="2025-01-06T13:48:57+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

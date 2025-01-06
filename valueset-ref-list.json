@@ -6,7 +6,7 @@
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Yes/No/Unknown' option set.",
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"]
     },
     {
@@ -15,7 +15,7 @@
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Yes/No/Unknown' option set.",
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"]
     },
     {
@@ -24,7 +24,7 @@
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Yes/No/Unknown' option set.",
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
       "uses" : {
       },
@@ -37,7 +37,7 @@
       "status" : "active",
       "name" : "RRTGENSexVS",
       "title" : "RRT - GEN - Sex value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sex' option set.",
       "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"]
     },
     {
@@ -46,7 +46,7 @@
       "status" : "active",
       "name" : "RRTGENSexVS",
       "title" : "RRT - GEN - Sex value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sex' option set.",
       "systems" : ["http://example.org/CodeSystem/RRTGENSexCS"],
       "uses" : {
       },
@@ -58,7 +58,7 @@
       "status" : "active",
       "name" : "SusceptibleResistantIndeterminateVS",
       "title" : "Susceptible/Resistant/Indeterminate value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set.",
       "systems" : [
         "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"
       ]
@@ -69,7 +69,7 @@
       "status" : "active",
       "name" : "SusceptibleResistantIndeterminateVS",
       "title" : "Susceptible/Resistant/Indeterminate value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set.",
       "systems" : [
         "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS"
       ],
@@ -83,7 +83,7 @@
       "status" : "active",
       "name" : "TBCSConfirmationMethodVS",
       "title" : "TB CS - Confirmation method value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Confirmation method' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSConfirmationMethodCS"]
     },
     {
@@ -92,7 +92,7 @@
       "status" : "active",
       "name" : "TBCSConfirmationMethodVS",
       "title" : "TB CS - Confirmation method value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Confirmation method' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSConfirmationMethodCS"],
       "uses" : {
       },
@@ -104,7 +104,7 @@
       "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Denotification reasons' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSDenotificationReasonsCS"]
     },
     {
@@ -113,7 +113,7 @@
       "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Denotification reasons' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSDenotificationReasonsCS"],
       "uses" : {
       },
@@ -125,7 +125,7 @@
       "status" : "active",
       "name" : "TBCSResistanceClassificationVS",
       "title" : "TB CS - Resistance Classification value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Resistance Classification' option set.",
       "systems" : [
         "http://example.org/CodeSystem/TBCSResistanceClassificationCS"
       ]
@@ -136,7 +136,7 @@
       "status" : "active",
       "name" : "TBCSResistanceClassificationVS",
       "title" : "TB CS - Resistance Classification value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Resistance Classification' option set.",
       "systems" : [
         "http://example.org/CodeSystem/TBCSResistanceClassificationCS"
       ],
@@ -150,7 +150,7 @@
       "status" : "active",
       "name" : "TBCSSiteOfDiseaseVS",
       "title" : "TB CS - Site of disease value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Site of disease' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"]
     },
     {
@@ -159,7 +159,7 @@
       "status" : "active",
       "name" : "TBCSSiteOfDiseaseVS",
       "title" : "TB CS - Site of disease value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Site of disease' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"],
       "uses" : {
       },
@@ -171,7 +171,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentCategoryVS",
       "title" : "TB CS - Treatment category value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment category' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentCategoryCS"]
     },
     {
@@ -180,7 +180,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentCategoryVS",
       "title" : "TB CS - Treatment category value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment category' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentCategoryCS"],
       "uses" : {
       },
@@ -192,7 +192,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentHistoryVS",
       "title" : "TB CS - Treatment history value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment history' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentHistoryCS"]
     },
     {
@@ -201,7 +201,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentHistoryVS",
       "title" : "TB CS - Treatment history value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment history' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentHistoryCS"],
       "uses" : {
       },
@@ -213,7 +213,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentOutcomeVS",
       "title" : "TB CS - Treatment outcome value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment outcome' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"]
     },
     {
@@ -222,7 +222,7 @@
       "status" : "active",
       "name" : "TBCSTreatmentOutcomeVS",
       "title" : "TB CS - Treatment outcome value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Treatment outcome' option set.",
       "systems" : ["http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"],
       "uses" : {
       },
@@ -234,7 +234,7 @@
       "status" : "active",
       "name" : "TBLABDSTResultVS",
       "title" : "TB-LAB - DST result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'DST result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABDSTResultCS"]
     },
     {
@@ -243,7 +243,7 @@
       "status" : "active",
       "name" : "TBLABDSTResultVS",
       "title" : "TB-LAB - DST result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'DST result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABDSTResultCS"],
       "uses" : {
       },
@@ -255,7 +255,7 @@
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Final culture result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"]
     },
     {
@@ -264,7 +264,7 @@
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Final culture result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"]
     },
     {
@@ -273,12 +273,12 @@
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Final culture result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
@@ -286,7 +286,7 @@
       "status" : "active",
       "name" : "TBLABLPASpecimenVS",
       "title" : "TB-LAB - LPA specimen value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'LPA specimen' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABLPASpecimenCS"]
     },
     {
@@ -295,7 +295,7 @@
       "status" : "active",
       "name" : "TBLABLPASpecimenVS",
       "title" : "TB-LAB - LPA specimen value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'LPA specimen' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABLPASpecimenCS"],
       "uses" : {
       },
@@ -307,7 +307,7 @@
       "status" : "active",
       "name" : "TBLABMTBTestResultVS",
       "title" : "TB-LAB - MTB test result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'MTB test result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABMTBTestResultCS"]
     },
     {
@@ -316,7 +316,7 @@
       "status" : "active",
       "name" : "TBLABMTBTestResultVS",
       "title" : "TB-LAB - MTB test result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'MTB test result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABMTBTestResultCS"],
       "uses" : {
       },
@@ -328,7 +328,7 @@
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample quality' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"]
     },
     {
@@ -337,7 +337,7 @@
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample quality' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"]
     },
     {
@@ -346,12 +346,12 @@
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample quality' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
@@ -359,7 +359,7 @@
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample status' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"]
     },
     {
@@ -368,7 +368,7 @@
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample status' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"]
     },
     {
@@ -377,12 +377,12 @@
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Sample status' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
@@ -390,7 +390,7 @@
       "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Smear result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"]
     },
     {
@@ -399,7 +399,7 @@
       "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Smear result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"]
     },
     {
@@ -408,12 +408,12 @@
       "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",
-      "description" : null,
+      "description" : "Value set for DHIS2 'Smear result' option set.",
       "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
     }
   ]
 }

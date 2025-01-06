@@ -44,6 +44,7 @@
       <title value="GEN - Yes/No/Unknown value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Yes/No/Unknown' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/GENYesNoUnknownCS"/>
@@ -64,6 +65,7 @@
       <title value="TB CS - Treatment history value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Treatment history' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBCSTreatmentHistoryCS"/>
@@ -84,6 +86,7 @@
       <title value="TB CS - Confirmation method value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Confirmation method' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBCSConfirmationMethodCS"/>
@@ -104,6 +107,7 @@
       <title value="TB CS - Site of disease value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <description value="Value set for DHIS2 'Site of disease' option set."/>
       <compose>
         <include>
           <system value="http://example.org/CodeSystem/TBCSSiteOfDiseaseCS"/>
@@ -118,7 +122,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <subjectType value="Patient"/>
-  <date value="2025-01-06T13:44:48+00:00"/>
+  <date value="2025-01-06T13:48:57+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

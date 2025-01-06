@@ -45,6 +45,7 @@
      fhir:title [ fhir:v "TB CS - Treatment outcome value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Treatment outcome' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"^^xsd:anyURI ]
@@ -70,6 +71,7 @@
      fhir:title [ fhir:v "TB CS - Denotification reasons value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:description [ fhir:v "Value set for DHIS2 'Denotification reasons' option set." ] ;
      fhir:compose [
        fhir:include ( [
          fhir:system [ fhir:v "http://example.org/CodeSystem/TBCSDenotificationReasonsCS"^^xsd:anyURI ]
@@ -85,7 +87,7 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
-  fhir:date [ fhir:v "2025-01-06T13:44:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:48:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

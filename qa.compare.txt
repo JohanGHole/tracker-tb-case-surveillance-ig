@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 101, warn = 234, info = 12
+err = 62, warn = 200, info = 12
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 6 / 21 / 0
+ Build Errors : 6 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
@@ -23,54 +23,37 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 14 / 0 / 24
- /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 26 / 0 / 40
- /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 14 / 0 / 24
- /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 8 / 0 / 16
- /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 8 / 0 / 16
- /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 8 / 0 / 16
+ /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 10 / 0 / 24
+ /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 18 / 0 / 40
+ /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 10 / 0 / 24
+ /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 6 / 0 / 16
+ /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 6 / 0 / 16
+ /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 6 / 0 / 16
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 20 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 150 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 10 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 6 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 1 / 6 / 1
- /github/workspace/fsh-generated/resources/ValueSet-GENYesNoUnknownVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-RRTGENSexVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-SusceptibleResistantIndeterminateVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSConfirmationMethodVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSDenotificationReasonsVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSResistanceClassificationVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSSiteOfDiseaseVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentCategoryVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentHistoryVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentOutcomeVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABDSTResultVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABFinalCultureResultVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABLPASpecimenVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABMTBTestResultVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleQualityVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleStatusVS : 1 / 1 / 6
- /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 1 / 1 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-GENYesNoUnknownVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-RRTGENSexVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-SusceptibleResistantIndeterminateVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSConfirmationMethodVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSDenotificationReasonsVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSResistanceClassificationVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSSiteOfDiseaseVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentCategoryVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentHistoryVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBCSTreatmentOutcomeVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABDSTResultVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABFinalCultureResultVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABLPASpecimenVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABMTBTestResultVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleQualityVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleStatusVS : 0 / 0 / 6
+ /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 0 / 0 / 6
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/GENYesNoUnknownVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/RRTGENSexVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SusceptibleResistantIndeterminateVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSConfirmationMethodVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSDenotificationReasonsVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSResistanceClassificationVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSSiteOfDiseaseVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSTreatmentCategoryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSTreatmentHistoryVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBCSTreatmentOutcomeVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABDSTResultVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABFinalCultureResultVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABLPASpecimenVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABMTBTestResultVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSampleQualityVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSampleStatusVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/TBLABSmearResultVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 411
 ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 426
 ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 429
@@ -101,16 +84,12 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
 == fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire.json ==
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[0]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[0]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[0]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSTreatmentHistoryVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSTreatmentHistoryVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSTreatmentHistoryVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBCSConfirmationMethodVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBCSConfirmationMethodVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBCSConfirmationMethodVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBCSSiteOfDiseaseVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBCSSiteOfDiseaseVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBCSSiteOfDiseaseVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -118,28 +97,20 @@ INFORMATION: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.
 INFORMATION: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire.json ==
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABDSTResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABDSTResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABDSTResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/SusceptibleResistantIndeterminateVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/SusceptibleResistantIndeterminateVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/SusceptibleResistantIndeterminateVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABMTBTestResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABMTBTestResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABMTBTestResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[4]/*ValueSet/TBLABSmearResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[4]/*ValueSet/TBLABSmearResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[4]/*ValueSet/TBLABSmearResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[5]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[5]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[5]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[6]/*ValueSet/TBLABLPASpecimenVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[6]/*ValueSet/TBLABLPASpecimenVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[6]/*ValueSet/TBLABLPASpecimenVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[7]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[7]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.contained[7]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -147,16 +118,12 @@ INFORMATION: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnai
 INFORMATION: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.json ==
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBLABFinalCultureResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBLABSmearResultVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[2]/*ValueSet/TBLABSampleQualityVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.contained[3]/*ValueSet/TBLABSampleStatusVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -164,10 +131,8 @@ INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnai
 INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json ==
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[0]/*ValueSet/RRTGENSexVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.contained[1]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -175,10 +140,8 @@ INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extens
 INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire.json ==
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentOutcomeVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentOutcomeVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentOutcomeVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSDenotificationReasonsVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSDenotificationReasonsVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSDenotificationReasonsVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -186,10 +149,8 @@ INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: T
 INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire.json ==
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
@@ -404,53 +365,19 @@ WARNING: StructureDefinition/TBTreatment: StructureDefinition.differential.eleme
 WARNING: StructureDefinition/TBTreatment: StructureDefinition.snapshot.element[2].binding: The definition for the element 'TBTreatment.treatmentRegimen' binds to the value set 'http://example.org/ValueSet/TBCSTreatmentCategoryVS' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/TBTreatment: StructureDefinition.snapshot.element[34].binding: The definition for the element 'TBTreatment.newlyAssignedResistanceClassification' binds to the value set 'http://example.org/ValueSet/TBCSResistanceClassificationVS' which is experimental, but this structure is not labeled as experimental
 == fsh-generated/resources/ValueSet-GENYesNoUnknownVS.json ==
-ERROR: ValueSet/GENYesNoUnknownVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/GENYesNoUnknownVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-RRTGENSexVS.json ==
-ERROR: ValueSet/RRTGENSexVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/RRTGENSexVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-SusceptibleResistantIndeterminateVS.json ==
-ERROR: ValueSet/SusceptibleResistantIndeterminateVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/SusceptibleResistantIndeterminateVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSConfirmationMethodVS.json ==
-ERROR: ValueSet/TBCSConfirmationMethodVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSConfirmationMethodVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSDenotificationReasonsVS.json ==
-ERROR: ValueSet/TBCSDenotificationReasonsVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSDenotificationReasonsVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSResistanceClassificationVS.json ==
-ERROR: ValueSet/TBCSResistanceClassificationVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSResistanceClassificationVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSSiteOfDiseaseVS.json ==
-ERROR: ValueSet/TBCSSiteOfDiseaseVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSSiteOfDiseaseVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSTreatmentCategoryVS.json ==
-ERROR: ValueSet/TBCSTreatmentCategoryVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSTreatmentCategoryVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSTreatmentHistoryVS.json ==
-ERROR: ValueSet/TBCSTreatmentHistoryVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSTreatmentHistoryVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBCSTreatmentOutcomeVS.json ==
-ERROR: ValueSet/TBCSTreatmentOutcomeVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBCSTreatmentOutcomeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABDSTResultVS.json ==
-ERROR: ValueSet/TBLABDSTResultVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABDSTResultVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABFinalCultureResultVS.json ==
-ERROR: ValueSet/TBLABFinalCultureResultVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABFinalCultureResultVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABLPASpecimenVS.json ==
-ERROR: ValueSet/TBLABLPASpecimenVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABLPASpecimenVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABMTBTestResultVS.json ==
-ERROR: ValueSet/TBLABMTBTestResultVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABMTBTestResultVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABSampleQualityVS.json ==
-ERROR: ValueSet/TBLABSampleQualityVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABSampleQualityVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABSampleStatusVS.json ==
-ERROR: ValueSet/TBLABSampleStatusVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABSampleStatusVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-TBLABSmearResultVS.json ==
-ERROR: ValueSet/TBLABSmearResultVS: ValueSet: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
-WARNING: ValueSet/TBLABSmearResultVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present

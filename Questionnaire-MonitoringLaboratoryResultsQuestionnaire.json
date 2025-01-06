@@ -24,6 +24,7 @@
     "title" : "TB-LAB - Final culture result value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Final culture result' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS"
@@ -43,6 +44,7 @@
     "title" : "TB-LAB - Smear result value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Smear result' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/TBLABSmearResultCS"
@@ -62,6 +64,7 @@
     "title" : "TB-LAB - Sample quality value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Sample quality' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/TBLABSampleQualityCS"
@@ -81,6 +84,7 @@
     "title" : "TB-LAB - Sample status value set",
     "status" : "active",
     "experimental" : true,
+    "description" : "Value set for DHIS2 'Sample status' option set.",
     "compose" : {
       "include" : [{
         "system" : "http://example.org/CodeSystem/TBLABSampleStatusCS"
@@ -96,7 +100,7 @@
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2025-01-06T13:44:48+00:00",
+  "date" : "2025-01-06T13:48:57+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
