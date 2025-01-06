@@ -1,7 +1,7 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 18, warn = 200, info = 12
+err = 6, warn = 200, info = 0
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
  Build Errors : 6 / 4 / 0
@@ -23,12 +23,12 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 2 / 0 / 24
- /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 2 / 0 / 40
- /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 2 / 0 / 24
- /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 2 / 0 / 16
- /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 2 / 0 / 16
- /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 2 / 0 / 16
+ /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 0 / 0 / 17
+ /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 0 / 0 / 33
+ /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 0 / 0 / 17
+ /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 0 / 0 / 9
+ /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 0 / 0 / 9
+ /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 20 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 150 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 10 / 1
@@ -54,12 +54,12 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 0 / 0 / 6
 </table>
 == n/a ==
-ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 411
-ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 426
-ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 429
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 420
-ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 413
-ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 429
+ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 155
+ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 170
+ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
+ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 164
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 157
+ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -83,35 +83,11 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-TBLABSmearResultCS.json ==
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
 == fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire.json ==
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire.json ==
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/DiagnosticLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.json ==
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/MonitoringLaboratoryResultsQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json ==
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/TBCaseSurveillanceQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire.json ==
-ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire.json ==
-ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
-INFORMATION: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
 ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[2].binding: The definition for the element 'DiagnosisAndNotification.historyOfPreviousTreatment' binds to the value set 'http://example.org/ValueSet/TBCSTreatmentHistoryVS' which is experimental, but this structure is not labeled as experimental

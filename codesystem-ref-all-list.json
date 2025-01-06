@@ -9,9 +9,9 @@
       "description" : "Code system for 'Yes/No/Unknown' option set.",
       "uses" : {
       },
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
       "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",
@@ -22,8 +22,8 @@
       "description" : "Code system for DHIS2 'Sex' option set.",
       "uses" : {
       },
-      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set",
-      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set"
+      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set",
+      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set"
     },
     {
       "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
@@ -58,8 +58,8 @@
       "description" : "Code system for DHIS2 'Denotification reasons' option set.",
       "uses" : {
       },
-      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
-      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
+      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
@@ -106,8 +106,8 @@
       "description" : "Code system for DHIS2 'Treatment history' option set.",
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set",
+      "ValueSet-TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
@@ -118,8 +118,8 @@
       "description" : "Code system for DHIS2 'Treatment outcome' option set.",
       "uses" : {
       },
-      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
-      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
@@ -179,8 +179,8 @@
       "description" : "Code system for DHIS2 'Sample quality' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
       "ValueSet-TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set"
     },
     {
@@ -192,9 +192,9 @@
       "description" : "Code system for DHIS2 'Sample status' option set.",
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
       "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
@@ -205,9 +205,9 @@
       "description" : "Code system for DHIS2 'Smear result' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
+      "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
-      "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
     }
   ]
 }
