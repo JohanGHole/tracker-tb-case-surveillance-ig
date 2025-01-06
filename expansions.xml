@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a87e7a4a-086b-491d-abc6-6b573959fd69"/>
+  <id value="8b3ccb8c-7c09-4e09-abdb-f00544b81a9e"/>
   <meta>
-    <lastUpdated value="2024-12-19T14:33:50.744+00:00"/>
+    <lastUpdated value="2025-01-06T08:12:15.413+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -63,8 +63,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:301ddea9-5df4-4b3b-97e2-2842a4a5f9f9"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -166,8 +166,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:051c5504-f350-4b7b-95b9-296b7e31d995"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -298,8 +298,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:f81247f2-8857-4e57-bcdf-f474367f4a6b"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -413,8 +413,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:f2360d9e-9377-4eeb-9ea0-757b73ed6cc2"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -446,6 +446,222 @@
             <system value="http://example.org/CodeSystem/TBCSDenotificationReasonsCS"/>
             <code value="DUPLICATE"/>
             <display value="Duplicate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSTreatmentCategoryVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSTreatmentCategoryCS.html">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT">FIRST_LINE_TREATMENT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td>
+                <td>First-line Treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT"> </a>  
+                  <a href="CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT">SECOND_LINE_TREATMENT</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td>
+                <td>Second-line Treatment</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSTreatmentCategoryVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSTreatmentCategoryVS"/>
+        <title value="TB CS - Treatment category value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:7824f2b8-72ea-4f0f-a2e6-4db43f84aade"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS"/>
+            <code value="FIRST_LINE_TREATMENT"/>
+            <display value="First-line Treatment"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSTreatmentCategoryCS"/>
+            <code value="SECOND_LINE_TREATMENT"/>
+            <display value="Second-line Treatment"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/TBCSResistanceClassificationVS"/>
+    <resource>
+      <ValueSet>
+        <meta>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset"/>
+          <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-TBCSResistanceClassificationCS.html">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS">DS</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>DS (drug-susceptible TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR">RR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>RR (rifampicin resistant TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR">MDR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>MDR (multidrug resistant TB)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR"> </a>  
+                  <a href="CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR">XDR</a>
+                </td>
+                <td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td>
+                <td>XDR (extensive drug resistant TB)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/TBCSResistanceClassificationVS"/>
+        <version value="0.1.0"/>
+        <name value="TBCSResistanceClassificationVS"/>
+        <title value="TB CS - Resistance Classification value set"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <expansion>
+          <identifier value="urn:uuid:0963278d-5ffa-4345-8291-93df77dcbc94"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-draft"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="DS"/>
+            <display value="DS (drug-susceptible TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="RR"/>
+            <display value="RR (rifampicin resistant TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="MDR"/>
+            <display value="MDR (multidrug resistant TB)"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/TBCSResistanceClassificationCS"/>
+            <code value="XDR"/>
+            <display value="XDR (extensive drug resistant TB)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -516,8 +732,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:051c5504-f350-4b7b-95b9-296b7e31d995"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -616,8 +832,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:301ddea9-5df4-4b3b-97e2-2842a4a5f9f9"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -718,10 +934,10 @@
         <title value="Susceptible/Resistant/Indeterminate value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:551323fb-e2fb-44cc-8ec9-3f8c73c1a5c3"/>
-          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <identifier value="urn:uuid:e38a028c-3f4f-4b04-886a-fa70fc48e61a"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -819,10 +1035,10 @@
         <title value="TB CS - Confirmation method value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:68d66b64-1bb5-4a34-aad2-17c4e3b2f7f3"/>
-          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <identifier value="urn:uuid:23537955-88a3-4539-ba2c-ae00689b68b7"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -916,8 +1132,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:f2360d9e-9377-4eeb-9ea0-757b73ed6cc2"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1026,10 +1242,9 @@
         <title value="TB CS - Resistance Classification value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:2c8e944f-5170-43e5-a405-06c7198e3b77"/>
-          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <identifier value="urn:uuid:0963278d-5ffa-4345-8291-93df77dcbc94"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1140,10 +1355,10 @@
         <title value="TB CS - Site of disease value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6d379221-ba6c-4f14-b8dd-d816ce16cd33"/>
-          <timestamp value="2024-12-19T14:34:10+00:00"/>
+          <identifier value="urn:uuid:2d15e14c-07f0-4e7b-8084-80f758bbe2a9"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1241,10 +1456,9 @@
         <title value="TB CS - Treatment category value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:c8d9fdb6-8fca-4bd1-9369-21f0550854a4"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:7824f2b8-72ea-4f0f-a2e6-4db43f84aade"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1369,10 +1583,10 @@
         <title value="TB CS - Treatment history value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bbb5948b-e5a3-4f0f-ada4-9acb7766ce6d"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:560a3b7b-fb8f-4e96-a431-011c8f89ca75"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1518,8 +1732,8 @@
         <status value="active"/>
         <experimental value="true"/>
         <expansion>
-          <identifier value="urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d"/>
-          <timestamp value="2024-12-19T14:34:07+00:00"/>
+          <identifier value="urn:uuid:f81247f2-8857-4e57-bcdf-f474367f4a6b"/>
+          <timestamp value="2025-01-06T08:12:32+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -1648,10 +1862,10 @@
         <title value="TB-LAB - DST result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:df49bb30-3d12-45bd-acfe-ae2adad4f530"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:eac53ed7-e3f0-4290-99b7-3c5b63d96cfd"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1770,10 +1984,10 @@
         <title value="TB-LAB - Final culture result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:af309bfa-d5d3-45f8-89d0-d84dcf20a928"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:6c3f32a4-4c8e-41c8-a360-3494e4faf7b0"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1876,10 +2090,10 @@
         <title value="TB-LAB - LPA specimen value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:bfe0dd69-b8d5-4638-88b7-d67bb3596feb"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:47320195-73ac-4c07-9953-b38cb4a2dda7"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1996,10 +2210,10 @@
         <title value="TB-LAB - MTB test result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:956c5664-d4d1-4b5f-9a26-16c7c91b7756"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:e3cce80b-3671-461f-a742-d4138cb4822f"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2107,10 +2321,10 @@
         <title value="TB-LAB - Sample quality value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9f3df469-5bbb-4bcd-ac55-77a4bbba8886"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:81a3c9b9-2431-4d0b-a743-26c8c441168c"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2203,10 +2417,10 @@
         <title value="TB-LAB - Sample status value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:36f14d54-1143-46d9-a94c-ec4c9f2b6ebc"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:3aa799ba-60ed-4df2-aa33-6b5cf3823081"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2323,10 +2537,10 @@
         <title value="TB-LAB - Smear result value set"/>
         <status value="active"/>
         <experimental value="true"/>
-        <date value="2024-12-19T14:33:50+00:00"/>
+        <date value="2025-01-06T08:12:15+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8b179160-950c-4ab3-8202-c91694eb90d3"/>
-          <timestamp value="2024-12-19T14:34:11+00:00"/>
+          <identifier value="urn:uuid:c77bf0e3-d4a5-42be-9f19-402e8bdff60e"/>
+          <timestamp value="2025-01-06T08:12:36+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

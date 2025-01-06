@@ -138,6 +138,12 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "TBTreatmentQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/TBTreatmentQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "DiagnosisAndNotification",
     "type" : "StructureDefinition",
     "url" : "http://example.org/StructureDefinition/DiagnosisAndNotification",

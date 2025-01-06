@@ -55,8 +55,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
-      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
+      "ValueSet-TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set",
+      "ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html" : "TB CS - Denotification reasons value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
@@ -67,6 +67,7 @@
       "description" : null,
       "uses" : {
       },
+      "ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set",
       "ValueSet-TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set"
     },
     {
@@ -89,7 +90,8 @@
       "description" : null,
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
+      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
+      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "a87e7a4a-086b-491d-abc6-6b573959fd69",
+  "id" : "8b3ccb8c-7c09-4e09-abdb-f00544b81a9e",
   "meta" : {
-    "lastUpdated" : "2024-12-19T14:33:50.744+00:00"
+    "lastUpdated" : "2025-01-06T08:12:15.413+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -25,8 +25,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:301ddea9-5df4-4b3b-97e2-2842a4a5f9f9",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -82,8 +82,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:051c5504-f350-4b7b-95b9-296b7e31d995",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -144,8 +144,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:f81247f2-8857-4e57-bcdf-f474367f4a6b",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -221,8 +221,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:f2360d9e-9377-4eeb-9ea0-757b73ed6cc2",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -259,6 +259,130 @@
     }
   },
   {
+    "fullUrl" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentCategoryCS.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>Second-line Treatment</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+      "version" : "0.1.0",
+      "name" : "TBCSTreatmentCategoryVS",
+      "title" : "TB CS - Treatment category value set",
+      "status" : "active",
+      "experimental" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:7824f2b8-72ea-4f0f-a2e6-4db43f84aade",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
+          "code" : "FIRST_LINE_TREATMENT",
+          "display" : "First-line Treatment"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
+          "code" : "SECOND_LINE_TREATMENT",
+          "display" : "Second-line Treatment"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSResistanceClassificationCS.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS\">DS</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR\">RR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR\">MDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR\">XDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+      "version" : "0.1.0",
+      "name" : "TBCSResistanceClassificationVS",
+      "title" : "TB CS - Resistance Classification value set",
+      "status" : "active",
+      "experimental" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:0963278d-5ffa-4345-8291-93df77dcbc94",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+          "code" : "DS",
+          "display" : "DS (drug-susceptible TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+          "code" : "RR",
+          "display" : "RR (rifampicin resistant TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+          "code" : "MDR",
+          "display" : "MDR (multidrug resistant TB)"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+          "code" : "XDR",
+          "display" : "XDR (extensive drug resistant TB)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://example.org/ValueSet/GENYesNoUnknownVS",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -278,8 +402,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:07e5f4a5-ac94-418e-89ed-8339db07075e",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:051c5504-f350-4b7b-95b9-296b7e31d995",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -340,8 +464,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:c8d3c291-53f2-4a98-9bcc-705f0acfeba8",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:301ddea9-5df4-4b3b-97e2-2842a4a5f9f9",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -396,10 +520,10 @@
       "title" : "Susceptible/Resistant/Indeterminate value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:551323fb-e2fb-44cc-8ec9-3f8c73c1a5c3",
-        "timestamp" : "2024-12-19T14:34:10+00:00",
+        "identifier" : "urn:uuid:e38a028c-3f4f-4b04-886a-fa70fc48e61a",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -459,10 +583,10 @@
       "title" : "TB CS - Confirmation method value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:68d66b64-1bb5-4a34-aad2-17c4e3b2f7f3",
-        "timestamp" : "2024-12-19T14:34:10+00:00",
+        "identifier" : "urn:uuid:23537955-88a3-4539-ba2c-ae00689b68b7",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -518,8 +642,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:29ceb28a-a356-4859-b5eb-7876bc05963f",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:f2360d9e-9377-4eeb-9ea0-757b73ed6cc2",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -574,10 +698,9 @@
       "title" : "TB CS - Resistance Classification value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2c8e944f-5170-43e5-a405-06c7198e3b77",
-        "timestamp" : "2024-12-19T14:34:10+00:00",
+        "identifier" : "urn:uuid:0963278d-5ffa-4345-8291-93df77dcbc94",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -642,10 +765,10 @@
       "title" : "TB CS - Site of disease value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6d379221-ba6c-4f14-b8dd-d816ce16cd33",
-        "timestamp" : "2024-12-19T14:34:10+00:00",
+        "identifier" : "urn:uuid:2d15e14c-07f0-4e7b-8084-80f758bbe2a9",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -705,10 +828,9 @@
       "title" : "TB CS - Treatment category value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c8d9fdb6-8fca-4bd1-9369-21f0550854a4",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:7824f2b8-72ea-4f0f-a2e6-4db43f84aade",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -763,10 +885,10 @@
       "title" : "TB CS - Treatment history value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:bbb5948b-e5a3-4f0f-ada4-9acb7766ce6d",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:560a3b7b-fb8f-4e96-a431-011c8f89ca75",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -842,8 +964,8 @@
       "status" : "active",
       "experimental" : true,
       "expansion" : {
-        "identifier" : "urn:uuid:2b405a4e-97d0-44b2-b763-e31caeefad6d",
-        "timestamp" : "2024-12-19T14:34:07+00:00",
+        "identifier" : "urn:uuid:f81247f2-8857-4e57-bcdf-f474367f4a6b",
+        "timestamp" : "2025-01-06T08:12:32+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -918,10 +1040,10 @@
       "title" : "TB-LAB - DST result value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:df49bb30-3d12-45bd-acfe-ae2adad4f530",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:eac53ed7-e3f0-4290-99b7-3c5b63d96cfd",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -986,10 +1108,10 @@
       "title" : "TB-LAB - Final culture result value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:af309bfa-d5d3-45f8-89d0-d84dcf20a928",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:6c3f32a4-4c8e-41c8-a360-3494e4faf7b0",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1054,10 +1176,10 @@
       "title" : "TB-LAB - LPA specimen value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:bfe0dd69-b8d5-4638-88b7-d67bb3596feb",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:47320195-73ac-4c07-9953-b38cb4a2dda7",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1112,10 +1234,10 @@
       "title" : "TB-LAB - MTB test result value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:956c5664-d4d1-4b5f-9a26-16c7c91b7756",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:e3cce80b-3671-461f-a742-d4138cb4822f",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1185,10 +1307,10 @@
       "title" : "TB-LAB - Sample quality value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9f3df469-5bbb-4bcd-ac55-77a4bbba8886",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:81a3c9b9-2431-4d0b-a743-26c8c441168c",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1243,10 +1365,10 @@
       "title" : "TB-LAB - Sample status value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:36f14d54-1143-46d9-a94c-ec4c9f2b6ebc",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:3aa799ba-60ed-4df2-aa33-6b5cf3823081",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1301,10 +1423,10 @@
       "title" : "TB-LAB - Smear result value set",
       "status" : "active",
       "experimental" : true,
-      "date" : "2024-12-19T14:33:50+00:00",
+      "date" : "2025-01-06T08:12:15+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:8b179160-950c-4ab3-8202-c91694eb90d3",
-        "timestamp" : "2024-12-19T14:34:11+00:00",
+        "identifier" : "urn:uuid:c77bf0e3-d4a5-42be-9f19-402e8bdff60e",
+        "timestamp" : "2025-01-06T08:12:36+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{

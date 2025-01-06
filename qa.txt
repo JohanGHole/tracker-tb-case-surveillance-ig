@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 56, warn = 268, info = 4
-IG Publisher Version: 1.8.3
-Generated Thu Dec 19 14:34:40 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
- Build Errors : 283 / 38 / 0
+err = 64, warn = 268, info = 6
+IG Publisher Version: 1.8.6
+Generated Mon Jan 06 08:13:11 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 294 / 38 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 1 / 1 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 1 / 1 / 4
@@ -25,6 +25,7 @@ Generated Thu Dec 19 14:34:40 UTC 2024. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 8 / 0 / 16
  /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 8 / 0 / 16
+ /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 8 / 0 / 16
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 20 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 150 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 10 / 1
@@ -86,6 +87,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/TBLABSmearResultCS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 411
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 420
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 243 column 413
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-GENYesNoUnknownCS.html#/html/body/div/div/div/p/span/a at Line 291, column 108: The link 'license.html' for "License" cannot be resolved
@@ -200,6 +202,12 @@ ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire.html#/html/
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire.json.html#/html/body/div/div/div/p/span/a at Line 393, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire.ttl.html#/html/body/div/div/div/p/span/a at Line 379, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire.xml.html#/html/body/div/div/div/p/span/a at Line 392, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-testing.html#/html/body/div/div/div/p/span/a at Line 262, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire.change.history.html#/html/body/div/div/div/p/span/a at Line 231, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire.html#/html/body/div/div/div/p/span/a at Line 280, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire.json.html#/html/body/div/div/div/p/span/a at Line 617, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire.ttl.html#/html/body/div/div/div/p/span/a at Line 571, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire.xml.html#/html/body/div/div/div/p/span/a at Line 650, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-definitions.html#/html/body/div/div/div/p/span/a at Line 487, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-examples.html#/html/body/div/div/div/p/span/a at Line 278, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DiagnosisAndNotification-mappings.html#/html/body/div/div/div/p/span/a at Line 277, column 108: The link 'license.html' for "License" cannot be resolved
@@ -364,7 +372,11 @@ ERROR: /github/workspace/output/ValueSet-TBOutcomeQuestionnaire_TBCSDenotificati
 ERROR: /github/workspace/output/ValueSet-TBOutcomeQuestionnaire_TBCSDenotificationReasonsVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 517, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS-testing.html#/html/body/div/div/div/p/span/a at Line 242, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html#/html/body/div/div/div/p/span/a at Line 306, column 108: The link 'license.html' for "License" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/span/a at Line 526, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/span/a at Line 245, column 108: The link 'license.html' for "License" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/span/a at Line 187, column 108: The link 'license.html' for "License" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -445,6 +457,17 @@ ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: Constra
 ERROR: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
 INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Questionnaire/TBOutcomeQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire.json ==
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[0]/*ValueSet/TBCSTreatmentCategoryVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.contained[1]/*ValueSet/TBCSResistanceClassificationVS*/: ValueSet.date: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|1.0.0)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
+ERROR: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value
+INFORMATION: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Questionnaire/TBTreatmentQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
 ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 WARNING: StructureDefinition/DiagnosisAndNotification: StructureDefinition.differential.element[2].binding: The definition for the element 'DiagnosisAndNotification.historyOfPreviousTreatment' binds to the value set 'http://example.org/ValueSet/TBCSTreatmentHistoryVS' which is experimental, but this structure is not labeled as experimental

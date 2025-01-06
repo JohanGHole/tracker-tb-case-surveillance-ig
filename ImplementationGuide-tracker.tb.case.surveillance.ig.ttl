@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-12-19T14:33:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T08:12:15+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -832,6 +832,18 @@
        ] ;
        fhir:name [ fhir:v "TB Treatment" ] ;
        fhir:description [ fhir:v "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/Questionnaire/TBTreatmentQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/TBTreatmentQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "TB Treatment Questionnaire" ] ;
+       fhir:description [ fhir:v "A questionnaire for capturing details of the patient’s treatment regimen, including medications, dosages, and updates to the treatment plan." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

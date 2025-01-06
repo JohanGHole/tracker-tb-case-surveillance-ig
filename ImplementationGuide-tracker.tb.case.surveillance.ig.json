@@ -10,7 +10,7 @@
   "name" : "TrackerTBCaseSurveillanceImplementationGuide",
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
-  "date" : "2024-12-19T14:33:50+00:00",
+  "date" : "2025-01-06T08:12:15+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -915,6 +915,18 @@
       },
       "name" : "TB Treatment",
       "description" : "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/TBTreatmentQuestionnaire"
+      },
+      "name" : "TB Treatment Questionnaire",
+      "description" : "A questionnaire for capturing details of the patient’s treatment regimen, including medications, dosages, and updates to the treatment plan.",
       "exampleBoolean" : false
     },
     {

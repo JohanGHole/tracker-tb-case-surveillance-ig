@@ -92,6 +92,17 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSResistanceClassificationVS",
+      "title" : "TB CS - Resistance Classification value set",
+      "description" : null,
+      "systems" : [
+        "http://example.org/CodeSystem/TBCSResistanceClassificationCS"
+      ]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBCSResistanceClassificationVS",
@@ -115,6 +126,15 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+      "version" : null,
+      "status" : "active",
+      "name" : "TBCSTreatmentCategoryVS",
+      "title" : "TB CS - Treatment category value set",
+      "description" : null,
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentCategoryCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
