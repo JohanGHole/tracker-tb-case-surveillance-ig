@@ -13,7 +13,7 @@ version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build
-license: BSD-3-Clause
+license: CC-BY-SA-3.0
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 dependencies:
   hl7.terminology: 5.5.0
@@ -24,10 +24,115 @@ dependencies:
 publisher:
   name: DHIS2
   url: http://dhis2.org
+
+pages:
+  index.md:
+    title: Home
+#    changes.md:
+#      title: Changes
+#    dependencies.md:
+#      title: Dependencies
+#    references.md:
+#      title: References
+#    adapting.md:
+#      title: Adapting Guidelines for Country use
+    license.md:
+      title: License
+#  business-requirements.md:
+#    title: Business Requirements
+#    concepts.md:
+#      title: Concepts
+#    personas.md:
+#      title: Generic Personas
+#    scenarios.md:
+#      title: User Scenarios
+#    business-processes.md:
+#      title: Business Processes
+#    dictionary.md:
+#      title: Data Dictionary
+#    decision-logic.md:
+#      title: Decision-support logic
+#    indicators.md:
+#      title: Indicator and Performance Metrics
+#    functional-requirements.md:
+#      title: Functional Requirements
+#    non-functional-requirements.md:
+#      title: Non-functional Requirements
+#  data-models-and-exchange.md:
+#    title: Data Models and Exchange
+#    system-actors.md:
+#      title: System Actors
+#    sequence-diagrams.md:
+#      title: Sequence Diagrams
+#    transactions.md:
+#      title: Transactions
+#    logical-models.md:
+#      title: Logical Models
+#    indicators-measures.md:
+#      title: Indicators and Measures
+#    profiles.xml:
+#      title: Content profiles
+#    codings.md:
+#      title: Codings
+
+#  deployment.md:
+#    title: Deployment
+#    security-privacy.md:
+#      title: Security and Privacy Considerations
+#    testing.md: 
+#      title: Testing
+#    test-data.md: 
+#      title: Test Data
+#    reference-implementations.md: 
+#      title: Reference Implementations
+#    downloads.md: 
+#      title: Downloads
+  indices.md:
+    title: Indices
+    artifacts.html: 
+      title: Artifact Index
+    maps.md: 
+      title: Mappings
   
 menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  Home: 
+    Summary: index.html
+#    Changes: changes.html
+#    Dependencies: dependencies.html
+#    References: references.html
+#    Adapting Guidelines for Country use: adapting.html
+#  Business Requirements: 
+#    Concepts: concepts.html
+#    Generic Personas: personas.html
+#    User Scenarios: scenarios.html
+#    Business Processes: business-processes.html
+#    Data Dictionary: dictionary.html
+#    Decision-support Logic: decision-logic.html
+#    Indicator and Performance Metrics: indicators.html
+#    Functional Requirements: functional-requirements.html
+#    Non-functional Requirements: non-functional-requirements.html
+#  Data Models and Exchange:
+#    System Actors: system-actors.html
+#    Sequence Diagrams: sequence-diagrams.html
+#    Transactions: transactions.html
+#    Indicators and Measures: indicators-measures.html
+#    Codings: codings.html
+
+#  Deployment:
+#    Security and Privacy Considerations: security-privacy.html
+#    Testing: testing.html
+#    Test Data: test-data.html
+#    Reference Implementations: reference-implementations.html
+#    Downloads: downloads.html
+
+  Indices:
+    Artifact Index: artifacts.html
+    Mappings: maps.html
+
+meta:
+  profile:
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
