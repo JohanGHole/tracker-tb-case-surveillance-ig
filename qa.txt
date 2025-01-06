@@ -1,9 +1,9 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 103, warn = 234, info = 12
+err = 101, warn = 234, info = 12
 IG Publisher Version: 1.8.6
-Generated Mon Jan 06 13:24:21 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+Generated Mon Jan 06 13:45:43 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
  Build Errors : 6 / 21 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
@@ -22,7 +22,7 @@ Generated Mon Jan 06 13:24:21 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleQualityCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSampleStatusCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-TBLABSmearResultCS : 0 / 0 / 4
- /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 2 / 0 / 3
+ /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 14 / 0 / 24
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 26 / 0 / 40
  /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 14 / 0 / 24
@@ -99,8 +99,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/CodeSystem-TBLABSampleStatusCS.json ==
 == fsh-generated/resources/CodeSystem-TBLABSmearResultCS.json ==
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
-ERROR: ImplementationGuide/tracker.tb.case.surveillance.ig: ImplementationGuide: ImplementationGuide.experimental: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|1.0.0)
-ERROR: ImplementationGuide/tracker.tb.case.surveillance.ig: ImplementationGuide: ImplementationGuide.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|1.0.0)
 == fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire.json ==
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[0]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.version: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)
 ERROR: Questionnaire/DiagnosisAndNotificationQuestionnaire: Questionnaire.contained[0]/*ValueSet/GENYesNoUnknownVS*/: ValueSet.description: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablevalueset|1.0.0)

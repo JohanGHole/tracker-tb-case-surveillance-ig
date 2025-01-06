@@ -7,14 +7,16 @@
     <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide tracker.tb.case.surveillance.ig</b></p><a name="tracker.tb.case.surveillance.ig"> </a><a name="hctracker.tb.case.surveillance.ig"> </a><a name="tracker.tb.case.surveillance.ig-en-US"> </a><h2>TrackerTBCaseSurveillanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide tracker.tb.case.surveillance.ig</b></p><a name="tracker.tb.case.surveillance.ig"> </a><a name="hctracker.tb.case.surveillance.ig"> </a><a name="tracker.tb.case.surveillance.ig-en-US"> </a><h2>TrackerTBCaseSurveillanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig</pre><div><p>Reference IG for Tracker TB Case Surveillance.</p>
+</div></div>
   </text>
   <url value="http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig"/>
   <version value="0.1.0"/>
   <name value="TrackerTBCaseSurveillanceImplementationGuide"/>
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
-  <date value="2025-01-06T13:23:20+00:00"/>
+  <experimental value="true"/>
+  <date value="2025-01-06T13:44:48+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -23,6 +25,7 @@
       <value value="http://dhis2.org"/>
     </telecom>
   </contact>
+  <description value="Reference IG for Tracker TB Case Surveillance."/>
   <packageId value="tracker.tb.case.surveillance.ig"/>
   <license value="CC-BY-SA-3.0"/>
   <fhirVersion value="4.0.1"/>
@@ -60,7 +63,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="draft"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -263,7 +266,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="draft"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

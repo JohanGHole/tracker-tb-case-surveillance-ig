@@ -19,14 +19,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tracker.tb.case.surveillance.ig</b></p><a name=\"tracker.tb.case.surveillance.ig\"> </a><a name=\"hctracker.tb.case.surveillance.ig\"> </a><a name=\"tracker.tb.case.surveillance.ig-en-US\"> </a><h2>TrackerTBCaseSurveillanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide tracker.tb.case.surveillance.ig</b></p><a name=\"tracker.tb.case.surveillance.ig\"> </a><a name=\"hctracker.tb.case.surveillance.ig\"> </a><a name=\"tracker.tb.case.surveillance.ig-en-US\"> </a><h2>TrackerTBCaseSurveillanceImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig</pre><div><p>Reference IG for Tracker TB Case Surveillance.</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://example.org/ImplementationGuide/tracker.tb.case.surveillance.ig"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TrackerTBCaseSurveillanceImplementationGuide"] ; # 
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-06T13:23:20+00:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-06T13:44:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -35,6 +36,7 @@
        fhir:value [ fhir:v "http://dhis2.org" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "Reference IG for Tracker TB Case Surveillance."] ; # 
   fhir:packageId [ fhir:v "tracker.tb.case.surveillance.ig"] ; # 
   fhir:license [ fhir:v "CC-BY-SA-3.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -87,7 +89,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "draft" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
@@ -315,7 +317,7 @@
          fhir:value [ fhir:v "releaselabel" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ci-build" ]
+         fhir:value [ fhir:v "draft" ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
