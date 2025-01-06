@@ -1,5 +1,6 @@
 CodeSystem: TBCSTreatmentHistoryCS
 Title: "TB CS - Treatment history"
+Description: "Code system for DHIS2 'Treatment history' option set."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
 * ^experimental = true
