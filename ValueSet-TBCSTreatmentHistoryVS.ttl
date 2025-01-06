@@ -30,7 +30,7 @@
   fhir:title [ fhir:v "TB CS - Treatment history value set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T13:48:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

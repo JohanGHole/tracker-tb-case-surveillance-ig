@@ -41,10 +41,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABDSTResultVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABDSTResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - DST result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'DST result' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -67,10 +69,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "SusceptibleResistantIndeterminateVS" ] ;
      fhir:title [ fhir:v "Susceptible/Resistant/Indeterminate value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Susceptible/Resistant/Indeterminate' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -93,10 +97,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABMTBTestResultVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABMTBTestResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - MTB test result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'MTB test result' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -119,10 +125,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABFinalCultureResultVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABFinalCultureResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Final culture result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Final culture result' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -145,10 +153,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABSmearResultVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABSmearResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Smear result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Smear result' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -171,10 +181,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABSampleQualityVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABSampleQualityVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Sample quality value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Sample quality' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -197,10 +209,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABLPASpecimenVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABLPASpecimenVS" ] ;
      fhir:title [ fhir:v "TB-LAB - LPA specimen value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'LPA specimen' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -223,10 +237,12 @@
        ] )
      ] ;
      fhir:url [ fhir:v "http://example.org/ValueSet/TBLABSampleStatusVS"^^xsd:anyURI ] ;
+     fhir:version [ fhir:v "1.0.0" ] ;
      fhir:name [ fhir:v "TBLABSampleStatusVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Sample status value set" ] ;
      fhir:status [ fhir:v "active" ] ;
      fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Sample status' option set." ] ;
      fhir:compose [
        fhir:include ( [
@@ -243,7 +259,7 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
-  fhir:date [ fhir:v "2025-01-06T13:48:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-06T14:12:01+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

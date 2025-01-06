@@ -40,10 +40,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/GENYesNoUnknownVS"/>
+      <version value="1.0.0"/>
       <name value="GENYesNoUnknownVS"/>
       <title value="GEN - Yes/No/Unknown value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Yes/No/Unknown' option set."/>
       <compose>
         <include>
@@ -61,10 +63,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBCSTreatmentHistoryVS"/>
+      <version value="1.0.0"/>
       <name value="TBCSTreatmentHistoryVS"/>
       <title value="TB CS - Treatment history value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Treatment history' option set."/>
       <compose>
         <include>
@@ -82,10 +86,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBCSConfirmationMethodVS"/>
+      <version value="1.0.0"/>
       <name value="TBCSConfirmationMethodVS"/>
       <title value="TB CS - Confirmation method value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Confirmation method' option set."/>
       <compose>
         <include>
@@ -103,10 +109,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBCSSiteOfDiseaseVS"/>
+      <version value="1.0.0"/>
       <name value="TBCSSiteOfDiseaseVS"/>
       <title value="TB CS - Site of disease value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Site of disease' option set."/>
       <compose>
         <include>
@@ -122,7 +130,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <subjectType value="Patient"/>
-  <date value="2025-01-06T13:48:57+00:00"/>
+  <date value="2025-01-06T14:12:01+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
@@ -11,7 +11,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "GENYesNoUnknownVS",
       "title" : "GEN - Yes/No/Unknown value set",
@@ -33,7 +33,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/RRTGENSexVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "RRTGENSexVS",
       "title" : "RRT - GEN - Sex value set",
@@ -54,7 +54,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "SusceptibleResistantIndeterminateVS",
       "title" : "Susceptible/Resistant/Indeterminate value set",
@@ -79,7 +79,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSConfirmationMethodVS",
       "title" : "TB CS - Confirmation method value set",
@@ -100,7 +100,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSDenotificationReasonsVS",
       "title" : "TB CS - Denotification reasons value set",
@@ -121,7 +121,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSResistanceClassificationVS",
       "title" : "TB CS - Resistance Classification value set",
@@ -146,7 +146,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSSiteOfDiseaseVS",
       "title" : "TB CS - Site of disease value set",
@@ -167,7 +167,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSTreatmentCategoryVS",
       "title" : "TB CS - Treatment category value set",
@@ -188,7 +188,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSTreatmentHistoryVS",
       "title" : "TB CS - Treatment history value set",
@@ -209,7 +209,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBCSTreatmentOutcomeVS",
       "title" : "TB CS - Treatment outcome value set",
@@ -230,7 +230,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABDSTResultVS",
       "title" : "TB-LAB - DST result value set",
@@ -251,7 +251,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
@@ -260,7 +260,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABFinalCultureResultVS",
       "title" : "TB-LAB - Final culture result value set",
@@ -282,7 +282,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABLPASpecimenVS",
       "title" : "TB-LAB - LPA specimen value set",
@@ -303,7 +303,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABMTBTestResultVS",
       "title" : "TB-LAB - MTB test result value set",
@@ -324,7 +324,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
@@ -333,7 +333,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSampleQualityVS",
       "title" : "TB-LAB - Sample quality value set",
@@ -355,7 +355,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
@@ -364,7 +364,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSampleStatusVS",
       "title" : "TB-LAB - Sample status value set",
@@ -386,7 +386,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",
@@ -395,7 +395,7 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
-      "version" : null,
+      "version" : "1.0.0",
       "status" : "active",
       "name" : "TBLABSmearResultVS",
       "title" : "TB-LAB - Smear result value set",

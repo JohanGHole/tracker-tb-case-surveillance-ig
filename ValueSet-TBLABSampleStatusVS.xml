@@ -16,7 +16,7 @@
   <title value="TB-LAB - Sample status value set"/>
   <status value="active"/>
   <experimental value="true"/>
-  <date value="2025-01-06T13:48:57+00:00"/>
+  <date value="2025-01-06"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

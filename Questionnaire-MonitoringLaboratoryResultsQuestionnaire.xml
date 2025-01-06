@@ -40,10 +40,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBLABFinalCultureResultVS"/>
+      <version value="1.0.0"/>
       <name value="TBLABFinalCultureResultVS"/>
       <title value="TB-LAB - Final culture result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Final culture result' option set."/>
       <compose>
         <include>
@@ -61,10 +63,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBLABSmearResultVS"/>
+      <version value="1.0.0"/>
       <name value="TBLABSmearResultVS"/>
       <title value="TB-LAB - Smear result value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Smear result' option set."/>
       <compose>
         <include>
@@ -82,10 +86,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBLABSampleQualityVS"/>
+      <version value="1.0.0"/>
       <name value="TBLABSampleQualityVS"/>
       <title value="TB-LAB - Sample quality value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Sample quality' option set."/>
       <compose>
         <include>
@@ -103,10 +109,12 @@
         <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"/>
       </meta>
       <url value="http://example.org/ValueSet/TBLABSampleStatusVS"/>
+      <version value="1.0.0"/>
       <name value="TBLABSampleStatusVS"/>
       <title value="TB-LAB - Sample status value set"/>
       <status value="active"/>
       <experimental value="true"/>
+      <date value="2025-01-06"/>
       <description value="Value set for DHIS2 'Sample status' option set."/>
       <compose>
         <include>
@@ -122,7 +130,7 @@
   <status value="draft"/>
   <experimental value="true"/>
   <subjectType value="Patient"/>
-  <date value="2025-01-06T13:48:57+00:00"/>
+  <date value="2025-01-06T14:12:01+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>

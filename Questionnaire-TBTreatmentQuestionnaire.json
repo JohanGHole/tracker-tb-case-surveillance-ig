@@ -20,10 +20,12 @@
       "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
     },
     "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
+    "version" : "1.0.0",
     "name" : "TBCSTreatmentCategoryVS",
     "title" : "TB CS - Treatment category value set",
     "status" : "active",
     "experimental" : true,
+    "date" : "2025-01-06",
     "description" : "Value set for DHIS2 'Treatment category' option set.",
     "compose" : {
       "include" : [{
@@ -40,10 +42,12 @@
       "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
     },
     "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
+    "version" : "1.0.0",
     "name" : "TBCSResistanceClassificationVS",
     "title" : "TB CS - Resistance Classification value set",
     "status" : "active",
     "experimental" : true,
+    "date" : "2025-01-06",
     "description" : "Value set for DHIS2 'Resistance Classification' option set.",
     "compose" : {
       "include" : [{
@@ -60,7 +64,7 @@
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2025-01-06T13:48:57+00:00",
+  "date" : "2025-01-06T14:12:01+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
