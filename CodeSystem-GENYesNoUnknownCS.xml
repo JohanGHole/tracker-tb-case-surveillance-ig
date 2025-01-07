@@ -15,7 +15,7 @@
   <title value="GEN - Yes/No/Unknown"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-06T14:45:14+00:00"/>
+  <date value="2025-01-07T09:00:06+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -24,7 +24,7 @@
       <value value="http://dhis2.org"/>
     </telecom>
   </contact>
-  <description value="Code system for 'Yes/No/Unknown' option set."/>
+  <description value="Code system for DHIS2 'Yes/No/Unknown' option set."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="3"/>

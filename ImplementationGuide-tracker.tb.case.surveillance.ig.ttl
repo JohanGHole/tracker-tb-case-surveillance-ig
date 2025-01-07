@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-06T14:45:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-07T09:00:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -586,7 +586,7 @@
          fhir:reference [ fhir:v "CodeSystem/GENYesNoUnknownCS" ]
        ] ;
        fhir:name [ fhir:v "GEN - Yes/No/Unknown" ] ;
-       fhir:description [ fhir:v "Code system for 'Yes/No/Unknown' option set." ] ;
+       fhir:description [ fhir:v "Code system for DHIS2 'Yes/No/Unknown' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

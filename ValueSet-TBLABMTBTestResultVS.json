@@ -15,7 +15,7 @@
   "name" : "TBLABMTBTestResultVS",
   "title" : "TB-LAB - MTB test result value set",
   "status" : "active",
-  "experimental" : true,
+  "experimental" : false,
   "date" : "2025-01-06",
   "publisher" : "DHIS2",
   "contact" : [{

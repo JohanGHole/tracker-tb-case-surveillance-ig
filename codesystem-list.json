@@ -6,7 +6,7 @@
       "status" : "draft",
       "name" : "GENYesNoUnknownCS",
       "title" : "GEN - Yes/No/Unknown",
-      "description" : "Code system for 'Yes/No/Unknown' option set."
+      "description" : "Code system for DHIS2 'Yes/No/Unknown' option set."
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",

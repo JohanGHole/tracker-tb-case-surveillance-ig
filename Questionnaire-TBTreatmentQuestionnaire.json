@@ -19,7 +19,7 @@
     "name" : "TBCSTreatmentCategoryVS",
     "title" : "TB CS - Treatment category value set",
     "status" : "active",
-    "experimental" : true,
+    "experimental" : false,
     "date" : "2025-01-06",
     "description" : "Value set for DHIS2 'Treatment category' option set.",
     "compose" : {
@@ -41,7 +41,7 @@
     "name" : "TBCSResistanceClassificationVS",
     "title" : "TB CS - Resistance Classification value set",
     "status" : "active",
-    "experimental" : true,
+    "experimental" : false,
     "date" : "2025-01-06",
     "description" : "Value set for DHIS2 'Resistance Classification' option set.",
     "compose" : {
@@ -56,7 +56,7 @@
   "status" : "draft",
   "experimental" : true,
   "subjectType" : ["Patient"],
-  "date" : "2025-01-06T14:45:14+00:00",
+  "date" : "2025-01-07T09:00:06+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",

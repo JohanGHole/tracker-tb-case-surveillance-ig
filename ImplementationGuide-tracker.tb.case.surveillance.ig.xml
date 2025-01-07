@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-06T14:45:14+00:00"/>
+  <date value="2025-01-07T09:00:06+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -505,7 +505,7 @@
         <reference value="CodeSystem/GENYesNoUnknownCS"/>
       </reference>
       <name value="GEN - Yes/No/Unknown"/>
-      <description value="Code system for 'Yes/No/Unknown' option set."/>
+      <description value="Code system for DHIS2 'Yes/No/Unknown' option set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

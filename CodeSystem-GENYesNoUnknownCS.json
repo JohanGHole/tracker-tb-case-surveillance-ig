@@ -15,7 +15,7 @@
   "title" : "GEN - Yes/No/Unknown",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-06T14:45:14+00:00",
+  "date" : "2025-01-07T09:00:06+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -24,7 +24,7 @@
       "value" : "http://dhis2.org"
     }]
   }],
-  "description" : "Code system for 'Yes/No/Unknown' option set.",
+  "description" : "Code system for DHIS2 'Yes/No/Unknown' option set.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,

@@ -1,5 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://example.org/CodeSystem/GENYesNoUnknownCS,0.1.0,draft,,GENYesNoUnknownCS,GEN - Yes/No/Unknown,"Code system for 'Yes/No/Unknown' option set.",
+http://example.org/CodeSystem/GENYesNoUnknownCS,0.1.0,draft,,GENYesNoUnknownCS,GEN - Yes/No/Unknown,"Code system for DHIS2 'Yes/No/Unknown' option set.",
 http://example.org/CodeSystem/RRTGENSexCS,0.1.0,draft,,RRTGENSexCS,RRT - GEN - Sex,"Code system for DHIS2 'Sex' option set.",
 http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS,0.1.0,draft,,SusceptibleResistantIndeterminateCS,Susceptible/Resistant/Indeterminate,"Code system for DHIS2 'Susceptible/Resistant/Indeterminate' option set.",
 http://example.org/CodeSystem/TBCSConfirmationMethodCS,0.1.0,draft,,TBCSConfirmationMethodCS,TB CS - Confirmation method,"Code system for DHIS2 'Confirmation method' option set.",

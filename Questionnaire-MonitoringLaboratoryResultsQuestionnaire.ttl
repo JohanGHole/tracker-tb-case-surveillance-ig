@@ -33,7 +33,7 @@
      fhir:name [ fhir:v "TBLABFinalCultureResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Final culture result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
-     fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:experimental [ fhir:v "false"^^xsd:boolean ] ;
      fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Final culture result' option set." ] ;
      fhir:compose [
@@ -61,7 +61,7 @@
      fhir:name [ fhir:v "TBLABSmearResultVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Smear result value set" ] ;
      fhir:status [ fhir:v "active" ] ;
-     fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:experimental [ fhir:v "false"^^xsd:boolean ] ;
      fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Smear result' option set." ] ;
      fhir:compose [
@@ -89,7 +89,7 @@
      fhir:name [ fhir:v "TBLABSampleQualityVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Sample quality value set" ] ;
      fhir:status [ fhir:v "active" ] ;
-     fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:experimental [ fhir:v "false"^^xsd:boolean ] ;
      fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Sample quality' option set." ] ;
      fhir:compose [
@@ -117,7 +117,7 @@
      fhir:name [ fhir:v "TBLABSampleStatusVS" ] ;
      fhir:title [ fhir:v "TB-LAB - Sample status value set" ] ;
      fhir:status [ fhir:v "active" ] ;
-     fhir:experimental [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:experimental [ fhir:v "false"^^xsd:boolean ] ;
      fhir:date [ fhir:v "2025-01-06"^^xsd:date ] ;
      fhir:description [ fhir:v "Value set for DHIS2 'Sample status' option set." ] ;
      fhir:compose [
@@ -132,7 +132,7 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
-  fhir:date [ fhir:v "2025-01-06T14:45:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-07T09:00:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
