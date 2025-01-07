@@ -2,7 +2,7 @@
 "Outcome","Outcome","","","",0,*,"","","","null {[]} {[]}
 ","Outcome","Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Outcome.executionDate","Outcome.executionDate","","","",0,1,"","","","date {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
+","Execution date","Execution date","","","","","","","","","",,,,,"",,,,"Outcome.executionDate",0,1,"",""
 "Outcome.treatmentOutcome","Outcome.treatmentOutcome","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Treatment outcome","TB CS - Treatment outcome","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentOutcomeVS","",,,,"Outcome.treatmentOutcome",0,1,"",""
 "Outcome.reasonForDenotification","Outcome.reasonForDenotification","","","",0,1,"","","","code {[]} {[]}

@@ -4,9 +4,9 @@
 "TBCaseSurveillance.enrollmentDate","TBCaseSurveillance.enrollmentDate","","","",1,1,"","","","date {[]} {[]}
 ","Placeholder: [Date of data entry in DHIS2]","Placeholder: [Date of data entry in DHIS2]","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.enrollmentDate",1,1,"",""
 "TBCaseSurveillance.incidentDate","TBCaseSurveillance.incidentDate","","","",0,1,"","","","date {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.incidentDate",0,1,"",""
+","Incident date","Incident date","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.incidentDate",0,1,"",""
 "TBCaseSurveillance.nationalId","TBCaseSurveillance.nationalId","","","",1,1,"","","","string {[]} {[]}
-","National unique identifier assigned to the client, if used in the country ","National unique identifier assigned to the client, if used in the country","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.nationalId",1,1,"",""
+","National unique identifier assigned to the client, if used in the country.","National unique identifier assigned to the client, if used in the country.","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.nationalId",1,1,"",""
 "TBCaseSurveillance.tbRegistrationNumber","TBCaseSurveillance.tbRegistrationNumber","","","",0,1,"","","","string {[]} {[]}
 ","TB registration number","TB registration number","","","","","","","","","",,,,,"",,,,"TBCaseSurveillance.tbRegistrationNumber",0,1,"",""
 "TBCaseSurveillance.familyName","TBCaseSurveillance.familyName","","","",1,1,"","","","string {[]} {[]}

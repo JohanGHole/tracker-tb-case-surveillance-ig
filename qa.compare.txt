@@ -1,7 +1,7 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 6, warn = 8, info = 0
+err = 0, warn = 4, info = 0
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
  Build Errors : 6 / 4 / 0
@@ -29,12 +29,12 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire : 0 / 0 / 9
- /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 1 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisAndNotification : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Outcome : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TBCaseSurveillance : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TBTreatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-GENYesNoUnknownVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-RRTGENSexVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-SusceptibleResistantIndeterminateVS : 0 / 0 / 6
@@ -89,21 +89,11 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-TBTreatmentQuestionnaire.json ==
 == fsh-generated/resources/StructureDefinition-DiagnosisAndNotification.json ==
-ERROR: StructureDefinition/DiagnosisAndNotification: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-DiagnosticLaboratoryResults.json ==
-ERROR: StructureDefinition/DiagnosticLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-MonitoringLaboratoryResults.json ==
-ERROR: StructureDefinition/MonitoringLaboratoryResults: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-Outcome.json ==
-ERROR: StructureDefinition/Outcome: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
 == fsh-generated/resources/StructureDefinition-TBCaseSurveillance.json ==
-ERROR: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
-WARNING: StructureDefinition/TBCaseSurveillance: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'National unique identifier assigned to the client, if used in the country '
 == fsh-generated/resources/StructureDefinition-TBTreatment.json ==
-ERROR: StructureDefinition/TBTreatment: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities'
-WARNING: StructureDefinition/TBTreatment: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
-WARNING: StructureDefinition/TBTreatment: StructureDefinition.differential.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/ValueSet-GENYesNoUnknownVS.json ==
 == fsh-generated/resources/ValueSet-RRTGENSexVS.json ==
 == fsh-generated/resources/ValueSet-SusceptibleResistantIndeterminateVS.json ==

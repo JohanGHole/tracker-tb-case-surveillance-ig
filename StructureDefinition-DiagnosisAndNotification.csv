@@ -2,7 +2,7 @@
 "DiagnosisAndNotification","DiagnosisAndNotification","","","",0,*,"","","","null {[]} {[]}
 ","Diagnosis and notification","Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosisAndNotification.executionDate","DiagnosisAndNotification.executionDate","","","",0,1,"","","","date {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.executionDate",0,1,"",""
+","Execution date","Execution date","","","","","","","","","",,,,,"",,,,"DiagnosisAndNotification.executionDate",0,1,"",""
 "DiagnosisAndNotification.historyOfPreviousTreatment","DiagnosisAndNotification.historyOfPreviousTreatment","","","",0,1,"","","","code {[]} {[]}
 ","TB CS - Registration - Previous treatment history","TB CS - Registration - Previous treatment history","","","","","","","","","",,"required","","http://example.org/ValueSet/TBCSTreatmentHistoryVS","",,,,"DiagnosisAndNotification.historyOfPreviousTreatment",0,1,"",""
 "DiagnosisAndNotification.hivInfection","DiagnosisAndNotification.hivInfection","","","",0,1,"","","","code {[]} {[]}

@@ -2,7 +2,7 @@
 "DiagnosticLaboratoryResults","DiagnosticLaboratoryResults","","","",0,*,"","","","null {[]} {[]}
 ","Diagnostic laboratory results","Captures diagnostic test results along with sample information to determine TB infection status.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "DiagnosticLaboratoryResults.executionDate","DiagnosticLaboratoryResults.executionDate","","","",0,1,"","","","date {[]} {[]}
-","","","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.executionDate",0,1,"",""
+","Execution date","Execution date","","","","","","","","","",,,,,"",,,,"DiagnosticLaboratoryResults.executionDate",0,1,"",""
 "DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc","","","",0,1,"","","","code {[]} {[]}
 ","TB-LAB - Initial DST (solid media) - Inh (CC)","TB-LAB - Initial DST (solid media) - Inh (CC)","","","","","","","","","",,"required","","http://example.org/ValueSet/TBLABDSTResultVS","",,,,"DiagnosticLaboratoryResults.solidInitialIsoniazidCriticalConcentrationInhCc",0,1,"",""
 "DiagnosticLaboratoryResults.solidInitialRifampicinRif","DiagnosticLaboratoryResults.solidInitialRifampicinRif","","","",0,1,"","","","code {[]} {[]}

@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-07T09:00:06+00:00"/>
+  <date value="2025-01-07T09:54:37+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -791,7 +791,7 @@
         <reference value="StructureDefinition/TBTreatment"/>
       </reference>
       <name value="TB Treatment"/>
-      <description value="Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan."/>
+      <description value="Tracks the patient's treatment regimen, including details of medication, dosages, and any updates to the treatment plan."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
