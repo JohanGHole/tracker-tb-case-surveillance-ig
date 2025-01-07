@@ -1,10 +1,8 @@
 Instance: DiagnosisAndNotificationQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "Diagnosis and Notification Questionnaire"
 Description: "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
@@ -13,7 +11,6 @@ Usage: #definition
 * contained[+] = TBCSTreatmentHistoryVS
 * contained[+] = TBCSConfirmationMethodVS
 * contained[+] = TBCSSiteOfDiseaseVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 * insert Question("executionDate", "Execution date", date, false, false)
 * insert Question("historyOfPreviousTreatment", "Registration - Previous treatment history", choice, false, false)

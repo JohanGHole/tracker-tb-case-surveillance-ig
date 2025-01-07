@@ -1,17 +1,14 @@
 Instance: TBOutcomeQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "TB Outcome Questionnaire"
 Description: "A questionnaire for capturing the final outcome of the TB case, including case closure, treatment success, or necessary corrections."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
 * language = #en
 * contained[+] = TBCSTreatmentOutcomeVS
 * contained[+] = TBCSDenotificationReasonsVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 // Question(linkId, text, type, required, repeatable)
 * insert Question("executionDate", "Execution Date", date, false, false)

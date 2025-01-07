@@ -1,10 +1,8 @@
 Instance: MonitoringLaboratoryResultsQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "Monitoring Laboratory Results Questionnaire"
 Description: "A questionnaire for capturing laboratory test results to monitor treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
@@ -13,7 +11,6 @@ Usage: #definition
 * contained[+] = TBLABSmearResultVS
 * contained[+] = TBLABSampleQualityVS
 * contained[+] = TBLABSampleStatusVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 // Question(linkId, text, type, required, repeatable)
 * insert Question("executionDate", "Execution Date", date, false, false)

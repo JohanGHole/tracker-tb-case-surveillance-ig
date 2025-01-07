@@ -1,8 +1,8 @@
 Logical: TBTreatment
 Title: "TB Treatment"
 Parent: Base
-Description: "Tracks the patient’s treatment regimen, including details of medication, dosages, and any updates to the treatment plan."
-* executionDate 0..1 date ""
+Description: "Tracks the patient's treatment regimen, including details of medication, dosages, and any updates to the treatment plan."
+* executionDate 0..1 date "Execution date"
 * treatmentRegimen 0..1 code "TB CS - Treatment regimen"
 * treatmentRegimen from TBCSTreatmentCategoryVS (required)
 * levofloxacinLfx 0..1 boolean "TB CS - Treatment second-line - Lfx"
@@ -33,7 +33,7 @@ Description: "Tracks the patient’s treatment regimen, including details of med
 * secondLineEthambutolEmb 0..1 boolean "TB CS - Treatment second-line - Emb"
 * kanamycinKan 0..1 boolean "TB CS - Treatment second-line - Kan"
 * pretomanidPa 0..1 boolean "TB CS - Treatment second-line - Pa"
-* SecondLinePyrazinamidePza 0..1 boolean "TB CS - Treatment second-line - Pza"
+* secondLinePyrazinamidePza 0..1 boolean "TB CS - Treatment second-line - Pza"
 * tickTheBoxToOverwriteThisClassification 0..1 boolean "TB CS - Reassign resistance classification"
 * resistanceClassificationBasedOnLaboratoryResultsInTheSystem 0..1 string "TB CS - Resistance classification"
 * newlyAssignedResistanceClassification 0..1 code "TB CS - Manually assigned resistance classification"

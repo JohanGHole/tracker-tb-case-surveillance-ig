@@ -1,5 +1,6 @@
 CodeSystem: TBCSTreatmentOutcomeCS
 Title: "TB CS - Treatment outcome"
+Description: "Code system for DHIS2 'Treatment outcome' option set."
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
 * ^experimental = true

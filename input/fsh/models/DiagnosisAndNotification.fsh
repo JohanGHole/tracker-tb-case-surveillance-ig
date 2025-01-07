@@ -2,7 +2,7 @@ Logical: DiagnosisAndNotification
 Title: "Diagnosis and notification"
 Parent: Base
 Description: "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases."
-* executionDate 0..1 date ""
+* executionDate 0..1 date "Execution date"
 * historyOfPreviousTreatment 0..1 code "TB CS - Registration - Previous treatment history"
 * historyOfPreviousTreatment from TBCSTreatmentHistoryVS (required)
 * hivInfection 0..1 code "TB CS - HIV infection"

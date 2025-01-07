@@ -1,10 +1,8 @@
 Instance: DiagnosticLaboratoryResultsQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "Diagnostic Laboratory Results Questionnaire"
 Description: "A questionnaire for capturing diagnostic test results and sample information to determine TB infection status."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
@@ -17,7 +15,6 @@ Usage: #definition
 * contained[+] = TBLABSampleQualityVS
 * contained[+] = TBLABLPASpecimenVS
 * contained[+] = TBLABSampleStatusVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 * insert Question("executionDate", "Execution Date", date, false, false)
 

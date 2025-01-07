@@ -1,5 +1,7 @@
 CodeSystem: TBCSResistanceClassificationCS
 Title: "TB CS - Resistance Classification"
+Description: "Code system for DHIS2 'Resistance Classification' option set."
+
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"
 * ^meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"
 * ^experimental = true

@@ -1,17 +1,14 @@
 Instance: TBCaseSurveillanceQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "TB Case Surveillance Questionnaire"
 Description: "A questionnaire for TB Case Surveillance capturing patient demographics and program-specific information."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
 * language = #en
 * contained[+] = RRTGENSexVS
 * contained[+] = GENYesNoUnknownVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 // Question(linkId, text, type, required, repeatable)
 * insert Question("enrollmentDate", "Enrollment Date", string, true, false)

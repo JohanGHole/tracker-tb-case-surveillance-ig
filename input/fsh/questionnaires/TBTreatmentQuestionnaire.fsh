@@ -1,17 +1,14 @@
 Instance: TBTreatmentQuestionnaire
-InstanceOf: sdc-questionnaire-extr-smap
+InstanceOf: Questionnaire
 Title: "TB Treatment Questionnaire"
 Description: "A questionnaire for capturing details of the patient’s treatment regimen, including medications, dosages, and updates to the treatment plan."
 Usage: #definition
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablequestionnaire"
-* meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablequestionnaire"
 * status = #draft
 * experimental = true
 * subjectType = #Patient
 * language = #en
 * contained[+] = TBCSTreatmentCategoryVS
 * contained[+] = TBCSResistanceClassificationVS
-* extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap"
 
 // Question(linkId, text, type, required, repeatable)
 * insert Question("executionDate", "Execution Date", date, false, false)

@@ -2,7 +2,7 @@ Logical: Outcome
 Title: "Outcome"
 Parent: Base
 Description: "Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections."
-* executionDate 0..1 date ""
+* executionDate 0..1 date "Execution date"
 * treatmentOutcome 0..1 code "TB CS - Treatment outcome"
 * treatmentOutcome from TBCSTreatmentOutcomeVS (required)
 * reasonForDenotification 0..1 code "TB CS - Outcome - Reason for case denotification"
