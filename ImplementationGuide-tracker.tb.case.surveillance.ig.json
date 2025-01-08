@@ -15,7 +15,7 @@
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-07T10:22:04+00:00",
+  "date" : "2025-01-08T13:44:33+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -718,6 +718,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/1"
+      },
+      "name" : "Outcome QuestionnaireResponse Example",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1158,6 +1169,16 @@
       "name" : "TB-LAB - Smear result value set",
       "description" : "Value set for DHIS2 'Smear result' option set.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/OutcomeQRToLM"
+      },
+      "description" : "Map TB Outcome QuestionnaireResponse to logical model"
     }],
     "page" : {
       "extension" : [{

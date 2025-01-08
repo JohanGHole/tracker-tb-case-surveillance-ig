@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="OutcomeQRToLM"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap OutcomeQRToLM</b></p><a name="OutcomeQRToLM"> </a><a name="hcOutcomeQRToLM"> </a><a name="OutcomeQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/OutcomeQRToLM<span style="color: navy">&quot; = &quot;</span>OutcomeQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map TB Outcome QuestionnaireResponse to logical model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-Outcome.html" title="Outcome">http://example.org/StructureDefinition/Outcome</a><span style="color: navy">&quot; </span><b>alias </b>OutcomeLM <b>as </b><b>target</b>
+
+<b>group </b>OutcomeQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">outcome</span><span style="color: navy"> : </span>OutcomeLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>outcome.executionDate = <span style="color: maroon">content</span> <i>&quot;SetExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapExecutionDate&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'treatmentOutcome'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>outcome.treatmentOutcome = <span style="color: maroon">coding</span> <i>&quot;SetTreatmentOutcome&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTreatmentDate&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'reasonForDenotification'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>outcome.reasonForDenotification = <span style="color: maroon">coding</span> <i>&quot;SetReasonForDenotification&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapReasonForDenotification&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'provideDuplicateSRecordNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>outcome.provideDuplicateSRecordNumber = <span style="color: maroon">content</span> <i>&quot;SetProvideDuplicateSRecordNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapProvideDuplicateSRecordNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'treatmentOutcomeDelayWeeks'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>outcome.treatmentOutcomeDelayWeeks = <span style="color: maroon">content</span> <i>&quot;SetTreatmentOutcomeDelayWeeks&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTreatmentOutcomeDelayWeeks&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'provideEvidenceForDenotifyingTheCase'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>outcome.provideEvidenceForDenotifyingTheCase = <span style="color: maroon">content</span> <i>&quot;SetProvideEvidenceForDenotifyingTheCase&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapProvideEvidenceForDenotifyingTheCase&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'denotifyTheCase'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>outcome.denotifyTheCase = <span style="color: maroon">content</span> <i>&quot;SetDenotifyTheCase&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDenotifyTheCase&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://example.org/StructureMap/OutcomeQRToLM"/>
+  <version value="0.1.0"/>
+  <name value="OutcomeQRToLM"/>
+  <title value="Map TB Outcome QuestionnaireResponse to logical model"/>
+  <status value="draft"/>
+  <date value="2025-01-08T13:44:33+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <description value="Map TB Outcome QuestionnaireResponse to logical model"/>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <mode value="source"/>
+    <alias value="QResp"/>
+  </structure>
+  <structure>
+    <url value="http://example.org/StructureDefinition/Outcome"/>
+    <mode value="target"/>
+    <alias value="OutcomeLM"/>
+  </structure>
+  <group>
+    <name value="OutcomeQRToLM"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="qr"/>
+      <type value="QResp"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="outcome"/>
+      <type value="OutcomeLM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="ProcessItems"/>
+      <source>
+        <context value="qr"/>
+        <element value="item"/>
+        <variable value="item"/>
+      </source>
+      <rule>
+        <name value="MapExecutionDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'executionDate'"/>
+        </source>
+        <rule>
+          <name value="SetExecutionDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="executionDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTreatmentDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'treatmentOutcome'"/>
+        </source>
+        <rule>
+          <name value="SetTreatmentOutcome"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="treatmentOutcome"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapReasonForDenotification"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'reasonForDenotification'"/>
+        </source>
+        <rule>
+          <name value="SetReasonForDenotification"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="reasonForDenotification"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapProvideDuplicateSRecordNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'provideDuplicateSRecordNumber'"/>
+        </source>
+        <rule>
+          <name value="SetProvideDuplicateSRecordNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="provideDuplicateSRecordNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTreatmentOutcomeDelayWeeks"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'treatmentOutcomeDelayWeeks'"/>
+        </source>
+        <rule>
+          <name value="SetTreatmentOutcomeDelayWeeks"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="treatmentOutcomeDelayWeeks"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapProvideEvidenceForDenotifyingTheCase"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'provideEvidenceForDenotifyingTheCase'"/>
+        </source>
+        <rule>
+          <name value="SetProvideEvidenceForDenotifyingTheCase"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="provideEvidenceForDenotifyingTheCase"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDenotifyTheCase"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'denotifyTheCase'"/>
+        </source>
+        <rule>
+          <name value="SetDenotifyTheCase"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="outcome"/>
+            <contextType value="variable"/>
+            <element value="denotifyTheCase"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

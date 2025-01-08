@@ -204,6 +204,13 @@
     "name" : "TBTreatment"
   },
   {
+    "id" : "OutcomeQRToLM",
+    "type" : "StructureMap",
+    "url" : "http://example.org/StructureMap/OutcomeQRToLM",
+    "version" : "0.1.0",
+    "name" : "OutcomeQRToLM"
+  },
+  {
     "id" : "GENYesNoUnknownVS",
     "type" : "ValueSet",
     "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",

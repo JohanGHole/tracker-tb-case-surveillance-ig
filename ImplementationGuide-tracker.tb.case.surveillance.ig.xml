@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-07T10:22:04+00:00"/>
+  <date value="2025-01-08T13:44:33+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -554,6 +554,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/1"/>
+      </reference>
+      <name value="Outcome QuestionnaireResponse Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -958,6 +968,15 @@
       <name value="TB-LAB - Smear result value set"/>
       <description value="Value set for DHIS2 'Smear result' option set."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/OutcomeQRToLM"/>
+      </reference>
+      <description value="Map TB Outcome QuestionnaireResponse to logical model"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

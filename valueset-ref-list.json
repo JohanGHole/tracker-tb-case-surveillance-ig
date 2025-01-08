@@ -28,8 +28,8 @@
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
       "uses" : {
       },
-      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification",
-      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
+      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance",
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
     },
     {
       "url" : "http://example.org/ValueSet/RRTGENSexVS",

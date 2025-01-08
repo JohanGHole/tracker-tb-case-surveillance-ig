@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 0
+err = 2, warn = 5, info = 3
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 6 / 4 / 0
+ Build Errors : 7 / 5 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
@@ -52,14 +52,18 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleQualityVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleStatusVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 0 / 0 / 6
+ /github/workspace/input/examples/OutcomeQRExample : 1 / 0 / 4
+ /github/workspace/input/maps/OutcomeQRToLM : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 155
-ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 170
-ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 164
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 157
+ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 164
+ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 155
 ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
+ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
+ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 170
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -111,3 +115,9 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-TBLABSampleQualityVS.json ==
 == fsh-generated/resources/ValueSet-TBLABSampleStatusVS.json ==
 == fsh-generated/resources/ValueSet-TBLABSmearResultVS.json ==
+== input/examples/OutcomeQRExample.json ==
+ERROR: QuestionnaireResponse: Unrecognized property 'title'
+INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0
+INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0
+INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== input/maps/OutcomeQRToLM.map ==
