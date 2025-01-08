@@ -10,7 +10,7 @@
   "name" : "DiagnosisAndNotificationQRToLM",
   "title" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
   "status" : "draft",
-  "date" : "2025-01-08T14:12:29+00:00",
+  "date" : "2025-01-08T14:51:23+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",

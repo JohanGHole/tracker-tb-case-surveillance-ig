@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="MonitoringLaboratoryResultsQRToLM"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap MonitoringLaboratoryResultsQRToLM</b></p><a name="MonitoringLaboratoryResultsQRToLM"> </a><a name="hcMonitoringLaboratoryResultsQRToLM"> </a><a name="MonitoringLaboratoryResultsQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM<span style="color: navy">&quot; = &quot;</span>MonitoringLaboratoryResultsQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-MonitoringLaboratoryResults.html" title="Monitoring laboratory results">http://example.org/StructureDefinition/MonitoringLaboratoryResults</a><span style="color: navy">&quot; </span><b>alias </b>LabResultsLM <b>as </b><b>target</b>
+
+<b>group </b>MonitoringLaboratoryResultsQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">labResults</span><span style="color: navy"> : </span>LabResultsLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    <span style="color: navy">// </span><span style="color: green">Execution Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.executionDate = <span style="color: maroon">content</span> <i>&quot;SetExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Culture in Liquid Media</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.cultureInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetCultureInLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Culture in Solid Media</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.cultureInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetCultureInSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Culture Inoculation - Liquid Media</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfCultureInoculationLiquidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Culture Inoculation - Solid Media</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfCultureInoculationSolidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Microscopy</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Sample Reception</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfSampleReception = <span style="color: maroon">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Liquid Culture Result Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfLiquidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Liquid Culture Specimen Number</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.liquidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Liquid Culture Test Result</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>labResults.liquidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Microscopy Result</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>labResults.microscopyResult = <span style="color: maroon">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Sample ID</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.sampleId = <span style="color: maroon">content</span> <i>&quot;SetSampleID&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleID&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Sample Quality</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>labResults.sampleQuality = <span style="color: maroon">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleQuality&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Sample Status</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>labResults.sampleStatus = <span style="color: maroon">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleStatus&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Smear Specimen Number</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.smearSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Solid Culture Result Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.dateOfSolidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Solid Culture Specimen Number</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.solidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Solid Culture Test Result</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>labResults.solidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Sputum Smear Microscopy</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>labResults.sputumSmearMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM"/>
+  <version value="0.1.0"/>
+  <name value="MonitoringLaboratoryResultsQRToLM"/>
+  <title value="Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"/>
+  <status value="draft"/>
+  <date value="2025-01-08T14:51:23+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <description value="Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"/>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <mode value="source"/>
+    <alias value="QResp"/>
+  </structure>
+  <structure>
+    <url value="http://example.org/StructureDefinition/MonitoringLaboratoryResults"/>
+    <mode value="target"/>
+    <alias value="LabResultsLM"/>
+  </structure>
+  <group>
+    <name value="MonitoringLaboratoryResultsQRToLM"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="qr"/>
+      <type value="QResp"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="labResults"/>
+      <type value="LabResultsLM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="ProcessItems"/>
+      <source>
+        <context value="qr"/>
+        <element value="item"/>
+        <variable value="item"/>
+      </source>
+      <rule>
+        <name value="MapExecutionDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'executionDate'"/>
+        </source>
+        <rule>
+          <name value="SetExecutionDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="executionDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCultureInLiquidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'cultureInLiquidMediaEGMgit'"/>
+        </source>
+        <rule>
+          <name value="SetCultureInLiquidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="cultureInLiquidMediaEGMgit"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCultureInSolidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'cultureInSolidMediaEGLj'"/>
+        </source>
+        <rule>
+          <name value="SetCultureInSolidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="cultureInSolidMediaEGLj"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfCultureInoculationLiquidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfCultureInoculationLiquidMedia'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfCultureInoculationLiquidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfCultureInoculationLiquidMedia"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfCultureInoculationSolidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfCultureInoculationSolidMedia'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfCultureInoculationSolidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfCultureInoculationSolidMedia"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfMicroscopy"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfMicroscopy'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfMicroscopy"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfMicroscopy"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfSampleReception"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfSampleReception'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfSampleReception"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfSampleReception"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfLiquidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfLiquidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfLiquidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfLiquidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidCultureSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidCultureSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidCultureSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="liquidCultureSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="liquidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapMicroscopyResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'microscopyResult'"/>
+        </source>
+        <rule>
+          <name value="SetMicroscopyResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="microscopyResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleID"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleId'"/>
+        </source>
+        <rule>
+          <name value="SetSampleID"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="sampleId"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleQuality"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleQuality'"/>
+        </source>
+        <rule>
+          <name value="SetSampleQuality"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="sampleQuality"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleStatus"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleStatus'"/>
+        </source>
+        <rule>
+          <name value="SetSampleStatus"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="sampleStatus"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSmearSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'smearSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSmearSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="smearSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfSolidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfSolidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfSolidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="dateOfSolidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidCultureSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidCultureSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSolidCultureSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="solidCultureSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetSolidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="solidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSputumSmearMicroscopy"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sputumSmearMicroscopy'"/>
+        </source>
+        <rule>
+          <name value="SetSputumSmearMicroscopy"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="labResults"/>
+            <contextType value="variable"/>
+            <element value="sputumSmearMicroscopy"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

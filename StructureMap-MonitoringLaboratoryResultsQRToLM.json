@@ -1,0 +1,568 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "MonitoringLaboratoryResultsQRToLM",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MonitoringLaboratoryResultsQRToLM</b></p><a name=\"MonitoringLaboratoryResultsQRToLM\"> </a><a name=\"hcMonitoringLaboratoryResultsQRToLM\"> </a><a name=\"MonitoringLaboratoryResultsQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot; = &quot;</span>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MonitoringLaboratoryResults.html\" title=\"Monitoring laboratory results\">http://example.org/StructureDefinition/MonitoringLaboratoryResults</a><span style=\"color: navy\">&quot; </span><b>alias </b>LabResultsLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">labResults</span><span style=\"color: navy\"> : </span>LabResultsLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Execution Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationLiquidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationSolidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Sample Reception</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSampleReception = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfLiquidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Microscopy Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.microscopyResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample ID</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleId = <span style=\"color: maroon\">content</span> <i>&quot;SetSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Quality</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleQuality = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Status</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleStatus = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Smear Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.smearSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSolidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sputum Smear Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sputumSmearMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM",
+  "version" : "0.1.0",
+  "name" : "MonitoringLaboratoryResultsQRToLM",
+  "title" : "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model",
+  "status" : "draft",
+  "date" : "2025-01-08T14:51:23+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "description" : "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model",
+  "structure" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+    "mode" : "source",
+    "alias" : "QResp"
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/MonitoringLaboratoryResults",
+    "mode" : "target",
+    "alias" : "LabResultsLM"
+  }],
+  "group" : [{
+    "name" : "MonitoringLaboratoryResultsQRToLM",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "qr",
+      "type" : "QResp",
+      "mode" : "source"
+    },
+    {
+      "name" : "labResults",
+      "type" : "LabResultsLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "ProcessItems",
+      "source" : [{
+        "context" : "qr",
+        "element" : "item",
+        "variable" : "item"
+      }],
+      "rule" : [{
+        "name" : "MapExecutionDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'executionDate'"
+        }],
+        "rule" : [{
+          "name" : "SetExecutionDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "executionDate",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCultureInLiquidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'cultureInLiquidMediaEGMgit'"
+        }],
+        "rule" : [{
+          "name" : "SetCultureInLiquidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "cultureInLiquidMediaEGMgit",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCultureInSolidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'cultureInSolidMediaEGLj'"
+        }],
+        "rule" : [{
+          "name" : "SetCultureInSolidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "cultureInSolidMediaEGLj",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfCultureInoculationLiquidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfCultureInoculationLiquidMedia'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfCultureInoculationLiquidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfCultureInoculationLiquidMedia",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfCultureInoculationSolidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfCultureInoculationSolidMedia'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfCultureInoculationSolidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfCultureInoculationSolidMedia",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfMicroscopy",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfMicroscopy'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfMicroscopy",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfMicroscopy",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfSampleReception",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfSampleReception'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfSampleReception",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfSampleReception",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfLiquidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfLiquidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfLiquidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfLiquidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidCultureSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidCultureSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidCultureSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "liquidCultureSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "liquidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapMicroscopyResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'microscopyResult'"
+        }],
+        "rule" : [{
+          "name" : "SetMicroscopyResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "microscopyResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleID",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleId'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleID",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "sampleId",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleQuality",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleQuality'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleQuality",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "sampleQuality",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleStatus",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleStatus'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleStatus",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "sampleStatus",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSmearSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'smearSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSmearSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "smearSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfSolidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfSolidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfSolidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "dateOfSolidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidCultureSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidCultureSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidCultureSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "solidCultureSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "solidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSputumSmearMicroscopy",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sputumSmearMicroscopy'"
+        }],
+        "rule" : [{
+          "name" : "SetSputumSmearMicroscopy",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "labResults",
+            "contextType" : "variable",
+            "element" : "sputumSmearMicroscopy",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+}

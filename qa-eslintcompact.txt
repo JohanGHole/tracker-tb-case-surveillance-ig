@@ -2,8 +2,10 @@ TrackerTBCaseSurveillanceImplementationGuide
 =========================================
 
 Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosisAndNotificationQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
+Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/MonitoringLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
 Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 260 column 157 (STRUCTURE)
 Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 260 column 164 (STRUCTURE)
@@ -26,10 +28,17 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/input/examples/DiagnosisAndNotificationQRExample.json: line 194, col 12, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/DiagnosisAndNotificationQRExample.json: line 207, col 12, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/DiagnosisAndNotificationQRExample.json: line 1, col 2, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 4, col 75, Error - Unrecognized property 'title' (STRUCTURE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 94, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 107, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 129, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 142, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 182, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/MonitoringLaboratoryResultsQRExample.json: line 1, col 4, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
 /github/workspace/input/examples/OutcomeQRExample.json: line 3, col 53, Error - Unrecognized property 'title' (STRUCTURE)
 /github/workspace/input/examples/OutcomeQRExample.json: line 22, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/OutcomeQRExample.json: line 35, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/OutcomeQRExample.json: line 1, col 4, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
 
-err = 4, warn = 6, info = 13
+err = 6, warn = 7, info = 19
 IG Publisher Version: 1.8.6
