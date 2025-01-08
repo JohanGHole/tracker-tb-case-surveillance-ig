@@ -1,0 +1,200 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "3",
+    "title": "Monitoring Laboratory Results QuestionnaireResponse Example",
+    "status": "completed",
+    "authored": "2025-01-08T14:29:52.916Z",
+    "item": [
+      {
+        "linkId": "executionDate",
+        "text": "Execution Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-08"
+          }
+        ]
+      },
+      {
+        "linkId": "cultureInLiquidMediaEGMgit",
+        "text": "Culture in Liquid Media - e.g. MGIT",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "cultureInSolidMediaEGLj",
+        "text": "Culture in Solid Media - e.g. LJ",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfCultureInoculationLiquidMedia",
+        "text": "Date of Culture Inoculation - Liquid Media",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfCultureInoculationSolidMedia",
+        "text": "Date of Culture Inoculation - Solid Media",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfMicroscopy",
+        "text": "Date of Microscopy",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfSampleReception",
+        "text": "Date of Sample Reception",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfLiquidCultureResult",
+        "text": "Liquid Culture Result Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-07"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidCultureSpecimenNumber",
+        "text": "Liquid Culture Specimen Number",
+        "answer": [
+          {
+            "valueString": "4"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidCultureResult",
+        "text": "Liquid Culture Test Result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+              "code": "MTB",
+              "display": "MTB"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "microscopyResult",
+        "text": "Microscopy Result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSmearResultCS",
+              "code": "2PLUS",
+              "display": "Positive (++)"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "sampleId",
+        "text": "Sample ID",
+        "answer": [
+          {
+            "valueString": "ID-123"
+          }
+        ]
+      },
+      {
+        "linkId": "sampleQuality",
+        "text": "Sample Quality",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSampleQualityCS",
+              "code": "GOOD",
+              "display": "Good (accepted for processing)"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "sampleStatus",
+        "text": "Sample Status",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSampleStatusCS",
+              "code": "RECEIVED",
+              "display": "Sample received"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "smearSpecimenNumber",
+        "text": "Smear Specimen Number",
+        "answer": [
+          {
+            "valueString": "15"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfSolidCultureResult",
+        "text": "Solid Culture Result Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-08"
+          }
+        ]
+      },
+      {
+        "linkId": "solidCultureSpecimenNumber",
+        "text": "Solid Culture Specimen Number",
+        "answer": [
+          {
+            "valueString": "1"
+          }
+        ]
+      },
+      {
+        "linkId": "solidCultureResult",
+        "text": "Solid Culture Test Result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+              "code": "NTM",
+              "display": "NTM"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "sputumSmearMicroscopy",
+        "text": "Sputum Smear Microscopy",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      }
+    ]
+  }
