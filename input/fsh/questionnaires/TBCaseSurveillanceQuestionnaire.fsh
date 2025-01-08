@@ -11,8 +11,8 @@ Usage: #definition
 * contained[+] = GENYesNoUnknownVS
 
 // Question(linkId, text, type, required, repeatable)
-* insert Question("enrollmentDate", "Enrollment Date", string, true, false)
-* insert Question("incidentDate", "Incident Date", string, false, false)
+* insert Question("enrollmentDate", "Enrollment Date", date, true, false)
+* insert Question("incidentDate", "Incident Date", date, false, false)
 * insert Question("nationalId", "National ID", string, true, false)
 * insert Question("tbRegistrationNumber", "TB Registration Number", string, false, false)
 * insert Question("familyName", "Family Name", string, true, false)
