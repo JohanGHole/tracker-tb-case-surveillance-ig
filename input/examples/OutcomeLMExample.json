@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Outcome",
+  "executionDate" : "2025-01-08",
+  "treatmentOutcome" : {
+    "system" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
+    "code" : "CURED",
+    "display" : "Cured"
+  },
+  "reasonForDenotification" : {
+    "system" : "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
+    "code" : "NOT_TB",
+    "display" : "Not a TB Case"
+  },
+  "provideDuplicateSRecordNumber" : "false",
+  "treatmentOutcomeDelayWeeks" : 23
+}

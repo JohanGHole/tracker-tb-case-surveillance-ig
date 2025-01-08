@@ -1,0 +1,80 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "title": "Outcome QuestionnaireResponse Example",
+    "id": "1",
+    "status": "completed",
+    "authored": "2025-01-08T11:12:08.346Z",
+    "item": [
+      {
+        "linkId": "executionDate",
+        "text": "Execution Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-08"
+          }
+        ]
+      },
+      {
+        "linkId": "treatmentOutcome",
+        "text": "Treatment Outcome",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
+              "code": "CURED",
+              "display": "Cured"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "reasonForDenotification",
+        "text": "Reason for Denotification",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
+              "code": "NOT_TB",
+              "display": "Not a TB Case"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "provideDuplicateSRecordNumber",
+        "text": "Duplicate's Record Number",
+        "answer": [
+          {
+            "valueString": "1"
+          }
+        ]
+      },
+      {
+        "linkId": "treatmentOutcomeDelayWeeks",
+        "text": "Treatment Outcome Delay Weeks",
+        "answer": [
+          {
+            "valueDecimal": 23
+          }
+        ]
+      },
+      {
+        "linkId": "provideEvidenceForDenotifyingTheCase",
+        "text": "Provide Evidence for Denotifying the Case",
+        "answer": [
+          {
+            "valueString": "2"
+          }
+        ]
+      },
+      {
+        "linkId": "denotifyTheCase",
+        "text": "Denotify the Case",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      }
+    ]
+  }
