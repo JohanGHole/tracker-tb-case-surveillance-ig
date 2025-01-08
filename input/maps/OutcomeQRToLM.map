@@ -1,6 +1,6 @@
 /// url = "http://example.org/StructureMap/OutcomeQRToLM"
 /// name = 'OutcomeQRToLM'
-/// description = "map outcome questionnaire response to logical model"
+/// description = "Map TB Outcome QuestionnaireResponse to logical model"
 
 uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
 uses "http://example.org/StructureDefinition/Outcome" alias OutcomeLM as target
@@ -11,32 +11,32 @@ group OutcomeQRToLM ( source qr : QResp, target outcome : OutcomeLM) {
 
     item.answer first as answer where item.linkId = 'executionDate' then {
       answer.value as content -> outcome.executionDate = content  "SetExecutionDate";
-    } "FirstAnswerForExecutionDate";
+    } "MapExecutionDate";
 
     item.answer first as answer where item.linkId = 'treatmentOutcome' then {
       answer.value as coding -> outcome.treatmentOutcome = coding "SetTreatmentOutcome";
-    } "FirstAnswerForTreatmentDate";
+    } "MapTreatmentDate";
 
     item.answer first as answer where item.linkId = 'reasonForDenotification' then {
       answer.value as coding -> outcome.reasonForDenotification = coding "SetReasonForDenotification";
-    } "FirstAnswerForReasonForDenotification";
+    } "MapReasonForDenotification";
 
     item.answer first as answer where item.linkId = 'provideDuplicateSRecordNumber' then {
       answer.value as content -> outcome.provideDuplicateSRecordNumber = content "SetProvideDuplicateSRecordNumber";
-    } "FirstAnswerForProvideDuplicateSRecordNumber";
+    } "MapProvideDuplicateSRecordNumber";
 
     item.answer first as answer where item.linkId = 'treatmentOutcomeDelayWeeks' then {
       answer.value as content -> outcome.treatmentOutcomeDelayWeeks = content "SetTreatmentOutcomeDelayWeeks";
-    } "FirstAnswerForTreatmentOutcomeDelayWeeks";
+    } "MapTreatmentOutcomeDelayWeeks";
 
     item.answer first as answer where item.linkId = 'provideEvidenceForDenotifyingTheCase' then {
-      answer.value as content -> outcome.provideDuplicateSRecordNumber = content "SetProvideEvidenceForDenotifyingTheCase";
-    } "FirstAnswerForProvideEvidenceForDenotifyingTheCase";
+      answer.value as content -> outcome.provideEvidenceForDenotifyingTheCase = content "SetProvideEvidenceForDenotifyingTheCase";
+    } "MapProvideEvidenceForDenotifyingTheCase";
 
     item.answer first as answer where item.linkId = 'denotifyTheCase' then {
-      answer.value as content -> outcome.provideDuplicateSRecordNumber = content "SetDenotifyTheCase";
-    } "FirstAnswerForDenotifyTheCase";
+      answer.value as content -> outcome.denotifyTheCase = content "SetDenotifyTheCase";
+    } "MapDenotifyTheCase";
   
-  } "processItems";
+  } "ProcessItems";
 
 }
