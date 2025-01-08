@@ -1,0 +1,58 @@
+{
+  "resourceType" : "DiagnosisAndNotification",
+  "executionDate" : "2025-01-01",
+  "historyOfPreviousTreatment" : {
+    "system" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
+    "code" : "HISTORY_RELAPSE",
+    "display" : "Relapse"
+  },
+  "hivInfection" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "UNKNOWN",
+    "display" : "Unknown"
+  },
+  "artStarted" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "UNKNOWN",
+    "display" : "Unknown"
+  },
+  "artStartDate" : "2025-01-01",
+  "isThisATbDiagnosisDoYouWantToNotifyTheCase" : true,
+  "diagnosisticNote" : "Test",
+  "undernourishment" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "YES",
+    "display" : "Yes"
+  },
+  "dateOfDiagnosis" : "2025-01-06",
+  "secondLineDrugsReceivedPreviously" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "NO",
+    "display" : "No"
+  },
+  "confirmationMethod" : {
+    "system" : "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
+    "code" : "CLINDX",
+    "display" : "Clinically diagnosed"
+  },
+  "currentAddressOnMap" : "Home",
+  "siteOfDisease" : {
+    "system" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
+    "code" : "SITE_PULMONARY",
+    "display" : "Pulmonary"
+  },
+  "artPatientId" : "ID-123",
+  "dateOfNotification" : "2025-01-08",
+  "hivStatusDate" : "2024-12-31",
+  "numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold" : 6,
+  "harmfulUseOfAlcohol" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "YES",
+    "display" : "Yes"
+  },
+  "diabetes" : {
+    "system" : "http://example.org/CodeSystem/GENYesNoUnknownCS",
+    "code" : "YES",
+    "display" : "Yes"
+  }
+}

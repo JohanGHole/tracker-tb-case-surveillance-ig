@@ -1,0 +1,114 @@
+/// url = "http://example.org/StructureMap/DiagnosisAndNotificationQRToLM"
+/// name = 'DiagnosisAndNotificationQRToLM'
+/// description = "Map Diagnosis and Notification QuestionnaireResponse to Logical Model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/DiagnosisAndNotification" alias DiagnosisLM as target
+
+group DiagnosisAndNotificationQRToLM (source qr : QResp, target diagnosis : DiagnosisLM) {
+
+    qr.item as item then {
+  
+      // Execution Date
+      item.answer first as answer where item.linkId = 'executionDate' then {
+        answer.value as content -> diagnosis.executionDate = content "SetExecutionDate";
+      } "MapExecutionDate";
+  
+      // Previous Treatment History
+      item.answer first as answer where item.linkId = 'historyOfPreviousTreatment' then {
+        answer.value as coding -> diagnosis.historyOfPreviousTreatment = coding "SetHistoryOfPreviousTreatment";
+      } "MapHistoryOfPreviousTreatment";
+  
+      // HIV Infection
+      item.answer first as answer where item.linkId = 'hivInfection' then {
+        answer.value as coding -> diagnosis.hivInfection = coding "SetHIVInfection";
+      } "MapHIVInfection";
+  
+      // ART Started
+      item.answer first as answer where item.linkId = 'artStarted' then {
+        answer.value as coding -> diagnosis.artStarted = coding "SetARTStarted";
+      } "MapARTStarted";
+  
+      // ART Start Date
+      item.answer first as answer where item.linkId = 'artStartDate' then {
+        answer.value as content -> diagnosis.artStartDate = content "SetARTStartDate";
+      } "MapARTStartDate";
+  
+      // Case Notification
+      item.answer first as answer where item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase' then {
+        answer.value as content -> diagnosis.isThisATbDiagnosisDoYouWantToNotifyTheCase = content "SetCaseNotification";
+      } "MapCaseNotification";
+  
+      // Diagnostic Note
+      item.answer first as answer where item.linkId = 'diagnosisticNote' then {
+        answer.value as content -> diagnosis.diagnosisticNote = content "SetDiagnosticNote";
+      } "MapDiagnosticNote";
+  
+      // Risk Factor: Undernourishment
+      item.answer first as answer where item.linkId = 'undernourishment' then {
+        answer.value as coding -> diagnosis.undernourishment = coding "SetUndernourishment";
+      } "MapUndernourishment";
+  
+      // Diagnosis Date
+      item.answer first as answer where item.linkId = 'dateOfDiagnosis' then {
+        answer.value as content -> diagnosis.dateOfDiagnosis = content "SetDiagnosisDate";
+      } "MapDiagnosisDate";
+  
+      // Second-line Drugs
+      item.answer first as answer where item.linkId = 'secondLineDrugsReceivedPreviously' then {
+        answer.value as coding -> diagnosis.secondLineDrugsReceivedPreviously = coding "SetSecondLineDrugs";
+      } "MapSecondLineDrugs";
+  
+      // Confirmation Method
+      item.answer first as answer where item.linkId = 'confirmationMethod' then {
+        answer.value as coding -> diagnosis.confirmationMethod = coding "SetConfirmationMethod";
+      } "MapConfirmationMethod";
+  
+      // Current Address (Coordinates)
+      item.answer first as answer where item.linkId = 'currentAddressOnMap' then {
+        answer.value as content -> diagnosis.currentAddressOnMap = content "SetCurrentAddressOnMap";
+      } "MapCurrentAddressOnMap";
+  
+      // Site of Disease
+      item.answer first as answer where item.linkId = 'siteOfDisease' then {
+        answer.value as coding -> diagnosis.siteOfDisease = coding "SetSiteOfDisease";
+      } "MapSiteOfDisease";
+  
+      // ART Patient ID
+      item.answer first as answer where item.linkId = 'artPatientId' then {
+        answer.value as content -> diagnosis.artPatientId = content "SetARTPatientID";
+      } "MapARTPatientID";
+  
+      // Notification Date
+      item.answer first as answer where item.linkId = 'dateOfNotification' then {
+        answer.value as content -> diagnosis.dateOfNotification = content "SetNotificationDate";
+      } "MapNotificationDate";
+  
+      // HIV Status Date
+      item.answer first as answer where item.linkId = 'hivStatusDate' then {
+        answer.value as content -> diagnosis.hivStatusDate = content "SetHIVStatusDate";
+      } "MapHIVStatusDate";
+  
+      // Household Size
+      item.answer first as answer where item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold' then {
+        answer.value as content -> diagnosis.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold = content "SetHouseholdSize";
+      } "MapHouseholdSize";
+  
+      // Risk Factor: Alcohol
+      item.answer first as answer where item.linkId = 'harmfulUseOfAlcohol' then {
+        answer.value as coding -> diagnosis.harmfulUseOfAlcohol = coding "SetRiskFactorAlcohol";
+      } "MapRiskFactorAlcohol";
+  
+      // Risk Factor: Diabetes
+      item.answer first as answer where item.linkId = 'diabetes' then {
+        answer.value as coding -> diagnosis.diabetes = coding "SetRiskFactorDiabetes";
+      } "MapRiskFactorDiabetes";
+  
+      // Risk Factor: Smoking
+      item.answer first as answer where item.linkId = 'smoking' then {
+        answer.value as coding -> diagnosis.smoking = coding "SetRiskFactorSmoking";
+      } "MapRiskFactorSmoking";
+  
+    } "ProcessItems";
+  
+  }
