@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="DiagnosisAndNotificationQRToLM"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap DiagnosisAndNotificationQRToLM</b></p><a name="DiagnosisAndNotificationQRToLM"> </a><a name="hcDiagnosisAndNotificationQRToLM"> </a><a name="DiagnosisAndNotificationQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/DiagnosisAndNotificationQRToLM<span style="color: navy">&quot; = &quot;</span>DiagnosisAndNotificationQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map Diagnosis and Notification QuestionnaireResponse to Logical Model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-DiagnosisAndNotification.html" title="Diagnosis and notification">http://example.org/StructureDefinition/DiagnosisAndNotification</a><span style="color: navy">&quot; </span><b>alias </b>DiagnosisLM <b>as </b><b>target</b>
+
+<b>group </b>DiagnosisAndNotificationQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">diagnosis</span><span style="color: navy"> : </span>DiagnosisLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    <span style="color: navy">// </span><span style="color: green">Execution Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.executionDate = <span style="color: maroon">content</span> <i>&quot;SetExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Previous Treatment History</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'historyOfPreviousTreatment'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.historyOfPreviousTreatment = <span style="color: maroon">coding</span> <i>&quot;SetHistoryOfPreviousTreatment&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapHistoryOfPreviousTreatment&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">HIV Infection</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'hivInfection'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.hivInfection = <span style="color: maroon">coding</span> <i>&quot;SetHIVInfection&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapHIVInfection&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">ART Started</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'artStarted'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.artStarted = <span style="color: maroon">coding</span> <i>&quot;SetARTStarted&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapARTStarted&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">ART Start Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'artStartDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.artStartDate = <span style="color: maroon">content</span> <i>&quot;SetARTStartDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapARTStartDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Case Notification</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.isThisATbDiagnosisDoYouWantToNotifyTheCase = <span style="color: maroon">content</span> <i>&quot;SetCaseNotification&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCaseNotification&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Diagnostic Note</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'diagnosisticNote'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.diagnosisticNote = <span style="color: maroon">content</span> <i>&quot;SetDiagnosticNote&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDiagnosticNote&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Risk Factor: Undernourishment</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'undernourishment'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.undernourishment = <span style="color: maroon">coding</span> <i>&quot;SetUndernourishment&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapUndernourishment&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Diagnosis Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfDiagnosis'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.dateOfDiagnosis = <span style="color: maroon">content</span> <i>&quot;SetDiagnosisDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDiagnosisDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Second-line Drugs</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'secondLineDrugsReceivedPreviously'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.secondLineDrugsReceivedPreviously = <span style="color: maroon">coding</span> <i>&quot;SetSecondLineDrugs&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSecondLineDrugs&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Confirmation Method</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'confirmationMethod'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.confirmationMethod = <span style="color: maroon">coding</span> <i>&quot;SetConfirmationMethod&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapConfirmationMethod&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Current Address (Coordinates)</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'currentAddressOnMap'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.currentAddressOnMap = <span style="color: maroon">content</span> <i>&quot;SetCurrentAddressOnMap&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCurrentAddressOnMap&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Site of Disease</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'siteOfDisease'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.siteOfDisease = <span style="color: maroon">coding</span> <i>&quot;SetSiteOfDisease&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSiteOfDisease&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">ART Patient ID</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'artPatientId'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.artPatientId = <span style="color: maroon">content</span> <i>&quot;SetARTPatientID&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapARTPatientID&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Notification Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfNotification'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.dateOfNotification = <span style="color: maroon">content</span> <i>&quot;SetNotificationDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapNotificationDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">HIV Status Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'hivStatusDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.hivStatusDate = <span style="color: maroon">content</span> <i>&quot;SetHIVStatusDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapHIVStatusDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Household Size</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold = <span style="color: maroon">content</span> <i>&quot;SetHouseholdSize&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapHouseholdSize&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Risk Factor: Alcohol</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'harmfulUseOfAlcohol'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.harmfulUseOfAlcohol = <span style="color: maroon">coding</span> <i>&quot;SetRiskFactorAlcohol&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapRiskFactorAlcohol&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Risk Factor: Diabetes</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'diabetes'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.diabetes = <span style="color: maroon">coding</span> <i>&quot;SetRiskFactorDiabetes&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapRiskFactorDiabetes&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Risk Factor: Smoking</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'smoking'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnosis.smoking = <span style="color: maroon">coding</span> <i>&quot;SetRiskFactorSmoking&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapRiskFactorSmoking&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://example.org/StructureMap/DiagnosisAndNotificationQRToLM"/>
+  <version value="0.1.0"/>
+  <name value="DiagnosisAndNotificationQRToLM"/>
+  <title value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
+  <status value="draft"/>
+  <date value="2025-01-08T14:12:29+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <description value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <mode value="source"/>
+    <alias value="QResp"/>
+  </structure>
+  <structure>
+    <url value="http://example.org/StructureDefinition/DiagnosisAndNotification"/>
+    <mode value="target"/>
+    <alias value="DiagnosisLM"/>
+  </structure>
+  <group>
+    <name value="DiagnosisAndNotificationQRToLM"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="qr"/>
+      <type value="QResp"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="diagnosis"/>
+      <type value="DiagnosisLM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="ProcessItems"/>
+      <source>
+        <context value="qr"/>
+        <element value="item"/>
+        <variable value="item"/>
+      </source>
+      <rule>
+        <name value="MapExecutionDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'executionDate'"/>
+        </source>
+        <rule>
+          <name value="SetExecutionDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="executionDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapHistoryOfPreviousTreatment"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'historyOfPreviousTreatment'"/>
+        </source>
+        <rule>
+          <name value="SetHistoryOfPreviousTreatment"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="historyOfPreviousTreatment"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapHIVInfection"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'hivInfection'"/>
+        </source>
+        <rule>
+          <name value="SetHIVInfection"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="hivInfection"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapARTStarted"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'artStarted'"/>
+        </source>
+        <rule>
+          <name value="SetARTStarted"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="artStarted"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapARTStartDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'artStartDate'"/>
+        </source>
+        <rule>
+          <name value="SetARTStartDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="artStartDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCaseNotification"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'"/>
+        </source>
+        <rule>
+          <name value="SetCaseNotification"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="isThisATbDiagnosisDoYouWantToNotifyTheCase"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDiagnosticNote"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'diagnosisticNote'"/>
+        </source>
+        <rule>
+          <name value="SetDiagnosticNote"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="diagnosisticNote"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapUndernourishment"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'undernourishment'"/>
+        </source>
+        <rule>
+          <name value="SetUndernourishment"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="undernourishment"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDiagnosisDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfDiagnosis'"/>
+        </source>
+        <rule>
+          <name value="SetDiagnosisDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="dateOfDiagnosis"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSecondLineDrugs"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'secondLineDrugsReceivedPreviously'"/>
+        </source>
+        <rule>
+          <name value="SetSecondLineDrugs"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="secondLineDrugsReceivedPreviously"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapConfirmationMethod"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'confirmationMethod'"/>
+        </source>
+        <rule>
+          <name value="SetConfirmationMethod"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="confirmationMethod"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCurrentAddressOnMap"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'currentAddressOnMap'"/>
+        </source>
+        <rule>
+          <name value="SetCurrentAddressOnMap"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="currentAddressOnMap"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSiteOfDisease"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'siteOfDisease'"/>
+        </source>
+        <rule>
+          <name value="SetSiteOfDisease"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="siteOfDisease"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapARTPatientID"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'artPatientId'"/>
+        </source>
+        <rule>
+          <name value="SetARTPatientID"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="artPatientId"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapNotificationDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfNotification'"/>
+        </source>
+        <rule>
+          <name value="SetNotificationDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="dateOfNotification"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapHIVStatusDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'hivStatusDate'"/>
+        </source>
+        <rule>
+          <name value="SetHIVStatusDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="hivStatusDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapHouseholdSize"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'"/>
+        </source>
+        <rule>
+          <name value="SetHouseholdSize"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapRiskFactorAlcohol"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'harmfulUseOfAlcohol'"/>
+        </source>
+        <rule>
+          <name value="SetRiskFactorAlcohol"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="harmfulUseOfAlcohol"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapRiskFactorDiabetes"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'diabetes'"/>
+        </source>
+        <rule>
+          <name value="SetRiskFactorDiabetes"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="diabetes"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapRiskFactorSmoking"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'smoking'"/>
+        </source>
+        <rule>
+          <name value="SetRiskFactorSmoking"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnosis"/>
+            <contextType value="variable"/>
+            <element value="smoking"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

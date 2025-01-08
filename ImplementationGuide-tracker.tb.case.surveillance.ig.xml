@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-08T13:44:33+00:00"/>
+  <date value="2025-01-08T14:12:29+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -474,6 +474,16 @@
       <name value="Diagnosis and Notification Questionnaire"/>
       <description value="Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/2"/>
+      </reference>
+      <name value="Diagnosis and Notification QuestionnaireResponse Example"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -968,6 +978,15 @@
       <name value="TB-LAB - Smear result value set"/>
       <description value="Value set for DHIS2 'Smear result' option set."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/DiagnosisAndNotificationQRToLM"/>
+      </reference>
+      <description value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

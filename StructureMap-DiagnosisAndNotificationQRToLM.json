@@ -1,0 +1,595 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "DiagnosisAndNotificationQRToLM",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap DiagnosisAndNotificationQRToLM</b></p><a name=\"DiagnosisAndNotificationQRToLM\"> </a><a name=\"hcDiagnosisAndNotificationQRToLM\"> </a><a name=\"DiagnosisAndNotificationQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/DiagnosisAndNotificationQRToLM<span style=\"color: navy\">&quot; = &quot;</span>DiagnosisAndNotificationQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Diagnosis and Notification QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-DiagnosisAndNotification.html\" title=\"Diagnosis and notification\">http://example.org/StructureDefinition/DiagnosisAndNotification</a><span style=\"color: navy\">&quot; </span><b>alias </b>DiagnosisLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>DiagnosisAndNotificationQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">diagnosis</span><span style=\"color: navy\"> : </span>DiagnosisLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Execution Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Previous Treatment History</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'historyOfPreviousTreatment'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.historyOfPreviousTreatment = <span style=\"color: maroon\">coding</span> <i>&quot;SetHistoryOfPreviousTreatment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHistoryOfPreviousTreatment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">HIV Infection</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'hivInfection'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.hivInfection = <span style=\"color: maroon\">coding</span> <i>&quot;SetHIVInfection&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHIVInfection&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Started</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artStarted'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artStarted = <span style=\"color: maroon\">coding</span> <i>&quot;SetARTStarted&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTStarted&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Start Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artStartDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artStartDate = <span style=\"color: maroon\">content</span> <i>&quot;SetARTStartDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTStartDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Case Notification</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.isThisATbDiagnosisDoYouWantToNotifyTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetCaseNotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCaseNotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Diagnostic Note</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'diagnosisticNote'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.diagnosisticNote = <span style=\"color: maroon\">content</span> <i>&quot;SetDiagnosticNote&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDiagnosticNote&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Undernourishment</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'undernourishment'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.undernourishment = <span style=\"color: maroon\">coding</span> <i>&quot;SetUndernourishment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapUndernourishment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Diagnosis Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfDiagnosis'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.dateOfDiagnosis = <span style=\"color: maroon\">content</span> <i>&quot;SetDiagnosisDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDiagnosisDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Second-line Drugs</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineDrugsReceivedPreviously'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.secondLineDrugsReceivedPreviously = <span style=\"color: maroon\">coding</span> <i>&quot;SetSecondLineDrugs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineDrugs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Confirmation Method</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'confirmationMethod'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.confirmationMethod = <span style=\"color: maroon\">coding</span> <i>&quot;SetConfirmationMethod&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapConfirmationMethod&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Current Address (Coordinates)</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'currentAddressOnMap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.currentAddressOnMap = <span style=\"color: maroon\">content</span> <i>&quot;SetCurrentAddressOnMap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCurrentAddressOnMap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Site of Disease</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'siteOfDisease'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.siteOfDisease = <span style=\"color: maroon\">coding</span> <i>&quot;SetSiteOfDisease&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSiteOfDisease&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Patient ID</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artPatientId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artPatientId = <span style=\"color: maroon\">content</span> <i>&quot;SetARTPatientID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTPatientID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Notification Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfNotification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.dateOfNotification = <span style=\"color: maroon\">content</span> <i>&quot;SetNotificationDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapNotificationDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">HIV Status Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'hivStatusDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.hivStatusDate = <span style=\"color: maroon\">content</span> <i>&quot;SetHIVStatusDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHIVStatusDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Household Size</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold = <span style=\"color: maroon\">content</span> <i>&quot;SetHouseholdSize&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHouseholdSize&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Alcohol</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'harmfulUseOfAlcohol'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.harmfulUseOfAlcohol = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorAlcohol&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorAlcohol&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Diabetes</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'diabetes'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.diabetes = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorDiabetes&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorDiabetes&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Smoking</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smoking'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.smoking = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorSmoking&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorSmoking&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://example.org/StructureMap/DiagnosisAndNotificationQRToLM",
+  "version" : "0.1.0",
+  "name" : "DiagnosisAndNotificationQRToLM",
+  "title" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
+  "status" : "draft",
+  "date" : "2025-01-08T14:12:29+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "description" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
+  "structure" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+    "mode" : "source",
+    "alias" : "QResp"
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/DiagnosisAndNotification",
+    "mode" : "target",
+    "alias" : "DiagnosisLM"
+  }],
+  "group" : [{
+    "name" : "DiagnosisAndNotificationQRToLM",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "qr",
+      "type" : "QResp",
+      "mode" : "source"
+    },
+    {
+      "name" : "diagnosis",
+      "type" : "DiagnosisLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "ProcessItems",
+      "source" : [{
+        "context" : "qr",
+        "element" : "item",
+        "variable" : "item"
+      }],
+      "rule" : [{
+        "name" : "MapExecutionDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'executionDate'"
+        }],
+        "rule" : [{
+          "name" : "SetExecutionDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "executionDate",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapHistoryOfPreviousTreatment",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'historyOfPreviousTreatment'"
+        }],
+        "rule" : [{
+          "name" : "SetHistoryOfPreviousTreatment",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "historyOfPreviousTreatment",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapHIVInfection",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'hivInfection'"
+        }],
+        "rule" : [{
+          "name" : "SetHIVInfection",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "hivInfection",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapARTStarted",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'artStarted'"
+        }],
+        "rule" : [{
+          "name" : "SetARTStarted",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "artStarted",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapARTStartDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'artStartDate'"
+        }],
+        "rule" : [{
+          "name" : "SetARTStartDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "artStartDate",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCaseNotification",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'"
+        }],
+        "rule" : [{
+          "name" : "SetCaseNotification",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "isThisATbDiagnosisDoYouWantToNotifyTheCase",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDiagnosticNote",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'diagnosisticNote'"
+        }],
+        "rule" : [{
+          "name" : "SetDiagnosticNote",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "diagnosisticNote",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapUndernourishment",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'undernourishment'"
+        }],
+        "rule" : [{
+          "name" : "SetUndernourishment",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "undernourishment",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDiagnosisDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfDiagnosis'"
+        }],
+        "rule" : [{
+          "name" : "SetDiagnosisDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "dateOfDiagnosis",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSecondLineDrugs",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'secondLineDrugsReceivedPreviously'"
+        }],
+        "rule" : [{
+          "name" : "SetSecondLineDrugs",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "secondLineDrugsReceivedPreviously",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapConfirmationMethod",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'confirmationMethod'"
+        }],
+        "rule" : [{
+          "name" : "SetConfirmationMethod",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "confirmationMethod",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCurrentAddressOnMap",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'currentAddressOnMap'"
+        }],
+        "rule" : [{
+          "name" : "SetCurrentAddressOnMap",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "currentAddressOnMap",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSiteOfDisease",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'siteOfDisease'"
+        }],
+        "rule" : [{
+          "name" : "SetSiteOfDisease",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "siteOfDisease",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapARTPatientID",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'artPatientId'"
+        }],
+        "rule" : [{
+          "name" : "SetARTPatientID",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "artPatientId",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapNotificationDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfNotification'"
+        }],
+        "rule" : [{
+          "name" : "SetNotificationDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "dateOfNotification",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapHIVStatusDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'hivStatusDate'"
+        }],
+        "rule" : [{
+          "name" : "SetHIVStatusDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "hivStatusDate",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapHouseholdSize",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'"
+        }],
+        "rule" : [{
+          "name" : "SetHouseholdSize",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapRiskFactorAlcohol",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'harmfulUseOfAlcohol'"
+        }],
+        "rule" : [{
+          "name" : "SetRiskFactorAlcohol",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "harmfulUseOfAlcohol",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapRiskFactorDiabetes",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'diabetes'"
+        }],
+        "rule" : [{
+          "name" : "SetRiskFactorDiabetes",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "diabetes",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapRiskFactorSmoking",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'smoking'"
+        }],
+        "rule" : [{
+          "name" : "SetRiskFactorSmoking",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnosis",
+            "contextType" : "variable",
+            "element" : "smoking",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+}

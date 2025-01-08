@@ -1,0 +1,589 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/StructureMap/DiagnosisAndNotificationQRToLM> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosisAndNotificationQRToLM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap DiagnosisAndNotificationQRToLM</b></p><a name=\"DiagnosisAndNotificationQRToLM\"> </a><a name=\"hcDiagnosisAndNotificationQRToLM\"> </a><a name=\"DiagnosisAndNotificationQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/DiagnosisAndNotificationQRToLM<span style=\"color: navy\">&quot; = &quot;</span>DiagnosisAndNotificationQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Diagnosis and Notification QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-DiagnosisAndNotification.html\" title=\"Diagnosis and notification\">http://example.org/StructureDefinition/DiagnosisAndNotification</a><span style=\"color: navy\">&quot; </span><b>alias </b>DiagnosisLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>DiagnosisAndNotificationQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">diagnosis</span><span style=\"color: navy\"> : </span>DiagnosisLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Execution Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Previous Treatment History</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'historyOfPreviousTreatment'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.historyOfPreviousTreatment = <span style=\"color: maroon\">coding</span> <i>&quot;SetHistoryOfPreviousTreatment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHistoryOfPreviousTreatment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">HIV Infection</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'hivInfection'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.hivInfection = <span style=\"color: maroon\">coding</span> <i>&quot;SetHIVInfection&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHIVInfection&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Started</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artStarted'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artStarted = <span style=\"color: maroon\">coding</span> <i>&quot;SetARTStarted&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTStarted&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Start Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artStartDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artStartDate = <span style=\"color: maroon\">content</span> <i>&quot;SetARTStartDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTStartDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Case Notification</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.isThisATbDiagnosisDoYouWantToNotifyTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetCaseNotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCaseNotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Diagnostic Note</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'diagnosisticNote'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.diagnosisticNote = <span style=\"color: maroon\">content</span> <i>&quot;SetDiagnosticNote&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDiagnosticNote&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Undernourishment</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'undernourishment'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.undernourishment = <span style=\"color: maroon\">coding</span> <i>&quot;SetUndernourishment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapUndernourishment&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Diagnosis Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfDiagnosis'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.dateOfDiagnosis = <span style=\"color: maroon\">content</span> <i>&quot;SetDiagnosisDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDiagnosisDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Second-line Drugs</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineDrugsReceivedPreviously'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.secondLineDrugsReceivedPreviously = <span style=\"color: maroon\">coding</span> <i>&quot;SetSecondLineDrugs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineDrugs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Confirmation Method</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'confirmationMethod'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.confirmationMethod = <span style=\"color: maroon\">coding</span> <i>&quot;SetConfirmationMethod&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapConfirmationMethod&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Current Address (Coordinates)</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'currentAddressOnMap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.currentAddressOnMap = <span style=\"color: maroon\">content</span> <i>&quot;SetCurrentAddressOnMap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCurrentAddressOnMap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Site of Disease</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'siteOfDisease'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.siteOfDisease = <span style=\"color: maroon\">coding</span> <i>&quot;SetSiteOfDisease&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSiteOfDisease&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">ART Patient ID</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'artPatientId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.artPatientId = <span style=\"color: maroon\">content</span> <i>&quot;SetARTPatientID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapARTPatientID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Notification Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfNotification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.dateOfNotification = <span style=\"color: maroon\">content</span> <i>&quot;SetNotificationDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapNotificationDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">HIV Status Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'hivStatusDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.hivStatusDate = <span style=\"color: maroon\">content</span> <i>&quot;SetHIVStatusDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHIVStatusDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Household Size</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold = <span style=\"color: maroon\">content</span> <i>&quot;SetHouseholdSize&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapHouseholdSize&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Alcohol</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'harmfulUseOfAlcohol'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.harmfulUseOfAlcohol = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorAlcohol&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorAlcohol&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Diabetes</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'diabetes'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.diabetes = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorDiabetes&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorDiabetes&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Risk Factor: Smoking</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smoking'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnosis.smoking = <span style=\"color: maroon\">coding</span> <i>&quot;SetRiskFactorSmoking&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRiskFactorSmoking&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/StructureMap/DiagnosisAndNotificationQRToLM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DiagnosisAndNotificationQRToLM"] ; # 
+  fhir:title [ fhir:v "Map Diagnosis and Notification QuestionnaireResponse to Logical Model"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-01-08T14:12:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map Diagnosis and Notification QuestionnaireResponse to Logical Model"] ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "QResp" ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/StructureDefinition/DiagnosisAndNotification"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/DiagnosisAndNotification>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "DiagnosisLM" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "DiagnosisAndNotificationQRToLM" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "qr" ] ;
+       fhir:type [ fhir:v "QResp" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "diagnosis" ] ;
+       fhir:type [ fhir:v "DiagnosisLM" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "ProcessItems" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "qr" ] ;
+         fhir:element [ fhir:v "item" ] ;
+         fhir:variable [ fhir:v "item" ]
+       ] ) ;
+       fhir:rule ( [
+         fhir:name [ fhir:v "MapExecutionDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'executionDate'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetExecutionDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "executionDate" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapHistoryOfPreviousTreatment" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'historyOfPreviousTreatment'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetHistoryOfPreviousTreatment" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "historyOfPreviousTreatment" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapHIVInfection" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'hivInfection'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetHIVInfection" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "hivInfection" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapARTStarted" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'artStarted'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetARTStarted" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "artStarted" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapARTStartDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'artStartDate'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetARTStartDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "artStartDate" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapCaseNotification" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetCaseNotification" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "isThisATbDiagnosisDoYouWantToNotifyTheCase" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapDiagnosticNote" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'diagnosisticNote'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetDiagnosticNote" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "diagnosisticNote" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapUndernourishment" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'undernourishment'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetUndernourishment" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "undernourishment" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapDiagnosisDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'dateOfDiagnosis'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetDiagnosisDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "dateOfDiagnosis" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapSecondLineDrugs" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'secondLineDrugsReceivedPreviously'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetSecondLineDrugs" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "secondLineDrugsReceivedPreviously" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapConfirmationMethod" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'confirmationMethod'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetConfirmationMethod" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "confirmationMethod" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapCurrentAddressOnMap" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'currentAddressOnMap'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetCurrentAddressOnMap" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "currentAddressOnMap" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapSiteOfDisease" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'siteOfDisease'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetSiteOfDisease" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "siteOfDisease" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapARTPatientID" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'artPatientId'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetARTPatientID" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "artPatientId" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapNotificationDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'dateOfNotification'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetNotificationDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "dateOfNotification" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapHIVStatusDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'hivStatusDate'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetHIVStatusDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "hivStatusDate" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapHouseholdSize" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetHouseholdSize" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapRiskFactorAlcohol" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'harmfulUseOfAlcohol'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetRiskFactorAlcohol" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "harmfulUseOfAlcohol" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapRiskFactorDiabetes" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'diabetes'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetRiskFactorDiabetes" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "diabetes" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapRiskFactorSmoking" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'smoking'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetRiskFactorSmoking" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "diagnosis" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "smoking" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

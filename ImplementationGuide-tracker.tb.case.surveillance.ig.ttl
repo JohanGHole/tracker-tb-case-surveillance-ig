@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-08T13:44:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-08T14:12:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -552,6 +552,17 @@
        fhir:name [ fhir:v "Diagnosis and Notification Questionnaire" ] ;
        fhir:description [ fhir:v "Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/2> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/2" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosis and Notification QuestionnaireResponse Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1091,6 +1102,16 @@
        fhir:name [ fhir:v "TB-LAB - Smear result value set" ] ;
        fhir:description [ fhir:v "Value set for DHIS2 'Smear result' option set." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureMap/DiagnosisAndNotificationQRToLM> ;
+         fhir:reference [ fhir:v "StructureMap/DiagnosisAndNotificationQRToLM" ]
+       ] ;
+       fhir:description [ fhir:v "Map Diagnosis and Notification QuestionnaireResponse to Logical Model" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

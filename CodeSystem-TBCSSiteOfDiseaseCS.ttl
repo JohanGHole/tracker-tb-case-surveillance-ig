@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "TB CS - Site of disease"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-08T13:44:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-08T14:12:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

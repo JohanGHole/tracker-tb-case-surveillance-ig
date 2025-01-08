@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 2, warn = 5, info = 3
+err = 4, warn = 6, info = 13
 $--
 Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonical = http://example.org)
- Build Errors : 7 / 5 / 0
+ Build Errors : 8 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
@@ -52,11 +52,15 @@ Generated $--. FHIR version $-- for tracker.tb.case.surveillance.ig#$-- (canonic
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleQualityVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleStatusVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 0 / 0 / 6
+ /github/workspace/input/examples/DiagnosisAndNotificationQRExample : 1 / 0 / 11
  /github/workspace/input/examples/OutcomeQRExample : 1 / 0 / 4
+ /github/workspace/input/maps/DiagnosisAndNotificationQRToLM : 0 / 0 / 1
  /github/workspace/input/maps/OutcomeQRToLM : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosisAndNotificationQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 157
 ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 164
@@ -115,9 +119,22 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ValueSet-TBLABSampleQualityVS.json ==
 == fsh-generated/resources/ValueSet-TBLABSampleStatusVS.json ==
 == fsh-generated/resources/ValueSet-TBLABSmearResultVS.json ==
+== input/examples/DiagnosisAndNotificationQRExample.json ==
+ERROR: QuestionnaireResponse: Unrecognized property 'title'
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSTreatmentHistoryCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[7].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[9].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[10].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSConfirmationMethodCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[12].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSSiteOfDiseaseCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[17].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[18].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
+INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == input/examples/OutcomeQRExample.json ==
 ERROR: QuestionnaireResponse: Unrecognized property 'title'
 INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSTreatmentOutcomeCS|0.1.0
 INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSDenotificationReasonsCS|0.1.0
 INFORMATION: QuestionnaireResponse/1: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== input/maps/DiagnosisAndNotificationQRToLM.map ==
 == input/maps/OutcomeQRToLM.map ==

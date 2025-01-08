@@ -204,6 +204,13 @@
     "name" : "TBTreatment"
   },
   {
+    "id" : "DiagnosisAndNotificationQRToLM",
+    "type" : "StructureMap",
+    "url" : "http://example.org/StructureMap/DiagnosisAndNotificationQRToLM",
+    "version" : "0.1.0",
+    "name" : "DiagnosisAndNotificationQRToLM"
+  },
+  {
     "id" : "OutcomeQRToLM",
     "type" : "StructureMap",
     "url" : "http://example.org/StructureMap/OutcomeQRToLM",

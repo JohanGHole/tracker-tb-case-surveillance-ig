@@ -1,0 +1,1108 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>null - JSON Representation - Tracker TB Case Surveillance Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<!-- <link href="assets/css/colors.css" rel="stylesheet"/>! -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1.47"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.47"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://dhis2.org/integration/fhir/">
+      <img height="60" alt="Project home" src="assets/images/dhis2.png"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="80" alt="FHIR website" src="assets/images/fhir.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">Tracker TB Case Surveillance Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b></b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Tracker TB Case Surveillance Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureMap-DiagnosisAndNotificationQRToLM.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureMap-DiagnosisAndNotificationQRToLM.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureMap-DiagnosisAndNotificationQRToLM.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: null - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-01-08
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="StructureMap-DiagnosisAndNotificationQRToLM.json" no-download="true">Raw json</a> | <a href="StructureMap-DiagnosisAndNotificationQRToLM.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap">resourceType</a>" : "StructureMap",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "DiagnosisAndNotificationQRToLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureMap DiagnosisAndNotificationQRToLM&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DiagnosisAndNotificationQRToLM\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDiagnosisAndNotificationQRToLM\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;DiagnosisAndNotificationQRToLM-en-US\&quot;&gt; &lt;/a&gt;&lt;pre class=\&quot;fml\&quot;&gt;\r\n&lt;b&gt;map&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;http://example.org/StructureMap/DiagnosisAndNotificationQRToLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; = &amp;quot;&lt;/span&gt;DiagnosisAndNotificationQRToLM&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot;\r\n\r\n&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Map Diagnosis and Notification QuestionnaireResponse to Logical Model&lt;/span&gt;\r\n\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/questionnaireresponse.html\&quot; title=\&quot;QuestionnaireResponse\&quot;&gt;http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;QResp &lt;b&gt;as &lt;/b&gt;&lt;b&gt;source&lt;/b&gt;\r\n&lt;b&gt;uses&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; &amp;quot;&lt;/span&gt;&lt;a href=\&quot;StructureDefinition-DiagnosisAndNotification.html\&quot; title=\&quot;Diagnosis and notification\&quot;&gt;http://example.org/StructureDefinition/DiagnosisAndNotification&lt;/a&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&amp;quot; &lt;/span&gt;&lt;b&gt;alias &lt;/b&gt;DiagnosisLM &lt;b&gt;as &lt;/b&gt;&lt;b&gt;target&lt;/b&gt;\r\n\r\n&lt;b&gt;group &lt;/b&gt;DiagnosisAndNotificationQRToLM&lt;span style=\&quot;color: navy\&quot;&gt;(&lt;/span&gt;&lt;b&gt;source&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;qr&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;QResp, &lt;b&gt;target&lt;/b&gt; &lt;span style=\&quot;color: maroon\&quot;&gt;diagnosis&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; : &lt;/span&gt;DiagnosisLM&lt;span style=\&quot;color: navy\&quot;&gt;)&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;  qr.item&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;item&lt;/span&gt;&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Execution Date&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'executionDate'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.executionDate = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetExecutionDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapExecutionDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Previous Treatment History&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'historyOfPreviousTreatment'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.historyOfPreviousTreatment = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetHistoryOfPreviousTreatment&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapHistoryOfPreviousTreatment&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;HIV Infection&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'hivInfection'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.hivInfection = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetHIVInfection&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapHIVInfection&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;ART Started&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'artStarted'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.artStarted = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetARTStarted&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapARTStarted&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;ART Start Date&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'artStartDate'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.artStartDate = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetARTStartDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapARTStartDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Case Notification&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.isThisATbDiagnosisDoYouWantToNotifyTheCase = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetCaseNotification&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapCaseNotification&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Diagnostic Note&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'diagnosisticNote'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.diagnosisticNote = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetDiagnosticNote&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapDiagnosticNote&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Risk Factor: Undernourishment&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'undernourishment'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.undernourishment = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetUndernourishment&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapUndernourishment&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Diagnosis Date&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'dateOfDiagnosis'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.dateOfDiagnosis = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetDiagnosisDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapDiagnosisDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Second-line Drugs&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'secondLineDrugsReceivedPreviously'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.secondLineDrugsReceivedPreviously = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetSecondLineDrugs&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapSecondLineDrugs&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Confirmation Method&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'confirmationMethod'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.confirmationMethod = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetConfirmationMethod&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapConfirmationMethod&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Current Address (Coordinates)&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'currentAddressOnMap'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.currentAddressOnMap = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetCurrentAddressOnMap&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapCurrentAddressOnMap&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Site of Disease&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'siteOfDisease'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.siteOfDisease = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetSiteOfDisease&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapSiteOfDisease&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;ART Patient ID&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'artPatientId'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.artPatientId = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetARTPatientID&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapARTPatientID&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Notification Date&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'dateOfNotification'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.dateOfNotification = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetNotificationDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapNotificationDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;HIV Status Date&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'hivStatusDate'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.hivStatusDate = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetHIVStatusDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapHIVStatusDate&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Household Size&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold = &lt;span style=\&quot;color: maroon\&quot;&gt;content&lt;/span&gt; &lt;i&gt;&amp;quot;SetHouseholdSize&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapHouseholdSize&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Risk Factor: Alcohol&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'harmfulUseOfAlcohol'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.harmfulUseOfAlcohol = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetRiskFactorAlcohol&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapRiskFactorAlcohol&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Risk Factor: Diabetes&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'diabetes'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.diabetes = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetRiskFactorDiabetes&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapRiskFactorDiabetes&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;// &lt;/span&gt;&lt;span style=\&quot;color: green\&quot;&gt;Risk Factor: Smoking&lt;/span&gt;\r\n    item.answer first&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;answer&lt;/span&gt;&lt;b&gt; where &lt;/b&gt;item.linkId = 'smoking'&lt;b&gt; then&lt;/b&gt;&lt;span style=\&quot;color: navy\&quot;&gt; {\r\n&lt;/span&gt;      answer.value&lt;b&gt; as &lt;/b&gt;&lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt;&lt;span style=\&quot;color: navy\&quot;&gt;&lt;b&gt; -&amp;gt; &lt;/b&gt;&lt;/span&gt;diagnosis.smoking = &lt;span style=\&quot;color: maroon\&quot;&gt;coding&lt;/span&gt; &lt;i&gt;&amp;quot;SetRiskFactorSmoking&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n    &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;MapRiskFactorSmoking&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n  &lt;span style=\&quot;color: navy\&quot;&gt;}&lt;/span&gt; &lt;i&gt;&amp;quot;ProcessItems&amp;quot;&lt;/i&gt;&lt;span style=\&quot;color: navy\&quot;&gt;;&lt;/span&gt;\r\n&lt;span style=\&quot;color: navy\&quot;&gt;}\r\n\r\n&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://example.org/StructureMap/DiagnosisAndNotificationQRToLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "DiagnosisAndNotificationQRToLM",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.title">title</a>" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2025-01-08T14:12:29+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "DHIS2",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "DHIS2",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://dhis2.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.description">description</a>" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure">structure</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "source",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "QResp"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.url">url</a>" : "http://example.org/StructureDefinition/DiagnosisAndNotification",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.mode">mode</a>" : "target",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a>" : "DiagnosisLM"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a>" : "DiagnosisAndNotificationQRToLM",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "qr",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "QResp",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "diagnosis",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "DiagnosisLM",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "target"
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "ProcessItems",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "item",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "item"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapExecutionDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'executionDate'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetExecutionDate",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "executionDate",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapHistoryOfPreviousTreatment",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'historyOfPreviousTreatment'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetHistoryOfPreviousTreatment",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "historyOfPreviousTreatment",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapHIVInfection",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'hivInfection'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetHIVInfection",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "hivInfection",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapARTStarted",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'artStarted'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetARTStarted",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "artStarted",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapARTStartDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'artStartDate'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetARTStartDate",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "artStartDate",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapCaseNotification",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'isThisATbDiagnosisDoYouWantToNotifyTheCase'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetCaseNotification",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "isThisATbDiagnosisDoYouWantToNotifyTheCase",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapDiagnosticNote",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'diagnosisticNote'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetDiagnosticNote",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "diagnosisticNote",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapUndernourishment",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'undernourishment'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetUndernourishment",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "undernourishment",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapDiagnosisDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'dateOfDiagnosis'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetDiagnosisDate",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "dateOfDiagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapSecondLineDrugs",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'secondLineDrugsReceivedPreviously'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetSecondLineDrugs",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "secondLineDrugsReceivedPreviously",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapConfirmationMethod",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'confirmationMethod'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetConfirmationMethod",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "confirmationMethod",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapCurrentAddressOnMap",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'currentAddressOnMap'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetCurrentAddressOnMap",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "currentAddressOnMap",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapSiteOfDisease",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'siteOfDisease'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetSiteOfDisease",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "siteOfDisease",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapARTPatientID",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'artPatientId'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetARTPatientID",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "artPatientId",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapNotificationDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'dateOfNotification'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetNotificationDate",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "dateOfNotification",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapHIVStatusDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'hivStatusDate'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetHIVStatusDate",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "hivStatusDate",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapHouseholdSize",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetHouseholdSize",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "content"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "content"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapRiskFactorAlcohol",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'harmfulUseOfAlcohol'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetRiskFactorAlcohol",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "harmfulUseOfAlcohol",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapRiskFactorDiabetes",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'diabetes'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetRiskFactorDiabetes",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "diabetes",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "MapRiskFactorSmoking",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "item",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.listMode">listMode</a>" : "first",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "answer",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.condition">condition</a>" : "item.linkId = 'smoking'"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "SetRiskFactorSmoking",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "answer",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "value",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "coding"
+                    }
+                  ],
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "diagnosis",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "smoking",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                        {
+                          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "coding"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 8, 2025 14:12+0000">2025-01-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://example.org/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
