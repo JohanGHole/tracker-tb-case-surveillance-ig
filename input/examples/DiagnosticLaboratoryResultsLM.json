@@ -1,0 +1,427 @@
+{
+  "resourceType" : "DiagnosticLaboratoryResults",
+  "executionDate" : "2025-01-01",
+  "solidInitialIsoniazidCriticalConcentrationInhCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialRifampicinRif" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialEthambutolEmb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialPyrazinamidePza" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialLevofloxacinLfx" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialMoxifloxacinCriticalConcentrationMfxCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "solidInitialAmikacinAmk" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialMoxifloxacinClinicalBreakpointMfxCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidInitialLinezolidLzd" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "solidInitialClofazimineCfz" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "solidInitialBedaquilineBdq" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "solidInitialDelamanidDlm" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "solidInitialIsoniazidClinicalBreakpointInhCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "dateRifResistanceDetected" : "2025-01-02",
+  "dateOfSolidCultureResult" : "2025-01-01",
+  "xpertMtbRifMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "ERROR",
+    "display" : "Error"
+  },
+  "xpertMtbRifRif" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidCultureSpecimenNumber" : "123",
+  "solidCultureResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+    "code" : "MTB",
+    "display" : "MTB"
+  },
+  "smearSpecimenNumber" : "33",
+  "xpertMtbRifSpecimenNumber" : "321",
+  "dateOfXpertMtbRifResult" : "2025-01-02",
+  "sputumSmearMicroscopy" : true,
+  "xpertMtbRif" : true,
+  "xpertMtbRifUltra" : true,
+  "cultureInLiquidMediaEGMgit" : true,
+  "cultureInSolidMediaEGLj" : true,
+  "initialDstInLiquidMediaEGMgit" : true,
+  "initialDstInSolidMediaEGLj" : true,
+  "subsequentDstInLiquidMediaEGMgit" : true,
+  "subsequentDstInSolidMediaEGLj" : true,
+  "dateOfFinalInitialDstSolidMediaResults" : "2025-01-02",
+  "xpertMtbRifUltraSpecimenNumber" : "5",
+  "dateOfXpertMtbRifUltraResult" : "2025-01-07",
+  "xpertMtbRifUltraMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "ERROR",
+    "display" : "Error"
+  },
+  "xpertMtbRifUltraRif" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfLiquidCultureResult" : "2025-01-01",
+  "liquidCultureResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+    "code" : "MTB",
+    "display" : "MTB"
+  },
+  "liquidCultureSpecimenNumber" : "963",
+  "liquidInitialAmikacinAmk" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "RESISTANT",
+    "display" : "Resistant"
+  },
+  "liquidInitialBedaquilineBdq" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialClofazimineCfz" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialDelamanidDlm" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialEthambutolEmb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialIsoniazidCriticalConcentrationInhCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialIsoniazidClinicalBreakpointInhCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialLevofloxacinLfx" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialLinezolidLzd" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialMoxifloxacinClinicalBreakpointMfxCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialMoxifloxacinCriticalConcentrationMfxCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialRifampicinRif" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidInitialPyrazinamidePza" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfFinalInitialDstLiquidMediaResults" : "2025-01-02",
+  "dateOfFinalSubsequentDstLiquidMediaResults" : "2025-01-01",
+  "dateOfFinalSubsequentDstSolidMediaResults" : "2025-01-01",
+  "liquidSubsequentAmikacinAmk" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentBedaquilineBdq" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentClofazimineCfz" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfSlLpa" : "2025-01-02",
+  "dateOfFlLpa" : "2025-01-01",
+  "liquidSubsequentDelamanidDlm" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "slLpa" : true,
+  "finalResultAmikacinCapreomycinAmkCap" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentEthambutolEmb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "RESISTANT",
+    "display" : "Resistant"
+  },
+  "finalResultEthambutolEmb" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "finalResultFluoroquinolonesFq" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "finalResultKanamycinKan" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentIsoniazidCriticalConcentrationInhCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentIsoniazidClinicalBreakpointInhCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "slLpaMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "INVALID",
+    "display" : "Invalid"
+  },
+  "slLpaSpecimenNumber" : "5",
+  "flLpa" : true,
+  "liquidSubsequentLevofloxacinLfx" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentLinezolidLzd" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "finalResultIsoniazidInh" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "flLpaMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "DETECTED",
+    "display" : "Detected"
+  },
+  "liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfSampleReception" : "2025-01-02",
+  "dateRifResistanceFirstDetected" : "2025-01-03",
+  "finalResultRifampicinRif" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "flLpaSpecimenNumber" : "56565656",
+  "microscopyResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABSmearResultCS",
+    "code" : "SCANTY",
+    "display" : "Positive (Scanty)"
+  },
+  "dateOfCultureInoculationLiquidMedia" : "2025-01-02",
+  "slLpaSpecimenType" : {
+    "system" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
+    "code" : "SPUTUM_SAMPLES_OR_SEDIMENTS",
+    "display" : "Sputum samples or sediments"
+  },
+  "dateOfCultureInoculationSolidMedia" : "2025-01-17",
+  "sampleQuality" : {
+    "system" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
+    "code" : "GOOD",
+    "display" : "Good (accepted for processing)"
+  },
+  "liquidSubsequentRifampicinRif" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "sampleId" : "ID-123",
+  "flLpaSpecimenType" : {
+    "system" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
+    "code" : "SPUTUM_SAMPLES_OR_SEDIMENTS",
+    "display" : "Sputum samples or sediments"
+  },
+  "sampleStatus" : {
+    "system" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
+    "code" : "RECEIVED",
+    "display" : "Sample received"
+  },
+  "initialDstLmSpecimenNumber" : "5665",
+  "liquidSubsequentPyrazinamidePza" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidSubsequentAmikacinAmk" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "initialDstSmSpecimenNumber" : "10",
+  "solidSubsequentBedaquilineBdq" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidSubsequentClofazimineCfz" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "subsequentDstLmSpecimenNumber" : "12",
+  "subsequentDstSmSpecimenNumber" : "00",
+  "tbLamp" : true,
+  "solidSubsequentDelamanidDlm" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidSubsequentEthambutolEmb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfTbLampResult" : "2025-01-02",
+  "tbLampMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "DETECTED",
+    "display" : "Detected"
+  },
+  "tbLampSpecimenNumber" : "1",
+  "lfLam" : true,
+  "solidSubsequentIsoniazidCriticalConcentrationInhCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfLfLamResult" : "2025-01-02",
+  "solidSubsequentIsoniazidClinicalBreakpointInhCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "lfLamMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "DETECTED",
+    "display" : "Detected"
+  },
+  "lfLamSpecimenNumber" : "123",
+  "solidSubsequentLevofloxacinLfx" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "CONTAMINATED",
+    "display" : "Contaminated"
+  },
+  "truenat" : true,
+  "solidSubsequentLinezolidLzd" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "solidSubsequentMoxifloxacinClinicalBreakpointMfxCb" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "INDETERMINATE",
+    "display" : "Indeterminate"
+  },
+  "truenatMtb" : {
+    "system" : "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+    "code" : "NOT_DETECTED",
+    "display" : "Not detected"
+  },
+  "solidSubsequentMoxifloxacinCriticalConcentrationMfxCc" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "INDETERMINATE",
+    "display" : "Indeterminate"
+  },
+  "dateOfTruenatResult" : "2025-01-02",
+  "truenatRif" : {
+    "system" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "truenatSpecimenNumber" : "123",
+  "solidSubsequentRifampicinRif" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  },
+  "dateOfMicroscopy" : "2025-01-03",
+  "solidSubsequentPyrazinamidePza" : {
+    "system" : "http://example.org/CodeSystem/TBLABDSTResultCS",
+    "code" : "SUSCEPTIBLE",
+    "display" : "Susceptible"
+  }
+}
