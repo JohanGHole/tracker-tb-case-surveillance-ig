@@ -211,6 +211,13 @@
     "name" : "DiagnosisAndNotificationQRToLM"
   },
   {
+    "id" : "DiagnosticLaboratoryResultsQRToLM",
+    "type" : "StructureMap",
+    "url" : "http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM",
+    "version" : "0.1.0",
+    "name" : "DiagnosticLaboratoryResultsQRToLM"
+  },
+  {
     "id" : "MonitoringLaboratoryResultsQRToLM",
     "type" : "StructureMap",
     "url" : "http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM",

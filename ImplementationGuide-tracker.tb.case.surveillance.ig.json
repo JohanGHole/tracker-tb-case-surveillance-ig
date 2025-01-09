@@ -15,7 +15,7 @@
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-09T11:45:34+00:00",
+  "date" : "2025-01-09T13:22:59+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -669,6 +669,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/6"
+      },
+      "name" : "Diagnostic Laboratory Results QuestionnaireResponse Example",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1223,6 +1234,16 @@
         "reference" : "StructureMap/DiagnosisAndNotificationQRToLM"
       },
       "description" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/DiagnosticLaboratoryResultsQRToLM"
+      },
+      "description" : "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"
     },
     {
       "extension" : [{

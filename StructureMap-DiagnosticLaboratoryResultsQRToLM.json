@@ -1,0 +1,3403 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "DiagnosticLaboratoryResultsQRToLM",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap DiagnosticLaboratoryResultsQRToLM</b></p><a name=\"DiagnosticLaboratoryResultsQRToLM\"> </a><a name=\"hcDiagnosticLaboratoryResultsQRToLM\"> </a><a name=\"DiagnosticLaboratoryResultsQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM<span style=\"color: navy\">&quot; = &quot;</span>DiagnosticLaboratoryResultsQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-DiagnosticLaboratoryResults.html\" title=\"Diagnostic laboratory results\">http://example.org/StructureDefinition/DiagnosticLaboratoryResults</a><span style=\"color: navy\">&quot; </span><b>alias </b>DiagnosticLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>DiagnosticLaboratoryResultsQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">diagnostic</span><span style=\"color: navy\"> : </span>DiagnosticLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidCriticalConcentrationInhCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialRifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialRifampicinRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialEthambutolEmb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialPyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialPyrazinamidePza = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialLevofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialLevofloxacinLfx = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialAmikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialAmikacinAmk = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialLinezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialLinezolidLzd = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialClofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialClofazimineCfz = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialBedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialBedaquilineBdq = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialDelamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialDelamanidDlm = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidClinicalBreakpointInhCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateRifResistanceDetected'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateRifResistanceDetected = <span style=\"color: maroon\">content</span> <i>&quot;SetDateRifResistanceDetected&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateRifResistanceDetected&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfSolidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetXpertMtbRifMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetXpertMtbRifRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.smearSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetXpertMtbRifSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfXpertMtbRifResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfXpertMtbRifResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.sputumSmearMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRif = <span style=\"color: maroon\">content</span> <i>&quot;SetXpertMtbRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltra'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltra = <span style=\"color: maroon\">content</span> <i>&quot;SetXpertMtbRifUltra&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifUltra&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.cultureInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.cultureInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'initialDstInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.initialDstInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetInitialDstInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapInitialDstInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'initialDstInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.initialDstInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetInitialDstInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapInitialDstInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'subsequentDstInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.subsequentDstInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetSubsequentDstInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSubsequentDstInLiquidMediaEGMgit&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'subsequentDstInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.subsequentDstInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetSubsequentDstInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSubsequentDstInSolidMediaEGLj&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstSolidMediaResults'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstSolidMediaResults = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfFinalInitialDstSolidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfFinalInitialDstSolidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetXpertMtbRifUltraSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifUltraSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifUltraResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifUltraResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfXpertMtbRifUltraResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfXpertMtbRifUltraResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetXpertMtbRifUltraMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifUltraMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetXpertMtbRifUltraRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapXpertMtbRifUltraRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfLiquidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialAmikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialAmikacinAmk = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialBedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialBedaquilineBdq = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialClofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialClofazimineCfz = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialDelamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialDelamanidDlm = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialEthambutolEmb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidCriticalConcentrationInhCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidClinicalBreakpointInhCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialLevofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialLevofloxacinLfx = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialLinezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialLinezolidLzd = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialRifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialRifampicinRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidInitialPyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidInitialPyrazinamidePza = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidInitialPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidInitialPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstLiquidMediaResults'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstLiquidMediaResults = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstLiquidMediaResults = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstSolidMediaResults = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentAmikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentAmikacinAmk = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentBedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentBedaquilineBdq = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentClofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentClofazimineCfz = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSlLpa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfSlLpa = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfFlLpa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfFlLpa = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfFlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfFlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentDelamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentDelamanidDlm = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'slLpa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.slLpa = <span style=\"color: maroon\">content</span> <i>&quot;SetSlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultAmikacinCapreomycinAmkCap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultAmikacinCapreomycinAmkCap = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentEthambutolEmb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultEthambutolEmb = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultFluoroquinolonesFq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultFluoroquinolonesFq = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultFluoroquinolonesFq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultFluoroquinolonesFq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultKanamycinKan'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultKanamycinKan = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidCriticalConcentrationInhCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidClinicalBreakpointInhCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'slLpaMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.slLpaMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSlLpaMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSlLpaMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'slLpaSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.slLpaSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSlLpaSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSlLpaSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'flLpa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.flLpa = <span style=\"color: maroon\">content</span> <i>&quot;SetFlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFlLpa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentLevofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentLevofloxacinLfx = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentLinezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentLinezolidLzd = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultIsoniazidInh'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultIsoniazidInh = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'flLpaMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.flLpaMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetFlLpaMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFlLpaMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfSampleReception = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateRifResistanceFirstDetected'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateRifResistanceFirstDetected = <span style=\"color: maroon\">content</span> <i>&quot;SetDateRifResistanceFirstDetected&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateRifResistanceFirstDetected&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'finalResultRifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.finalResultRifampicinRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetFinalResultRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFinalResultRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'flLpaSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.flLpaSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetFlLpaSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFlLpaSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.microscopyResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationLiquidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'slLpaSpecimenType'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.slLpaSpecimenType = <span style=\"color: maroon\">coding</span> <i>&quot;SetSlLpaSpecimenType&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSlLpaSpecimenType&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationSolidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.sampleQuality = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentRifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentRifampicinRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.sampleId = <span style=\"color: maroon\">content</span> <i>&quot;SetSampleId&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleId&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'flLpaSpecimenType'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.flLpaSpecimenType = <span style=\"color: maroon\">coding</span> <i>&quot;SetFlLpaSpecimenType&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFlLpaSpecimenType&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.sampleStatus = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'initialDstLmSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.initialDstLmSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetInitialDstLmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapInitialDstLmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidSubsequentPyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.liquidSubsequentPyrazinamidePza = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidSubsequentPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidSubsequentPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentAmikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentAmikacinAmk = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'initialDstSmSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.initialDstSmSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetInitialDstSmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapInitialDstSmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentBedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentBedaquilineBdq = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentClofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentClofazimineCfz = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'subsequentDstLmSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.subsequentDstLmSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSubsequentDstLmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSubsequentDstLmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'subsequentDstSmSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.subsequentDstSmSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSubsequentDstSmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSubsequentDstSmSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tbLamp'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.tbLamp = <span style=\"color: maroon\">content</span> <i>&quot;SetTbLamp&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTbLamp&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentDelamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentDelamanidDlm = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentEthambutolEmb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfTbLampResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfTbLampResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfTbLampResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfTbLampResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tbLampMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.tbLampMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetTbLampMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTbLampMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tbLampSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.tbLampSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetTbLampSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTbLampSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'lfLam'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.lfLam = <span style=\"color: maroon\">content</span> <i>&quot;SetLfLam&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLfLam&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidCriticalConcentrationInhCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfLfLamResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfLfLamResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfLfLamResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfLfLamResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidClinicalBreakpointInhCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'lfLamMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.lfLamMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetLfLamMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLfLamMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'lfLamSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.lfLamSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetLfLamSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLfLamSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentLevofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentLevofloxacinLfx = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'truenat'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.truenat = <span style=\"color: maroon\">content</span> <i>&quot;SetTruenat&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTruenat&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentLinezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentLinezolidLzd = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'truenatMtb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.truenatMtb = <span style=\"color: maroon\">coding</span> <i>&quot;SetTruenatMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTruenatMtb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfTruenatResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfTruenatResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfTruenatResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfTruenatResult&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'truenatRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.truenatRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetTruenatRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTruenatRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'truenatSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.truenatSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetTruenatSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTruenatSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentRifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentRifampicinRif = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.dateOfMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidSubsequentPyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>diagnostic.solidSubsequentPyrazinamidePza = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidSubsequentPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidSubsequentPyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM",
+  "version" : "0.1.0",
+  "name" : "DiagnosticLaboratoryResultsQRToLM",
+  "title" : "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model",
+  "status" : "draft",
+  "date" : "2025-01-09T13:22:59+00:00",
+  "publisher" : "DHIS2",
+  "contact" : [{
+    "name" : "DHIS2",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://dhis2.org"
+    }]
+  }],
+  "description" : "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model",
+  "structure" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+    "mode" : "source",
+    "alias" : "QResp"
+  },
+  {
+    "url" : "http://example.org/StructureDefinition/DiagnosticLaboratoryResults",
+    "mode" : "target",
+    "alias" : "DiagnosticLM"
+  }],
+  "group" : [{
+    "name" : "DiagnosticLaboratoryResultsQRToLM",
+    "typeMode" : "none",
+    "input" : [{
+      "name" : "qr",
+      "type" : "QResp",
+      "mode" : "source"
+    },
+    {
+      "name" : "diagnostic",
+      "type" : "DiagnosticLM",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "ProcessItems",
+      "source" : [{
+        "context" : "qr",
+        "element" : "item",
+        "variable" : "item"
+      }],
+      "rule" : [{
+        "name" : "MapExecutionDate",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'executionDate'"
+        }],
+        "rule" : [{
+          "name" : "SetExecutionDate",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "executionDate",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialIsoniazidCriticalConcentrationInhCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialIsoniazidCriticalConcentrationInhCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialIsoniazidCriticalConcentrationInhCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialRifampicinRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialRifampicinRif'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialRifampicinRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialRifampicinRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialEthambutolEmb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialEthambutolEmb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialEthambutolEmb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialEthambutolEmb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialPyrazinamidePza",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialPyrazinamidePza'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialPyrazinamidePza",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialPyrazinamidePza",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialLevofloxacinLfx",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialLevofloxacinLfx'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialLevofloxacinLfx",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialLevofloxacinLfx",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialMoxifloxacinCriticalConcentrationMfxCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialAmikacinAmk",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialAmikacinAmk'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialAmikacinAmk",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialAmikacinAmk",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialMoxifloxacinClinicalBreakpointMfxCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialLinezolidLzd",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialLinezolidLzd'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialLinezolidLzd",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialLinezolidLzd",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialClofazimineCfz",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialClofazimineCfz'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialClofazimineCfz",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialClofazimineCfz",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialBedaquilineBdq",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialBedaquilineBdq'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialBedaquilineBdq",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialBedaquilineBdq",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialDelamanidDlm",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialDelamanidDlm'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialDelamanidDlm",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialDelamanidDlm",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidInitialIsoniazidClinicalBreakpointInhCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidInitialIsoniazidClinicalBreakpointInhCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidInitialIsoniazidClinicalBreakpointInhCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateRifResistanceDetected",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateRifResistanceDetected'"
+        }],
+        "rule" : [{
+          "name" : "SetDateRifResistanceDetected",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateRifResistanceDetected",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfSolidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfSolidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfSolidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfSolidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifRif'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidCultureSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidCultureSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidCultureSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidCultureSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSmearSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'smearSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSmearSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "smearSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfXpertMtbRifResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfXpertMtbRifResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfXpertMtbRifResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfXpertMtbRifResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSputumSmearMicroscopy",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sputumSmearMicroscopy'"
+        }],
+        "rule" : [{
+          "name" : "SetSputumSmearMicroscopy",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "sputumSmearMicroscopy",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRif'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifUltra",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifUltra'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifUltra",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifUltra",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCultureInLiquidMediaEGMgit",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'cultureInLiquidMediaEGMgit'"
+        }],
+        "rule" : [{
+          "name" : "SetCultureInLiquidMediaEGMgit",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "cultureInLiquidMediaEGMgit",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapCultureInSolidMediaEGLj",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'cultureInSolidMediaEGLj'"
+        }],
+        "rule" : [{
+          "name" : "SetCultureInSolidMediaEGLj",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "cultureInSolidMediaEGLj",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapInitialDstInLiquidMediaEGMgit",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'initialDstInLiquidMediaEGMgit'"
+        }],
+        "rule" : [{
+          "name" : "SetInitialDstInLiquidMediaEGMgit",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "initialDstInLiquidMediaEGMgit",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapInitialDstInSolidMediaEGLj",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'initialDstInSolidMediaEGLj'"
+        }],
+        "rule" : [{
+          "name" : "SetInitialDstInSolidMediaEGLj",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "initialDstInSolidMediaEGLj",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSubsequentDstInLiquidMediaEGMgit",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'subsequentDstInLiquidMediaEGMgit'"
+        }],
+        "rule" : [{
+          "name" : "SetSubsequentDstInLiquidMediaEGMgit",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "subsequentDstInLiquidMediaEGMgit",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSubsequentDstInSolidMediaEGLj",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'subsequentDstInSolidMediaEGLj'"
+        }],
+        "rule" : [{
+          "name" : "SetSubsequentDstInSolidMediaEGLj",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "subsequentDstInSolidMediaEGLj",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfFinalInitialDstSolidMediaResults",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfFinalInitialDstSolidMediaResults'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfFinalInitialDstSolidMediaResults",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfFinalInitialDstSolidMediaResults",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifUltraSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifUltraSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifUltraSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifUltraSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfXpertMtbRifUltraResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfXpertMtbRifUltraResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfXpertMtbRifUltraResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfXpertMtbRifUltraResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifUltraMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifUltraMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifUltraMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifUltraMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapXpertMtbRifUltraRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'xpertMtbRifUltraRif'"
+        }],
+        "rule" : [{
+          "name" : "SetXpertMtbRifUltraRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "xpertMtbRifUltraRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfLiquidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfLiquidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfLiquidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfLiquidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidCultureResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidCultureResult'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidCultureResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidCultureResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidCultureSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidCultureSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidCultureSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidCultureSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialAmikacinAmk",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialAmikacinAmk'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialAmikacinAmk",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialAmikacinAmk",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialBedaquilineBdq",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialBedaquilineBdq'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialBedaquilineBdq",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialBedaquilineBdq",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialClofazimineCfz",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialClofazimineCfz'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialClofazimineCfz",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialClofazimineCfz",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialDelamanidDlm",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialDelamanidDlm'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialDelamanidDlm",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialDelamanidDlm",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialEthambutolEmb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialEthambutolEmb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialEthambutolEmb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialEthambutolEmb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialIsoniazidCriticalConcentrationInhCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialIsoniazidCriticalConcentrationInhCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialIsoniazidCriticalConcentrationInhCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialIsoniazidClinicalBreakpointInhCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialIsoniazidClinicalBreakpointInhCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialIsoniazidClinicalBreakpointInhCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialLevofloxacinLfx",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialLevofloxacinLfx'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialLevofloxacinLfx",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialLevofloxacinLfx",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialLinezolidLzd",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialLinezolidLzd'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialLinezolidLzd",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialLinezolidLzd",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialMoxifloxacinClinicalBreakpointMfxCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialMoxifloxacinCriticalConcentrationMfxCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialRifampicinRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialRifampicinRif'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialRifampicinRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialRifampicinRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidInitialPyrazinamidePza",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidInitialPyrazinamidePza'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidInitialPyrazinamidePza",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidInitialPyrazinamidePza",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfFinalInitialDstLiquidMediaResults",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfFinalInitialDstLiquidMediaResults'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfFinalInitialDstLiquidMediaResults",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfFinalInitialDstLiquidMediaResults",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfFinalSubsequentDstLiquidMediaResults",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfFinalSubsequentDstLiquidMediaResults",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfFinalSubsequentDstLiquidMediaResults",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfFinalSubsequentDstSolidMediaResults",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfFinalSubsequentDstSolidMediaResults",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfFinalSubsequentDstSolidMediaResults",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentAmikacinAmk",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentAmikacinAmk'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentAmikacinAmk",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentAmikacinAmk",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentBedaquilineBdq",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentBedaquilineBdq'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentBedaquilineBdq",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentBedaquilineBdq",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentClofazimineCfz",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentClofazimineCfz'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentClofazimineCfz",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentClofazimineCfz",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfSlLpa",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfSlLpa'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfSlLpa",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfSlLpa",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfFlLpa",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfFlLpa'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfFlLpa",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfFlLpa",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentDelamanidDlm",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentDelamanidDlm'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentDelamanidDlm",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentDelamanidDlm",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSlLpa",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'slLpa'"
+        }],
+        "rule" : [{
+          "name" : "SetSlLpa",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "slLpa",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultAmikacinCapreomycinAmkCap",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultAmikacinCapreomycinAmkCap'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultAmikacinCapreomycinAmkCap",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultAmikacinCapreomycinAmkCap",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentEthambutolEmb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentEthambutolEmb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentEthambutolEmb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentEthambutolEmb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultEthambutolEmb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultEthambutolEmb'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultEthambutolEmb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultEthambutolEmb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultFluoroquinolonesFq",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultFluoroquinolonesFq'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultFluoroquinolonesFq",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultFluoroquinolonesFq",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultKanamycinKan",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultKanamycinKan'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultKanamycinKan",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultKanamycinKan",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentIsoniazidCriticalConcentrationInhCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentIsoniazidClinicalBreakpointInhCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSlLpaMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'slLpaMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetSlLpaMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "slLpaMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSlLpaSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'slLpaSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSlLpaSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "slLpaSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFlLpa",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'flLpa'"
+        }],
+        "rule" : [{
+          "name" : "SetFlLpa",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "flLpa",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentLevofloxacinLfx",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentLevofloxacinLfx'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentLevofloxacinLfx",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentLevofloxacinLfx",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentLinezolidLzd",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentLinezolidLzd'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentLinezolidLzd",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentLinezolidLzd",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultIsoniazidInh",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultIsoniazidInh'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultIsoniazidInh",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultIsoniazidInh",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFlLpaMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'flLpaMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetFlLpaMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "flLpaMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfSampleReception",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfSampleReception'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfSampleReception",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfSampleReception",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateRifResistanceFirstDetected",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateRifResistanceFirstDetected'"
+        }],
+        "rule" : [{
+          "name" : "SetDateRifResistanceFirstDetected",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateRifResistanceFirstDetected",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFinalResultRifampicinRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'finalResultRifampicinRif'"
+        }],
+        "rule" : [{
+          "name" : "SetFinalResultRifampicinRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "finalResultRifampicinRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFlLpaSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'flLpaSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetFlLpaSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "flLpaSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapMicroscopyResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'microscopyResult'"
+        }],
+        "rule" : [{
+          "name" : "SetMicroscopyResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "microscopyResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfCultureInoculationLiquidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfCultureInoculationLiquidMedia'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfCultureInoculationLiquidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfCultureInoculationLiquidMedia",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSlLpaSpecimenType",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'slLpaSpecimenType'"
+        }],
+        "rule" : [{
+          "name" : "SetSlLpaSpecimenType",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "slLpaSpecimenType",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfCultureInoculationSolidMedia",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfCultureInoculationSolidMedia'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfCultureInoculationSolidMedia",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfCultureInoculationSolidMedia",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleQuality",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleQuality'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleQuality",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "sampleQuality",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentRifampicinRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentRifampicinRif'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentRifampicinRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentRifampicinRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleId",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleId'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleId",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "sampleId",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapFlLpaSpecimenType",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'flLpaSpecimenType'"
+        }],
+        "rule" : [{
+          "name" : "SetFlLpaSpecimenType",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "flLpaSpecimenType",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSampleStatus",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'sampleStatus'"
+        }],
+        "rule" : [{
+          "name" : "SetSampleStatus",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "sampleStatus",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapInitialDstLmSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'initialDstLmSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetInitialDstLmSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "initialDstLmSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLiquidSubsequentPyrazinamidePza",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'liquidSubsequentPyrazinamidePza'"
+        }],
+        "rule" : [{
+          "name" : "SetLiquidSubsequentPyrazinamidePza",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "liquidSubsequentPyrazinamidePza",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentAmikacinAmk",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentAmikacinAmk'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentAmikacinAmk",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentAmikacinAmk",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapInitialDstSmSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'initialDstSmSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetInitialDstSmSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "initialDstSmSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentBedaquilineBdq",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentBedaquilineBdq'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentBedaquilineBdq",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentBedaquilineBdq",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentClofazimineCfz",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentClofazimineCfz'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentClofazimineCfz",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentClofazimineCfz",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSubsequentDstLmSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'subsequentDstLmSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSubsequentDstLmSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "subsequentDstLmSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSubsequentDstSmSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'subsequentDstSmSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetSubsequentDstSmSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "subsequentDstSmSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTbLamp",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'tbLamp'"
+        }],
+        "rule" : [{
+          "name" : "SetTbLamp",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "tbLamp",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentDelamanidDlm",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentDelamanidDlm'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentDelamanidDlm",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentDelamanidDlm",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentEthambutolEmb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentEthambutolEmb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentEthambutolEmb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentEthambutolEmb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfTbLampResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfTbLampResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfTbLampResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfTbLampResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTbLampMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'tbLampMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetTbLampMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "tbLampMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTbLampSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'tbLampSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetTbLampSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "tbLampSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLfLam",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'lfLam'"
+        }],
+        "rule" : [{
+          "name" : "SetLfLam",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "lfLam",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentIsoniazidCriticalConcentrationInhCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentIsoniazidCriticalConcentrationInhCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentIsoniazidCriticalConcentrationInhCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfLfLamResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfLfLamResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfLfLamResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfLfLamResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentIsoniazidClinicalBreakpointInhCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentIsoniazidClinicalBreakpointInhCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentIsoniazidClinicalBreakpointInhCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLfLamMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'lfLamMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetLfLamMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "lfLamMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapLfLamSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'lfLamSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetLfLamSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "lfLamSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentLevofloxacinLfx",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentLevofloxacinLfx'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentLevofloxacinLfx",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentLevofloxacinLfx",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTruenat",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'truenat'"
+        }],
+        "rule" : [{
+          "name" : "SetTruenat",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "truenat",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentLinezolidLzd",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentLinezolidLzd'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentLinezolidLzd",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentLinezolidLzd",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTruenatMtb",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'truenatMtb'"
+        }],
+        "rule" : [{
+          "name" : "SetTruenatMtb",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "truenatMtb",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfTruenatResult",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfTruenatResult'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfTruenatResult",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfTruenatResult",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTruenatRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'truenatRif'"
+        }],
+        "rule" : [{
+          "name" : "SetTruenatRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "truenatRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapTruenatSpecimenNumber",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'truenatSpecimenNumber'"
+        }],
+        "rule" : [{
+          "name" : "SetTruenatSpecimenNumber",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "truenatSpecimenNumber",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentRifampicinRif",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentRifampicinRif'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentRifampicinRif",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentRifampicinRif",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapDateOfMicroscopy",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'dateOfMicroscopy'"
+        }],
+        "rule" : [{
+          "name" : "SetDateOfMicroscopy",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "content"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "dateOfMicroscopy",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "content"
+            }]
+          }]
+        }]
+      },
+      {
+        "name" : "MapSolidSubsequentPyrazinamidePza",
+        "source" : [{
+          "context" : "item",
+          "element" : "answer",
+          "listMode" : "first",
+          "variable" : "answer",
+          "condition" : "item.linkId = 'solidSubsequentPyrazinamidePza'"
+        }],
+        "rule" : [{
+          "name" : "SetSolidSubsequentPyrazinamidePza",
+          "source" : [{
+            "context" : "answer",
+            "element" : "value",
+            "variable" : "coding"
+          }],
+          "target" : [{
+            "context" : "diagnostic",
+            "contextType" : "variable",
+            "element" : "solidSubsequentPyrazinamidePza",
+            "transform" : "copy",
+            "parameter" : [{
+              "valueId" : "coding"
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+}

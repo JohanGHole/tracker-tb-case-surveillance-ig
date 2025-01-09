@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - Tracker TB Case Surveillance Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+<!-- Placeholder for child template CSS declarations -->
+<!-- <link href="assets/css/colors.css" rel="stylesheet"/>! -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1.48"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.48"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+<div id="project-nav">
+    <a id="project-logo" no-external="true" href="https://dhis2.org/integration/fhir/">
+      <img height="60" alt="Project home" src="assets/images/dhis2.png"/>
+    </a>
+  </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+  <div id="family-nav">
+    <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="80" alt="FHIR website" src="assets/images/fhir.png"/> </a>
+  </div>
+
+<!-- search icon - if you want -->
+<!--
+  <div id="hl7-search">
+    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+-->
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">Tracker TB Case Surveillance Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b></b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Tracker TB Case Surveillance Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://example.org/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">StructureMap: 
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-01-09
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">DiagnosticLaboratoryResultsQRToLM</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.xml.html">XML</a>, <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.json.html">JSON</a>, <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap DiagnosticLaboratoryResultsQRToLM</b></p><a name="DiagnosticLaboratoryResultsQRToLM"> </a><a name="hcDiagnosticLaboratoryResultsQRToLM"> </a><a name="DiagnosticLaboratoryResultsQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM<span style="color: navy">&quot; = &quot;</span>DiagnosticLaboratoryResultsQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-DiagnosticLaboratoryResults.html" title="Diagnostic laboratory results">http://example.org/StructureDefinition/DiagnosticLaboratoryResults</a><span style="color: navy">&quot; </span><b>alias </b>DiagnosticLM <b>as </b><b>target</b>
+
+<b>group </b>DiagnosticLaboratoryResultsQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">diagnostic</span><span style="color: navy"> : </span>DiagnosticLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.executionDate = <span style="color: maroon">content</span> <i>&quot;SetExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapExecutionDate&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateRifResistanceDetected'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateRifResistanceDetected = <span style="color: maroon">content</span> <i>&quot;SetDateRifResistanceDetected&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateRifResistanceDetected&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSolidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifMtb = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifRif = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.smearSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfXpertMtbRifResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfXpertMtbRifResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sputumSmearMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRif = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltra'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltra = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifUltra&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltra&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.cultureInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetCultureInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.cultureInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetCultureInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetInitialDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetInitialDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstSolidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstSolidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalInitialDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalInitialDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifUltraSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifUltraResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifUltraResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfXpertMtbRifUltraResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfXpertMtbRifUltraResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraMtb = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifUltraMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraRif = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifUltraRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfLiquidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstLiquidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstLiquidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstLiquidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstSolidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSlLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSlLpa = <span style="color: maroon">content</span> <i>&quot;SetDateOfSlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFlLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFlLpa = <span style="color: maroon">content</span> <i>&quot;SetDateOfFlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpa = <span style="color: maroon">content</span> <i>&quot;SetSlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultAmikacinCapreomycinAmkCap'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultAmikacinCapreomycinAmkCap = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultFluoroquinolonesFq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultFluoroquinolonesFq = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultFluoroquinolonesFq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultFluoroquinolonesFq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultKanamycinKan'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultKanamycinKan = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultKanamycinKan&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultKanamycinKan&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaMtb = <span style="color: maroon">coding</span> <i>&quot;SetSlLpaMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpa = <span style="color: maroon">content</span> <i>&quot;SetFlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultIsoniazidInh'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultIsoniazidInh = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultIsoniazidInh&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultIsoniazidInh&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaMtb = <span style="color: maroon">coding</span> <i>&quot;SetFlLpaMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSampleReception = <span style="color: maroon">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateRifResistanceFirstDetected'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateRifResistanceFirstDetected = <span style="color: maroon">content</span> <i>&quot;SetDateRifResistanceFirstDetected&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateRifResistanceFirstDetected&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetFlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.microscopyResult = <span style="color: maroon">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationLiquidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaSpecimenType'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaSpecimenType = <span style="color: maroon">coding</span> <i>&quot;SetSlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationSolidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleQuality = <span style="color: maroon">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleQuality&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleId = <span style="color: maroon">content</span> <i>&quot;SetSampleId&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleId&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaSpecimenType'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaSpecimenType = <span style="color: maroon">coding</span> <i>&quot;SetFlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleStatus = <span style="color: maroon">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleStatus&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstLmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstLmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetInitialDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstSmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstSmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetInitialDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstLmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstLmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstSmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstSmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLamp'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLamp = <span style="color: maroon">content</span> <i>&quot;SetTbLamp&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLamp&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfTbLampResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfTbLampResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfTbLampResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfTbLampResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLampMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLampMtb = <span style="color: maroon">coding</span> <i>&quot;SetTbLampMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLampMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLampSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLampSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetTbLampSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLampSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLam'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLam = <span style="color: maroon">content</span> <i>&quot;SetLfLam&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLam&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfLfLamResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfLfLamResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfLfLamResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfLfLamResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLamMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLamMtb = <span style="color: maroon">coding</span> <i>&quot;SetLfLamMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLamMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLamSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLamSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetLfLamSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLamSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenat'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenat = <span style="color: maroon">content</span> <i>&quot;SetTruenat&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenat&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatMtb = <span style="color: maroon">coding</span> <i>&quot;SetTruenatMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfTruenatResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfTruenatResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfTruenatResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfTruenatResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatRif = <span style="color: maroon">coding</span> <i>&quot;SetTruenatRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetTruenatSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 9, 2025 13:22+0000">2025-01-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://example.org/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 10, warn = 9, info = 25
+err = 12, warn = 10, info = 101
 IG Publisher Version: 1.8.6
-Generated Thu Jan 09 11:46:32 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
- Build Errors : 11 / 9 / 0
+Generated Thu Jan 09 13:23:55 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 12 / 10 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
@@ -53,11 +53,13 @@ Generated Thu Jan 09 11:46:32 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSampleStatusVS : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/ValueSet-TBLABSmearResultVS : 0 / 0 / 6
  /github/workspace/input/examples/DiagnosisAndNotificationQRExample : 1 / 0 / 11
+ /github/workspace/input/examples/DiagnosticLaboratoryResultsQRExample : 1 / 0 / 77
  /github/workspace/input/examples/MonitoringLaboratoryResultsQRExample : 1 / 0 / 7
  /github/workspace/input/examples/OutcomeQRExample : 1 / 0 / 4
  /github/workspace/input/examples/TBCaseSurveillanceQRExample : 1 / 0 / 4
  /github/workspace/input/examples/TBTreatmentQRExample : 1 / 0 / 4
  /github/workspace/input/maps/DiagnosisAndNotificationQRToLM : 0 / 0 / 1
+ /github/workspace/input/maps/DiagnosticLaboratoryResultsQRToLM : 0 / 0 / 1
  /github/workspace/input/maps/MonitoringLaboratoryResultsQRToLM : 0 / 0 / 1
  /github/workspace/input/maps/OutcomeQRToLM : 0 / 0 / 1
  /github/workspace/input/maps/TBCaseSurveillanceQRToLM : 0 / 0 / 1
@@ -65,11 +67,13 @@ Generated Thu Jan 09 11:46:32 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.s
 </table>
 == n/a ==
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosisAndNotificationQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosticLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/MonitoringLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBCaseSurveillanceQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBTreatmentQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -143,6 +147,84 @@ INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[12].answer[0].v
 INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[17].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
 INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse.item[18].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0
 INFORMATION: QuestionnaireResponse/2: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== input/examples/DiagnosticLaboratoryResultsQRExample.json ==
+ERROR: QuestionnaireResponse: Unrecognized property 'title'
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[1].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[2].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[4].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[5].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[6].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[7].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[8].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[9].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[10].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[11].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[12].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[13].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[16].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[17].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[19].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[35].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[36].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[38].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[40].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[41].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[42].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[43].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[44].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[45].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[46].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[47].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[48].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[49].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[50].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[51].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[52].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[56].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[57].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[58].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[61].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[63].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[64].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[65].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[66].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[67].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[68].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[69].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[70].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[73].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[74].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[75].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[76].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[77].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[78].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[81].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[83].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSmearResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[85].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[87].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSampleQualityCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[88].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[90].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABLPASpecimenCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[91].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABSampleStatusCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[93].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[94].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[96].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[97].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[101].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[102].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[104].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[107].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[109].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[110].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[112].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[114].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[115].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[116].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABMTBTestResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[117].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[119].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[121].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse.item[123].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABDSTResultCS|0.1.0
+INFORMATION: QuestionnaireResponse/6: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == input/examples/MonitoringLaboratoryResultsQRExample.json ==
 ERROR: QuestionnaireResponse: Unrecognized property 'title'
 INFORMATION: QuestionnaireResponse/3: QuestionnaireResponse.item[9].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBLABFinalCultureResultCS|0.1.0
@@ -167,6 +249,7 @@ INFORMATION: QuestionnaireResponse/5: QuestionnaireResponse.item[1].answer[0].va
 INFORMATION: QuestionnaireResponse/5: QuestionnaireResponse.item[33].answer[0].value.ofType(Coding): Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0
 INFORMATION: QuestionnaireResponse/5: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == input/maps/DiagnosisAndNotificationQRToLM.map ==
+== input/maps/DiagnosticLaboratoryResultsQRToLM.map ==
 == input/maps/MonitoringLaboratoryResultsQRToLM.map ==
 == input/maps/OutcomeQRToLM.map ==
 == input/maps/TBCaseSurveillanceQRToLM.map ==

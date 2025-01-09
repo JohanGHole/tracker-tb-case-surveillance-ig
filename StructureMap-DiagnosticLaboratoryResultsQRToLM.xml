@@ -1,0 +1,3788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="DiagnosticLaboratoryResultsQRToLM"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap DiagnosticLaboratoryResultsQRToLM</b></p><a name="DiagnosticLaboratoryResultsQRToLM"> </a><a name="hcDiagnosticLaboratoryResultsQRToLM"> </a><a name="DiagnosticLaboratoryResultsQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM<span style="color: navy">&quot; = &quot;</span>DiagnosticLaboratoryResultsQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-DiagnosticLaboratoryResults.html" title="Diagnostic laboratory results">http://example.org/StructureDefinition/DiagnosticLaboratoryResults</a><span style="color: navy">&quot; </span><b>alias </b>DiagnosticLM <b>as </b><b>target</b>
+
+<b>group </b>DiagnosticLaboratoryResultsQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">diagnostic</span><span style="color: navy"> : </span>DiagnosticLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.executionDate = <span style="color: maroon">content</span> <i>&quot;SetExecutionDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapExecutionDate&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidInitialIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateRifResistanceDetected'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateRifResistanceDetected = <span style="color: maroon">content</span> <i>&quot;SetDateRifResistanceDetected&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateRifResistanceDetected&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSolidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifMtb = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifRif = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.smearSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfXpertMtbRifResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfXpertMtbRifResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sputumSmearMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRif = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltra'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltra = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifUltra&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltra&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.cultureInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetCultureInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.cultureInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetCultureInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapCultureInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetInitialDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetInitialDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstInLiquidMediaEGMgit'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstInLiquidMediaEGMgit = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstInLiquidMediaEGMgit&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstInSolidMediaEGLj'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstInSolidMediaEGLj = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstInSolidMediaEGLj&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstSolidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstSolidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalInitialDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalInitialDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetXpertMtbRifUltraSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfXpertMtbRifUltraResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfXpertMtbRifUltraResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfXpertMtbRifUltraResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfXpertMtbRifUltraResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraMtb = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifUltraMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'xpertMtbRifUltraRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.xpertMtbRifUltraRif = <span style="color: maroon">coding</span> <i>&quot;SetXpertMtbRifUltraRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapXpertMtbRifUltraRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfLiquidCultureResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidCultureResult = <span style="color: maroon">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidCultureSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidInitialPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidInitialPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetLiquidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidInitialPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalInitialDstLiquidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalInitialDstLiquidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalInitialDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstLiquidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalSubsequentDstLiquidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFinalSubsequentDstSolidMediaResults = <span style="color: maroon">content</span> <i>&quot;SetDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFinalSubsequentDstSolidMediaResults&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSlLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSlLpa = <span style="color: maroon">content</span> <i>&quot;SetDateOfSlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfFlLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfFlLpa = <span style="color: maroon">content</span> <i>&quot;SetDateOfFlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfFlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpa = <span style="color: maroon">content</span> <i>&quot;SetSlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultAmikacinCapreomycinAmkCap'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultAmikacinCapreomycinAmkCap = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultAmikacinCapreomycinAmkCap&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultFluoroquinolonesFq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultFluoroquinolonesFq = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultFluoroquinolonesFq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultFluoroquinolonesFq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultKanamycinKan'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultKanamycinKan = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultKanamycinKan&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultKanamycinKan&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaMtb = <span style="color: maroon">coding</span> <i>&quot;SetSlLpaMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpa'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpa = <span style="color: maroon">content</span> <i>&quot;SetFlLpa&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpa&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultIsoniazidInh'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultIsoniazidInh = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultIsoniazidInh&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultIsoniazidInh&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaMtb = <span style="color: maroon">coding</span> <i>&quot;SetFlLpaMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfSampleReception = <span style="color: maroon">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateRifResistanceFirstDetected'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateRifResistanceFirstDetected = <span style="color: maroon">content</span> <i>&quot;SetDateRifResistanceFirstDetected&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateRifResistanceFirstDetected&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'finalResultRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.finalResultRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetFinalResultRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFinalResultRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetFlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.microscopyResult = <span style="color: maroon">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationLiquidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'slLpaSpecimenType'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.slLpaSpecimenType = <span style="color: maroon">coding</span> <i>&quot;SetSlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfCultureInoculationSolidMedia = <span style="color: maroon">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleQuality = <span style="color: maroon">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleQuality&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleId = <span style="color: maroon">content</span> <i>&quot;SetSampleId&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleId&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'flLpaSpecimenType'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.flLpaSpecimenType = <span style="color: maroon">coding</span> <i>&quot;SetFlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFlLpaSpecimenType&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.sampleStatus = <span style="color: maroon">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSampleStatus&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstLmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstLmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetInitialDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'liquidSubsequentPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.liquidSubsequentPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetLiquidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLiquidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentAmikacinAmk'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentAmikacinAmk = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentAmikacinAmk&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'initialDstSmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.initialDstSmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetInitialDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapInitialDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentBedaquilineBdq'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentBedaquilineBdq = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentBedaquilineBdq&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentClofazimineCfz'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentClofazimineCfz = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentClofazimineCfz&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstLmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstLmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstLmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'subsequentDstSmSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.subsequentDstSmSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetSubsequentDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSubsequentDstSmSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLamp'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLamp = <span style="color: maroon">content</span> <i>&quot;SetTbLamp&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLamp&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentDelamanidDlm'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentDelamanidDlm = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentDelamanidDlm&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentEthambutolEmb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentEthambutolEmb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentEthambutolEmb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfTbLampResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfTbLampResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfTbLampResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfTbLampResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLampMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLampMtb = <span style="color: maroon">coding</span> <i>&quot;SetTbLampMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLampMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbLampSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.tbLampSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetTbLampSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTbLampSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLam'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLam = <span style="color: maroon">content</span> <i>&quot;SetLfLam&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLam&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidCriticalConcentrationInhCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentIsoniazidCriticalConcentrationInhCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfLfLamResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfLfLamResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfLfLamResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfLfLamResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentIsoniazidClinicalBreakpointInhCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentIsoniazidClinicalBreakpointInhCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLamMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLamMtb = <span style="color: maroon">coding</span> <i>&quot;SetLfLamMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLamMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'lfLamSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.lfLamSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetLfLamSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapLfLamSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentLevofloxacinLfx'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentLevofloxacinLfx = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentLevofloxacinLfx&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenat'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenat = <span style="color: maroon">content</span> <i>&quot;SetTruenat&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenat&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentLinezolidLzd'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentLinezolidLzd = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentLinezolidLzd&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatMtb'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatMtb = <span style="color: maroon">coding</span> <i>&quot;SetTruenatMtb&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatMtb&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfTruenatResult'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfTruenatResult = <span style="color: maroon">content</span> <i>&quot;SetDateOfTruenatResult&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfTruenatResult&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatRif = <span style="color: maroon">coding</span> <i>&quot;SetTruenatRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'truenatSpecimenNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.truenatSpecimenNumber = <span style="color: maroon">content</span> <i>&quot;SetTruenatSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTruenatSpecimenNumber&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentRifampicinRif'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentRifampicinRif = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentRifampicinRif&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.dateOfMicroscopy = <span style="color: maroon">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style="color: navy">;</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'solidSubsequentPyrazinamidePza'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>diagnostic.solidSubsequentPyrazinamidePza = <span style="color: maroon">coding</span> <i>&quot;SetSolidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSolidSubsequentPyrazinamidePza&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM"/>
+  <version value="0.1.0"/>
+  <name value="DiagnosticLaboratoryResultsQRToLM"/>
+  <title value="Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"/>
+  <status value="draft"/>
+  <date value="2025-01-09T13:22:59+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <description value="Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"/>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <mode value="source"/>
+    <alias value="QResp"/>
+  </structure>
+  <structure>
+    <url value="http://example.org/StructureDefinition/DiagnosticLaboratoryResults"/>
+    <mode value="target"/>
+    <alias value="DiagnosticLM"/>
+  </structure>
+  <group>
+    <name value="DiagnosticLaboratoryResultsQRToLM"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="qr"/>
+      <type value="QResp"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="diagnostic"/>
+      <type value="DiagnosticLM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="ProcessItems"/>
+      <source>
+        <context value="qr"/>
+        <element value="item"/>
+        <variable value="item"/>
+      </source>
+      <rule>
+        <name value="MapExecutionDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'executionDate'"/>
+        </source>
+        <rule>
+          <name value="SetExecutionDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="executionDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialIsoniazidCriticalConcentrationInhCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialIsoniazidCriticalConcentrationInhCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialIsoniazidCriticalConcentrationInhCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialRifampicinRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialRifampicinRif'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialRifampicinRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialRifampicinRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialEthambutolEmb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialEthambutolEmb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialEthambutolEmb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialEthambutolEmb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialPyrazinamidePza"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialPyrazinamidePza'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialPyrazinamidePza"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialPyrazinamidePza"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialLevofloxacinLfx"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialLevofloxacinLfx'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialLevofloxacinLfx"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialLevofloxacinLfx"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialAmikacinAmk"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialAmikacinAmk'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialAmikacinAmk"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialAmikacinAmk"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialLinezolidLzd"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialLinezolidLzd'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialLinezolidLzd"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialLinezolidLzd"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialClofazimineCfz"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialClofazimineCfz'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialClofazimineCfz"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialClofazimineCfz"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialBedaquilineBdq"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialBedaquilineBdq'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialBedaquilineBdq"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialBedaquilineBdq"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialDelamanidDlm"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialDelamanidDlm'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialDelamanidDlm"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialDelamanidDlm"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidInitialIsoniazidClinicalBreakpointInhCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidInitialIsoniazidClinicalBreakpointInhCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidInitialIsoniazidClinicalBreakpointInhCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateRifResistanceDetected"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateRifResistanceDetected'"/>
+        </source>
+        <rule>
+          <name value="SetDateRifResistanceDetected"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateRifResistanceDetected"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfSolidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfSolidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfSolidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfSolidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifMtb'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifRif'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidCultureSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidCultureSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSolidCultureSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidCultureSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetSolidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSmearSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'smearSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSmearSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="smearSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfXpertMtbRifResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfXpertMtbRifResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfXpertMtbRifResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfXpertMtbRifResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSputumSmearMicroscopy"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sputumSmearMicroscopy'"/>
+        </source>
+        <rule>
+          <name value="SetSputumSmearMicroscopy"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="sputumSmearMicroscopy"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRif'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifUltra"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifUltra'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifUltra"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifUltra"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCultureInLiquidMediaEGMgit"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'cultureInLiquidMediaEGMgit'"/>
+        </source>
+        <rule>
+          <name value="SetCultureInLiquidMediaEGMgit"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="cultureInLiquidMediaEGMgit"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapCultureInSolidMediaEGLj"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'cultureInSolidMediaEGLj'"/>
+        </source>
+        <rule>
+          <name value="SetCultureInSolidMediaEGLj"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="cultureInSolidMediaEGLj"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapInitialDstInLiquidMediaEGMgit"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'initialDstInLiquidMediaEGMgit'"/>
+        </source>
+        <rule>
+          <name value="SetInitialDstInLiquidMediaEGMgit"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="initialDstInLiquidMediaEGMgit"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapInitialDstInSolidMediaEGLj"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'initialDstInSolidMediaEGLj'"/>
+        </source>
+        <rule>
+          <name value="SetInitialDstInSolidMediaEGLj"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="initialDstInSolidMediaEGLj"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSubsequentDstInLiquidMediaEGMgit"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'subsequentDstInLiquidMediaEGMgit'"/>
+        </source>
+        <rule>
+          <name value="SetSubsequentDstInLiquidMediaEGMgit"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="subsequentDstInLiquidMediaEGMgit"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSubsequentDstInSolidMediaEGLj"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'subsequentDstInSolidMediaEGLj'"/>
+        </source>
+        <rule>
+          <name value="SetSubsequentDstInSolidMediaEGLj"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="subsequentDstInSolidMediaEGLj"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfFinalInitialDstSolidMediaResults"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfFinalInitialDstSolidMediaResults'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfFinalInitialDstSolidMediaResults"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfFinalInitialDstSolidMediaResults"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifUltraSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifUltraSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifUltraSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifUltraSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfXpertMtbRifUltraResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfXpertMtbRifUltraResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfXpertMtbRifUltraResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfXpertMtbRifUltraResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifUltraMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifUltraMtb'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifUltraMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifUltraMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapXpertMtbRifUltraRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'xpertMtbRifUltraRif'"/>
+        </source>
+        <rule>
+          <name value="SetXpertMtbRifUltraRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="xpertMtbRifUltraRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfLiquidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfLiquidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfLiquidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfLiquidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidCultureResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidCultureResult'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidCultureResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidCultureResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidCultureSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidCultureSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidCultureSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidCultureSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialAmikacinAmk"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialAmikacinAmk'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialAmikacinAmk"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialAmikacinAmk"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialBedaquilineBdq"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialBedaquilineBdq'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialBedaquilineBdq"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialBedaquilineBdq"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialClofazimineCfz"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialClofazimineCfz'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialClofazimineCfz"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialClofazimineCfz"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialDelamanidDlm"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialDelamanidDlm'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialDelamanidDlm"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialDelamanidDlm"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialEthambutolEmb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialEthambutolEmb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialEthambutolEmb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialEthambutolEmb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialIsoniazidCriticalConcentrationInhCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialIsoniazidCriticalConcentrationInhCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialIsoniazidCriticalConcentrationInhCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialIsoniazidClinicalBreakpointInhCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialIsoniazidClinicalBreakpointInhCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialIsoniazidClinicalBreakpointInhCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialLevofloxacinLfx"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialLevofloxacinLfx'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialLevofloxacinLfx"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialLevofloxacinLfx"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialLinezolidLzd"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialLinezolidLzd'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialLinezolidLzd"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialLinezolidLzd"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialMoxifloxacinClinicalBreakpointMfxCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialMoxifloxacinCriticalConcentrationMfxCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialRifampicinRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialRifampicinRif'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialRifampicinRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialRifampicinRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidInitialPyrazinamidePza"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidInitialPyrazinamidePza'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidInitialPyrazinamidePza"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidInitialPyrazinamidePza"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfFinalInitialDstLiquidMediaResults"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfFinalInitialDstLiquidMediaResults'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfFinalInitialDstLiquidMediaResults"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfFinalInitialDstLiquidMediaResults"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfFinalSubsequentDstLiquidMediaResults"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfFinalSubsequentDstLiquidMediaResults"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfFinalSubsequentDstLiquidMediaResults"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfFinalSubsequentDstSolidMediaResults"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfFinalSubsequentDstSolidMediaResults"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfFinalSubsequentDstSolidMediaResults"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentAmikacinAmk"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentAmikacinAmk'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentAmikacinAmk"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentAmikacinAmk"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentBedaquilineBdq"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentBedaquilineBdq'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentBedaquilineBdq"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentBedaquilineBdq"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentClofazimineCfz"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentClofazimineCfz'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentClofazimineCfz"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentClofazimineCfz"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfSlLpa"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfSlLpa'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfSlLpa"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfSlLpa"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfFlLpa"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfFlLpa'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfFlLpa"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfFlLpa"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentDelamanidDlm"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentDelamanidDlm'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentDelamanidDlm"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentDelamanidDlm"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSlLpa"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'slLpa'"/>
+        </source>
+        <rule>
+          <name value="SetSlLpa"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="slLpa"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultAmikacinCapreomycinAmkCap"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultAmikacinCapreomycinAmkCap'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultAmikacinCapreomycinAmkCap"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultAmikacinCapreomycinAmkCap"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentEthambutolEmb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentEthambutolEmb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentEthambutolEmb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentEthambutolEmb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultEthambutolEmb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultEthambutolEmb'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultEthambutolEmb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultEthambutolEmb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultFluoroquinolonesFq"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultFluoroquinolonesFq'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultFluoroquinolonesFq"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultFluoroquinolonesFq"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultKanamycinKan"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultKanamycinKan'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultKanamycinKan"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultKanamycinKan"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSlLpaMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'slLpaMtb'"/>
+        </source>
+        <rule>
+          <name value="SetSlLpaMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="slLpaMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSlLpaSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'slLpaSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSlLpaSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="slLpaSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFlLpa"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'flLpa'"/>
+        </source>
+        <rule>
+          <name value="SetFlLpa"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="flLpa"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentLevofloxacinLfx"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentLevofloxacinLfx'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentLevofloxacinLfx"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentLevofloxacinLfx"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentLinezolidLzd"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentLinezolidLzd'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentLinezolidLzd"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentLinezolidLzd"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultIsoniazidInh"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultIsoniazidInh'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultIsoniazidInh"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultIsoniazidInh"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFlLpaMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'flLpaMtb'"/>
+        </source>
+        <rule>
+          <name value="SetFlLpaMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="flLpaMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfSampleReception"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfSampleReception'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfSampleReception"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfSampleReception"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateRifResistanceFirstDetected"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateRifResistanceFirstDetected'"/>
+        </source>
+        <rule>
+          <name value="SetDateRifResistanceFirstDetected"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateRifResistanceFirstDetected"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFinalResultRifampicinRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'finalResultRifampicinRif'"/>
+        </source>
+        <rule>
+          <name value="SetFinalResultRifampicinRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="finalResultRifampicinRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFlLpaSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'flLpaSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetFlLpaSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="flLpaSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapMicroscopyResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'microscopyResult'"/>
+        </source>
+        <rule>
+          <name value="SetMicroscopyResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="microscopyResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfCultureInoculationLiquidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfCultureInoculationLiquidMedia'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfCultureInoculationLiquidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfCultureInoculationLiquidMedia"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSlLpaSpecimenType"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'slLpaSpecimenType'"/>
+        </source>
+        <rule>
+          <name value="SetSlLpaSpecimenType"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="slLpaSpecimenType"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfCultureInoculationSolidMedia"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfCultureInoculationSolidMedia'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfCultureInoculationSolidMedia"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfCultureInoculationSolidMedia"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleQuality"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleQuality'"/>
+        </source>
+        <rule>
+          <name value="SetSampleQuality"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="sampleQuality"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentRifampicinRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentRifampicinRif'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentRifampicinRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentRifampicinRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleId"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleId'"/>
+        </source>
+        <rule>
+          <name value="SetSampleId"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="sampleId"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFlLpaSpecimenType"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'flLpaSpecimenType'"/>
+        </source>
+        <rule>
+          <name value="SetFlLpaSpecimenType"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="flLpaSpecimenType"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSampleStatus"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sampleStatus'"/>
+        </source>
+        <rule>
+          <name value="SetSampleStatus"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="sampleStatus"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapInitialDstLmSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'initialDstLmSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetInitialDstLmSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="initialDstLmSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLiquidSubsequentPyrazinamidePza"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'liquidSubsequentPyrazinamidePza'"/>
+        </source>
+        <rule>
+          <name value="SetLiquidSubsequentPyrazinamidePza"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="liquidSubsequentPyrazinamidePza"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentAmikacinAmk"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentAmikacinAmk'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentAmikacinAmk"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentAmikacinAmk"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapInitialDstSmSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'initialDstSmSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetInitialDstSmSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="initialDstSmSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentBedaquilineBdq"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentBedaquilineBdq'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentBedaquilineBdq"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentBedaquilineBdq"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentClofazimineCfz"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentClofazimineCfz'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentClofazimineCfz"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentClofazimineCfz"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSubsequentDstLmSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'subsequentDstLmSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSubsequentDstLmSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="subsequentDstLmSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSubsequentDstSmSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'subsequentDstSmSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetSubsequentDstSmSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="subsequentDstSmSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTbLamp"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'tbLamp'"/>
+        </source>
+        <rule>
+          <name value="SetTbLamp"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="tbLamp"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentDelamanidDlm"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentDelamanidDlm'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentDelamanidDlm"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentDelamanidDlm"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentEthambutolEmb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentEthambutolEmb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentEthambutolEmb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentEthambutolEmb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfTbLampResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfTbLampResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfTbLampResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfTbLampResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTbLampMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'tbLampMtb'"/>
+        </source>
+        <rule>
+          <name value="SetTbLampMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="tbLampMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTbLampSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'tbLampSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetTbLampSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="tbLampSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLfLam"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'lfLam'"/>
+        </source>
+        <rule>
+          <name value="SetLfLam"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="lfLam"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentIsoniazidCriticalConcentrationInhCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfLfLamResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfLfLamResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfLfLamResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfLfLamResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentIsoniazidClinicalBreakpointInhCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLfLamMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'lfLamMtb'"/>
+        </source>
+        <rule>
+          <name value="SetLfLamMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="lfLamMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapLfLamSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'lfLamSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetLfLamSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="lfLamSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentLevofloxacinLfx"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentLevofloxacinLfx'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentLevofloxacinLfx"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentLevofloxacinLfx"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTruenat"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'truenat'"/>
+        </source>
+        <rule>
+          <name value="SetTruenat"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="truenat"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentLinezolidLzd"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentLinezolidLzd'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentLinezolidLzd"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentLinezolidLzd"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentMoxifloxacinClinicalBreakpointMfxCb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTruenatMtb"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'truenatMtb'"/>
+        </source>
+        <rule>
+          <name value="SetTruenatMtb"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="truenatMtb"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentMoxifloxacinCriticalConcentrationMfxCc"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfTruenatResult"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfTruenatResult'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfTruenatResult"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfTruenatResult"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTruenatRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'truenatRif'"/>
+        </source>
+        <rule>
+          <name value="SetTruenatRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="truenatRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTruenatSpecimenNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'truenatSpecimenNumber'"/>
+        </source>
+        <rule>
+          <name value="SetTruenatSpecimenNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="truenatSpecimenNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentRifampicinRif"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentRifampicinRif'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentRifampicinRif"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentRifampicinRif"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfMicroscopy"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfMicroscopy'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfMicroscopy"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="dateOfMicroscopy"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSolidSubsequentPyrazinamidePza"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'solidSubsequentPyrazinamidePza'"/>
+        </source>
+        <rule>
+          <name value="SetSolidSubsequentPyrazinamidePza"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="diagnostic"/>
+            <contextType value="variable"/>
+            <element value="solidSubsequentPyrazinamidePza"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

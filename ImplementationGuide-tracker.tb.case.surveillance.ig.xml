@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-09T11:45:34+00:00"/>
+  <date value="2025-01-09T13:22:59+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -506,6 +506,16 @@
       <name value="Diagnostic Laboratory Results Questionnaire"/>
       <description value="A questionnaire for capturing diagnostic test results and sample information to determine TB infection status."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/6"/>
+      </reference>
+      <name value="Diagnostic Laboratory Results QuestionnaireResponse Example"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1017,6 +1027,15 @@
         <reference value="StructureMap/DiagnosisAndNotificationQRToLM"/>
       </reference>
       <description value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/DiagnosticLaboratoryResultsQRToLM"/>
+      </reference>
+      <description value="Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

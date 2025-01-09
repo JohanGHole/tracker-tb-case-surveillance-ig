@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TBCaseSurveillanceQRToLM"] ; # 
   fhir:title [ fhir:v "Map TB Case Surveillance QuestionnaireResponse to Logical Model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-09T11:45:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-09T13:22:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
