@@ -1,0 +1,368 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "5",
+    "title": "TB Treatment QuestionnaireResponse Example",
+    "status": "completed",
+    "authored": "2025-01-09T11:29:32.765Z",
+    "item": [
+      {
+        "linkId": "executionDate",
+        "text": "Execution Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-08"
+          }
+        ]
+      },
+      {
+        "linkId": "treatmentRegimen",
+        "text": "Treatment Regimen",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBCSTreatmentCategoryCS",
+              "code": "FIRST_LINE_TREATMENT",
+              "display": "First-line Treatment"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "levofloxacinLfx",
+        "text": "Second-line Treatment: Lfx",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "moxifloxacinMfx",
+        "text": "Second-line Treatment: Mfx",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "amikacinAmk",
+        "text": "Second-line Treatment: Amk",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "streptomycinStm",
+        "text": "Second-line Treatment: Stm",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "clofazimineCfz",
+        "text": "Second-line Treatment: Cfz",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "cycloserineCs",
+        "text": "Second-line Treatment: Cs",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "ethionamideEto",
+        "text": "Second-line Treatment: Eto",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "linezolidLzd",
+        "text": "Second-line Treatment: Lzd",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "prothionamidePto",
+        "text": "Second-line Treatment: Pto",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "terizidoneTrd",
+        "text": "Second-line Treatment: Trd",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "firstLineEthambutolEmb",
+        "text": "First-line Treatment: Emb",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "firstLinePyrazinamidePza",
+        "text": "First-line Treatment: Pza",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "bedaquilineBdq",
+        "text": "Second-line Treatment: Bdq",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "delamanidDlm",
+        "text": "Second-line Treatment: Dlm",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "imipenemCilastatinIpmCln",
+        "text": "Second-line Treatment: Ipm/Cln",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "meropenemMpm",
+        "text": "Second-line Treatment: Mpm",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "pAminosalicylicAcidPas",
+        "text": "Second-line Treatment: PAS",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "isoniazidInh",
+        "text": "First-line Treatment: Inh",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "other",
+        "text": "Second-line Treatment: Other",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "firstLineTreatmentStart",
+        "text": "First-line Treatment Start Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "otherDrugSpecify",
+        "text": "Specify Other Second-line Drug",
+        "answer": [
+          {
+            "valueString": "25"
+          }
+        ]
+      },
+      {
+        "linkId": "rifampicinRif",
+        "text": "First-line Treatment: Rif",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "amoxicillinClavulanicAcidAmxClv",
+        "text": "Second-line Treatment: Amx/Clv",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "secondLineTreatmentStart",
+        "text": "Second-line Treatment Start Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "capreomycinCap",
+        "text": "Second-line Treatment: Cap",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "secondLineEthambutolEmb",
+        "text": "Second-line Treatment: Emb",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "kanamycinKan",
+        "text": "Second-line Treatment: Kan",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "pretomanidPa",
+        "text": "Second-line Treatment: Pa",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "SecondLinePyrazinamidePza",
+        "text": "Second-line Treatment: Pza",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "tickTheBoxToOverwriteThisClassification",
+        "text": "Reassign Resistance Classification",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "resistanceClassificationBasedOnLaboratoryResultsInTheSystem",
+        "text": "Resistance Classification - Lab Results",
+        "answer": [
+          {
+            "valueString": "OK"
+          }
+        ]
+      },
+      {
+        "linkId": "newlyAssignedResistanceClassification",
+        "text": "Newly Assigned Resistance Classification",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBCSResistanceClassificationCS",
+              "code": "DS",
+              "display": "DS (drug-susceptible TB)"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "treatmentInitiationDelayDays",
+        "text": "Treatment Initiation Delay - days",
+        "answer": [
+          {
+            "valueDecimal": 123
+          }
+        ]
+      },
+      {
+        "linkId": "treatmentEpisodeEndDate",
+        "text": "Treatment Episode End Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "reasonForEndingCurrentTreatmentEpisode",
+        "text": "Reason for Ending Treatment Episode",
+        "answer": [
+          {
+            "valueString": "Healthy"
+          }
+        ]
+      },
+      {
+        "linkId": "clickToEndTheCurrentTreatmentEpisode",
+        "text": "End Current Treatment Episode",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "outcomeDue",
+        "text": "Outcome Due Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-09"
+          }
+        ]
+      }
+    ]
+  }

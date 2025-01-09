@@ -1,0 +1,171 @@
+/// url = "http://example.org/StructureMap/TBTreatmentQRToLM"
+/// name = 'TBTreatmentQRToLM'
+/// description = "Map TB Treatment QuestionnaireResponse to Logical Model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/TBTreatment" alias TBTreatmentLM as target
+
+group TBTreatmentQRToLM (source qr : QResp, target treatment : TBTreatmentLM) {
+
+  qr.item as item then {
+
+    item.answer first as answer where item.linkId = 'executionDate' then {
+
+        answer.value as content -> treatment.executionDate = content "SetExecutionDate";
+      } "MapExecutionDate";
+      
+      item.answer first as answer where item.linkId = 'treatmentRegimen' then {
+        answer.value as coding -> treatment.treatmentRegimen = coding "SetTreatmentRegimen";
+      } "MapTreatmentRegimen";
+      
+      item.answer first as answer where item.linkId = 'levofloxacinLfx' then {
+        answer.value as content -> treatment.levofloxacinLfx = content "SetLevofloxacinLfx";
+      } "MapLevofloxacinLfx";
+      
+      item.answer first as answer where item.linkId = 'moxifloxacinMfx' then {
+        answer.value as content -> treatment.moxifloxacinMfx = content "SetMoxifloxacinMfx";
+      } "MapMoxifloxacinMfx";
+      
+      item.answer first as answer where item.linkId = 'amikacinAmk' then {
+        answer.value as content -> treatment.amikacinAmk = content "SetAmikacinAmk";
+      } "MapAmikacinAmk";
+      
+      item.answer first as answer where item.linkId = 'streptomycinStm' then {
+        answer.value as content -> treatment.streptomycinStm = content "SetStreptomycinStm";
+      } "MapStreptomycinStm";
+      
+      item.answer first as answer where item.linkId = 'clofazimineCfz' then {
+        answer.value as content -> treatment.clofazimineCfz = content "SetClofazimineCfz";
+      } "MapClofazimineCfz";
+      
+      item.answer first as answer where item.linkId = 'cycloserineCs' then {
+        answer.value as content -> treatment.cycloserineCs = content "SetCycloserineCs";
+      } "MapCycloserineCs";
+      
+      item.answer first as answer where item.linkId = 'ethionamideEto' then {
+        answer.value as content -> treatment.ethionamideEto = content "SetEthionamideEto";
+      } "MapEthionamideEto";
+
+      item.answer first as answer where item.linkId = 'linezolidLzd' then {
+        answer.value as content -> treatment.linezolidLzd = content "SetLinezolidLzd";
+      } "MapLinezolidLzd";
+      
+      item.answer first as answer where item.linkId = 'prothionamidePto' then {
+        answer.value as content -> treatment.prothionamidePto = content "SetProthionamidePto";
+      } "MapProthionamidePto";
+      
+      item.answer first as answer where item.linkId = 'terizidoneTrd' then {
+        answer.value as content -> treatment.terizidoneTrd = content "SetTerizidoneTrd";
+      } "MapTerizidoneTrd";
+      
+      item.answer first as answer where item.linkId = 'firstLineEthambutolEmb' then {
+        answer.value as content -> treatment.firstLineEthambutolEmb = content "SetFirstLineEthambutolEmb";
+      } "MapFirstLineEthambutolEmb";
+      
+      item.answer first as answer where item.linkId = 'firstLinePyrazinamidePza' then {
+        answer.value as content -> treatment.firstLinePyrazinamidePza = content "SetFirstLinePyrazinamidePza";
+      } "MapFirstLinePyrazinamidePza";
+      
+      item.answer first as answer where item.linkId = 'bedaquilineBdq' then {
+        answer.value as content -> treatment.bedaquilineBdq = content "SetBedaquilineBdq";
+      } "MapBedaquilineBdq";
+      
+      item.answer first as answer where item.linkId = 'delamanidDlm' then {
+        answer.value as content -> treatment.delamanidDlm = content "SetDelamanidDlm";
+      } "MapDelamanidDlm";
+      
+      item.answer first as answer where item.linkId = 'imipenemCilastatinIpmCln' then {
+        answer.value as content -> treatment.imipenemCilastatinIpmCln = content "SetImipenemCilastatinIpmCln";
+      } "MapImipenemCilastatinIpmCln";
+      
+      item.answer first as answer where item.linkId = 'meropenemMpm' then {
+        answer.value as content -> treatment.meropenemMpm = content "SetMeropenemMpm";
+      } "MapMeropenemMpm";
+      
+      item.answer first as answer where item.linkId = 'pAminosalicylicAcidPas' then {
+        answer.value as content -> treatment.pAminosalicylicAcidPas = content "SetPAminosalicylicAcidPas";
+      } "MapPAminosalicylicAcidPas";
+
+      item.answer first as answer where item.linkId = 'isoniazidInh' then {
+        answer.value as content -> treatment.isoniazidInh = content "SetIsoniazidInh";
+      } "MapIsoniazidInh";
+      
+      item.answer first as answer where item.linkId = 'other' then {
+        answer.value as content -> treatment.other = content "SetOther";
+      } "MapOther";
+      
+      item.answer first as answer where item.linkId = 'firstLineTreatmentStart' then {
+        answer.value as content -> treatment.firstLineTreatmentStart = content "SetFirstLineTreatmentStart";
+      } "MapFirstLineTreatmentStart";
+      
+      item.answer first as answer where item.linkId = 'otherDrugSpecify' then {
+        answer.value as content -> treatment.otherDrugSpecify = content "SetOtherDrugSpecify";
+      } "MapOtherDrugSpecify";
+      
+      item.answer first as answer where item.linkId = 'rifampicinRif' then {
+        answer.value as content -> treatment.rifampicinRif = content "SetRifampicinRif";
+      } "MapRifampicinRif";
+      
+      item.answer first as answer where item.linkId = 'amoxicillinClavulanicAcidAmxClv' then {
+        answer.value as content -> treatment.amoxicillinClavulanicAcidAmxClv = content "SetAmoxicillinClavulanicAcidAmxClv";
+      } "MapAmoxicillinClavulanicAcidAmxClv";
+      
+      item.answer first as answer where item.linkId = 'secondLineTreatmentStart' then {
+        answer.value as content -> treatment.secondLineTreatmentStart = content "SetSecondLineTreatmentStart";
+      } "MapSecondLineTreatmentStart";
+      
+      item.answer first as answer where item.linkId = 'capreomycinCap' then {
+        answer.value as content -> treatment.capreomycinCap = content "SetCapreomycinCap";
+      } "MapCapreomycinCap";
+      
+      item.answer first as answer where item.linkId = 'secondLineEthambutolEmb' then {
+        answer.value as content -> treatment.secondLineEthambutolEmb = content "SetSecondLineEthambutolEmb";
+      } "MapSecondLineEthambutolEmb";
+      
+      item.answer first as answer where item.linkId = 'kanamycinKan' then {
+        answer.value as content -> treatment.kanamycinKan = content "SetKanamycinKan";
+      } "MapKanamycinKan";
+
+      item.answer first as answer where item.linkId = 'pretomanidPa' then {
+        answer.value as content -> treatment.pretomanidPa = content "SetPretomanidPa";
+      } "MapPretomanidPa";
+      
+      item.answer first as answer where item.linkId = 'secondLinePyrazinamidePza' then {
+        answer.value as content -> treatment.secondLinePyrazinamidePza = content "SetSecondLinePyrazinamidePza";
+      } "MapSecondLinePyrazinamidePza";
+      
+      item.answer first as answer where item.linkId = 'tickTheBoxToOverwriteThisClassification' then {
+        answer.value as content -> treatment.tickTheBoxToOverwriteThisClassification = content "SetTickTheBoxToOverwriteThisClassification";
+      } "MapTickTheBoxToOverwriteThisClassification";
+      
+      item.answer first as answer where item.linkId = 'resistanceClassificationBasedOnLaboratoryResultsInTheSystem' then {
+        answer.value as content -> treatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem = content "SetResistanceClassificationBasedOnLaboratoryResults";
+      } "MapResistanceClassificationBasedOnLaboratoryResults";
+      
+      item.answer first as answer where item.linkId = 'newlyAssignedResistanceClassification' then {
+        answer.value as coding -> treatment.newlyAssignedResistanceClassification = coding "SetNewlyAssignedResistanceClassification";
+      } "MapNewlyAssignedResistanceClassification";
+      
+      item.answer first as answer where item.linkId = 'treatmentInitiationDelayDays' then {
+        answer.value as content -> treatment.treatmentInitiationDelayDays = content "SetTreatmentInitiationDelayDays";
+      } "MapTreatmentInitiationDelayDays";
+      
+      item.answer first as answer where item.linkId = 'treatmentEpisodeEndDate' then {
+        answer.value as content -> treatment.treatmentEpisodeEndDate = content "SetTreatmentEpisodeEndDate";
+      } "MapTreatmentEpisodeEndDate";
+      
+      item.answer first as answer where item.linkId = 'reasonForEndingCurrentTreatmentEpisode' then {
+        answer.value as content -> treatment.reasonForEndingCurrentTreatmentEpisode = content "SetReasonForEndingCurrentTreatmentEpisode";
+      } "MapReasonForEndingCurrentTreatmentEpisode";
+      
+      item.answer first as answer where item.linkId = 'clickToEndTheCurrentTreatmentEpisode' then {
+        answer.value as content -> treatment.clickToEndTheCurrentTreatmentEpisode = content "SetClickToEndTheCurrentTreatmentEpisode";
+      } "MapClickToEndTheCurrentTreatmentEpisode";
+      
+      item.answer first as answer where item.linkId = 'outcomeDue' then {
+        answer.value as content -> treatment.outcomeDue = content "SetOutcomeDue";
+      } "MapOutcomeDue";
+
+  } "ProcessItems";
+
+}
