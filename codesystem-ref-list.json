@@ -9,9 +9,9 @@
       "description" : "Code system for DHIS2 'Yes/No/Unknown' option set.",
       "uses" : {
       },
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
       "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",
@@ -22,8 +22,8 @@
       "description" : "Code system for DHIS2 'Sex' option set.",
       "uses" : {
       },
-      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set",
-      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set"
+      "ValueSet-RRTGENSexVS.html" : "RRT - GEN - Sex value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_RRTGENSexVS.html" : "RRT - GEN - Sex value set"
     },
     {
       "url" : "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
@@ -46,8 +46,8 @@
       "description" : "Code system for DHIS2 'Confirmation method' option set.",
       "uses" : {
       },
-      "ValueSet-TBCSConfirmationMethodVS.html" : "TB CS - Confirmation method value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSConfirmationMethodVS.html" : "TB CS - Confirmation method value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSConfirmationMethodVS.html" : "TB CS - Confirmation method value set",
+      "ValueSet-TBCSConfirmationMethodVS.html" : "TB CS - Confirmation method value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSDenotificationReasonsCS",
@@ -70,8 +70,8 @@
       "description" : "Code system for DHIS2 'Resistance Classification' option set.",
       "uses" : {
       },
-      "ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set",
-      "ValueSet-TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set"
+      "ValueSet-TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set",
+      "ValueSet-TBTreatmentQuestionnaire_TBCSResistanceClassificationVS.html" : "TB CS - Resistance Classification value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
@@ -106,8 +106,8 @@
       "description" : "Code system for DHIS2 'Treatment history' option set.",
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set",
+      "ValueSet-TBCSTreatmentHistoryVS.html" : "TB CS - Treatment history value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentOutcomeCS",
@@ -118,8 +118,8 @@
       "description" : "Code system for DHIS2 'Treatment outcome' option set.",
       "uses" : {
       },
-      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
-      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
+      "ValueSet-TBOutcomeQuestionnaire_TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set",
+      "ValueSet-TBCSTreatmentOutcomeVS.html" : "TB CS - Treatment outcome value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABDSTResultCS",
@@ -130,8 +130,8 @@
       "description" : "Code system for DHIS2 'DST result' option set.",
       "uses" : {
       },
-      "ValueSet-TBLABDSTResultVS.html" : "TB-LAB - DST result value set",
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABDSTResultVS.html" : "TB-LAB - DST result value set"
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABDSTResultVS.html" : "TB-LAB - DST result value set",
+      "ValueSet-TBLABDSTResultVS.html" : "TB-LAB - DST result value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
@@ -142,9 +142,9 @@
       "description" : "Code system for DHIS2 'Final culture result' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
-      "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
+      "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABLPASpecimenCS",
@@ -192,9 +192,9 @@
       "description" : "Code system for DHIS2 'Sample status' option set.",
       "uses" : {
       },
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
+      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",

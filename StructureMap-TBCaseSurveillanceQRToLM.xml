@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="TBCaseSurveillanceQRToLM"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap TBCaseSurveillanceQRToLM</b></p><a name="TBCaseSurveillanceQRToLM"> </a><a name="hcTBCaseSurveillanceQRToLM"> </a><a name="TBCaseSurveillanceQRToLM-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://example.org/StructureMap/TBCaseSurveillanceQRToLM<span style="color: navy">&quot; = &quot;</span>TBCaseSurveillanceQRToLM<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map TB Case Surveillance QuestionnaireResponse to Logical Model</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/questionnaireresponse.html" title="QuestionnaireResponse">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style="color: navy">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-TBCaseSurveillance.html" title="TB Case Surveillance">http://example.org/StructureDefinition/TBCaseSurveillance</a><span style="color: navy">&quot; </span><b>alias </b>TBCaseLM <b>as </b><b>target</b>
+
+<b>group </b>TBCaseSurveillanceQRToLM<span style="color: navy">(</span><b>source</b> <span style="color: maroon">qr</span><span style="color: navy"> : </span>QResp, <b>target</b> <span style="color: maroon">tbCase</span><span style="color: navy"> : </span>TBCaseLM<span style="color: navy">)</span><span style="color: navy"> {
+</span>  qr.item<b> as </b><span style="color: maroon">item</span><b> then</b><span style="color: navy"> {
+</span>    <span style="color: navy">// </span><span style="color: green">Enrollment Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'enrollmentDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.enrollmentDate = <span style="color: maroon">content</span> <i>&quot;SetEnrollmentDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapEnrollmentDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Incident Date</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'incidentDate'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.incidentDate = <span style="color: maroon">content</span> <i>&quot;SetIncidentDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapIncidentDate&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">National ID</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'nationalId'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.nationalId = <span style="color: maroon">content</span> <i>&quot;SetNationalId&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapNationalId&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">TB Registration Number</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'tbRegistrationNumber'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.tbRegistrationNumber = <span style="color: maroon">content</span> <i>&quot;SetTBRegistrationNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapTBRegistrationNumber&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Family Name</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'familyName'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.familyName = <span style="color: maroon">content</span> <i>&quot;SetFamilyName&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapFamilyName&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Given Name</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'givenName'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.givenName = <span style="color: maroon">content</span> <i>&quot;SetGivenName&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapGivenName&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Sex</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'sex'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>tbCase.sex = <span style="color: maroon">coding</span> <i>&quot;SetSex&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapSex&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Birth is Estimated</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfBirthIsEstimated'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.dateOfBirthIsEstimated = <span style="color: maroon">content</span> <i>&quot;SetDateOfBirthIsEstimated&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfBirthIsEstimated&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Date of Birth</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'dateOfBirth'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.dateOfBirth = <span style="color: maroon">content</span> <i>&quot;SetDateOfBirth&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapDateOfBirth&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Foreign Born</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'foreignBorn'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">coding</span><span style="color: navy"><b> -&gt; </b></span>tbCase.foreignBorn = <span style="color: maroon">coding</span> <i>&quot;SetForeignBorn&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapForeignBorn&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Administrative Area of Residence</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'administrativeAreaOfResidence'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.administrativeAreaOfResidence = <span style="color: maroon">content</span> <i>&quot;SetAdministrativeAreaOfResidence&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapAdministrativeAreaOfResidence&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Home Address</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'homeAddress'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.homeAddress = <span style="color: maroon">content</span> <i>&quot;SetHomeAddress&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapHomeAddress&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">// </span><span style="color: green">Contact Phone Number Local</span>
+    item.answer first<b> as </b><span style="color: maroon">answer</span><b> where </b>item.linkId = 'contactPhoneNumberLocal'<b> then</b><span style="color: navy"> {
+</span>      answer.value<b> as </b><span style="color: maroon">content</span><span style="color: navy"><b> -&gt; </b></span>tbCase.contactPhoneNumberLocal = <span style="color: maroon">content</span> <i>&quot;SetContactPhoneNumberLocal&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;MapContactPhoneNumberLocal&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;ProcessItems&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://example.org/StructureMap/TBCaseSurveillanceQRToLM"/>
+  <version value="0.1.0"/>
+  <name value="TBCaseSurveillanceQRToLM"/>
+  <title value="Map TB Case Surveillance QuestionnaireResponse to Logical Model"/>
+  <status value="draft"/>
+  <date value="2025-01-09T10:44:33+00:00"/>
+  <publisher value="DHIS2"/>
+  <contact>
+    <name value="DHIS2"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://dhis2.org"/>
+    </telecom>
+  </contact>
+  <description value="Map TB Case Surveillance QuestionnaireResponse to Logical Model"/>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/>
+    <mode value="source"/>
+    <alias value="QResp"/>
+  </structure>
+  <structure>
+    <url value="http://example.org/StructureDefinition/TBCaseSurveillance"/>
+    <mode value="target"/>
+    <alias value="TBCaseLM"/>
+  </structure>
+  <group>
+    <name value="TBCaseSurveillanceQRToLM"/>
+    <typeMode value="none"/>
+    <input>
+      <name value="qr"/>
+      <type value="QResp"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="tbCase"/>
+      <type value="TBCaseLM"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="ProcessItems"/>
+      <source>
+        <context value="qr"/>
+        <element value="item"/>
+        <variable value="item"/>
+      </source>
+      <rule>
+        <name value="MapEnrollmentDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'enrollmentDate'"/>
+        </source>
+        <rule>
+          <name value="SetEnrollmentDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="enrollmentDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapIncidentDate"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'incidentDate'"/>
+        </source>
+        <rule>
+          <name value="SetIncidentDate"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="incidentDate"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapNationalId"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'nationalId'"/>
+        </source>
+        <rule>
+          <name value="SetNationalId"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="nationalId"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapTBRegistrationNumber"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'tbRegistrationNumber'"/>
+        </source>
+        <rule>
+          <name value="SetTBRegistrationNumber"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="tbRegistrationNumber"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapFamilyName"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'familyName'"/>
+        </source>
+        <rule>
+          <name value="SetFamilyName"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="familyName"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapGivenName"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'givenName'"/>
+        </source>
+        <rule>
+          <name value="SetGivenName"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="givenName"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapSex"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'sex'"/>
+        </source>
+        <rule>
+          <name value="SetSex"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="sex"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfBirthIsEstimated"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfBirthIsEstimated'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfBirthIsEstimated"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="dateOfBirthIsEstimated"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapDateOfBirth"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'dateOfBirth'"/>
+        </source>
+        <rule>
+          <name value="SetDateOfBirth"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="dateOfBirth"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapForeignBorn"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'foreignBorn'"/>
+        </source>
+        <rule>
+          <name value="SetForeignBorn"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="coding"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="foreignBorn"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapAdministrativeAreaOfResidence"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'administrativeAreaOfResidence'"/>
+        </source>
+        <rule>
+          <name value="SetAdministrativeAreaOfResidence"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="administrativeAreaOfResidence"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapHomeAddress"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'homeAddress'"/>
+        </source>
+        <rule>
+          <name value="SetHomeAddress"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="homeAddress"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+      <rule>
+        <name value="MapContactPhoneNumberLocal"/>
+        <source>
+          <context value="item"/>
+          <element value="answer"/>
+          <listMode value="first"/>
+          <variable value="answer"/>
+          <condition value="item.linkId = 'contactPhoneNumberLocal'"/>
+        </source>
+        <rule>
+          <name value="SetContactPhoneNumberLocal"/>
+          <source>
+            <context value="answer"/>
+            <element value="value"/>
+            <variable value="content"/>
+          </source>
+          <target>
+            <context value="tbCase"/>
+            <contextType value="variable"/>
+            <element value="contactPhoneNumberLocal"/>
+            <transform value="copy"/>
+            <parameter>
+              <valueId value="content"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

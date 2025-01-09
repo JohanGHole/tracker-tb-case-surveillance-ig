@@ -27,7 +27,7 @@
   fhir:title [ fhir:v "Tracker TB Case Surveillance Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-08T15:06:16+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-09T10:44:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -744,6 +744,17 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "QuestionnaireResponse" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/QuestionnaireResponse/4> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/4" ]
+       ] ;
+       fhir:name [ fhir:v "TB Case Surveillance QuestionnaireResponse Example" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -1143,6 +1154,16 @@
          fhir:reference [ fhir:v "StructureMap/OutcomeQRToLM" ]
        ] ;
        fhir:description [ fhir:v "Map TB Outcome QuestionnaireResponse to logical model" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://example.org/StructureMap/TBCaseSurveillanceQRToLM> ;
+         fhir:reference [ fhir:v "StructureMap/TBCaseSurveillanceQRToLM" ]
+       ] ;
+       fhir:description [ fhir:v "Map TB Case Surveillance QuestionnaireResponse to Logical Model" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
