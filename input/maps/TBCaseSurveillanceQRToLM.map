@@ -1,0 +1,79 @@
+/// url = "http://example.org/StructureMap/TBCaseSurveillanceQRToLM"
+/// name = 'TBCaseSurveillanceQRToLM'
+/// description = "Map TB Case Surveillance QuestionnaireResponse to Logical Model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/TBCaseSurveillance" alias TBCaseLM as target
+
+group TBCaseSurveillanceQRToLM (source qr : QResp, target tbCase : TBCaseLM) {
+
+  qr.item as item then {
+
+    // Enrollment Date
+    item.answer first as answer where item.linkId = 'enrollmentDate' then {
+      answer.value as content -> tbCase.enrollmentDate = content "SetEnrollmentDate";
+    } "MapEnrollmentDate";
+
+    // Incident Date
+    item.answer first as answer where item.linkId = 'incidentDate' then {
+      answer.value as content -> tbCase.incidentDate = content "SetIncidentDate";
+    } "MapIncidentDate";
+
+    // National ID
+    item.answer first as answer where item.linkId = 'nationalId' then {
+      answer.value as content -> tbCase.nationalId = content "SetNationalId";
+    } "MapNationalId";
+
+    // TB Registration Number
+    item.answer first as answer where item.linkId = 'tbRegistrationNumber' then {
+      answer.value as content -> tbCase.tbRegistrationNumber = content "SetTBRegistrationNumber";
+    } "MapTBRegistrationNumber";
+
+    // Family Name
+    item.answer first as answer where item.linkId = 'familyName' then {
+      answer.value as content -> tbCase.familyName = content "SetFamilyName";
+    } "MapFamilyName";
+
+    // Given Name
+    item.answer first as answer where item.linkId = 'givenName' then {
+      answer.value as content -> tbCase.givenName = content "SetGivenName";
+    } "MapGivenName";
+
+    // Sex
+    item.answer first as answer where item.linkId = 'sex' then {
+      answer.value as coding -> tbCase.sex = coding "SetSex";
+    } "MapSex";
+
+    // Date of Birth is Estimated
+    item.answer first as answer where item.linkId = 'dateOfBirthIsEstimated' then {
+      answer.value as content -> tbCase.dateOfBirthIsEstimated = content "SetDateOfBirthIsEstimated";
+    } "MapDateOfBirthIsEstimated";
+
+    // Date of Birth
+    item.answer first as answer where item.linkId = 'dateOfBirth' then {
+      answer.value as content -> tbCase.dateOfBirth = content "SetDateOfBirth";
+    } "MapDateOfBirth";
+
+    // Foreign Born
+    item.answer first as answer where item.linkId = 'foreignBorn' then {
+      answer.value as coding -> tbCase.foreignBorn = coding "SetForeignBorn";
+    } "MapForeignBorn";
+
+    // Administrative Area of Residence
+    item.answer first as answer where item.linkId = 'administrativeAreaOfResidence' then {
+      answer.value as content -> tbCase.administrativeAreaOfResidence = content "SetAdministrativeAreaOfResidence";
+    } "MapAdministrativeAreaOfResidence";
+
+    // Home Address
+    item.answer first as answer where item.linkId = 'homeAddress' then {
+      answer.value as content -> tbCase.homeAddress = content "SetHomeAddress";
+    } "MapHomeAddress";
+
+    // Contact Phone Number Local
+    item.answer first as answer where item.linkId = 'contactPhoneNumberLocal' then {
+      answer.value as content -> tbCase.contactPhoneNumberLocal = content "SetContactPhoneNumberLocal";
+    } "MapContactPhoneNumberLocal";
+
+  } "ProcessItems";
+
+}
