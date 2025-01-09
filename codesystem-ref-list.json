@@ -9,9 +9,9 @@
       "description" : "Code system for DHIS2 'Yes/No/Unknown' option set.",
       "uses" : {
       },
-      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
       "ValueSet-GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
-      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
+      "ValueSet-DiagnosisAndNotificationQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set",
+      "ValueSet-TBCaseSurveillanceQuestionnaire_GENYesNoUnknownVS.html" : "GEN - Yes/No/Unknown value set"
     },
     {
       "url" : "http://example.org/CodeSystem/RRTGENSexCS",
@@ -94,8 +94,8 @@
       "description" : "Code system for DHIS2 'Treatment category' option set.",
       "uses" : {
       },
-      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
-      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
+      "ValueSet-TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set",
+      "ValueSet-TBTreatmentQuestionnaire_TBCSTreatmentCategoryVS.html" : "TB CS - Treatment category value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
@@ -142,8 +142,8 @@
       "description" : "Code system for DHIS2 'Final culture result' option set.",
       "uses" : {
       },
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
       "ValueSet-TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set",
       "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABFinalCultureResultVS.html" : "TB-LAB - Final culture result value set"
     },
     {
@@ -167,8 +167,8 @@
       "description" : "Code system for DHIS2 'MTB test result' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set",
-      "ValueSet-TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set"
+      "ValueSet-TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABMTBTestResultVS.html" : "TB-LAB - MTB test result value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
@@ -179,8 +179,8 @@
       "description" : "Code system for DHIS2 'Sample quality' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
       "ValueSet-TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set",
       "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleQualityVS.html" : "TB-LAB - Sample quality value set"
     },
     {
@@ -193,8 +193,8 @@
       "uses" : {
       },
       "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
-      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
+      "ValueSet-TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSampleStatusVS.html" : "TB-LAB - Sample status value set"
     },
     {
       "url" : "http://example.org/CodeSystem/TBLABSmearResultCS",
@@ -205,9 +205,9 @@
       "description" : "Code system for DHIS2 'Smear result' option set.",
       "uses" : {
       },
-      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
+      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
       "ValueSet-TBLABSmearResultVS.html" : "TB-LAB - Smear result value set",
-      "ValueSet-MonitoringLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
+      "ValueSet-DiagnosticLaboratoryResultsQuestionnaire_TBLABSmearResultVS.html" : "TB-LAB - Smear result value set"
     }
   ]
 }

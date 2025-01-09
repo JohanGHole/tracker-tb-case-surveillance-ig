@@ -244,7 +244,7 @@
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:subjectType ( [ fhir:v "Patient"] ) ; # 
-  fhir:date [ fhir:v "2025-01-09T10:44:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-01-09T11:45:34+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

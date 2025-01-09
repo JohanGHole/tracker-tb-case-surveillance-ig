@@ -1,0 +1,1083 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/StructureMap/TBTreatmentQRToLM> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TBTreatmentQRToLM"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap TBTreatmentQRToLM</b></p><a name=\"TBTreatmentQRToLM\"> </a><a name=\"hcTBTreatmentQRToLM\"> </a><a name=\"TBTreatmentQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/TBTreatmentQRToLM<span style=\"color: navy\">&quot; = &quot;</span>TBTreatmentQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map TB Treatment QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-TBTreatment.html\" title=\"TB Treatment\">http://example.org/StructureDefinition/TBTreatment</a><span style=\"color: navy\">&quot; </span><b>alias </b>TBTreatmentLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>TBTreatmentQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">treatment</span><span style=\"color: navy\"> : </span>TBTreatmentLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentRegimen'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentRegimen = <span style=\"color: maroon\">coding</span> <i>&quot;SetTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'levofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.levofloxacinLfx = <span style=\"color: maroon\">content</span> <i>&quot;SetLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'moxifloxacinMfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.moxifloxacinMfx = <span style=\"color: maroon\">content</span> <i>&quot;SetMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amikacinAmk = <span style=\"color: maroon\">content</span> <i>&quot;SetAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'streptomycinStm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.streptomycinStm = <span style=\"color: maroon\">content</span> <i>&quot;SetStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clofazimineCfz = <span style=\"color: maroon\">content</span> <i>&quot;SetClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cycloserineCs'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.cycloserineCs = <span style=\"color: maroon\">content</span> <i>&quot;SetCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'ethionamideEto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.ethionamideEto = <span style=\"color: maroon\">content</span> <i>&quot;SetEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'linezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.linezolidLzd = <span style=\"color: maroon\">content</span> <i>&quot;SetLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'prothionamidePto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.prothionamidePto = <span style=\"color: maroon\">content</span> <i>&quot;SetProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'terizidoneTrd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.terizidoneTrd = <span style=\"color: maroon\">content</span> <i>&quot;SetTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'bedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.bedaquilineBdq = <span style=\"color: maroon\">content</span> <i>&quot;SetBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'delamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.delamanidDlm = <span style=\"color: maroon\">content</span> <i>&quot;SetDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'imipenemCilastatinIpmCln'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.imipenemCilastatinIpmCln = <span style=\"color: maroon\">content</span> <i>&quot;SetImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'meropenemMpm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.meropenemMpm = <span style=\"color: maroon\">content</span> <i>&quot;SetMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pAminosalicylicAcidPas'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pAminosalicylicAcidPas = <span style=\"color: maroon\">content</span> <i>&quot;SetPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'isoniazidInh'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.isoniazidInh = <span style=\"color: maroon\">content</span> <i>&quot;SetIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'other'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.other = <span style=\"color: maroon\">content</span> <i>&quot;SetOther&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOther&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'otherDrugSpecify'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.otherDrugSpecify = <span style=\"color: maroon\">content</span> <i>&quot;SetOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'rifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.rifampicinRif = <span style=\"color: maroon\">content</span> <i>&quot;SetRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amoxicillinClavulanicAcidAmxClv'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amoxicillinClavulanicAcidAmxClv = <span style=\"color: maroon\">content</span> <i>&quot;SetAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'capreomycinCap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.capreomycinCap = <span style=\"color: maroon\">content</span> <i>&quot;SetCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'kanamycinKan'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.kanamycinKan = <span style=\"color: maroon\">content</span> <i>&quot;SetKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pretomanidPa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pretomanidPa = <span style=\"color: maroon\">content</span> <i>&quot;SetPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tickTheBoxToOverwriteThisClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.tickTheBoxToOverwriteThisClassification = <span style=\"color: maroon\">content</span> <i>&quot;SetTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'resistanceClassificationBasedOnLaboratoryResultsInTheSystem'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem = <span style=\"color: maroon\">content</span> <i>&quot;SetResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'newlyAssignedResistanceClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.newlyAssignedResistanceClassification = <span style=\"color: maroon\">coding</span> <i>&quot;SetNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentInitiationDelayDays'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentInitiationDelayDays = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentEpisodeEndDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentEpisodeEndDate = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'reasonForEndingCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.reasonForEndingCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clickToEndTheCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clickToEndTheCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'outcomeDue'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.outcomeDue = <span style=\"color: maroon\">content</span> <i>&quot;SetOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/StructureMap/TBTreatmentQRToLM"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TBTreatmentQRToLM"] ; # 
+  fhir:title [ fhir:v "Map TB Treatment QuestionnaireResponse to Logical Model"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-01-09T11:45:34+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "DHIS2"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "DHIS2" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://dhis2.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map TB Treatment QuestionnaireResponse to Logical Model"] ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "QResp" ]
+  ] [
+     fhir:url [
+       fhir:v "http://example.org/StructureDefinition/TBTreatment"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/TBTreatment>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "TBTreatmentLM" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "TBTreatmentQRToLM" ] ;
+     fhir:typeMode [ fhir:v "none" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "qr" ] ;
+       fhir:type [ fhir:v "QResp" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "treatment" ] ;
+       fhir:type [ fhir:v "TBTreatmentLM" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "ProcessItems" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "qr" ] ;
+         fhir:element [ fhir:v "item" ] ;
+         fhir:variable [ fhir:v "item" ]
+       ] ) ;
+       fhir:rule ( [
+         fhir:name [ fhir:v "MapExecutionDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'executionDate'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetExecutionDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "executionDate" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapTreatmentRegimen" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'treatmentRegimen'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetTreatmentRegimen" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "treatmentRegimen" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapLevofloxacinLfx" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'levofloxacinLfx'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetLevofloxacinLfx" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "levofloxacinLfx" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapMoxifloxacinMfx" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'moxifloxacinMfx'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetMoxifloxacinMfx" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "moxifloxacinMfx" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapAmikacinAmk" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'amikacinAmk'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetAmikacinAmk" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "amikacinAmk" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapStreptomycinStm" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'streptomycinStm'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetStreptomycinStm" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "streptomycinStm" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapClofazimineCfz" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'clofazimineCfz'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetClofazimineCfz" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "clofazimineCfz" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapCycloserineCs" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'cycloserineCs'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetCycloserineCs" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "cycloserineCs" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapEthionamideEto" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'ethionamideEto'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetEthionamideEto" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "ethionamideEto" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapLinezolidLzd" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'linezolidLzd'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetLinezolidLzd" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "linezolidLzd" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapProthionamidePto" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'prothionamidePto'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetProthionamidePto" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "prothionamidePto" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapTerizidoneTrd" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'terizidoneTrd'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetTerizidoneTrd" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "terizidoneTrd" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapFirstLineEthambutolEmb" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'firstLineEthambutolEmb'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetFirstLineEthambutolEmb" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "firstLineEthambutolEmb" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapFirstLinePyrazinamidePza" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'firstLinePyrazinamidePza'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetFirstLinePyrazinamidePza" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "firstLinePyrazinamidePza" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapBedaquilineBdq" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'bedaquilineBdq'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetBedaquilineBdq" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "bedaquilineBdq" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapDelamanidDlm" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'delamanidDlm'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetDelamanidDlm" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "delamanidDlm" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapImipenemCilastatinIpmCln" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'imipenemCilastatinIpmCln'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetImipenemCilastatinIpmCln" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "imipenemCilastatinIpmCln" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapMeropenemMpm" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'meropenemMpm'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetMeropenemMpm" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "meropenemMpm" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapPAminosalicylicAcidPas" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'pAminosalicylicAcidPas'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetPAminosalicylicAcidPas" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "pAminosalicylicAcidPas" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapIsoniazidInh" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'isoniazidInh'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetIsoniazidInh" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "isoniazidInh" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapOther" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'other'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetOther" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "other" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapFirstLineTreatmentStart" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'firstLineTreatmentStart'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetFirstLineTreatmentStart" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "firstLineTreatmentStart" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapOtherDrugSpecify" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'otherDrugSpecify'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetOtherDrugSpecify" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "otherDrugSpecify" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapRifampicinRif" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'rifampicinRif'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetRifampicinRif" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "rifampicinRif" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapAmoxicillinClavulanicAcidAmxClv" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'amoxicillinClavulanicAcidAmxClv'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetAmoxicillinClavulanicAcidAmxClv" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "amoxicillinClavulanicAcidAmxClv" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapSecondLineTreatmentStart" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'secondLineTreatmentStart'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetSecondLineTreatmentStart" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "secondLineTreatmentStart" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapCapreomycinCap" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'capreomycinCap'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetCapreomycinCap" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "capreomycinCap" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapSecondLineEthambutolEmb" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'secondLineEthambutolEmb'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetSecondLineEthambutolEmb" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "secondLineEthambutolEmb" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapKanamycinKan" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'kanamycinKan'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetKanamycinKan" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "kanamycinKan" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapPretomanidPa" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'pretomanidPa'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetPretomanidPa" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "pretomanidPa" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapSecondLinePyrazinamidePza" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'secondLinePyrazinamidePza'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetSecondLinePyrazinamidePza" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "secondLinePyrazinamidePza" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapTickTheBoxToOverwriteThisClassification" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'tickTheBoxToOverwriteThisClassification'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetTickTheBoxToOverwriteThisClassification" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "tickTheBoxToOverwriteThisClassification" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapResistanceClassificationBasedOnLaboratoryResults" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'resistanceClassificationBasedOnLaboratoryResultsInTheSystem'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetResistanceClassificationBasedOnLaboratoryResults" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "resistanceClassificationBasedOnLaboratoryResultsInTheSystem" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapNewlyAssignedResistanceClassification" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'newlyAssignedResistanceClassification'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetNewlyAssignedResistanceClassification" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "newlyAssignedResistanceClassification" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapTreatmentInitiationDelayDays" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'treatmentInitiationDelayDays'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetTreatmentInitiationDelayDays" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "treatmentInitiationDelayDays" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapTreatmentEpisodeEndDate" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'treatmentEpisodeEndDate'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetTreatmentEpisodeEndDate" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "treatmentEpisodeEndDate" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapReasonForEndingCurrentTreatmentEpisode" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'reasonForEndingCurrentTreatmentEpisode'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetReasonForEndingCurrentTreatmentEpisode" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "reasonForEndingCurrentTreatmentEpisode" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapClickToEndTheCurrentTreatmentEpisode" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'clickToEndTheCurrentTreatmentEpisode'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetClickToEndTheCurrentTreatmentEpisode" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "clickToEndTheCurrentTreatmentEpisode" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "MapOutcomeDue" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "item" ] ;
+           fhir:element [ fhir:v "answer" ] ;
+           fhir:listMode [ fhir:v "first" ] ;
+           fhir:variable [ fhir:v "answer" ] ;
+           fhir:condition [ fhir:v "item.linkId = 'outcomeDue'" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetOutcomeDue" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "answer" ] ;
+             fhir:element [ fhir:v "value" ] ;
+             fhir:variable [ fhir:v "content" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "treatment" ] ;
+             fhir:contextType [ fhir:v "variable" ] ;
+             fhir:element [ fhir:v "outcomeDue" ] ;
+             fhir:transform [ fhir:v "copy" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "content" ]
+             ] )
+           ] )
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-09T10:44:33+00:00"/>
+  <date value="2025-01-09T11:45:34+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -847,6 +847,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/5"/>
+      </reference>
+      <name value="TB Treatment QuestionnaireResponse Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1034,6 +1044,15 @@
         <reference value="StructureMap/TBCaseSurveillanceQRToLM"/>
       </reference>
       <description value="Map TB Case Surveillance QuestionnaireResponse to Logical Model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/TBTreatmentQRToLM"/>
+      </reference>
+      <description value="Map TB Treatment QuestionnaireResponse to Logical Model"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

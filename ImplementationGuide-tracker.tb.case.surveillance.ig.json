@@ -15,7 +15,7 @@
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-09T10:44:33+00:00",
+  "date" : "2025-01-09T11:45:34+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -1038,6 +1038,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/5"
+      },
+      "name" : "TB Treatment QuestionnaireResponse Example",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1242,6 +1253,16 @@
         "reference" : "StructureMap/TBCaseSurveillanceQRToLM"
       },
       "description" : "Map TB Case Surveillance QuestionnaireResponse to Logical Model"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/TBTreatmentQRToLM"
+      },
+      "description" : "Map TB Treatment QuestionnaireResponse to Logical Model"
     }],
     "page" : {
       "extension" : [{

@@ -232,6 +232,13 @@
     "name" : "TBCaseSurveillanceQRToLM"
   },
   {
+    "id" : "TBTreatmentQRToLM",
+    "type" : "StructureMap",
+    "url" : "http://example.org/StructureMap/TBTreatmentQRToLM",
+    "version" : "0.1.0",
+    "name" : "TBTreatmentQRToLM"
+  },
+  {
     "id" : "GENYesNoUnknownVS",
     "type" : "ValueSet",
     "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",

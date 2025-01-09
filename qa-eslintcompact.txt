@@ -5,10 +5,12 @@ Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.re
 Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/MonitoringLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
 Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
 Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBCaseSurveillanceQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
+Generic: line 0, col 0, Error - Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBTreatmentQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list. (REQUIRED)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
 Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 260 column 157 (STRUCTURE)
 Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 260 column 164 (STRUCTURE)
 Generic: line 0, col 0, Error - unexpected non-end of element null::div  at line 260 column 155 (STRUCTURE)
@@ -45,6 +47,10 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/input/examples/TBCaseSurveillanceQRExample.json: line 67, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/RRTGENSexCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/TBCaseSurveillanceQRExample.json: line 98, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/GENYesNoUnknownCS|0.1.0 (BUSINESSRULE)
 /github/workspace/input/examples/TBCaseSurveillanceQRExample.json: line 1, col 4, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
+/github/workspace/input/examples/TBTreatmentQRExample.json: line 4, col 58, Error - Unrecognized property 'title' (STRUCTURE)
+/github/workspace/input/examples/TBTreatmentQRExample.json: line 22, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSTreatmentCategoryCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/TBTreatmentQRExample.json: line 314, col 14, Info - Reference to experimental CodeSystem http://example.org/CodeSystem/TBCSResistanceClassificationCS|0.1.0 (BUSINESSRULE)
+/github/workspace/input/examples/TBTreatmentQRExample.json: line 1, col 4, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
 
-err = 8, warn = 8, info = 22
+err = 10, warn = 9, info = 25
 IG Publisher Version: 1.8.6
