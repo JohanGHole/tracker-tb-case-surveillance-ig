@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="63a7a149-d633-4feb-954f-8471d04933f6"/>
+  <id value="32485e54-f3d1-4403-adae-6d0154d5a1a9"/>
   <meta>
-    <lastUpdated value="2025-01-09T13:22:59.134+00:00"/>
+    <lastUpdated value="2025-01-20T11:09:19.815+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -21,7 +21,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-GENYesNoUnknownCS.html">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -72,8 +72,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:93692e94-56a2-4a9b-ade7-0c5ed49d789c"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:894bb1f1-41d3-4198-ba20-35b95b2b2b1f"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -130,7 +130,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentHistoryCS.html">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -205,8 +205,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:289e9aa9-ddc2-48f9-b528-51d392c30e8f"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:af9390ef-8ad4-4c5f-95d8-9957fd42ee28"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -278,7 +278,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSConfirmationMethodCS.html">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -321,8 +321,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:b71c30f3-aeff-4e8c-a53d-b180ec51e747"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:97fb7aa6-026d-4ba0-b815-be7286cec508"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -374,7 +374,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSSiteOfDiseaseCS.html">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -425,8 +425,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:ab867837-b29c-4320-845e-d9b4d2baa0e9"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:1ce7e8c9-9614-42d1-9142-18b3032a24ea"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -483,7 +483,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABDSTResultCS.html">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -542,8 +542,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:a9fee86d-cfce-42b8-bedf-fbea2588641c"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:a39286c4-0729-4729-bf90-01e324dd8ba7"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -605,7 +605,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -656,8 +656,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:2606987a-48f1-44ea-ae71-8b1be73f583f"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:34839c4c-795c-4929-b9bc-034283b984b1"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -714,7 +714,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABMTBTestResultCS.html">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -781,8 +781,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:27914bc4-087b-405b-b76d-492337a8e83a"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:842f37b3-297d-4a5d-99c7-fe79a52e49f4"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -849,7 +849,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABFinalCultureResultCS.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -908,8 +908,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:89a4121a-cf65-4286-b97d-9c89011c7aa3"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:02f898ad-6e17-4917-a846-f83dbfccc3ce"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -971,7 +971,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSmearResultCS.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -1038,8 +1038,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:c539630f-d257-4da5-823c-99c70f345bc6"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:b44bba65-1309-42fe-bba4-afe4ead561ca"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1106,7 +1106,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleQualityCS.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1149,8 +1149,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:8f3b8bfa-195b-43f9-bd29-0bc10278bd62"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:14d3976e-3268-42fb-809f-c69cb13fee8f"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1202,7 +1202,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABLPASpecimenCS.html">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1245,8 +1245,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:5e5d959f-64d1-416a-b183-a62d8a7ced96"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:2c8e9de9-b078-44b6-b16e-12d3309a7e30"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1298,7 +1298,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleStatusCS.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1341,8 +1341,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:26ddd5b5-e046-4e82-a5f9-c4b9de29e287"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:26d6a7fd-8cba-4a5a-9c7e-8dfb10808784"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1394,7 +1394,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABFinalCultureResultCS.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -1453,8 +1453,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:89a4121a-cf65-4286-b97d-9c89011c7aa3"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:02f898ad-6e17-4917-a846-f83dbfccc3ce"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -1516,7 +1516,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSmearResultCS.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -1583,8 +1583,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:c539630f-d257-4da5-823c-99c70f345bc6"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:b44bba65-1309-42fe-bba4-afe4ead561ca"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -1651,7 +1651,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleQualityCS.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1694,8 +1694,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:8f3b8bfa-195b-43f9-bd29-0bc10278bd62"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:14d3976e-3268-42fb-809f-c69cb13fee8f"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1747,7 +1747,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleStatusCS.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1790,8 +1790,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:26ddd5b5-e046-4e82-a5f9-c4b9de29e287"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:26d6a7fd-8cba-4a5a-9c7e-8dfb10808784"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1843,7 +1843,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-RRTGENSexCS.html">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1886,8 +1886,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:50a3bd2e-5644-468d-bd89-a41400c0f49a"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:aecf2a0a-997c-426e-866b-a8d88b449d83"/>
+          <timestamp value="2025-01-20T11:09:44+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1939,7 +1939,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-GENYesNoUnknownCS.html">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -1990,8 +1990,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:93692e94-56a2-4a9b-ade7-0c5ed49d789c"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:894bb1f1-41d3-4198-ba20-35b95b2b2b1f"/>
+          <timestamp value="2025-01-20T11:09:43+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2048,7 +2048,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentOutcomeCS.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -2123,8 +2123,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:9293f216-fe3f-4f5d-a808-5acf9f55a897"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:9e955d82-d590-4dae-91ed-53b22f9f24b7"/>
+          <timestamp value="2025-01-20T11:09:44+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2196,7 +2196,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSDenotificationReasonsCS.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -2239,8 +2239,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:1035444b-9f73-499f-86ee-edcc2ab35b7d"/>
-          <timestamp value="2025-01-09T13:23:17+00:00"/>
+          <identifier value="urn:uuid:6a62960d-3316-49e2-b02f-6b34cdc511a8"/>
+          <timestamp value="2025-01-20T11:09:44+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2292,7 +2292,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentCategoryCS.html">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -2335,8 +2335,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:4c61e233-e42c-49d1-a049-1f103e18e87d"/>
-          <timestamp value="2025-01-09T13:23:18+00:00"/>
+          <identifier value="urn:uuid:623cd656-aa68-4320-a186-ad503047d8e2"/>
+          <timestamp value="2025-01-20T11:09:44+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2388,7 +2388,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSResistanceClassificationCS.html">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -2447,8 +2447,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:7758903b-88b9-4c90-b647-9718741a2db6"/>
-          <timestamp value="2025-01-09T13:23:18+00:00"/>
+          <identifier value="urn:uuid:29006472-64e5-4dc4-a522-561daba04e6e"/>
+          <timestamp value="2025-01-20T11:09:44+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2510,7 +2510,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-GENYesNoUnknownCS.html">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -2561,8 +2561,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:50e22c30-8337-4320-a76d-0a486a8fcdec"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:f397d7e5-1227-475f-9f27-7f08a29e467a"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2619,7 +2619,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-RRTGENSexCS.html">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -2662,8 +2662,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:285e71f5-8811-4e3b-8e23-fde413fc86a2"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:8cfbbd18-d559-4c6d-beed-354a16cedc0d"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2715,7 +2715,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-SusceptibleResistantIndeterminateCS.html">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -2766,8 +2766,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:6debbdab-4373-426e-a91a-aa20cb8c2fc7"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:4f5bd6a5-72eb-4b9e-bb38-532dcf8e2d49"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2824,7 +2824,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSConfirmationMethodCS.html">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -2867,8 +2867,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:6f4fc1f4-b3a5-492c-9c9f-9d882a903926"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:7a1ba9f7-7206-480a-944f-e48230b407dd"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -2920,7 +2920,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSDenotificationReasonsCS.html">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -2963,8 +2963,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:d0a2afdf-270b-4502-a864-36410b786912"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:44862810-2960-4c4a-83fe-8dc5ee544cfa"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3016,7 +3016,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSResistanceClassificationCS.html">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -3075,8 +3075,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:97e67eb6-6219-4f11-9315-89c236f0d807"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:1e2f814a-6501-47aa-a3b3-2a6fbe2da75a"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3138,7 +3138,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSSiteOfDiseaseCS.html">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -3189,8 +3189,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:6b40a325-5b60-4709-b64a-ac9f41e9d785"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:708f07f2-63fa-4ed0-843b-1497974e001e"/>
+          <timestamp value="2025-01-20T11:09:47+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3247,7 +3247,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentCategoryCS.html">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -3290,8 +3290,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:9f369253-ce08-49b5-b192-2a9ce55dec9a"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:7684a68d-d82e-429d-9337-96ce52f5f84e"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3343,7 +3343,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentHistoryCS.html">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -3418,8 +3418,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:bf5cfb45-9cdb-4882-abdd-0e3b32a64b74"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:ac130edd-48a3-4ddd-b714-7f2b56bf0126"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -3491,7 +3491,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBCSTreatmentOutcomeCS.html">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 6 concepts</p>
@@ -3566,8 +3566,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:03606077-e2b4-4e19-a925-a0ba37c2b866"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:e050ef21-981f-410b-9950-6cb9773ac11d"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -3639,7 +3639,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABDSTResultCS.html">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -3698,8 +3698,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:6db485b2-6ad7-49a2-9d79-7e365575db4c"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:401ac5a9-9f7a-41a0-b27a-526e3d0cca49"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3761,7 +3761,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABFinalCultureResultCS.html">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -3820,8 +3820,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:2dea6d0a-7d18-4f93-97d3-990dd1fe1150"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:4d7c0cbe-314c-4d6c-8cb4-6e07b31076b5"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -3883,7 +3883,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABLPASpecimenCS.html">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -3926,8 +3926,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:d6113d0e-be3e-4a75-9243-dd298c4a2ea1"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:0eeee32e-7eb4-4ec8-b762-480c2ee0e5e7"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -3979,7 +3979,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABMTBTestResultCS.html">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -4046,8 +4046,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:73061fca-a1f8-4be9-88c7-e9ecd42b2dbe"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:08173b9d-6995-46c7-aec4-5111995ece43"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -4114,7 +4114,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleQualityCS.html">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -4157,8 +4157,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:b83f440f-9491-44db-8267-5b220950252b"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:79589ecb-9c62-4e47-90ad-84e10a2fffb2"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4210,7 +4210,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSampleStatusCS.html">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -4253,8 +4253,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:2e0a46bf-9173-476a-bd4d-606c53a90ac3"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:47287758-7b97-4c86-8eb2-4add400ecc74"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -4306,7 +4306,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
               <a href="CodeSystem-TBLABSmearResultCS.html">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -4373,8 +4373,8 @@
         <experimental value="false"/>
         <date value="2025-01-06"/>
         <expansion>
-          <identifier value="urn:uuid:1015167c-e6ca-4c0d-932c-cc7ef6dd912f"/>
-          <timestamp value="2025-01-09T13:23:21+00:00"/>
+          <identifier value="urn:uuid:e689ec7a-046d-4a22-9eba-38a4c1fa03c3"/>
+          <timestamp value="2025-01-20T11:09:48+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

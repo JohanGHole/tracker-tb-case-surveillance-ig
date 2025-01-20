@@ -132,4 +132,4 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /github/workspace/input/examples/TBTreatmentQRExample.json: line 1, col 4, Info - No questionnaire is identified, so no validation can be performed against the base questionnaire (REQUIRED)
 
 err = 12, warn = 10, info = 101
-IG Publisher Version: 1.8.6
+IG Publisher Version: 1.8.8

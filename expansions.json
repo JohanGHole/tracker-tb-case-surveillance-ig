@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "63a7a149-d633-4feb-954f-8471d04933f6",
+  "id" : "32485e54-f3d1-4403-adae-6d0154d5a1a9",
   "meta" : {
-    "lastUpdated" : "2025-01-09T13:22:59.134+00:00"
+    "lastUpdated" : "2025-01-20T11:09:19.815+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -16,7 +16,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
       "version" : "1.0.0",
@@ -26,8 +26,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:93692e94-56a2-4a9b-ade7-0c5ed49d789c",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:894bb1f1-41d3-4198-ba20-35b95b2b2b1f",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -79,7 +79,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentHistoryCS.html\">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_NEW\">HISTORY_NEW</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>New</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_RELAPSE\">HISTORY_RELAPSE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_FAILED\">HISTORY_FAILED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\">HISTORY_LOST_TO_FOLLOWUP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\">HISTORY_OTHER_PREV</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\">HISTORY_UNKNOWN</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentHistoryCS.html\">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_NEW\">HISTORY_NEW</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>New</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_RELAPSE\">HISTORY_RELAPSE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_FAILED\">HISTORY_FAILED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\">HISTORY_LOST_TO_FOLLOWUP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\">HISTORY_OTHER_PREV</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\">HISTORY_UNKNOWN</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
       "version" : "1.0.0",
@@ -89,8 +89,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:289e9aa9-ddc2-48f9-b528-51d392c30e8f",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:af9390ef-8ad4-4c5f-95d8-9957fd42ee28",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -157,7 +157,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSConfirmationMethodCS.html\">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-CLINDX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-CLINDX\">CLINDX</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-LABCONF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-LABCONF\">LABCONF</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Bacteriologically confirmed</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSConfirmationMethodCS.html\">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-CLINDX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-CLINDX\">CLINDX</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-LABCONF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-LABCONF\">LABCONF</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Bacteriologically confirmed</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
       "version" : "1.0.0",
@@ -167,8 +167,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:b71c30f3-aeff-4e8c-a53d-b180ec51e747",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:97fb7aa6-026d-4ba0-b815-be7286cec508",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -215,7 +215,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html\">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_PULMONARY\">SITE_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\">SITE_EXTRA_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Extra-pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_BOTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_BOTH\">SITE_BOTH</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary and extra-pulmonary</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html\">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_PULMONARY\">SITE_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\">SITE_EXTRA_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Extra-pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_BOTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_BOTH\">SITE_BOTH</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary and extra-pulmonary</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
       "version" : "1.0.0",
@@ -225,8 +225,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:ab867837-b29c-4320-845e-d9b4d2baa0e9",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:1ce7e8c9-9614-42d1-9142-18b3032a24ea",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -278,7 +278,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABDSTResultCS.html\">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Indeterminate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABDSTResultCS.html\">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Indeterminate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
       "version" : "1.0.0",
@@ -288,8 +288,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:a9fee86d-cfce-42b8-bedf-fbea2588641c",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:a39286c4-0729-4729-bf90-01e324dd8ba7",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -346,7 +346,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html\">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Indeterminate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html\">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Indeterminate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
       "version" : "1.0.0",
@@ -356,8 +356,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:2606987a-48f1-44ea-ae71-8b1be73f583f",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:34839c4c-795c-4929-b9bc-034283b984b1",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -409,7 +409,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABMTBTestResultCS.html\">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED\">DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED\">NOT_DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR\">ERROR</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID\">INVALID</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT\">NO_RESULT</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>No result</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABMTBTestResultCS.html\">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED\">DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED\">NOT_DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR\">ERROR</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID\">INVALID</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT\">NO_RESULT</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>No result</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
       "version" : "1.0.0",
@@ -419,8 +419,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:27914bc4-087b-405b-b76d-492337a8e83a",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:842f37b3-297d-4a5d-99c7-fe79a52e49f4",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -482,7 +482,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
       "version" : "1.0.0",
@@ -492,8 +492,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:89a4121a-cf65-4286-b97d-9c89011c7aa3",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:02f898ad-6e17-4917-a846-f83dbfccc3ce",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -550,7 +550,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
       "version" : "1.0.0",
@@ -560,8 +560,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:c539630f-d257-4da5-823c-99c70f345bc6",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:b44bba65-1309-42fe-bba4-afe4ead561ca",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -623,7 +623,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
       "version" : "1.0.0",
@@ -633,8 +633,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:8f3b8bfa-195b-43f9-bd29-0bc10278bd62",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:14d3976e-3268-42fb-809f-c69cb13fee8f",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -681,7 +681,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABLPASpecimenCS.html\">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\">SPUTUM_SAMPLES_OR_SEDIMENTS</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>Sputum samples or sediments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\">MTB_CULTURE_ISOLATES</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>MTB culture isolates</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABLPASpecimenCS.html\">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\">SPUTUM_SAMPLES_OR_SEDIMENTS</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>Sputum samples or sediments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\">MTB_CULTURE_ISOLATES</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>MTB culture isolates</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
       "version" : "1.0.0",
@@ -691,8 +691,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:5e5d959f-64d1-416a-b183-a62d8a7ced96",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:2c8e9de9-b078-44b6-b16e-12d3309a7e30",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -739,7 +739,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
       "version" : "1.0.0",
@@ -749,8 +749,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:26ddd5b5-e046-4e82-a5f9-c4b9de29e287",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:26d6a7fd-8cba-4a5a-9c7e-8dfb10808784",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -797,7 +797,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
       "version" : "1.0.0",
@@ -807,8 +807,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:89a4121a-cf65-4286-b97d-9c89011c7aa3",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:02f898ad-6e17-4917-a846-f83dbfccc3ce",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -865,7 +865,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
       "version" : "1.0.0",
@@ -875,8 +875,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:c539630f-d257-4da5-823c-99c70f345bc6",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:b44bba65-1309-42fe-bba4-afe4ead561ca",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -938,7 +938,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
       "version" : "1.0.0",
@@ -948,8 +948,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:8f3b8bfa-195b-43f9-bd29-0bc10278bd62",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:14d3976e-3268-42fb-809f-c69cb13fee8f",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -996,7 +996,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
       "version" : "1.0.0",
@@ -1006,8 +1006,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:26ddd5b5-e046-4e82-a5f9-c4b9de29e287",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:26d6a7fd-8cba-4a5a-9c7e-8dfb10808784",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1054,7 +1054,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-RRTGENSexCS.html\">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-FEMALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-FEMALE\">FEMALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-MALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-MALE\">MALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Male</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-RRTGENSexCS.html\">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-FEMALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-FEMALE\">FEMALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-MALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-MALE\">MALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Male</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/RRTGENSexVS",
       "version" : "1.0.0",
@@ -1064,8 +1064,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:50a3bd2e-5644-468d-bd89-a41400c0f49a",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:aecf2a0a-997c-426e-866b-a8d88b449d83",
+        "timestamp" : "2025-01-20T11:09:44+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1112,7 +1112,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
       "version" : "1.0.0",
@@ -1122,8 +1122,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:93692e94-56a2-4a9b-ade7-0c5ed49d789c",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:894bb1f1-41d3-4198-ba20-35b95b2b2b1f",
+        "timestamp" : "2025-01-20T11:09:43+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1175,7 +1175,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html\">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED\">CURED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED\">COMPLETED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE\">FAILURE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED\">DIED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\">LOST_TO_FOLLOW_UP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED\">NOT_EVALUATED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Not evaluated</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html\">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED\">CURED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED\">COMPLETED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE\">FAILURE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED\">DIED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\">LOST_TO_FOLLOW_UP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED\">NOT_EVALUATED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Not evaluated</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
       "version" : "1.0.0",
@@ -1185,8 +1185,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:9293f216-fe3f-4f5d-a808-5acf9f55a897",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:9e955d82-d590-4dae-91ed-53b22f9f24b7",
+        "timestamp" : "2025-01-20T11:09:44+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -1253,7 +1253,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSDenotificationReasonsCS.html\">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB\">NOT_TB</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE\">DUPLICATE</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Duplicate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSDenotificationReasonsCS.html\">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB\">NOT_TB</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE\">DUPLICATE</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Duplicate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
       "version" : "1.0.0",
@@ -1263,8 +1263,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:1035444b-9f73-499f-86ee-edcc2ab35b7d",
-        "timestamp" : "2025-01-09T13:23:17+00:00",
+        "identifier" : "urn:uuid:6a62960d-3316-49e2-b02f-6b34cdc511a8",
+        "timestamp" : "2025-01-20T11:09:44+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1311,7 +1311,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentCategoryCS.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>Second-line Treatment</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentCategoryCS.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>Second-line Treatment</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
       "version" : "1.0.0",
@@ -1321,8 +1321,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:4c61e233-e42c-49d1-a049-1f103e18e87d",
-        "timestamp" : "2025-01-09T13:23:18+00:00",
+        "identifier" : "urn:uuid:623cd656-aa68-4320-a186-ad503047d8e2",
+        "timestamp" : "2025-01-20T11:09:44+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1369,7 +1369,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSResistanceClassificationCS.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS\">DS</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR\">RR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR\">MDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR\">XDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSResistanceClassificationCS.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS\">DS</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR\">RR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR\">MDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR\">XDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
       "version" : "1.0.0",
@@ -1379,8 +1379,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:7758903b-88b9-4c90-b647-9718741a2db6",
-        "timestamp" : "2025-01-09T13:23:18+00:00",
+        "identifier" : "urn:uuid:29006472-64e5-4dc4-a522-561daba04e6e",
+        "timestamp" : "2025-01-20T11:09:44+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1437,7 +1437,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-GENYesNoUnknownCS.html\">codesystem GEN - Yes/No/Unknown v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-NO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-NO\">NO</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>No</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-UNKNOWN\">UNKNOWN</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/GENYesNoUnknownCS-YES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-GENYesNoUnknownCS.html#GENYesNoUnknownCS-YES\">YES</a></td><td>http://example.org/CodeSystem/GENYesNoUnknownCS</td><td>Yes</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/GENYesNoUnknownVS",
       "version" : "0.1.0",
@@ -1447,8 +1447,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:50e22c30-8337-4320-a76d-0a486a8fcdec",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:f397d7e5-1227-475f-9f27-7f08a29e467a",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1500,7 +1500,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-RRTGENSexCS.html\">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-FEMALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-FEMALE\">FEMALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-MALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-MALE\">MALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Male</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-RRTGENSexCS.html\">codesystem RRT - GEN - Sex v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-FEMALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-FEMALE\">FEMALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/RRTGENSexCS-MALE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-RRTGENSexCS.html#RRTGENSexCS-MALE\">MALE</a></td><td>http://example.org/CodeSystem/RRTGENSexCS</td><td>Male</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/RRTGENSexVS",
       "version" : "0.1.0",
@@ -1510,8 +1510,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:285e71f5-8811-4e3b-8e23-fde413fc86a2",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:8cfbbd18-d559-4c6d-beed-354a16cedc0d",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1558,7 +1558,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html\">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Indeterminate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html\">codesystem Susceptible/Resistant/Indeterminate v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SusceptibleResistantIndeterminateCS.html#SusceptibleResistantIndeterminateCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS</td><td>Indeterminate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/SusceptibleResistantIndeterminateVS",
       "version" : "0.1.0",
@@ -1568,8 +1568,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:6debbdab-4373-426e-a91a-aa20cb8c2fc7",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:4f5bd6a5-72eb-4b9e-bb38-532dcf8e2d49",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1621,7 +1621,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSConfirmationMethodCS.html\">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-CLINDX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-CLINDX\">CLINDX</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-LABCONF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-LABCONF\">LABCONF</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Bacteriologically confirmed</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSConfirmationMethodCS.html\">codesystem TB CS - Confirmation method v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-CLINDX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-CLINDX\">CLINDX</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Clinically diagnosed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSConfirmationMethodCS-LABCONF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSConfirmationMethodCS.html#TBCSConfirmationMethodCS-LABCONF\">LABCONF</a></td><td>http://example.org/CodeSystem/TBCSConfirmationMethodCS</td><td>Bacteriologically confirmed</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSConfirmationMethodVS",
       "version" : "0.1.0",
@@ -1631,8 +1631,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:6f4fc1f4-b3a5-492c-9c9f-9d882a903926",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:7a1ba9f7-7206-480a-944f-e48230b407dd",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1679,7 +1679,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSDenotificationReasonsCS.html\">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB\">NOT_TB</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE\">DUPLICATE</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Duplicate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSDenotificationReasonsCS.html\">codesystem TB CS - Denotification reasons v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-NOT_TB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-NOT_TB\">NOT_TB</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSDenotificationReasonsCS-DUPLICATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSDenotificationReasonsCS.html#TBCSDenotificationReasonsCS-DUPLICATE\">DUPLICATE</a></td><td>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</td><td>Duplicate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
       "version" : "0.1.0",
@@ -1689,8 +1689,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:d0a2afdf-270b-4502-a864-36410b786912",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:44862810-2960-4c4a-83fe-8dc5ee544cfa",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1737,7 +1737,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSResistanceClassificationCS.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS\">DS</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR\">RR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR\">MDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR\">XDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSResistanceClassificationCS.html\">codesystem TB CS - Resistance Classification v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-DS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-DS\">DS</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>DS (drug-susceptible TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-RR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-RR\">RR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>RR (rifampicin resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-MDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-MDR\">MDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>MDR (multidrug resistant TB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSResistanceClassificationCS-XDR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSResistanceClassificationCS.html#TBCSResistanceClassificationCS-XDR\">XDR</a></td><td>http://example.org/CodeSystem/TBCSResistanceClassificationCS</td><td>XDR (extensive drug resistant TB)</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSResistanceClassificationVS",
       "version" : "0.1.0",
@@ -1747,8 +1747,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:97e67eb6-6219-4f11-9315-89c236f0d807",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:1e2f814a-6501-47aa-a3b3-2a6fbe2da75a",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1805,7 +1805,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html\">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_PULMONARY\">SITE_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\">SITE_EXTRA_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Extra-pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_BOTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_BOTH\">SITE_BOTH</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary and extra-pulmonary</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html\">codesystem TB CS - Site of disease v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_PULMONARY\">SITE_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_EXTRA_PULMONARY\">SITE_EXTRA_PULMONARY</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Extra-pulmonary</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSSiteOfDiseaseCS-SITE_BOTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSSiteOfDiseaseCS.html#TBCSSiteOfDiseaseCS-SITE_BOTH\">SITE_BOTH</a></td><td>http://example.org/CodeSystem/TBCSSiteOfDiseaseCS</td><td>Pulmonary and extra-pulmonary</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSSiteOfDiseaseVS",
       "version" : "0.1.0",
@@ -1815,8 +1815,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:6b40a325-5b60-4709-b64a-ac9f41e9d785",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:708f07f2-63fa-4ed0-843b-1497974e001e",
+        "timestamp" : "2025-01-20T11:09:47+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1868,7 +1868,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentCategoryCS.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>Second-line Treatment</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentCategoryCS.html\">codesystem TB CS - Treatment category v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-FIRST_LINE_TREATMENT\">FIRST_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>First-line Treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentCategoryCS.html#TBCSTreatmentCategoryCS-SECOND_LINE_TREATMENT\">SECOND_LINE_TREATMENT</a></td><td>http://example.org/CodeSystem/TBCSTreatmentCategoryCS</td><td>Second-line Treatment</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentCategoryVS",
       "version" : "0.1.0",
@@ -1878,8 +1878,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:9f369253-ce08-49b5-b192-2a9ce55dec9a",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:7684a68d-d82e-429d-9337-96ce52f5f84e",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -1926,7 +1926,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentHistoryCS.html\">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_NEW\">HISTORY_NEW</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>New</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_RELAPSE\">HISTORY_RELAPSE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_FAILED\">HISTORY_FAILED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\">HISTORY_LOST_TO_FOLLOWUP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\">HISTORY_OTHER_PREV</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\">HISTORY_UNKNOWN</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentHistoryCS.html\">codesystem TB CS - Treatment history v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_NEW\">HISTORY_NEW</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>New</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_RELAPSE\">HISTORY_RELAPSE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_FAILED\">HISTORY_FAILED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\">HISTORY_LOST_TO_FOLLOWUP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\">HISTORY_OTHER_PREV</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentHistoryCS.html#TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\">HISTORY_UNKNOWN</a></td><td>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentHistoryVS",
       "version" : "0.1.0",
@@ -1936,8 +1936,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:bf5cfb45-9cdb-4882-abdd-0e3b32a64b74",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:ac130edd-48a3-4ddd-b714-7f2b56bf0126",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -2004,7 +2004,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html\">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED\">CURED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED\">COMPLETED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE\">FAILURE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED\">DIED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\">LOST_TO_FOLLOW_UP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED\">NOT_EVALUATED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Not evaluated</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html\">codesystem TB CS - Treatment outcome v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-CURED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-CURED\">CURED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Cured</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-COMPLETED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-COMPLETED\">COMPLETED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-FAILURE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-FAILURE\">FAILURE</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Failed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-DIED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-DIED\">DIED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Died</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-LOST_TO_FOLLOW_UP\">LOST_TO_FOLLOW_UP</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBCSTreatmentOutcomeCS-NOT_EVALUATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBCSTreatmentOutcomeCS.html#TBCSTreatmentOutcomeCS-NOT_EVALUATED\">NOT_EVALUATED</a></td><td>http://example.org/CodeSystem/TBCSTreatmentOutcomeCS</td><td>Not evaluated</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
       "version" : "0.1.0",
@@ -2014,8 +2014,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:03606077-e2b4-4e19-a925-a0ba37c2b866",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:e050ef21-981f-410b-9950-6cb9773ac11d",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -2082,7 +2082,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABDSTResultCS.html\">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Indeterminate</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABDSTResultCS.html\">codesystem TB-LAB - DST result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-SUSCEPTIBLE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-SUSCEPTIBLE\">SUSCEPTIBLE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Susceptible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-RESISTANT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-RESISTANT\">RESISTANT</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Resistant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Contaminated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABDSTResultCS-INDETERMINATE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABDSTResultCS.html#TBLABDSTResultCS-INDETERMINATE\">INDETERMINATE</a></td><td>http://example.org/CodeSystem/TBLABDSTResultCS</td><td>Indeterminate</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABDSTResultVS",
       "version" : "0.1.0",
@@ -2092,8 +2092,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:6db485b2-6ad7-49a2-9d79-7e365575db4c",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:401ac5a9-9f7a-41a0-b27a-526e3d0cca49",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -2150,7 +2150,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABFinalCultureResultCS.html\">codesystem TB-LAB - Final culture result v0.1.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-MTB\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-MTB\">MTB</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>MTB</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NTM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NTM\">NTM</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>NTM</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-NO_GROWTH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-NO_GROWTH\">NO_GROWTH</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>No growth</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABFinalCultureResultCS-CONTAMINATED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABFinalCultureResultCS.html#TBLABFinalCultureResultCS-CONTAMINATED\">CONTAMINATED</a></td><td>http://example.org/CodeSystem/TBLABFinalCultureResultCS</td><td>Contaminated</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABFinalCultureResultVS",
       "version" : "0.1.0",
@@ -2160,8 +2160,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:2dea6d0a-7d18-4f93-97d3-990dd1fe1150",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:4d7c0cbe-314c-4d6c-8cb4-6e07b31076b5",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -2218,7 +2218,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABLPASpecimenCS.html\">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\">SPUTUM_SAMPLES_OR_SEDIMENTS</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>Sputum samples or sediments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\">MTB_CULTURE_ISOLATES</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>MTB culture isolates</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABLPASpecimenCS.html\">codesystem TB-LAB - LPA specimen v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-SPUTUM_SAMPLES_OR_SEDIMENTS\">SPUTUM_SAMPLES_OR_SEDIMENTS</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>Sputum samples or sediments</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABLPASpecimenCS.html#TBLABLPASpecimenCS-MTB_CULTURE_ISOLATES\">MTB_CULTURE_ISOLATES</a></td><td>http://example.org/CodeSystem/TBLABLPASpecimenCS</td><td>MTB culture isolates</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
       "version" : "0.1.0",
@@ -2228,8 +2228,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:d6113d0e-be3e-4a75-9243-dd298c4a2ea1",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:0eeee32e-7eb4-4ec8-b762-480c2ee0e5e7",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -2276,7 +2276,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABMTBTestResultCS.html\">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED\">DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED\">NOT_DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR\">ERROR</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID\">INVALID</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT\">NO_RESULT</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>No result</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABMTBTestResultCS.html\">codesystem TB-LAB - MTB test result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-DETECTED\">DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NOT_DETECTED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NOT_DETECTED\">NOT_DETECTED</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Not detected</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-ERROR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-ERROR\">ERROR</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Error</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-INVALID\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-INVALID\">INVALID</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>Invalid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABMTBTestResultCS-NO_RESULT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABMTBTestResultCS.html#TBLABMTBTestResultCS-NO_RESULT\">NO_RESULT</a></td><td>http://example.org/CodeSystem/TBLABMTBTestResultCS</td><td>No result</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABMTBTestResultVS",
       "version" : "0.1.0",
@@ -2286,8 +2286,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:73061fca-a1f8-4be9-88c7-e9ecd42b2dbe",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:08173b9d-6995-46c7-aec4-5111995ece43",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -2349,7 +2349,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleQualityCS.html\">codesystem TB-LAB - Sample quality v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-GOOD\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-GOOD\">GOOD</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Good (accepted for processing)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleQualityCS-POOR\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleQualityCS.html#TBLABSampleQualityCS-POOR\">POOR</a></td><td>http://example.org/CodeSystem/TBLABSampleQualityCS</td><td>Poor (rejected for processing)</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleQualityVS",
       "version" : "0.1.0",
@@ -2359,8 +2359,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:b83f440f-9491-44db-8267-5b220950252b",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:79589ecb-9c62-4e47-90ad-84e10a2fffb2",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -2407,7 +2407,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSampleStatusCS.html\">codesystem TB-LAB - Sample status v0.1.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-RECEIVED\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-RECEIVED\">RECEIVED</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample received</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSampleStatusCS-LOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSampleStatusCS.html#TBLABSampleStatusCS-LOST\">LOST</a></td><td>http://example.org/CodeSystem/TBLABSampleStatusCS</td><td>Sample lost</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
       "version" : "0.1.0",
@@ -2417,8 +2417,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:2e0a46bf-9173-476a-bd4d-606c53a90ac3",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:47287758-7b97-4c86-8eb2-4add400ecc74",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -2465,7 +2465,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion done internally based on <a href=\"CodeSystem-TBLABSmearResultCS.html\">codesystem TB-LAB - Smear result v0.1.0 (CodeSystem)</a></p><p>This value set contains 5 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-SCANTY\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-SCANTY\">SCANTY</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (Scanty)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-1PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-1PLUS\">1PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-2PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-2PLUS\">2PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-3PLUS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-3PLUS\">3PLUS</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Positive (+++)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/TBLABSmearResultCS-NEGATIVE\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TBLABSmearResultCS.html#TBLABSmearResultCS-NEGATIVE\">NEGATIVE</a></td><td>http://example.org/CodeSystem/TBLABSmearResultCS</td><td>Negative</td></tr></table></div>"
       },
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
       "version" : "0.1.0",
@@ -2475,8 +2475,8 @@
       "experimental" : false,
       "date" : "2025-01-06",
       "expansion" : {
-        "identifier" : "urn:uuid:1015167c-e6ca-4c0d-932c-cc7ef6dd912f",
-        "timestamp" : "2025-01-09T13:23:21+00:00",
+        "identifier" : "urn:uuid:e689ec7a-046d-4a22-9eba-38a4c1fa03c3",
+        "timestamp" : "2025-01-20T11:09:48+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
