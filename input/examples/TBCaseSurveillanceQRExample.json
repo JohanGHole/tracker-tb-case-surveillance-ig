@@ -1,0 +1,134 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "4",
+    "title": "TB Case Surveillance QuestionnaireResponse Example",
+    "status": "completed",
+    "authored": "2025-01-09T10:04:14.014Z",
+    "item": [
+      {
+        "linkId": "enrollmentDate",
+        "text": "Enrollment Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "incidentDate",
+        "text": "Incident Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "nationalId",
+        "text": "National ID",
+        "answer": [
+          {
+            "valueString": "123"
+          }
+        ]
+      },
+      {
+        "linkId": "tbRegistrationNumber",
+        "text": "TB Registration Number",
+        "answer": [
+          {
+            "valueString": "123"
+          }
+        ]
+      },
+      {
+        "linkId": "familyName",
+        "text": "Family Name",
+        "answer": [
+          {
+            "valueString": "Doe"
+          }
+        ]
+      },
+      {
+        "linkId": "givenName",
+        "text": "Given Name",
+        "answer": [
+          {
+            "valueString": "John"
+          }
+        ]
+      },
+      {
+        "linkId": "sex",
+        "text": "Sex",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/RRTGENSexCS",
+              "code": "MALE",
+              "display": "Male"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfBirthIsEstimated",
+        "text": "Date of Birth is Estimated",
+        "answer": [
+          {
+            "valueBoolean": false
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfBirth",
+        "text": "Date of Birth",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "foreignBorn",
+        "text": "Foreign Born",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+              "code": "NO",
+              "display": "No"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "administrativeAreaOfResidence",
+        "text": "Administrative Area of Residence",
+        "answer": [
+          {
+            "valueString": "Homeville"
+          }
+        ]
+      },
+      {
+        "linkId": "homeAddress",
+        "text": "Home Address",
+        "answer": [
+          {
+            "valueString": "Home"
+          }
+        ]
+      },
+      {
+        "linkId": "contactPhoneNumberLocal",
+        "text": "Contact Phone Number Local",
+        "answer": [
+          {
+            "valueString": "1234567890"
+          }
+        ]
+      }
+    ]
+  }

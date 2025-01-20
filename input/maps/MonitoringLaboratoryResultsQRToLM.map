@@ -1,0 +1,109 @@
+/// url = "http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM"
+/// name = 'MonitoringLaboratoryResultsQRToLM'
+/// description = "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/MonitoringLaboratoryResults" alias LabResultsLM as target
+
+group MonitoringLaboratoryResultsQRToLM (source qr : QResp, target labResults : LabResultsLM) {
+
+  qr.item as item then {
+
+    // Execution Date
+    item.answer first as answer where item.linkId = 'executionDate' then {
+      answer.value as content -> labResults.executionDate = content "SetExecutionDate";
+    } "MapExecutionDate";
+
+    // Culture in Liquid Media
+    item.answer first as answer where item.linkId = 'cultureInLiquidMediaEGMgit' then {
+      answer.value as content -> labResults.cultureInLiquidMediaEGMgit = content "SetCultureInLiquidMedia";
+    } "MapCultureInLiquidMedia";
+
+    // Culture in Solid Media
+    item.answer first as answer where item.linkId = 'cultureInSolidMediaEGLj' then {
+      answer.value as content -> labResults.cultureInSolidMediaEGLj = content "SetCultureInSolidMedia";
+    } "MapCultureInSolidMedia";
+
+    // Date of Culture Inoculation - Liquid Media
+    item.answer first as answer where item.linkId = 'dateOfCultureInoculationLiquidMedia' then {
+      answer.value as content -> labResults.dateOfCultureInoculationLiquidMedia = content "SetDateOfCultureInoculationLiquidMedia";
+    } "MapDateOfCultureInoculationLiquidMedia";
+
+    // Date of Culture Inoculation - Solid Media
+    item.answer first as answer where item.linkId = 'dateOfCultureInoculationSolidMedia' then {
+      answer.value as content -> labResults.dateOfCultureInoculationSolidMedia = content "SetDateOfCultureInoculationSolidMedia";
+    } "MapDateOfCultureInoculationSolidMedia";
+
+    // Date of Microscopy
+    item.answer first as answer where item.linkId = 'dateOfMicroscopy' then {
+      answer.value as content -> labResults.dateOfMicroscopy = content "SetDateOfMicroscopy";
+    } "MapDateOfMicroscopy";
+
+    // Date of Sample Reception
+    item.answer first as answer where item.linkId = 'dateOfSampleReception' then {
+      answer.value as content -> labResults.dateOfSampleReception = content "SetDateOfSampleReception";
+    } "MapDateOfSampleReception";
+
+    // Liquid Culture Result Date
+    item.answer first as answer where item.linkId = 'dateOfLiquidCultureResult' then {
+      answer.value as content -> labResults.dateOfLiquidCultureResult = content "SetDateOfLiquidCultureResult";
+    } "MapDateOfLiquidCultureResult";
+
+    // Liquid Culture Specimen Number
+    item.answer first as answer where item.linkId = 'liquidCultureSpecimenNumber' then {
+      answer.value as content -> labResults.liquidCultureSpecimenNumber = content "SetLiquidCultureSpecimenNumber";
+    } "MapLiquidCultureSpecimenNumber";
+
+    // Liquid Culture Test Result
+    item.answer first as answer where item.linkId = 'liquidCultureResult' then {
+      answer.value as coding -> labResults.liquidCultureResult = coding "SetLiquidCultureResult";
+    } "MapLiquidCultureResult";
+
+    // Microscopy Result
+    item.answer first as answer where item.linkId = 'microscopyResult' then {
+      answer.value as coding -> labResults.microscopyResult = coding "SetMicroscopyResult";
+    } "MapMicroscopyResult";
+
+    // Sample ID
+    item.answer first as answer where item.linkId = 'sampleId' then {
+      answer.value as content -> labResults.sampleId = content "SetSampleID";
+    } "MapSampleID";
+
+    // Sample Quality
+    item.answer first as answer where item.linkId = 'sampleQuality' then {
+      answer.value as coding -> labResults.sampleQuality = coding "SetSampleQuality";
+    } "MapSampleQuality";
+
+    // Sample Status
+    item.answer first as answer where item.linkId = 'sampleStatus' then {
+      answer.value as coding -> labResults.sampleStatus = coding "SetSampleStatus";
+    } "MapSampleStatus";
+
+    // Smear Specimen Number
+    item.answer first as answer where item.linkId = 'smearSpecimenNumber' then {
+      answer.value as content -> labResults.smearSpecimenNumber = content "SetSmearSpecimenNumber";
+    } "MapSmearSpecimenNumber";
+
+    // Solid Culture Result Date
+    item.answer first as answer where item.linkId = 'dateOfSolidCultureResult' then {
+      answer.value as content -> labResults.dateOfSolidCultureResult = content "SetDateOfSolidCultureResult";
+    } "MapDateOfSolidCultureResult";
+
+    // Solid Culture Specimen Number
+    item.answer first as answer where item.linkId = 'solidCultureSpecimenNumber' then {
+      answer.value as content -> labResults.solidCultureSpecimenNumber = content "SetSolidCultureSpecimenNumber";
+    } "MapSolidCultureSpecimenNumber";
+
+    // Solid Culture Test Result
+    item.answer first as answer where item.linkId = 'solidCultureResult' then {
+      answer.value as coding -> labResults.solidCultureResult = coding "SetSolidCultureResult";
+    } "MapSolidCultureResult";
+
+    // Sputum Smear Microscopy
+    item.answer first as answer where item.linkId = 'sputumSmearMicroscopy' then {
+      answer.value as content -> labResults.sputumSmearMicroscopy = content "SetSputumSmearMicroscopy";
+    } "MapSputumSmearMicroscopy";
+
+  } "ProcessItems";
+
+}

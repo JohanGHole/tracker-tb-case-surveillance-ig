@@ -1,0 +1,42 @@
+/// url = "http://example.org/StructureMap/OutcomeQRToLM"
+/// name = 'OutcomeQRToLM'
+/// description = "Map TB Outcome QuestionnaireResponse to logical model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/Outcome" alias OutcomeLM as target
+
+group OutcomeQRToLM ( source qr : QResp, target outcome : OutcomeLM) {
+
+  qr.item as item then {
+
+    item.answer first as answer where item.linkId = 'executionDate' then {
+      answer.value as content -> outcome.executionDate = content  "SetExecutionDate";
+    } "MapExecutionDate";
+
+    item.answer first as answer where item.linkId = 'treatmentOutcome' then {
+      answer.value as coding -> outcome.treatmentOutcome = coding "SetTreatmentOutcome";
+    } "MapTreatmentDate";
+
+    item.answer first as answer where item.linkId = 'reasonForDenotification' then {
+      answer.value as coding -> outcome.reasonForDenotification = coding "SetReasonForDenotification";
+    } "MapReasonForDenotification";
+
+    item.answer first as answer where item.linkId = 'provideDuplicateSRecordNumber' then {
+      answer.value as content -> outcome.provideDuplicateSRecordNumber = content "SetProvideDuplicateSRecordNumber";
+    } "MapProvideDuplicateSRecordNumber";
+
+    item.answer first as answer where item.linkId = 'treatmentOutcomeDelayWeeks' then {
+      answer.value as content -> outcome.treatmentOutcomeDelayWeeks = content "SetTreatmentOutcomeDelayWeeks";
+    } "MapTreatmentOutcomeDelayWeeks";
+
+    item.answer first as answer where item.linkId = 'provideEvidenceForDenotifyingTheCase' then {
+      answer.value as content -> outcome.provideEvidenceForDenotifyingTheCase = content "SetProvideEvidenceForDenotifyingTheCase";
+    } "MapProvideEvidenceForDenotifyingTheCase";
+
+    item.answer first as answer where item.linkId = 'denotifyTheCase' then {
+      answer.value as content -> outcome.denotifyTheCase = content "SetDenotifyTheCase";
+    } "MapDenotifyTheCase";
+  
+  } "ProcessItems";
+
+}

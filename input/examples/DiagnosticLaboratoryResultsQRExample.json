@@ -1,0 +1,1425 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "6",
+    "title": "Diagnostic Laboratory Results QuestionnaireResponse Example",
+    "status": "completed",
+    "authored": "2025-01-09T13:10:15.258Z",
+    "item": [
+      {
+        "linkId": "executionDate",
+        "text": "Execution Date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialIsoniazidCriticalConcentrationInhCc",
+        "text": "Initial DST (solid media) - Inh (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialRifampicinRif",
+        "text": "Initial DST (solid media) - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialEthambutolEmb",
+        "text": "Initial DST (solid media) - Emb",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialPyrazinamidePza",
+        "text": "Initial DST (solid media) - Pza",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialLevofloxacinLfx",
+        "text": "Initial DST (solid media) - Lfx",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialMoxifloxacinCriticalConcentrationMfxCc",
+        "text": "Initial DST (solid media) - Mfx (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialAmikacinAmk",
+        "text": "Initial DST (solid media) - Amk",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialMoxifloxacinClinicalBreakpointMfxCb",
+        "text": "Initial DST (solid media) - Mfx (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialLinezolidLzd",
+        "text": "Initial DST (solid media) - Lzd",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialClofazimineCfz",
+        "text": "Initial DST (solid media) - Cfz",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialBedaquilineBdq",
+        "text": "Initial DST (solid media) - Bdq",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialDelamanidDlm",
+        "text": "Initial DST (solid media) - Dlm",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidInitialIsoniazidClinicalBreakpointInhCb",
+        "text": "Initial DST (solid media) - Inh (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateRifResistanceDetected",
+        "text": "Date Rif-resistance detected",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfSolidCultureResult",
+        "text": "Solid culture result date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifMtb",
+        "text": "Xpert MTB/RIF result - MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "ERROR",
+              "display": "Error"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifRif",
+        "text": "Xpert MTB/RIF result - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidCultureSpecimenNumber",
+        "text": "Solid culture specimen number",
+        "answer": [
+          {
+            "valueString": "123"
+          }
+        ]
+      },
+      {
+        "linkId": "solidCultureResult",
+        "text": "Solid culture test result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+              "code": "MTB",
+              "display": "MTB"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "smearSpecimenNumber",
+        "text": "Smear specimen number",
+        "answer": [
+          {
+            "valueString": "33"
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifSpecimenNumber",
+        "text": "Xpert MTB/RIF specimen number",
+        "answer": [
+          {
+            "valueString": "321"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfXpertMtbRifResult",
+        "text": "Xpert MTB/RIF result date",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "sputumSmearMicroscopy",
+        "text": "Sputum smear microscopy",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRif",
+        "text": "Xpert MTB/RIF",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifUltra",
+        "text": "Xpert MTB/RIF Ultra",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "cultureInLiquidMediaEGMgit",
+        "text": "Culture in liquid media (e.g. MGIT)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "cultureInSolidMediaEGLj",
+        "text": "Culture in solid media (e.g. LJ)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "initialDstInLiquidMediaEGMgit",
+        "text": "Initial DST in liquid media (e.g. MGIT)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "initialDstInSolidMediaEGLj",
+        "text": "Initial DST in solid media (e.g. LJ)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "subsequentDstInLiquidMediaEGMgit",
+        "text": "Subsequent DST in liquid media (e.g. MGIT)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "subsequentDstInSolidMediaEGLj",
+        "text": "Subsequent DST in solid media (e.g. LJ)",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfFinalInitialDstSolidMediaResults",
+        "text": "Date of initial DST results (solid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifUltraSpecimenNumber",
+        "text": "Xpert MTB/RIF Ultra specimen number",
+        "answer": [
+          {
+            "valueString": "5"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfXpertMtbRifUltraResult",
+        "text": "Xpert MTB/RIF Ultra result date",
+        "answer": [
+          {
+            "valueDate": "2025-01-07"
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifUltraMtb",
+        "text": "Xpert MTB/RIF Ultra result - MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "ERROR",
+              "display": "Error"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "xpertMtbRifUltraRif",
+        "text": "Xpert MTB/RIF Ultra result - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfLiquidCultureResult",
+        "text": "Liquid culture result date",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidCultureResult",
+        "text": "Liquid culture test result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+              "code": "MTB",
+              "display": "MTB"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidCultureSpecimenNumber",
+        "text": "Liquid culture specimen number",
+        "answer": [
+          {
+            "valueString": "963"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialAmikacinAmk",
+        "text": "Initial DST (liquid media) - Amk",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "RESISTANT",
+              "display": "Resistant"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialBedaquilineBdq",
+        "text": "Initial DST (liquid media) - Bdq",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialClofazimineCfz",
+        "text": "Initial DST (liquid media) - Cfz",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialDelamanidDlm",
+        "text": "Initial DST (liquid media) - Dlm",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialEthambutolEmb",
+        "text": "Initial DST (liquid media) - Emb",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialIsoniazidCriticalConcentrationInhCc",
+        "text": "Initial DST (liquid media) - Inh (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialIsoniazidClinicalBreakpointInhCb",
+        "text": "Initial DST (liquid media) - Inh (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialLevofloxacinLfx",
+        "text": "Initial DST (liquid media) - Lfx",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialLinezolidLzd",
+        "text": "Initial DST (liquid media) - Lzd",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialMoxifloxacinClinicalBreakpointMfxCb",
+        "text": "Initial DST (liquid media) - Mfx (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialMoxifloxacinCriticalConcentrationMfxCc",
+        "text": "Initial DST (liquid media) - Mfx (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialRifampicinRif",
+        "text": "Initial DST (liquid media) - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidInitialPyrazinamidePza",
+        "text": "Initial DST (liquid media) - Pza",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfFinalInitialDstLiquidMediaResults",
+        "text": "Date of initial DST results (liquid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfFinalSubsequentDstLiquidMediaResults",
+        "text": "Date of subsequent DST results (liquid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfFinalSubsequentDstSolidMediaResults",
+        "text": "Date of subsequent DST results (solid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentAmikacinAmk",
+        "text": "Subsequent DST (liquid media) - Amk",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentBedaquilineBdq",
+        "text": "Subsequent DST (liquid media) - Bdq",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentClofazimineCfz",
+        "text": "Subsequent DST (liquid media) - Cfz",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfSlLpa",
+        "text": "Date of SL-LPA",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfFlLpa",
+        "text": "Date of FL-LPA",
+        "answer": [
+          {
+            "valueDate": "2025-01-01"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentDelamanidDlm",
+        "text": "Subsequent DST (liquid media) - Dlm",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "slLpa",
+        "text": "SL-LPA",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultAmikacinCapreomycinAmkCap",
+        "text": "SL-LPA - Amk/Cap",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentEthambutolEmb",
+        "text": "Subsequent DST (liquid media) - Emb",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "RESISTANT",
+              "display": "Resistant"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultEthambutolEmb",
+        "text": "SL-LPA - Emb",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultFluoroquinolonesFq",
+        "text": "SL-LPA - Fq",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultKanamycinKan",
+        "text": "SL-LPA - Kan",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentIsoniazidCriticalConcentrationInhCc",
+        "text": "Subsequent DST (liquid media) - Inh (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentIsoniazidClinicalBreakpointInhCb",
+        "text": "Subsequent DST (liquid media) - Inh (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "slLpaMtb",
+        "text": "SL-LPA - MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "INVALID",
+              "display": "Invalid"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "slLpaSpecimenNumber",
+        "text": "SL-LPA specimen number",
+        "answer": [
+          {
+            "valueString": "5"
+          }
+        ]
+      },
+      {
+        "linkId": "flLpa",
+        "text": "FL-LPA",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentLevofloxacinLfx",
+        "text": "Subsequent DST (liquid media) - Lfx",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentLinezolidLzd",
+        "text": "Subsequent DST (liquid media) - Lzd",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultIsoniazidInh",
+        "text": "FL-LPA - Inh",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "flLpaMtb",
+        "text": "FL-LPA - MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "DETECTED",
+              "display": "Detected"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+        "text": "Subsequent DST (liquid media) - Mfx (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+        "text": "Subsequent DST (liquid media) - Mfx (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfSampleReception",
+        "text": "Date of sample reception",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "dateRifResistanceFirstDetected",
+        "text": "Date Rif-resistance first detected",
+        "answer": [
+          {
+            "valueDate": "2025-01-03"
+          }
+        ]
+      },
+      {
+        "linkId": "finalResultRifampicinRif",
+        "text": "FL-LPA - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "flLpaSpecimenNumber",
+        "text": "FL-LPA specimen number",
+        "answer": [
+          {
+            "valueString": "56565656"
+          }
+        ]
+      },
+      {
+        "linkId": "microscopyResult",
+        "text": "Microscopy result",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSmearResultCS",
+              "code": "SCANTY",
+              "display": "Positive (Scanty)"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfCultureInoculationLiquidMedia",
+        "text": "Date of culture inoculation (liquid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "slLpaSpecimenType",
+        "text": "SL-LPA specimen type",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABLPASpecimenCS",
+              "code": "SPUTUM_SAMPLES_OR_SEDIMENTS",
+              "display": "Sputum samples or sediments"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfCultureInoculationSolidMedia",
+        "text": "Date of culture inoculation (solid media)",
+        "answer": [
+          {
+            "valueDate": "2025-01-17"
+          }
+        ]
+      },
+      {
+        "linkId": "sampleQuality",
+        "text": "Sample quality",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSampleQualityCS",
+              "code": "GOOD",
+              "display": "Good (accepted for processing)"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentRifampicinRif",
+        "text": "Subsequent DST (liquid media) - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "sampleId",
+        "text": "Sample ID",
+        "answer": [
+          {
+            "valueString": "ID-123"
+          }
+        ]
+      },
+      {
+        "linkId": "flLpaSpecimenType",
+        "text": "FL-LPA specimen type",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABLPASpecimenCS",
+              "code": "SPUTUM_SAMPLES_OR_SEDIMENTS",
+              "display": "Sputum samples or sediments"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "sampleStatus",
+        "text": "Sample status",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABSampleStatusCS",
+              "code": "RECEIVED",
+              "display": "Sample received"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "initialDstLmSpecimenNumber",
+        "text": "Initial DST specimen number (liquid media)",
+        "answer": [
+          {
+            "valueString": "5665"
+          }
+        ]
+      },
+      {
+        "linkId": "liquidSubsequentPyrazinamidePza",
+        "text": "Subsequent DST (liquid media) - Pza",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentAmikacinAmk",
+        "text": "Subsequent DST (solid media) - Amk",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "initialDstSmSpecimenNumber",
+        "text": "Initial DST specimen number (solid media)",
+        "answer": [
+          {
+            "valueString": "10"
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentBedaquilineBdq",
+        "text": "Subsequent DST (solid media) - Bdq",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentClofazimineCfz",
+        "text": "Subsequent DST (solid media) - Cfz",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "subsequentDstLmSpecimenNumber",
+        "text": "Subsequent DST specimen number (liquid media)",
+        "answer": [
+          {
+            "valueString": "12"
+          }
+        ]
+      },
+      {
+        "linkId": "subsequentDstSmSpecimenNumber",
+        "text": "Subsequent DST specimen number (solid media)",
+        "answer": [
+          {
+            "valueString": "00"
+          }
+        ]
+      },
+      {
+        "linkId": "tbLamp",
+        "text": "TB-LAMP",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentDelamanidDlm",
+        "text": "Subsequent DST (solid media) - Dlm",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentEthambutolEmb",
+        "text": "Subsequent DST (solid media) - Emb",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfTbLampResult",
+        "text": "TB-LAMP date",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "tbLampMtb",
+        "text": "TB-LAMP MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "DETECTED",
+              "display": "Detected"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "tbLampSpecimenNumber",
+        "text": "TB-LAMP specimen number",
+        "answer": [
+          {
+            "valueString": "1"
+          }
+        ]
+      },
+      {
+        "linkId": "lfLam",
+        "text": "LF-LAM",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentIsoniazidCriticalConcentrationInhCc",
+        "text": "Subsequent DST (solid media) - Inh (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfLfLamResult",
+        "text": "LF-LAM date",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentIsoniazidClinicalBreakpointInhCb",
+        "text": "Subsequent DST (solid media) - Inh (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "lfLamMtb",
+        "text": "LF-LAM MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "DETECTED",
+              "display": "Detected"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "lfLamSpecimenNumber",
+        "text": "LF-LAM specimen number",
+        "answer": [
+          {
+            "valueString": "123"
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentLevofloxacinLfx",
+        "text": "Subsequent DST (solid media) - Lfx",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "CONTAMINATED",
+              "display": "Contaminated"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "truenat",
+        "text": "Truenat",
+        "answer": [
+          {
+            "valueBoolean": true
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentLinezolidLzd",
+        "text": "Subsequent DST (solid media) - Lzd",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentMoxifloxacinClinicalBreakpointMfxCb",
+        "text": "Subsequent DST (solid media) - Mfx (CB)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "INDETERMINATE",
+              "display": "Indeterminate"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "truenatMtb",
+        "text": "Truenat result - MTB",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABMTBTestResultCS",
+              "code": "NOT_DETECTED",
+              "display": "Not detected"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentMoxifloxacinCriticalConcentrationMfxCc",
+        "text": "Subsequent DST (solid media) - Mfx (CC)",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "INDETERMINATE",
+              "display": "Indeterminate"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfTruenatResult",
+        "text": "Truenat result date",
+        "answer": [
+          {
+            "valueDate": "2025-01-02"
+          }
+        ]
+      },
+      {
+        "linkId": "truenatRif",
+        "text": "Truenat result - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/SusceptibleResistantIndeterminateCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "truenatSpecimenNumber",
+        "text": "Truenat specimen number",
+        "answer": [
+          {
+            "valueString": "123"
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentRifampicinRif",
+        "text": "Subsequent DST (solid media) - Rif",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      },
+      {
+        "linkId": "dateOfMicroscopy",
+        "text": "Date of microscopy",
+        "answer": [
+          {
+            "valueDate": "2025-01-03"
+          }
+        ]
+      },
+      {
+        "linkId": "solidSubsequentPyrazinamidePza",
+        "text": "Subsequent DST (solid media) - Pza",
+        "answer": [
+          {
+            "valueCoding": {
+              "system": "http://example.org/CodeSystem/TBLABDSTResultCS",
+              "code": "SUSCEPTIBLE",
+              "display": "Susceptible"
+            }
+          }
+        ]
+      }
+    ]
+  }

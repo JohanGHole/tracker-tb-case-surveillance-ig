@@ -1,0 +1,216 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "2",
+  "title": "Diagnosis and Notification QuestionnaireResponse Example",
+  "status": "completed",
+  "authored": "2025-01-08T13:58:31.390Z",
+  "item": [
+    {
+      "linkId": "executionDate",
+      "text": "Execution date",
+      "answer": [
+        {
+          "valueDate": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "linkId": "historyOfPreviousTreatment",
+      "text": "Registration - Previous treatment history",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/TBCSTreatmentHistoryCS",
+            "code": "HISTORY_RELAPSE",
+            "display": "Relapse"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "hivInfection",
+      "text": "HIV infection",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "UNKNOWN",
+            "display": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "artStarted",
+      "text": "ART started",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "UNKNOWN",
+            "display": "Unknown"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "artStartDate",
+      "text": "ART start date",
+      "answer": [
+        {
+          "valueDate": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "linkId": "isThisATbDiagnosisDoYouWantToNotifyTheCase",
+      "text": "Case notification",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "diagnosisticNote",
+      "text": "Diagnostic note",
+      "answer": [
+        {
+          "valueString": "Test"
+        }
+      ]
+    },
+    {
+      "linkId": "undernourishment",
+      "text": "Risk factor undernourishment",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "YES",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "dateOfDiagnosis",
+      "text": "Diagnosis date",
+      "answer": [
+        {
+          "valueDate": "2025-01-06"
+        }
+      ]
+    },
+    {
+      "linkId": "secondLineDrugsReceivedPreviously",
+      "text": "Registration - Second-line drugs",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "NO",
+            "display": "No"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "confirmationMethod",
+      "text": "Confirmation method",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/TBCSConfirmationMethodCS",
+            "code": "CLINDX",
+            "display": "Clinically diagnosed"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "currentAddressOnMap",
+      "text": "Current address - coordinates",
+      "answer": [
+        {
+          "valueString": "Home"
+        }
+      ]
+    },
+    {
+      "linkId": "siteOfDisease",
+      "text": "Site of disease",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/TBCSSiteOfDiseaseCS",
+            "code": "SITE_PULMONARY",
+            "display": "Pulmonary"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "artPatientId",
+      "text": "ART patient ID",
+      "answer": [
+        {
+          "valueString": "ID-123"
+        }
+      ]
+    },
+    {
+      "linkId": "dateOfNotification",
+      "text": "Notification date",
+      "answer": [
+        {
+          "valueDate": "2025-01-08"
+        }
+      ]
+    },
+    {
+      "linkId": "hivStatusDate",
+      "text": "HIV status date",
+      "answer": [
+        {
+          "valueDate": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "linkId": "numberOfPeopleExcludingTheIndexCaseLivingInTheSameHousehold",
+      "text": "Household size - contacts",
+      "answer": [
+        {
+          "valueInteger": 6
+        }
+      ]
+    },
+    {
+      "linkId": "harmfulUseOfAlcohol",
+      "text": "Risk factor alcohol",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "YES",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "diabetes",
+      "text": "Risk factor diabetes",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://example.org/CodeSystem/GENYesNoUnknownCS",
+            "code": "YES",
+            "display": "Yes"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+/// url = "http://example.org/StructureMap/DiagnosticLaboratoryResultsQRToLM"
+/// name = 'DiagnosticLaboratoryResultsQRToLM'
+/// description = "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"
+
+uses "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse" alias QResp as source
+uses "http://example.org/StructureDefinition/DiagnosticLaboratoryResults" alias DiagnosticLM as target
+
+group DiagnosticLaboratoryResultsQRToLM (source qr : QResp, target diagnostic : DiagnosticLM) {
+
+  qr.item as item then {
+
+    item.answer first as answer where item.linkId = 'executionDate' then {
+      answer.value as content -> diagnostic.executionDate = content "SetExecutionDate";
+    } "MapExecutionDate";
+
+    item.answer first as answer where item.linkId = 'solidInitialIsoniazidCriticalConcentrationInhCc' then {
+      answer.value as coding -> diagnostic.solidInitialIsoniazidCriticalConcentrationInhCc = coding "SetSolidInitialIsoniazidCriticalConcentrationInhCc";
+    } "MapSolidInitialIsoniazidCriticalConcentrationInhCc";
+
+    item.answer first as answer where item.linkId = 'solidInitialRifampicinRif' then {
+      answer.value as coding -> diagnostic.solidInitialRifampicinRif = coding "SetSolidInitialRifampicinRif";
+    } "MapSolidInitialRifampicinRif";
+
+    item.answer first as answer where item.linkId = 'solidInitialEthambutolEmb' then {
+      answer.value as coding -> diagnostic.solidInitialEthambutolEmb = coding "SetSolidInitialEthambutolEmb";
+    } "MapSolidInitialEthambutolEmb";
+
+    item.answer first as answer where item.linkId = 'solidInitialPyrazinamidePza' then {
+      answer.value as coding -> diagnostic.solidInitialPyrazinamidePza = coding "SetSolidInitialPyrazinamidePza";
+    } "MapSolidInitialPyrazinamidePza";
+
+    item.answer first as answer where item.linkId = 'solidInitialLevofloxacinLfx' then {
+      answer.value as coding -> diagnostic.solidInitialLevofloxacinLfx = coding "SetSolidInitialLevofloxacinLfx";
+    } "MapSolidInitialLevofloxacinLfx";
+
+    item.answer first as answer where item.linkId = 'solidInitialMoxifloxacinCriticalConcentrationMfxCc' then {
+      answer.value as coding -> diagnostic.solidInitialMoxifloxacinCriticalConcentrationMfxCc = coding "SetSolidInitialMoxifloxacinCriticalConcentrationMfxCc";
+    } "MapSolidInitialMoxifloxacinCriticalConcentrationMfxCc";
+
+    item.answer first as answer where item.linkId = 'solidInitialAmikacinAmk' then {
+      answer.value as coding -> diagnostic.solidInitialAmikacinAmk = coding "SetSolidInitialAmikacinAmk";
+    } "MapSolidInitialAmikacinAmk";
+
+    item.answer first as answer where item.linkId = 'solidInitialMoxifloxacinClinicalBreakpointMfxCb' then {
+      answer.value as coding -> diagnostic.solidInitialMoxifloxacinClinicalBreakpointMfxCb = coding "SetSolidInitialMoxifloxacinClinicalBreakpointMfxCb";
+    } "MapSolidInitialMoxifloxacinClinicalBreakpointMfxCb";
+
+    item.answer first as answer where item.linkId = 'solidInitialLinezolidLzd' then {
+      answer.value as coding -> diagnostic.solidInitialLinezolidLzd = coding "SetSolidInitialLinezolidLzd";
+    } "MapSolidInitialLinezolidLzd";
+
+    item.answer first as answer where item.linkId = 'solidInitialClofazimineCfz' then {
+      answer.value as coding -> diagnostic.solidInitialClofazimineCfz = coding "SetSolidInitialClofazimineCfz";
+    } "MapSolidInitialClofazimineCfz";
+      
+    item.answer first as answer where item.linkId = 'solidInitialBedaquilineBdq' then {
+      answer.value as coding -> diagnostic.solidInitialBedaquilineBdq = coding "SetSolidInitialBedaquilineBdq";
+    } "MapSolidInitialBedaquilineBdq";
+      
+    item.answer first as answer where item.linkId = 'solidInitialDelamanidDlm' then {
+      answer.value as coding -> diagnostic.solidInitialDelamanidDlm = coding "SetSolidInitialDelamanidDlm";
+    } "MapSolidInitialDelamanidDlm";
+      
+    item.answer first as answer where item.linkId = 'solidInitialIsoniazidClinicalBreakpointInhCb' then {
+      answer.value as coding -> diagnostic.solidInitialIsoniazidClinicalBreakpointInhCb = coding "SetSolidInitialIsoniazidClinicalBreakpointInhCb";
+    } "MapSolidInitialIsoniazidClinicalBreakpointInhCb";
+      
+    item.answer first as answer where item.linkId = 'dateRifResistanceDetected' then {
+      answer.value as content -> diagnostic.dateRifResistanceDetected = content "SetDateRifResistanceDetected";
+    } "MapDateRifResistanceDetected";
+      
+    item.answer first as answer where item.linkId = 'dateOfSolidCultureResult' then {
+      answer.value as content -> diagnostic.dateOfSolidCultureResult = content "SetDateOfSolidCultureResult";
+    } "MapDateOfSolidCultureResult";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifMtb' then {
+      answer.value as coding -> diagnostic.xpertMtbRifMtb = coding "SetXpertMtbRifMtb";
+    } "MapXpertMtbRifMtb";
+      
+      item.answer first as answer where item.linkId = 'xpertMtbRifRif' then {
+      answer.value as coding -> diagnostic.xpertMtbRifRif = coding "SetXpertMtbRifRif";
+    } "MapXpertMtbRifRif";
+      
+      item.answer first as answer where item.linkId = 'solidCultureSpecimenNumber' then {
+      answer.value as content -> diagnostic.solidCultureSpecimenNumber = content "SetSolidCultureSpecimenNumber";
+    } "MapSolidCultureSpecimenNumber";
+      
+      item.answer first as answer where item.linkId = 'solidCultureResult' then {
+      answer.value as coding -> diagnostic.solidCultureResult = coding "SetSolidCultureResult";
+    } "MapSolidCultureResult";
+
+    item.answer first as answer where item.linkId = 'smearSpecimenNumber' then {
+      answer.value as content -> diagnostic.smearSpecimenNumber = content "SetSmearSpecimenNumber";
+    } "MapSmearSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifSpecimenNumber' then {
+      answer.value as content -> diagnostic.xpertMtbRifSpecimenNumber = content "SetXpertMtbRifSpecimenNumber";
+    } "MapXpertMtbRifSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'dateOfXpertMtbRifResult' then {
+      answer.value as content -> diagnostic.dateOfXpertMtbRifResult = content "SetDateOfXpertMtbRifResult";
+    } "MapDateOfXpertMtbRifResult";
+      
+    item.answer first as answer where item.linkId = 'sputumSmearMicroscopy' then {
+      answer.value as content -> diagnostic.sputumSmearMicroscopy = content "SetSputumSmearMicroscopy";
+    } "MapSputumSmearMicroscopy";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRif' then {
+      answer.value as content -> diagnostic.xpertMtbRif = content "SetXpertMtbRif";
+    } "MapXpertMtbRif";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifUltra' then {
+      answer.value as content -> diagnostic.xpertMtbRifUltra = content "SetXpertMtbRifUltra";
+    } "MapXpertMtbRifUltra";
+      
+    item.answer first as answer where item.linkId = 'cultureInLiquidMediaEGMgit' then {
+      answer.value as content -> diagnostic.cultureInLiquidMediaEGMgit = content "SetCultureInLiquidMediaEGMgit";
+    } "MapCultureInLiquidMediaEGMgit";
+      
+    item.answer first as answer where item.linkId = 'cultureInSolidMediaEGLj' then {
+      answer.value as content -> diagnostic.cultureInSolidMediaEGLj = content "SetCultureInSolidMediaEGLj";
+    } "MapCultureInSolidMediaEGLj";
+      
+    item.answer first as answer where item.linkId = 'initialDstInLiquidMediaEGMgit' then {
+      answer.value as content -> diagnostic.initialDstInLiquidMediaEGMgit = content "SetInitialDstInLiquidMediaEGMgit";
+    } "MapInitialDstInLiquidMediaEGMgit";
+      
+    item.answer first as answer where item.linkId = 'initialDstInSolidMediaEGLj' then {
+      answer.value as content -> diagnostic.initialDstInSolidMediaEGLj = content "SetInitialDstInSolidMediaEGLj";
+    } "MapInitialDstInSolidMediaEGLj";
+
+    item.answer first as answer where item.linkId = 'subsequentDstInLiquidMediaEGMgit' then {
+      answer.value as content -> diagnostic.subsequentDstInLiquidMediaEGMgit = content "SetSubsequentDstInLiquidMediaEGMgit";
+    } "MapSubsequentDstInLiquidMediaEGMgit";
+      
+    item.answer first as answer where item.linkId = 'subsequentDstInSolidMediaEGLj' then {
+      answer.value as content -> diagnostic.subsequentDstInSolidMediaEGLj = content "SetSubsequentDstInSolidMediaEGLj";
+    } "MapSubsequentDstInSolidMediaEGLj";
+      
+    item.answer first as answer where item.linkId = 'dateOfFinalInitialDstSolidMediaResults' then {
+      answer.value as content -> diagnostic.dateOfFinalInitialDstSolidMediaResults = content "SetDateOfFinalInitialDstSolidMediaResults";
+    } "MapDateOfFinalInitialDstSolidMediaResults";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifUltraSpecimenNumber' then {
+      answer.value as content -> diagnostic.xpertMtbRifUltraSpecimenNumber = content "SetXpertMtbRifUltraSpecimenNumber";
+    } "MapXpertMtbRifUltraSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'dateOfXpertMtbRifUltraResult' then {
+      answer.value as content -> diagnostic.dateOfXpertMtbRifUltraResult = content "SetDateOfXpertMtbRifUltraResult";
+    } "MapDateOfXpertMtbRifUltraResult";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifUltraMtb' then {
+      answer.value as coding -> diagnostic.xpertMtbRifUltraMtb = coding "SetXpertMtbRifUltraMtb";
+    } "MapXpertMtbRifUltraMtb";
+      
+    item.answer first as answer where item.linkId = 'xpertMtbRifUltraRif' then {
+      answer.value as coding -> diagnostic.xpertMtbRifUltraRif = coding "SetXpertMtbRifUltraRif";
+    } "MapXpertMtbRifUltraRif";
+      
+    item.answer first as answer where item.linkId = 'dateOfLiquidCultureResult' then {
+      answer.value as content -> diagnostic.dateOfLiquidCultureResult = content "SetDateOfLiquidCultureResult";
+    } "MapDateOfLiquidCultureResult";
+      
+    item.answer first as answer where item.linkId = 'liquidCultureResult' then {
+      answer.value as coding -> diagnostic.liquidCultureResult = coding "SetLiquidCultureResult";
+    } "MapLiquidCultureResult";
+      
+    item.answer first as answer where item.linkId = 'liquidCultureSpecimenNumber' then {
+      answer.value as content -> diagnostic.liquidCultureSpecimenNumber = content "SetLiquidCultureSpecimenNumber";
+    } "MapLiquidCultureSpecimenNumber";
+
+    item.answer first as answer where item.linkId = 'liquidInitialAmikacinAmk' then {
+      answer.value as coding -> diagnostic.liquidInitialAmikacinAmk = coding "SetLiquidInitialAmikacinAmk";
+    } "MapLiquidInitialAmikacinAmk";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialBedaquilineBdq' then {
+      answer.value as coding -> diagnostic.liquidInitialBedaquilineBdq = coding "SetLiquidInitialBedaquilineBdq";
+    } "MapLiquidInitialBedaquilineBdq";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialClofazimineCfz' then {
+      answer.value as coding -> diagnostic.liquidInitialClofazimineCfz = coding "SetLiquidInitialClofazimineCfz";
+    } "MapLiquidInitialClofazimineCfz";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialDelamanidDlm' then {
+      answer.value as coding -> diagnostic.liquidInitialDelamanidDlm = coding "SetLiquidInitialDelamanidDlm";
+    } "MapLiquidInitialDelamanidDlm";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialEthambutolEmb' then {
+      answer.value as coding -> diagnostic.liquidInitialEthambutolEmb = coding "SetLiquidInitialEthambutolEmb";
+    } "MapLiquidInitialEthambutolEmb";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialIsoniazidCriticalConcentrationInhCc' then {
+      answer.value as coding -> diagnostic.liquidInitialIsoniazidCriticalConcentrationInhCc = coding "SetLiquidInitialIsoniazidCriticalConcentrationInhCc";
+    } "MapLiquidInitialIsoniazidCriticalConcentrationInhCc";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialIsoniazidClinicalBreakpointInhCb' then {
+      answer.value as coding -> diagnostic.liquidInitialIsoniazidClinicalBreakpointInhCb = coding "SetLiquidInitialIsoniazidClinicalBreakpointInhCb";
+    } "MapLiquidInitialIsoniazidClinicalBreakpointInhCb";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialLevofloxacinLfx' then {
+      answer.value as coding -> diagnostic.liquidInitialLevofloxacinLfx = coding "SetLiquidInitialLevofloxacinLfx";
+    } "MapLiquidInitialLevofloxacinLfx";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialLinezolidLzd' then {
+      answer.value as coding -> diagnostic.liquidInitialLinezolidLzd = coding "SetLiquidInitialLinezolidLzd";
+    } "MapLiquidInitialLinezolidLzd";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialMoxifloxacinClinicalBreakpointMfxCb' then {
+      answer.value as coding -> diagnostic.liquidInitialMoxifloxacinClinicalBreakpointMfxCb = coding "SetLiquidInitialMoxifloxacinClinicalBreakpointMfxCb";
+    } "MapLiquidInitialMoxifloxacinClinicalBreakpointMfxCb";
+
+    item.answer first as answer where item.linkId = 'liquidInitialMoxifloxacinCriticalConcentrationMfxCc' then {
+      answer.value as coding -> diagnostic.liquidInitialMoxifloxacinCriticalConcentrationMfxCc = coding "SetLiquidInitialMoxifloxacinCriticalConcentrationMfxCc";
+    } "MapLiquidInitialMoxifloxacinCriticalConcentrationMfxCc";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialRifampicinRif' then {
+      answer.value as coding -> diagnostic.liquidInitialRifampicinRif = coding "SetLiquidInitialRifampicinRif";
+    } "MapLiquidInitialRifampicinRif";
+      
+    item.answer first as answer where item.linkId = 'liquidInitialPyrazinamidePza' then {
+      answer.value as coding -> diagnostic.liquidInitialPyrazinamidePza = coding "SetLiquidInitialPyrazinamidePza";
+    } "MapLiquidInitialPyrazinamidePza";
+      
+    item.answer first as answer where item.linkId = 'dateOfFinalInitialDstLiquidMediaResults' then {
+      answer.value as content -> diagnostic.dateOfFinalInitialDstLiquidMediaResults = content "SetDateOfFinalInitialDstLiquidMediaResults";
+    } "MapDateOfFinalInitialDstLiquidMediaResults";
+    
+    item.answer first as answer where item.linkId = 'dateOfFinalSubsequentDstLiquidMediaResults' then {
+      answer.value as content -> diagnostic.dateOfFinalSubsequentDstLiquidMediaResults = content "SetDateOfFinalSubsequentDstLiquidMediaResults";
+    } "MapDateOfFinalSubsequentDstLiquidMediaResults";
+    
+    item.answer first as answer where item.linkId = 'dateOfFinalSubsequentDstSolidMediaResults' then {
+      answer.value as content -> diagnostic.dateOfFinalSubsequentDstSolidMediaResults = content "SetDateOfFinalSubsequentDstSolidMediaResults";
+    } "MapDateOfFinalSubsequentDstSolidMediaResults";
+    
+    item.answer first as answer where item.linkId = 'liquidSubsequentAmikacinAmk' then {
+      answer.value as coding -> diagnostic.liquidSubsequentAmikacinAmk = coding "SetLiquidSubsequentAmikacinAmk";
+    } "MapLiquidSubsequentAmikacinAmk";
+
+    item.answer first as answer where item.linkId = 'liquidSubsequentBedaquilineBdq' then {
+      answer.value as coding -> diagnostic.liquidSubsequentBedaquilineBdq = coding "SetLiquidSubsequentBedaquilineBdq";
+    } "MapLiquidSubsequentBedaquilineBdq";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentClofazimineCfz' then {
+      answer.value as coding -> diagnostic.liquidSubsequentClofazimineCfz = coding "SetLiquidSubsequentClofazimineCfz";
+    } "MapLiquidSubsequentClofazimineCfz";
+      
+    item.answer first as answer where item.linkId = 'dateOfSlLpa' then {
+      answer.value as content -> diagnostic.dateOfSlLpa = content "SetDateOfSlLpa";
+    } "MapDateOfSlLpa";
+      
+    item.answer first as answer where item.linkId = 'dateOfFlLpa' then {
+      answer.value as content -> diagnostic.dateOfFlLpa = content "SetDateOfFlLpa";
+    } "MapDateOfFlLpa";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentDelamanidDlm' then {
+      answer.value as coding -> diagnostic.liquidSubsequentDelamanidDlm = coding "SetLiquidSubsequentDelamanidDlm";
+    } "MapLiquidSubsequentDelamanidDlm";
+      
+    item.answer first as answer where item.linkId = 'slLpa' then {
+      answer.value as content -> diagnostic.slLpa = content "SetSlLpa";
+    } "MapSlLpa";
+      
+    item.answer first as answer where item.linkId = 'finalResultAmikacinCapreomycinAmkCap' then {
+      answer.value as coding -> diagnostic.finalResultAmikacinCapreomycinAmkCap = coding "SetFinalResultAmikacinCapreomycinAmkCap";
+    } "MapFinalResultAmikacinCapreomycinAmkCap";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentEthambutolEmb' then {
+      answer.value as coding -> diagnostic.liquidSubsequentEthambutolEmb = coding "SetLiquidSubsequentEthambutolEmb";
+    } "MapLiquidSubsequentEthambutolEmb";
+      
+    item.answer first as answer where item.linkId = 'finalResultEthambutolEmb' then {
+      answer.value as coding -> diagnostic.finalResultEthambutolEmb = coding "SetFinalResultEthambutolEmb";
+    } "MapFinalResultEthambutolEmb";
+      
+    item.answer first as answer where item.linkId = 'finalResultFluoroquinolonesFq' then {
+      answer.value as coding -> diagnostic.finalResultFluoroquinolonesFq = coding "SetFinalResultFluoroquinolonesFq";
+    } "MapFinalResultFluoroquinolonesFq";
+
+    item.answer first as answer where item.linkId = 'finalResultKanamycinKan' then {
+      answer.value as coding -> diagnostic.finalResultKanamycinKan = coding "SetFinalResultKanamycinKan";
+    } "MapFinalResultKanamycinKan";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentIsoniazidCriticalConcentrationInhCc' then {
+      answer.value as coding -> diagnostic.liquidSubsequentIsoniazidCriticalConcentrationInhCc = coding "SetLiquidSubsequentIsoniazidCriticalConcentrationInhCc";
+    } "MapLiquidSubsequentIsoniazidCriticalConcentrationInhCc";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentIsoniazidClinicalBreakpointInhCb' then {
+      answer.value as coding -> diagnostic.liquidSubsequentIsoniazidClinicalBreakpointInhCb = coding "SetLiquidSubsequentIsoniazidClinicalBreakpointInhCb";
+    } "MapLiquidSubsequentIsoniazidClinicalBreakpointInhCb";
+      
+    item.answer first as answer where item.linkId = 'slLpaMtb' then {
+      answer.value as coding -> diagnostic.slLpaMtb = coding "SetSlLpaMtb";
+    } "MapSlLpaMtb";
+      
+    item.answer first as answer where item.linkId = 'slLpaSpecimenNumber' then {
+      answer.value as content -> diagnostic.slLpaSpecimenNumber = content "SetSlLpaSpecimenNumber";
+    } "MapSlLpaSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'flLpa' then {
+      answer.value as content -> diagnostic.flLpa = content "SetFlLpa";
+    } "MapFlLpa";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentLevofloxacinLfx' then {
+      answer.value as coding -> diagnostic.liquidSubsequentLevofloxacinLfx = coding "SetLiquidSubsequentLevofloxacinLfx";
+    } "MapLiquidSubsequentLevofloxacinLfx";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentLinezolidLzd' then {
+      answer.value as coding -> diagnostic.liquidSubsequentLinezolidLzd = coding "SetLiquidSubsequentLinezolidLzd";
+    } "MapLiquidSubsequentLinezolidLzd";
+      
+    item.answer first as answer where item.linkId = 'finalResultIsoniazidInh' then {
+      answer.value as coding -> diagnostic.finalResultIsoniazidInh = coding "SetFinalResultIsoniazidInh";
+    } "MapFinalResultIsoniazidInh";
+      
+    item.answer first as answer where item.linkId = 'flLpaMtb' then {
+      answer.value as coding -> diagnostic.flLpaMtb = coding "SetFlLpaMtb";
+    } "MapFlLpaMtb";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb' then {
+      answer.value as coding -> diagnostic.liquidSubsequentMoxifloxacinClinicalBreakpointMfxCb = coding "SetLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb";
+    } "MapLiquidSubsequentMoxifloxacinClinicalBreakpointMfxCb";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc' then {
+      answer.value as coding -> diagnostic.liquidSubsequentMoxifloxacinCriticalConcentrationMfxCc = coding "SetLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc";
+    } "MapLiquidSubsequentMoxifloxacinCriticalConcentrationMfxCc";
+      
+    item.answer first as answer where item.linkId = 'dateOfSampleReception' then {
+      answer.value as content -> diagnostic.dateOfSampleReception = content "SetDateOfSampleReception";
+    } "MapDateOfSampleReception";
+      
+    item.answer first as answer where item.linkId = 'dateRifResistanceFirstDetected' then {
+      answer.value as content -> diagnostic.dateRifResistanceFirstDetected = content "SetDateRifResistanceFirstDetected";
+    } "MapDateRifResistanceFirstDetected";
+      
+    item.answer first as answer where item.linkId = 'finalResultRifampicinRif' then {
+      answer.value as coding -> diagnostic.finalResultRifampicinRif = coding "SetFinalResultRifampicinRif";
+    } "MapFinalResultRifampicinRif";
+
+    item.answer first as answer where item.linkId = 'flLpaSpecimenNumber' then {
+      answer.value as content -> diagnostic.flLpaSpecimenNumber = content "SetFlLpaSpecimenNumber";
+    } "MapFlLpaSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'microscopyResult' then {
+      answer.value as coding -> diagnostic.microscopyResult = coding "SetMicroscopyResult";
+    } "MapMicroscopyResult";
+      
+    item.answer first as answer where item.linkId = 'dateOfCultureInoculationLiquidMedia' then {
+      answer.value as content -> diagnostic.dateOfCultureInoculationLiquidMedia = content "SetDateOfCultureInoculationLiquidMedia";
+    } "MapDateOfCultureInoculationLiquidMedia";
+      
+    item.answer first as answer where item.linkId = 'slLpaSpecimenType' then {
+      answer.value as coding -> diagnostic.slLpaSpecimenType = coding "SetSlLpaSpecimenType";
+    } "MapSlLpaSpecimenType";
+      
+    item.answer first as answer where item.linkId = 'dateOfCultureInoculationSolidMedia' then {
+      answer.value as content -> diagnostic.dateOfCultureInoculationSolidMedia = content "SetDateOfCultureInoculationSolidMedia";
+    } "MapDateOfCultureInoculationSolidMedia";
+      
+    item.answer first as answer where item.linkId = 'sampleQuality' then {
+      answer.value as coding -> diagnostic.sampleQuality = coding "SetSampleQuality";
+    } "MapSampleQuality";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentRifampicinRif' then {
+      answer.value as coding -> diagnostic.liquidSubsequentRifampicinRif = coding "SetLiquidSubsequentRifampicinRif";
+    } "MapLiquidSubsequentRifampicinRif";
+      
+    item.answer first as answer where item.linkId = 'sampleId' then {
+      answer.value as content -> diagnostic.sampleId = content "SetSampleId";
+    } "MapSampleId";
+      
+    item.answer first as answer where item.linkId = 'flLpaSpecimenType' then {
+      answer.value as coding -> diagnostic.flLpaSpecimenType = coding "SetFlLpaSpecimenType";
+    } "MapFlLpaSpecimenType";
+      
+    item.answer first as answer where item.linkId = 'sampleStatus' then {
+      answer.value as coding -> diagnostic.sampleStatus = coding "SetSampleStatus";
+    } "MapSampleStatus";
+      
+    item.answer first as answer where item.linkId = 'initialDstLmSpecimenNumber' then {
+      answer.value as content -> diagnostic.initialDstLmSpecimenNumber = content "SetInitialDstLmSpecimenNumber";
+    } "MapInitialDstLmSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'liquidSubsequentPyrazinamidePza' then {
+      answer.value as coding -> diagnostic.liquidSubsequentPyrazinamidePza = coding "SetLiquidSubsequentPyrazinamidePza";
+    } "MapLiquidSubsequentPyrazinamidePza";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentAmikacinAmk' then {
+      answer.value as coding -> diagnostic.solidSubsequentAmikacinAmk = coding "SetSolidSubsequentAmikacinAmk";
+    } "MapSolidSubsequentAmikacinAmk";
+      
+    item.answer first as answer where item.linkId = 'initialDstSmSpecimenNumber' then {
+      answer.value as content -> diagnostic.initialDstSmSpecimenNumber = content "SetInitialDstSmSpecimenNumber";
+    } "MapInitialDstSmSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentBedaquilineBdq' then {
+      answer.value as coding -> diagnostic.solidSubsequentBedaquilineBdq = coding "SetSolidSubsequentBedaquilineBdq";
+    } "MapSolidSubsequentBedaquilineBdq";
+
+    item.answer first as answer where item.linkId = 'solidSubsequentClofazimineCfz' then {
+      answer.value as coding -> diagnostic.solidSubsequentClofazimineCfz = coding "SetSolidSubsequentClofazimineCfz";
+    } "MapSolidSubsequentClofazimineCfz";
+      
+    item.answer first as answer where item.linkId = 'subsequentDstLmSpecimenNumber' then {
+      answer.value as content -> diagnostic.subsequentDstLmSpecimenNumber = content "SetSubsequentDstLmSpecimenNumber";
+    } "MapSubsequentDstLmSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'subsequentDstSmSpecimenNumber' then {
+      answer.value as content -> diagnostic.subsequentDstSmSpecimenNumber = content "SetSubsequentDstSmSpecimenNumber";
+    } "MapSubsequentDstSmSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'tbLamp' then {
+      answer.value as content -> diagnostic.tbLamp = content "SetTbLamp";
+    } "MapTbLamp";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentDelamanidDlm' then {
+      answer.value as coding -> diagnostic.solidSubsequentDelamanidDlm = coding "SetSolidSubsequentDelamanidDlm";
+    } "MapSolidSubsequentDelamanidDlm";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentEthambutolEmb' then {
+      answer.value as coding -> diagnostic.solidSubsequentEthambutolEmb = coding "SetSolidSubsequentEthambutolEmb";
+    } "MapSolidSubsequentEthambutolEmb";
+      
+    item.answer first as answer where item.linkId = 'dateOfTbLampResult' then {
+      answer.value as content -> diagnostic.dateOfTbLampResult = content "SetDateOfTbLampResult";
+    } "MapDateOfTbLampResult";
+      
+    item.answer first as answer where item.linkId = 'tbLampMtb' then {
+      answer.value as coding -> diagnostic.tbLampMtb = coding "SetTbLampMtb";
+    } "MapTbLampMtb";
+      
+    item.answer first as answer where item.linkId = 'tbLampSpecimenNumber' then {
+      answer.value as content -> diagnostic.tbLampSpecimenNumber = content "SetTbLampSpecimenNumber";
+    } "MapTbLampSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'lfLam' then {
+      answer.value as content -> diagnostic.lfLam = content "SetLfLam";
+    } "MapLfLam";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentIsoniazidCriticalConcentrationInhCc' then {
+      answer.value as coding -> diagnostic.solidSubsequentIsoniazidCriticalConcentrationInhCc = coding "SetSolidSubsequentIsoniazidCriticalConcentrationInhCc";
+    } "MapSolidSubsequentIsoniazidCriticalConcentrationInhCc";
+      
+    item.answer first as answer where item.linkId = 'dateOfLfLamResult' then {
+      answer.value as content -> diagnostic.dateOfLfLamResult = content "SetDateOfLfLamResult";
+    } "MapDateOfLfLamResult";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentIsoniazidClinicalBreakpointInhCb' then {
+      answer.value as coding -> diagnostic.solidSubsequentIsoniazidClinicalBreakpointInhCb = coding "SetSolidSubsequentIsoniazidClinicalBreakpointInhCb";
+    } "MapSolidSubsequentIsoniazidClinicalBreakpointInhCb";
+      
+    item.answer first as answer where item.linkId = 'lfLamMtb' then {
+      answer.value as coding -> diagnostic.lfLamMtb = coding "SetLfLamMtb";
+    } "MapLfLamMtb";
+      
+    item.answer first as answer where item.linkId = 'lfLamSpecimenNumber' then {
+      answer.value as content -> diagnostic.lfLamSpecimenNumber = content "SetLfLamSpecimenNumber";
+    } "MapLfLamSpecimenNumber";
+
+    item.answer first as answer where item.linkId = 'solidSubsequentLevofloxacinLfx' then {
+      answer.value as coding -> diagnostic.solidSubsequentLevofloxacinLfx = coding "SetSolidSubsequentLevofloxacinLfx";
+    } "MapSolidSubsequentLevofloxacinLfx";
+      
+    item.answer first as answer where item.linkId = 'truenat' then {
+      answer.value as content -> diagnostic.truenat = content "SetTruenat";
+    } "MapTruenat";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentLinezolidLzd' then {
+      answer.value as coding -> diagnostic.solidSubsequentLinezolidLzd = coding "SetSolidSubsequentLinezolidLzd";
+    } "MapSolidSubsequentLinezolidLzd";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentMoxifloxacinClinicalBreakpointMfxCb' then {
+      answer.value as coding -> diagnostic.solidSubsequentMoxifloxacinClinicalBreakpointMfxCb = coding "SetSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb";
+    } "MapSolidSubsequentMoxifloxacinClinicalBreakpointMfxCb";
+      
+    item.answer first as answer where item.linkId = 'truenatMtb' then {
+      answer.value as coding -> diagnostic.truenatMtb = coding "SetTruenatMtb";
+    } "MapTruenatMtb";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentMoxifloxacinCriticalConcentrationMfxCc' then {
+      answer.value as coding -> diagnostic.solidSubsequentMoxifloxacinCriticalConcentrationMfxCc = coding "SetSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc";
+    } "MapSolidSubsequentMoxifloxacinCriticalConcentrationMfxCc";
+      
+    item.answer first as answer where item.linkId = 'dateOfTruenatResult' then {
+      answer.value as content -> diagnostic.dateOfTruenatResult = content "SetDateOfTruenatResult";
+    } "MapDateOfTruenatResult";
+      
+    item.answer first as answer where item.linkId = 'truenatRif' then {
+      answer.value as coding -> diagnostic.truenatRif = coding "SetTruenatRif";
+    } "MapTruenatRif";
+      
+    item.answer first as answer where item.linkId = 'truenatSpecimenNumber' then {
+      answer.value as content -> diagnostic.truenatSpecimenNumber = content "SetTruenatSpecimenNumber";
+    } "MapTruenatSpecimenNumber";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentRifampicinRif' then {
+      answer.value as coding -> diagnostic.solidSubsequentRifampicinRif = coding "SetSolidSubsequentRifampicinRif";
+    } "MapSolidSubsequentRifampicinRif";
+      
+    item.answer first as answer where item.linkId = 'dateOfMicroscopy' then {
+      answer.value as content -> diagnostic.dateOfMicroscopy = content "SetDateOfMicroscopy";
+    } "MapDateOfMicroscopy";
+      
+    item.answer first as answer where item.linkId = 'solidSubsequentPyrazinamidePza' then {
+      answer.value as coding -> diagnostic.solidSubsequentPyrazinamidePza = coding "SetSolidSubsequentPyrazinamidePza";
+    } "MapSolidSubsequentPyrazinamidePza";
+      
+  } "ProcessItems";
+
+}

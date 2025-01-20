@@ -1,0 +1,42 @@
+{
+  "resourceType" : "MonitoringLaboratoryResults",
+  "executionDate" : "2025-01-08",
+  "cultureInLiquidMediaEGMgit" : true,
+  "cultureInSolidMediaEGLj" : true,
+  "dateOfCultureInoculationLiquidMedia" : "2025-01-01",
+  "dateOfCultureInoculationSolidMedia" : "2025-01-01",
+  "dateOfMicroscopy" : "2025-01-02",
+  "dateOfSampleReception" : "2025-01-01",
+  "dateOfLiquidCultureResult" : "2025-01-07",
+  "liquidCultureSpecimenNumber" : "4",
+  "liquidCultureResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+    "code" : "MTB",
+    "display" : "MTB"
+  },
+  "microscopyResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABSmearResultCS",
+    "code" : "2PLUS",
+    "display" : "Positive (++)"
+  },
+  "sampleId" : "ID-123",
+  "sampleQuality" : {
+    "system" : "http://example.org/CodeSystem/TBLABSampleQualityCS",
+    "code" : "GOOD",
+    "display" : "Good (accepted for processing)"
+  },
+  "sampleStatus" : {
+    "system" : "http://example.org/CodeSystem/TBLABSampleStatusCS",
+    "code" : "RECEIVED",
+    "display" : "Sample received"
+  },
+  "smearSpecimenNumber" : "15",
+  "dateOfSolidCultureResult" : "2025-01-08",
+  "solidCultureSpecimenNumber" : "1",
+  "solidCultureResult" : {
+    "system" : "http://example.org/CodeSystem/TBLABFinalCultureResultCS",
+    "code" : "NTM",
+    "display" : "NTM"
+  },
+  "sputumSmearMicroscopy" : true
+}
