@@ -15,7 +15,7 @@
   "title" : "Tracker TB Case Surveillance Implementation Guide",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-01-20T11:09:19+00:00",
+  "date" : "2025-02-10T09:39:27+00:00",
   "publisher" : "DHIS2",
   "contact" : [{
     "name" : "DHIS2",
@@ -610,7 +610,7 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DiagnosisAndNotification"
@@ -645,7 +645,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DiagnosticLaboratoryResults"
@@ -704,7 +704,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MockOutcomeQuestionnaire"
+      },
+      "name" : "Mock Outcome Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MonitoringLaboratoryResults"
@@ -739,7 +750,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Outcome"
@@ -810,7 +821,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/TBCaseSurveillance"
@@ -1025,7 +1036,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition"
       }],
       "reference" : {
         "reference" : "StructureDefinition/TBTreatment"
@@ -1233,6 +1244,7 @@
       "reference" : {
         "reference" : "StructureMap/DiagnosisAndNotificationQRToLM"
       },
+      "name" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model",
       "description" : "Map Diagnosis and Notification QuestionnaireResponse to Logical Model"
     },
     {
@@ -1243,6 +1255,7 @@
       "reference" : {
         "reference" : "StructureMap/DiagnosticLaboratoryResultsQRToLM"
       },
+      "name" : "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model",
       "description" : "Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"
     },
     {
@@ -1253,6 +1266,7 @@
       "reference" : {
         "reference" : "StructureMap/MonitoringLaboratoryResultsQRToLM"
       },
+      "name" : "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model",
       "description" : "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"
     },
     {
@@ -1263,6 +1277,7 @@
       "reference" : {
         "reference" : "StructureMap/OutcomeQRToLM"
       },
+      "name" : "Map TB Outcome QuestionnaireResponse to logical model",
       "description" : "Map TB Outcome QuestionnaireResponse to logical model"
     },
     {
@@ -1273,6 +1288,7 @@
       "reference" : {
         "reference" : "StructureMap/TBCaseSurveillanceQRToLM"
       },
+      "name" : "Map TB Case Surveillance QuestionnaireResponse to Logical Model",
       "description" : "Map TB Case Surveillance QuestionnaireResponse to Logical Model"
     },
     {
@@ -1283,6 +1299,7 @@
       "reference" : {
         "reference" : "StructureMap/TBTreatmentQRToLM"
       },
+      "name" : "Map TB Treatment QuestionnaireResponse to Logical Model",
       "description" : "Map TB Treatment QuestionnaireResponse to Logical Model"
     }],
     "page" : {

@@ -138,6 +138,12 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "MockOutcomeQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/MockOutcomeQuestionnaire",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "MonitoringLaboratoryResultsQuestionnaire",
     "type" : "Questionnaire",
     "url" : "http://example.org/Questionnaire/MonitoringLaboratoryResultsQuestionnaire",

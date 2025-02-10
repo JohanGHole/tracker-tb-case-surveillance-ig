@@ -1,10 +1,10 @@
 TrackerTBCaseSurveillanceImplementationGuide : Validation Results
 =========================================
 
-err = 12, warn = 10, info = 101
-IG Publisher Version: 1.8.8
-Generated Mon Jan 20 11:10:25 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
- Build Errors : 12 / 10 / 0
+err = 6, warn = 11, info = 101
+IG Publisher Version: 1.8.11
+Generated Mon Feb 10 09:41:31 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.surveillance.ig#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 11 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-GENYesNoUnknownCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-RRTGENSexCS : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/CodeSystem-SusceptibleResistantIndeterminateCS : 0 / 0 / 4
@@ -25,6 +25,7 @@ Generated Mon Jan 20 11:10:25 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire : 0 / 0 / 17
  /github/workspace/fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire : 0 / 0 / 33
+ /github/workspace/fsh-generated/resources/Questionnaire-MockOutcomeQuestionnaire : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire : 0 / 0 / 17
  /github/workspace/fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire : 0 / 0 / 9
@@ -66,24 +67,13 @@ Generated Mon Jan 20 11:10:25 UTC 2025. FHIR version 4.0.1 for tracker.tb.case.s
  /github/workspace/input/maps/TBTreatmentQRToLM : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosisAndNotificationQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/DiagnosticLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/MonitoringLaboratoryResultsQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/OutcomeQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBCaseSurveillanceQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/TBTreatmentQRToLM.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/MockOutcomeQuestionnaire.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/4.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/5.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Questionnaire-TBTreatmentQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 157
-ERROR: /github/workspace/output/Questionnaire-TBCaseSurveillanceQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 164
-ERROR: /github/workspace/output/Questionnaire-TBOutcomeQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 155
-ERROR: /github/workspace/output/Questionnaire-MonitoringLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
-ERROR: /github/workspace/output/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 173
-ERROR: /github/workspace/output/Questionnaire-DiagnosisAndNotificationQuestionnaire-form.html: unexpected non-end of element null::div  at line 260 column 170
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -108,6 +98,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/ImplementationGuide-tracker.tb.case.surveillance.ig.json ==
 == fsh-generated/resources/Questionnaire-DiagnosisAndNotificationQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-DiagnosticLaboratoryResultsQuestionnaire.json ==
+== fsh-generated/resources/Questionnaire-MockOutcomeQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-MonitoringLaboratoryResultsQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-TBCaseSurveillanceQuestionnaire.json ==
 == fsh-generated/resources/Questionnaire-TBOutcomeQuestionnaire.json ==

@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +20,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSDenotificationReasonsCS</b></p><a name=\"TBCSDenotificationReasonsCS\"> </a><a name=\"hcTBCSDenotificationReasonsCS\"> </a><a name=\"TBCSDenotificationReasonsCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NOT_TB<a name=\"TBCSDenotificationReasonsCS-NOT_TB\"> </a></td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\">DUPLICATE<a name=\"TBCSDenotificationReasonsCS-DUPLICATE\"> </a></td><td>Duplicate</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSDenotificationReasonsCS</b></p><a name=\"TBCSDenotificationReasonsCS\"> </a><a name=\"hcTBCSDenotificationReasonsCS\"> </a><a name=\"TBCSDenotificationReasonsCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSDenotificationReasonsCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NOT_TB<a name=\"TBCSDenotificationReasonsCS-NOT_TB\"> </a></td><td>Not a TB Case</td></tr><tr><td style=\"white-space:nowrap\">DUPLICATE<a name=\"TBCSDenotificationReasonsCS-DUPLICATE\"> </a></td><td>Duplicate</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/CodeSystem/TBCSDenotificationReasonsCS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -27,7 +28,7 @@
   fhir:title [ fhir:v "TB CS - Denotification reasons"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-20T11:09:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-10T09:39:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

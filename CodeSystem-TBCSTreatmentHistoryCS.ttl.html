@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.1.38"}
-    h3,h4,h5,h6{--heading-prefix:"2.1.38"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.1.33"}
+    h3,h4,h5,h6{--heading-prefix:"2.1.33"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -222,7 +222,7 @@
         
           Draft
           
-            as of 2025-01-20
+            as of 2025-02-10
           
         
       </td>
@@ -241,6 +241,7 @@
   <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -258,7 +259,7 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem TBCSTreatmentHistoryCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;TBCSTreatmentHistoryCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcTBCSTreatmentHistoryCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;TBCSTreatmentHistoryCS-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://example.org/CodeSystem/TBCSTreatmentHistoryCS&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_NEW&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_NEW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;New&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_RELAPSE&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_RELAPSE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Relapse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_FAILED&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_FAILED\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Treatment after failure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_LOST_TO_FOLLOWUP&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Treatment after lost to follow-up&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_OTHER_PREV&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other previously treated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_UNKNOWN&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem TBCSTreatmentHistoryCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;TBCSTreatmentHistoryCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcTBCSTreatmentHistoryCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;TBCSTreatmentHistoryCS-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://example.org/CodeSystem/TBCSTreatmentHistoryCS&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_NEW&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_NEW\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;New&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_RELAPSE&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_RELAPSE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Relapse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_FAILED&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_FAILED\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Treatment after failure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_LOST_TO_FOLLOWUP&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Treatment after lost to follow-up&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_OTHER_PREV&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other previously treated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HISTORY_UNKNOWN&lt;a name=\&quot;TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://example.org/CodeSystem/TBCSTreatmentHistoryCS&quot;^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
@@ -266,7 +267,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TB CS - Treatment history&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-01-20T11:09:19+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-02-10T09:39:27+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DHIS2&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DHIS2&quot; ] ;
@@ -323,7 +324,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 20, 2025 11:09+0000">2025-01-20</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 10, 2025 09:40+0000">2025-02-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

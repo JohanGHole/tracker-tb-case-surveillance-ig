@@ -184,22 +184,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Logical Models</a>
+         <a href="#1">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#2">Structures: Questionnaires</a>
+         <a href="#2">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Structure Maps</a>
       </li>
       <li>
-         <a href="#5">Terminology: Structure Maps</a>
+         <a href="#5">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Other</a>
       </li>
    </ul>
 </div>
@@ -208,68 +208,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Logical Models </h3>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DiagnosisAndNotification.html"
-                  title="StructureDefinition/DiagnosisAndNotification">Diagnosis and notification</a>
-            </td>
-            <td>
-<p>Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DiagnosticLaboratoryResults.html"
-                  title="StructureDefinition/DiagnosticLaboratoryResults">Diagnostic laboratory results</a>
-            </td>
-            <td>
-<p>Captures diagnostic test results along with sample information to determine TB infection status.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-MonitoringLaboratoryResults.html"
-                  title="StructureDefinition/MonitoringLaboratoryResults">Monitoring laboratory results</a>
-            </td>
-            <td>
-<p>Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Outcome.html"
-                  title="StructureDefinition/Outcome">Outcome</a>
-            </td>
-            <td>
-<p>Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TBCaseSurveillance.html"
-                  title="StructureDefinition/TBCaseSurveillance">TB Case Surveillance</a>
-            </td>
-            <td>
-<p>Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TBTreatment.html"
-                  title="StructureDefinition/TBTreatment">TB Treatment</a>
-            </td>
-            <td>
-<p>Tracks the patient's treatment regimen, including details of medication, dosages, and any updates to the treatment plan.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="2"> </a>
    <h3>Structures: Questionnaires </h3>
     <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
 <table class="grid">
@@ -291,6 +229,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>A questionnaire for capturing diagnostic test results and sample information to determine TB infection status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-MockOutcomeQuestionnaire.html"
+                  title="Questionnaire/MockOutcomeQuestionnaire">Mock Outcome Questionnaire</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -331,7 +278,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="2"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -490,7 +437,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -650,7 +597,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Structure Maps </h3>
     <p>These define transformations to convert between data structures used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -659,7 +606,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureMap-DiagnosisAndNotificationQRToLM.html"
-                  title="StructureMap/DiagnosisAndNotificationQRToLM">StructureMap/DiagnosisAndNotificationQRToLM</a>
+                  title="StructureMap/DiagnosisAndNotificationQRToLM">Map Diagnosis and Notification QuestionnaireResponse to Logical Model</a>
             </td>
             <td>
 <p>Map Diagnosis and Notification QuestionnaireResponse to Logical Model</p>
@@ -668,7 +615,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureMap-DiagnosticLaboratoryResultsQRToLM.html"
-                  title="StructureMap/DiagnosticLaboratoryResultsQRToLM">StructureMap/DiagnosticLaboratoryResultsQRToLM</a>
+                  title="StructureMap/DiagnosticLaboratoryResultsQRToLM">Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</a>
             </td>
             <td>
 <p>Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model</p>
@@ -677,7 +624,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureMap-MonitoringLaboratoryResultsQRToLM.html"
-                  title="StructureMap/MonitoringLaboratoryResultsQRToLM">StructureMap/MonitoringLaboratoryResultsQRToLM</a>
+                  title="StructureMap/MonitoringLaboratoryResultsQRToLM">Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</a>
             </td>
             <td>
 <p>Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</p>
@@ -685,17 +632,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureMap-OutcomeQRToLM.html"
-                  title="StructureMap/OutcomeQRToLM">StructureMap/OutcomeQRToLM</a>
-            </td>
-            <td>
-<p>Map TB Outcome QuestionnaireResponse to logical model</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureMap-TBCaseSurveillanceQRToLM.html"
-                  title="StructureMap/TBCaseSurveillanceQRToLM">StructureMap/TBCaseSurveillanceQRToLM</a>
+                  title="StructureMap/TBCaseSurveillanceQRToLM">Map TB Case Surveillance QuestionnaireResponse to Logical Model</a>
             </td>
             <td>
 <p>Map TB Case Surveillance QuestionnaireResponse to Logical Model</p>
@@ -703,8 +641,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureMap-OutcomeQRToLM.html"
+                  title="StructureMap/OutcomeQRToLM">Map TB Outcome QuestionnaireResponse to logical model</a>
+            </td>
+            <td>
+<p>Map TB Outcome QuestionnaireResponse to logical model</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureMap-TBTreatmentQRToLM.html"
-                  title="StructureMap/TBTreatmentQRToLM">StructureMap/TBTreatmentQRToLM</a>
+                  title="StructureMap/TBTreatmentQRToLM">Map TB Treatment QuestionnaireResponse to Logical Model</a>
             </td>
             <td>
 <p>Map TB Treatment QuestionnaireResponse to Logical Model</p>
@@ -712,7 +659,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -750,6 +697,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
+   <a name="6"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnosisAndNotification.html"
+                  title="StructureDefinition/DiagnosisAndNotification">Diagnosis and notification</a>
+            </td>
+            <td>
+<p>Represents the collection of baseline patient data, risk factors, and the diagnostic decision, including notifications of confirmed or ruled-out cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnosticLaboratoryResults.html"
+                  title="StructureDefinition/DiagnosticLaboratoryResults">Diagnostic laboratory results</a>
+            </td>
+            <td>
+<p>Captures diagnostic test results along with sample information to determine TB infection status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MonitoringLaboratoryResults.html"
+                  title="StructureDefinition/MonitoringLaboratoryResults">Monitoring laboratory results</a>
+            </td>
+            <td>
+<p>Captures laboratory test results for monitoring treatment progress, including sputum microscopy and culture tests for drug-resistant TB cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Outcome.html"
+                  title="StructureDefinition/Outcome">Outcome</a>
+            </td>
+            <td>
+<p>Represents the final outcome of the TB case, including case closure, treatment success, or necessary corrections.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TBCaseSurveillance.html"
+                  title="StructureDefinition/TBCaseSurveillance">TB Case Surveillance</a>
+            </td>
+            <td>
+<p>Represents the overall structure of the program and the initial capture of patient demographcis and key identifiers.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TBTreatment.html"
+                  title="StructureDefinition/TBTreatment">TB Treatment</a>
+            </td>
+            <td>
+<p>Tracks the patient's treatment regimen, including details of medication, dosages, and any updates to the treatment plan.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -768,7 +777,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 20, 2025 11:09+0000">2025-01-20</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://dhis2.org">DHIS2</a>.  Package tracker.tb.case.surveillance.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 10, 2025 09:40+0000">2025-02-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

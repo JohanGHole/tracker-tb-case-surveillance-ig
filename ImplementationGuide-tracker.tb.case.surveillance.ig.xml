@@ -16,7 +16,7 @@
   <title value="Tracker TB Case Surveillance Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-01-20T11:09:19+00:00"/>
+  <date value="2025-02-10T09:39:27+00:00"/>
   <publisher value="DHIS2"/>
   <contact>
     <name value="DHIS2"/>
@@ -455,7 +455,7 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/DiagnosisAndNotification"/>
@@ -487,7 +487,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/DiagnosticLaboratoryResults"/>
@@ -541,7 +541,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MockOutcomeQuestionnaire"/>
+      </reference>
+      <name value="Mock Outcome Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/MonitoringLaboratoryResults"/>
@@ -573,7 +583,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/Outcome"/>
@@ -638,7 +648,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/TBCaseSurveillance"/>
@@ -835,7 +845,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/TBTreatment"/>
@@ -1026,6 +1036,7 @@
       <reference>
         <reference value="StructureMap/DiagnosisAndNotificationQRToLM"/>
       </reference>
+      <name value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
       <description value="Map Diagnosis and Notification QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
@@ -1035,6 +1046,7 @@
       <reference>
         <reference value="StructureMap/DiagnosticLaboratoryResultsQRToLM"/>
       </reference>
+      <name value="Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"/>
       <description value="Map Diagnostic Laboratory Results QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
@@ -1044,6 +1056,7 @@
       <reference>
         <reference value="StructureMap/MonitoringLaboratoryResultsQRToLM"/>
       </reference>
+      <name value="Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"/>
       <description value="Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
@@ -1053,6 +1066,7 @@
       <reference>
         <reference value="StructureMap/OutcomeQRToLM"/>
       </reference>
+      <name value="Map TB Outcome QuestionnaireResponse to logical model"/>
       <description value="Map TB Outcome QuestionnaireResponse to logical model"/>
     </resource>
     <resource>
@@ -1062,6 +1076,7 @@
       <reference>
         <reference value="StructureMap/TBCaseSurveillanceQRToLM"/>
       </reference>
+      <name value="Map TB Case Surveillance QuestionnaireResponse to Logical Model"/>
       <description value="Map TB Case Surveillance QuestionnaireResponse to Logical Model"/>
     </resource>
     <resource>
@@ -1071,6 +1086,7 @@
       <reference>
         <reference value="StructureMap/TBTreatmentQRToLM"/>
       </reference>
+      <name value="Map TB Treatment QuestionnaireResponse to Logical Model"/>
       <description value="Map TB Treatment QuestionnaireResponse to Logical Model"/>
     </resource>
     <page>

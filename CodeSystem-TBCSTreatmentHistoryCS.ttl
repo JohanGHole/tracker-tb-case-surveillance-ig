@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +20,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSTreatmentHistoryCS</b></p><a name=\"TBCSTreatmentHistoryCS\"> </a><a name=\"hcTBCSTreatmentHistoryCS\"> </a><a name=\"TBCSTreatmentHistoryCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HISTORY_NEW<a name=\"TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a></td><td>New</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_RELAPSE<a name=\"TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_FAILED<a name=\"TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a></td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_LOST_TO_FOLLOWUP<a name=\"TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a></td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_OTHER_PREV<a name=\"TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a></td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_UNKNOWN<a name=\"TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a></td><td>Unknown</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem TBCSTreatmentHistoryCS</b></p><a name=\"TBCSTreatmentHistoryCS\"> </a><a name=\"hcTBCSTreatmentHistoryCS\"> </a><a name=\"TBCSTreatmentHistoryCS-en-US\"> </a><p>This case-sensitive code system <code>http://example.org/CodeSystem/TBCSTreatmentHistoryCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">HISTORY_NEW<a name=\"TBCSTreatmentHistoryCS-HISTORY_NEW\"> </a></td><td>New</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_RELAPSE<a name=\"TBCSTreatmentHistoryCS-HISTORY_RELAPSE\"> </a></td><td>Relapse</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_FAILED<a name=\"TBCSTreatmentHistoryCS-HISTORY_FAILED\"> </a></td><td>Treatment after failure</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_LOST_TO_FOLLOWUP<a name=\"TBCSTreatmentHistoryCS-HISTORY_LOST_TO_FOLLOWUP\"> </a></td><td>Treatment after lost to follow-up</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_OTHER_PREV<a name=\"TBCSTreatmentHistoryCS-HISTORY_OTHER_PREV\"> </a></td><td>Other previously treated</td></tr><tr><td style=\"white-space:nowrap\">HISTORY_UNKNOWN<a name=\"TBCSTreatmentHistoryCS-HISTORY_UNKNOWN\"> </a></td><td>Unknown</td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/CodeSystem/TBCSTreatmentHistoryCS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -27,7 +28,7 @@
   fhir:title [ fhir:v "TB CS - Treatment history"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2025-01-20T11:09:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-10T09:39:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;

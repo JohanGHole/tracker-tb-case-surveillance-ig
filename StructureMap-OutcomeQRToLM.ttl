@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "OutcomeQRToLM"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap OutcomeQRToLM</b></p><a name=\"OutcomeQRToLM\"> </a><a name=\"hcOutcomeQRToLM\"> </a><a name=\"OutcomeQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/OutcomeQRToLM<span style=\"color: navy\">&quot; = &quot;</span>OutcomeQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map TB Outcome QuestionnaireResponse to logical model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-Outcome.html\" title=\"Outcome\">http://example.org/StructureDefinition/Outcome</a><span style=\"color: navy\">&quot; </span><b>alias </b>OutcomeLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>OutcomeQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">outcome</span><span style=\"color: navy\"> : </span>OutcomeLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentOutcome'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.treatmentOutcome = <span style=\"color: maroon\">coding</span> <i>&quot;SetTreatmentOutcome&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'reasonForDenotification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.reasonForDenotification = <span style=\"color: maroon\">coding</span> <i>&quot;SetReasonForDenotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapReasonForDenotification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'provideDuplicateSRecordNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.provideDuplicateSRecordNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetProvideDuplicateSRecordNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProvideDuplicateSRecordNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentOutcomeDelayWeeks'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.treatmentOutcomeDelayWeeks = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentOutcomeDelayWeeks&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentOutcomeDelayWeeks&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'provideEvidenceForDenotifyingTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.provideEvidenceForDenotifyingTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetProvideEvidenceForDenotifyingTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProvideEvidenceForDenotifyingTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'denotifyTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.denotifyTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetDenotifyTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDenotifyTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap OutcomeQRToLM</b></p><a name=\"OutcomeQRToLM\"> </a><a name=\"hcOutcomeQRToLM\"> </a><a name=\"OutcomeQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/OutcomeQRToLM<span style=\"color: navy\">&quot; = &quot;</span>OutcomeQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map TB Outcome QuestionnaireResponse to logical model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-Outcome.html\" title=\"Outcome\">http://example.org/StructureDefinition/Outcome</a><span style=\"color: navy\">&quot; </span><b>alias </b>OutcomeLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>OutcomeQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">outcome</span><span style=\"color: navy\"> : </span>OutcomeLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentOutcome'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.treatmentOutcome = <span style=\"color: maroon\">coding</span> <i>&quot;SetTreatmentOutcome&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'reasonForDenotification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.reasonForDenotification = <span style=\"color: maroon\">coding</span> <i>&quot;SetReasonForDenotification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapReasonForDenotification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'provideDuplicateSRecordNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.provideDuplicateSRecordNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetProvideDuplicateSRecordNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProvideDuplicateSRecordNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentOutcomeDelayWeeks'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.treatmentOutcomeDelayWeeks = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentOutcomeDelayWeeks&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentOutcomeDelayWeeks&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'provideEvidenceForDenotifyingTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.provideEvidenceForDenotifyingTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetProvideEvidenceForDenotifyingTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProvideEvidenceForDenotifyingTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'denotifyTheCase'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>outcome.denotifyTheCase = <span style=\"color: maroon\">content</span> <i>&quot;SetDenotifyTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDenotifyTheCase&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/StructureMap/OutcomeQRToLM"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OutcomeQRToLM"] ; # 
   fhir:title [ fhir:v "Map TB Outcome QuestionnaireResponse to logical model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-20T11:09:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-10T09:39:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -83,7 +84,10 @@
              fhir:element [ fhir:v "executionDate" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -109,7 +113,10 @@
              fhir:element [ fhir:v "treatmentOutcome" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -135,7 +142,10 @@
              fhir:element [ fhir:v "reasonForDenotification" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -161,7 +171,10 @@
              fhir:element [ fhir:v "provideDuplicateSRecordNumber" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -187,7 +200,10 @@
              fhir:element [ fhir:v "treatmentOutcomeDelayWeeks" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -213,7 +229,10 @@
              fhir:element [ fhir:v "provideEvidenceForDenotifyingTheCase" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -239,7 +258,10 @@
              fhir:element [ fhir:v "denotifyTheCase" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )

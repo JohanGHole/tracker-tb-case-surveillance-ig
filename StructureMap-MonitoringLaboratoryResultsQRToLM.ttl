@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "MonitoringLaboratoryResultsQRToLM"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MonitoringLaboratoryResultsQRToLM</b></p><a name=\"MonitoringLaboratoryResultsQRToLM\"> </a><a name=\"hcMonitoringLaboratoryResultsQRToLM\"> </a><a name=\"MonitoringLaboratoryResultsQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot; = &quot;</span>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MonitoringLaboratoryResults.html\" title=\"Monitoring laboratory results\">http://example.org/StructureDefinition/MonitoringLaboratoryResults</a><span style=\"color: navy\">&quot; </span><b>alias </b>LabResultsLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">labResults</span><span style=\"color: navy\"> : </span>LabResultsLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Execution Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationLiquidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationSolidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Sample Reception</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSampleReception = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfLiquidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Microscopy Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.microscopyResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample ID</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleId = <span style=\"color: maroon\">content</span> <i>&quot;SetSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Quality</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleQuality = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Status</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleStatus = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Smear Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.smearSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSolidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sputum Smear Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sputumSmearMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap MonitoringLaboratoryResultsQRToLM</b></p><a name=\"MonitoringLaboratoryResultsQRToLM\"> </a><a name=\"hcMonitoringLaboratoryResultsQRToLM\"> </a><a name=\"MonitoringLaboratoryResultsQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot; = &quot;</span>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-MonitoringLaboratoryResults.html\" title=\"Monitoring laboratory results\">http://example.org/StructureDefinition/MonitoringLaboratoryResults</a><span style=\"color: navy\">&quot; </span><b>alias </b>LabResultsLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>MonitoringLaboratoryResultsQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">labResults</span><span style=\"color: navy\"> : </span>LabResultsLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    <span style=\"color: navy\">// </span><span style=\"color: green\">Execution Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInLiquidMediaEGMgit'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInLiquidMediaEGMgit = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Culture in Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cultureInSolidMediaEGLj'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.cultureInSolidMediaEGLj = <span style=\"color: maroon\">content</span> <i>&quot;SetCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCultureInSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Liquid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationLiquidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationLiquidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationLiquidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Culture Inoculation - Solid Media</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfCultureInoculationSolidMedia'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfCultureInoculationSolidMedia = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfCultureInoculationSolidMedia&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Date of Sample Reception</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSampleReception'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSampleReception = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSampleReception&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfLiquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfLiquidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Liquid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'liquidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.liquidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLiquidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Microscopy Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'microscopyResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.microscopyResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMicroscopyResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample ID</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleId'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleId = <span style=\"color: maroon\">content</span> <i>&quot;SetSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleID&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Quality</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleQuality'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleQuality = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleQuality&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sample Status</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sampleStatus'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sampleStatus = <span style=\"color: maroon\">coding</span> <i>&quot;SetSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSampleStatus&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Smear Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'smearSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.smearSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSmearSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Result Date</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'dateOfSolidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.dateOfSolidCultureResult = <span style=\"color: maroon\">content</span> <i>&quot;SetDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDateOfSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Specimen Number</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureSpecimenNumber'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureSpecimenNumber = <span style=\"color: maroon\">content</span> <i>&quot;SetSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureSpecimenNumber&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Solid Culture Test Result</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'solidCultureResult'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.solidCultureResult = <span style=\"color: maroon\">coding</span> <i>&quot;SetSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSolidCultureResult&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">// </span><span style=\"color: green\">Sputum Smear Microscopy</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'sputumSmearMicroscopy'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>labResults.sputumSmearMicroscopy = <span style=\"color: maroon\">content</span> <i>&quot;SetSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSputumSmearMicroscopy&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/StructureMap/MonitoringLaboratoryResultsQRToLM"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MonitoringLaboratoryResultsQRToLM"] ; # 
   fhir:title [ fhir:v "Map Monitoring Laboratory Results QuestionnaireResponse to Logical Model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-20T11:09:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-10T09:39:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -83,7 +84,10 @@
              fhir:element [ fhir:v "executionDate" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -109,7 +113,10 @@
              fhir:element [ fhir:v "cultureInLiquidMediaEGMgit" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -135,7 +142,10 @@
              fhir:element [ fhir:v "cultureInSolidMediaEGLj" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -161,7 +171,10 @@
              fhir:element [ fhir:v "dateOfCultureInoculationLiquidMedia" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -187,7 +200,10 @@
              fhir:element [ fhir:v "dateOfCultureInoculationSolidMedia" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -213,7 +229,10 @@
              fhir:element [ fhir:v "dateOfMicroscopy" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -239,7 +258,10 @@
              fhir:element [ fhir:v "dateOfSampleReception" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -265,7 +287,10 @@
              fhir:element [ fhir:v "dateOfLiquidCultureResult" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -291,7 +316,10 @@
              fhir:element [ fhir:v "liquidCultureSpecimenNumber" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -317,7 +345,10 @@
              fhir:element [ fhir:v "liquidCultureResult" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -343,7 +374,10 @@
              fhir:element [ fhir:v "microscopyResult" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -369,7 +403,10 @@
              fhir:element [ fhir:v "sampleId" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -395,7 +432,10 @@
              fhir:element [ fhir:v "sampleQuality" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -421,7 +461,10 @@
              fhir:element [ fhir:v "sampleStatus" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -447,7 +490,10 @@
              fhir:element [ fhir:v "smearSpecimenNumber" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -473,7 +519,10 @@
              fhir:element [ fhir:v "dateOfSolidCultureResult" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -499,7 +548,10 @@
              fhir:element [ fhir:v "solidCultureSpecimenNumber" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -525,7 +577,10 @@
              fhir:element [ fhir:v "solidCultureResult" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -551,7 +606,10 @@
              fhir:element [ fhir:v "sputumSmearMicroscopy" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )

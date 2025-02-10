@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,14 +11,14 @@
   fhir:id [ fhir:v "TBTreatmentQRToLM"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap TBTreatmentQRToLM</b></p><a name=\"TBTreatmentQRToLM\"> </a><a name=\"hcTBTreatmentQRToLM\"> </a><a name=\"TBTreatmentQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/TBTreatmentQRToLM<span style=\"color: navy\">&quot; = &quot;</span>TBTreatmentQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map TB Treatment QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-TBTreatment.html\" title=\"TB Treatment\">http://example.org/StructureDefinition/TBTreatment</a><span style=\"color: navy\">&quot; </span><b>alias </b>TBTreatmentLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>TBTreatmentQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">treatment</span><span style=\"color: navy\"> : </span>TBTreatmentLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentRegimen'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentRegimen = <span style=\"color: maroon\">coding</span> <i>&quot;SetTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'levofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.levofloxacinLfx = <span style=\"color: maroon\">content</span> <i>&quot;SetLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'moxifloxacinMfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.moxifloxacinMfx = <span style=\"color: maroon\">content</span> <i>&quot;SetMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amikacinAmk = <span style=\"color: maroon\">content</span> <i>&quot;SetAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'streptomycinStm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.streptomycinStm = <span style=\"color: maroon\">content</span> <i>&quot;SetStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clofazimineCfz = <span style=\"color: maroon\">content</span> <i>&quot;SetClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cycloserineCs'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.cycloserineCs = <span style=\"color: maroon\">content</span> <i>&quot;SetCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'ethionamideEto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.ethionamideEto = <span style=\"color: maroon\">content</span> <i>&quot;SetEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'linezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.linezolidLzd = <span style=\"color: maroon\">content</span> <i>&quot;SetLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'prothionamidePto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.prothionamidePto = <span style=\"color: maroon\">content</span> <i>&quot;SetProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'terizidoneTrd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.terizidoneTrd = <span style=\"color: maroon\">content</span> <i>&quot;SetTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'bedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.bedaquilineBdq = <span style=\"color: maroon\">content</span> <i>&quot;SetBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'delamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.delamanidDlm = <span style=\"color: maroon\">content</span> <i>&quot;SetDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'imipenemCilastatinIpmCln'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.imipenemCilastatinIpmCln = <span style=\"color: maroon\">content</span> <i>&quot;SetImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'meropenemMpm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.meropenemMpm = <span style=\"color: maroon\">content</span> <i>&quot;SetMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pAminosalicylicAcidPas'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pAminosalicylicAcidPas = <span style=\"color: maroon\">content</span> <i>&quot;SetPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'isoniazidInh'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.isoniazidInh = <span style=\"color: maroon\">content</span> <i>&quot;SetIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'other'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.other = <span style=\"color: maroon\">content</span> <i>&quot;SetOther&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOther&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'otherDrugSpecify'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.otherDrugSpecify = <span style=\"color: maroon\">content</span> <i>&quot;SetOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'rifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.rifampicinRif = <span style=\"color: maroon\">content</span> <i>&quot;SetRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amoxicillinClavulanicAcidAmxClv'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amoxicillinClavulanicAcidAmxClv = <span style=\"color: maroon\">content</span> <i>&quot;SetAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'capreomycinCap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.capreomycinCap = <span style=\"color: maroon\">content</span> <i>&quot;SetCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'kanamycinKan'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.kanamycinKan = <span style=\"color: maroon\">content</span> <i>&quot;SetKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pretomanidPa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pretomanidPa = <span style=\"color: maroon\">content</span> <i>&quot;SetPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tickTheBoxToOverwriteThisClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.tickTheBoxToOverwriteThisClassification = <span style=\"color: maroon\">content</span> <i>&quot;SetTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'resistanceClassificationBasedOnLaboratoryResultsInTheSystem'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem = <span style=\"color: maroon\">content</span> <i>&quot;SetResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'newlyAssignedResistanceClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.newlyAssignedResistanceClassification = <span style=\"color: maroon\">coding</span> <i>&quot;SetNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentInitiationDelayDays'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentInitiationDelayDays = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentEpisodeEndDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentEpisodeEndDate = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'reasonForEndingCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.reasonForEndingCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clickToEndTheCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clickToEndTheCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'outcomeDue'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.outcomeDue = <span style=\"color: maroon\">content</span> <i>&quot;SetOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap TBTreatmentQRToLM</b></p><a name=\"TBTreatmentQRToLM\"> </a><a name=\"hcTBTreatmentQRToLM\"> </a><a name=\"TBTreatmentQRToLM-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://example.org/StructureMap/TBTreatmentQRToLM<span style=\"color: navy\">&quot; = &quot;</span>TBTreatmentQRToLM<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map TB Treatment QuestionnaireResponse to Logical Model</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\" title=\"QuestionnaireResponse\">http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse</a><span style=\"color: navy\">&quot; </span><b>alias </b>QResp <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"StructureDefinition-TBTreatment.html\" title=\"TB Treatment\">http://example.org/StructureDefinition/TBTreatment</a><span style=\"color: navy\">&quot; </span><b>alias </b>TBTreatmentLM <b>as </b><b>target</b>\r\n\r\n<b>group </b>TBTreatmentQRToLM<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">qr</span><span style=\"color: navy\"> : </span>QResp, <b>target</b> <span style=\"color: maroon\">treatment</span><span style=\"color: navy\"> : </span>TBTreatmentLM<span style=\"color: navy\">)</span><span style=\"color: navy\"> {\r\n</span>  qr.item<b> as </b><span style=\"color: maroon\">item</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'executionDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.executionDate = <span style=\"color: maroon\">content</span> <i>&quot;SetExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapExecutionDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentRegimen'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentRegimen = <span style=\"color: maroon\">coding</span> <i>&quot;SetTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentRegimen&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'levofloxacinLfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.levofloxacinLfx = <span style=\"color: maroon\">content</span> <i>&quot;SetLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLevofloxacinLfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'moxifloxacinMfx'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.moxifloxacinMfx = <span style=\"color: maroon\">content</span> <i>&quot;SetMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMoxifloxacinMfx&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amikacinAmk'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amikacinAmk = <span style=\"color: maroon\">content</span> <i>&quot;SetAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmikacinAmk&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'streptomycinStm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.streptomycinStm = <span style=\"color: maroon\">content</span> <i>&quot;SetStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapStreptomycinStm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clofazimineCfz'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clofazimineCfz = <span style=\"color: maroon\">content</span> <i>&quot;SetClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClofazimineCfz&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'cycloserineCs'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.cycloserineCs = <span style=\"color: maroon\">content</span> <i>&quot;SetCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCycloserineCs&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'ethionamideEto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.ethionamideEto = <span style=\"color: maroon\">content</span> <i>&quot;SetEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapEthionamideEto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'linezolidLzd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.linezolidLzd = <span style=\"color: maroon\">content</span> <i>&quot;SetLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapLinezolidLzd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'prothionamidePto'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.prothionamidePto = <span style=\"color: maroon\">content</span> <i>&quot;SetProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapProthionamidePto&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'terizidoneTrd'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.terizidoneTrd = <span style=\"color: maroon\">content</span> <i>&quot;SetTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTerizidoneTrd&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'bedaquilineBdq'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.bedaquilineBdq = <span style=\"color: maroon\">content</span> <i>&quot;SetBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapBedaquilineBdq&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'delamanidDlm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.delamanidDlm = <span style=\"color: maroon\">content</span> <i>&quot;SetDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapDelamanidDlm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'imipenemCilastatinIpmCln'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.imipenemCilastatinIpmCln = <span style=\"color: maroon\">content</span> <i>&quot;SetImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapImipenemCilastatinIpmCln&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'meropenemMpm'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.meropenemMpm = <span style=\"color: maroon\">content</span> <i>&quot;SetMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapMeropenemMpm&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pAminosalicylicAcidPas'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pAminosalicylicAcidPas = <span style=\"color: maroon\">content</span> <i>&quot;SetPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPAminosalicylicAcidPas&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'isoniazidInh'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.isoniazidInh = <span style=\"color: maroon\">content</span> <i>&quot;SetIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapIsoniazidInh&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'other'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.other = <span style=\"color: maroon\">content</span> <i>&quot;SetOther&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOther&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'firstLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.firstLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapFirstLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'otherDrugSpecify'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.otherDrugSpecify = <span style=\"color: maroon\">content</span> <i>&quot;SetOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOtherDrugSpecify&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'rifampicinRif'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.rifampicinRif = <span style=\"color: maroon\">content</span> <i>&quot;SetRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapRifampicinRif&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'amoxicillinClavulanicAcidAmxClv'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.amoxicillinClavulanicAcidAmxClv = <span style=\"color: maroon\">content</span> <i>&quot;SetAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapAmoxicillinClavulanicAcidAmxClv&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineTreatmentStart'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineTreatmentStart = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineTreatmentStart&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'capreomycinCap'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.capreomycinCap = <span style=\"color: maroon\">content</span> <i>&quot;SetCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapCapreomycinCap&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLineEthambutolEmb'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLineEthambutolEmb = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLineEthambutolEmb&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'kanamycinKan'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.kanamycinKan = <span style=\"color: maroon\">content</span> <i>&quot;SetKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapKanamycinKan&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'pretomanidPa'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.pretomanidPa = <span style=\"color: maroon\">content</span> <i>&quot;SetPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapPretomanidPa&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'secondLinePyrazinamidePza'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.secondLinePyrazinamidePza = <span style=\"color: maroon\">content</span> <i>&quot;SetSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapSecondLinePyrazinamidePza&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'tickTheBoxToOverwriteThisClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.tickTheBoxToOverwriteThisClassification = <span style=\"color: maroon\">content</span> <i>&quot;SetTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTickTheBoxToOverwriteThisClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'resistanceClassificationBasedOnLaboratoryResultsInTheSystem'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.resistanceClassificationBasedOnLaboratoryResultsInTheSystem = <span style=\"color: maroon\">content</span> <i>&quot;SetResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapResistanceClassificationBasedOnLaboratoryResults&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'newlyAssignedResistanceClassification'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">coding</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.newlyAssignedResistanceClassification = <span style=\"color: maroon\">coding</span> <i>&quot;SetNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapNewlyAssignedResistanceClassification&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentInitiationDelayDays'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentInitiationDelayDays = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentInitiationDelayDays&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'treatmentEpisodeEndDate'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.treatmentEpisodeEndDate = <span style=\"color: maroon\">content</span> <i>&quot;SetTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapTreatmentEpisodeEndDate&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'reasonForEndingCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.reasonForEndingCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapReasonForEndingCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'clickToEndTheCurrentTreatmentEpisode'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.clickToEndTheCurrentTreatmentEpisode = <span style=\"color: maroon\">content</span> <i>&quot;SetClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapClickToEndTheCurrentTreatmentEpisode&quot;</i><span style=\"color: navy\">;</span>\r\n    item.answer first<b> as </b><span style=\"color: maroon\">answer</span><b> where </b>item.linkId = 'outcomeDue'<b> then</b><span style=\"color: navy\"> {\r\n</span>      answer.value<b> as </b><span style=\"color: maroon\">content</span><span style=\"color: navy\"><b> -&gt; </b></span>treatment.outcomeDue = <span style=\"color: maroon\">content</span> <i>&quot;SetOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;MapOutcomeDue&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;ProcessItems&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://example.org/StructureMap/TBTreatmentQRToLM"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TBTreatmentQRToLM"] ; # 
   fhir:title [ fhir:v "Map TB Treatment QuestionnaireResponse to Logical Model"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-01-20T11:09:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-02-10T09:39:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "DHIS2"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "DHIS2" ] ;
@@ -83,7 +84,10 @@
              fhir:element [ fhir:v "executionDate" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -109,7 +113,10 @@
              fhir:element [ fhir:v "treatmentRegimen" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -135,7 +142,10 @@
              fhir:element [ fhir:v "levofloxacinLfx" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -161,7 +171,10 @@
              fhir:element [ fhir:v "moxifloxacinMfx" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -187,7 +200,10 @@
              fhir:element [ fhir:v "amikacinAmk" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -213,7 +229,10 @@
              fhir:element [ fhir:v "streptomycinStm" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -239,7 +258,10 @@
              fhir:element [ fhir:v "clofazimineCfz" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -265,7 +287,10 @@
              fhir:element [ fhir:v "cycloserineCs" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -291,7 +316,10 @@
              fhir:element [ fhir:v "ethionamideEto" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -317,7 +345,10 @@
              fhir:element [ fhir:v "linezolidLzd" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -343,7 +374,10 @@
              fhir:element [ fhir:v "prothionamidePto" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -369,7 +403,10 @@
              fhir:element [ fhir:v "terizidoneTrd" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -395,7 +432,10 @@
              fhir:element [ fhir:v "firstLineEthambutolEmb" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -421,7 +461,10 @@
              fhir:element [ fhir:v "firstLinePyrazinamidePza" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -447,7 +490,10 @@
              fhir:element [ fhir:v "bedaquilineBdq" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -473,7 +519,10 @@
              fhir:element [ fhir:v "delamanidDlm" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -499,7 +548,10 @@
              fhir:element [ fhir:v "imipenemCilastatinIpmCln" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -525,7 +577,10 @@
              fhir:element [ fhir:v "meropenemMpm" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -551,7 +606,10 @@
              fhir:element [ fhir:v "pAminosalicylicAcidPas" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -577,7 +635,10 @@
              fhir:element [ fhir:v "isoniazidInh" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -603,7 +664,10 @@
              fhir:element [ fhir:v "other" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -629,7 +693,10 @@
              fhir:element [ fhir:v "firstLineTreatmentStart" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -655,7 +722,10 @@
              fhir:element [ fhir:v "otherDrugSpecify" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -681,7 +751,10 @@
              fhir:element [ fhir:v "rifampicinRif" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -707,7 +780,10 @@
              fhir:element [ fhir:v "amoxicillinClavulanicAcidAmxClv" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -733,7 +809,10 @@
              fhir:element [ fhir:v "secondLineTreatmentStart" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -759,7 +838,10 @@
              fhir:element [ fhir:v "capreomycinCap" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -785,7 +867,10 @@
              fhir:element [ fhir:v "secondLineEthambutolEmb" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -811,7 +896,10 @@
              fhir:element [ fhir:v "kanamycinKan" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -837,7 +925,10 @@
              fhir:element [ fhir:v "pretomanidPa" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -863,7 +954,10 @@
              fhir:element [ fhir:v "secondLinePyrazinamidePza" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -889,7 +983,10 @@
              fhir:element [ fhir:v "tickTheBoxToOverwriteThisClassification" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -915,7 +1012,10 @@
              fhir:element [ fhir:v "resistanceClassificationBasedOnLaboratoryResultsInTheSystem" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -941,7 +1041,10 @@
              fhir:element [ fhir:v "newlyAssignedResistanceClassification" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "coding" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "coding"
+               ]
              ] )
            ] )
          ] )
@@ -967,7 +1070,10 @@
              fhir:element [ fhir:v "treatmentInitiationDelayDays" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -993,7 +1099,10 @@
              fhir:element [ fhir:v "treatmentEpisodeEndDate" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -1019,7 +1128,10 @@
              fhir:element [ fhir:v "reasonForEndingCurrentTreatmentEpisode" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -1045,7 +1157,10 @@
              fhir:element [ fhir:v "clickToEndTheCurrentTreatmentEpisode" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )
@@ -1071,7 +1186,10 @@
              fhir:element [ fhir:v "outcomeDue" ] ;
              fhir:transform [ fhir:v "copy" ] ;
              fhir:parameter ( [
-               fhir:value [ fhir:v "content" ]
+               fhir:value [
+                 a fhir:id ;
+                 fhir:v "content"
+               ]
              ] )
            ] )
          ] )

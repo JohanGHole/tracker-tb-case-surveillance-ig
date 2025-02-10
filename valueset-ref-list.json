@@ -28,8 +28,8 @@
       "systems" : ["http://example.org/CodeSystem/GENYesNoUnknownCS"],
       "uses" : {
       },
-      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance",
-      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+      "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification",
+      "StructureDefinition-TBCaseSurveillance.html" : "TB Case Surveillance"
     },
     {
       "url" : "http://example.org/ValueSet/RRTGENSexVS",
@@ -97,6 +97,15 @@
       "uses" : {
       },
       "StructureDefinition-DiagnosisAndNotification.html" : "Diagnosis and notification"
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TBCSDenotificationReasonsVS",
+      "title" : "TB CS - Denotification reasons value set",
+      "description" : "Value set for DHIS2 'Denotification reasons' option set.",
+      "systems" : ["http://example.org/CodeSystem/TBCSDenotificationReasonsCS"]
     },
     {
       "url" : "http://example.org/ValueSet/TBCSDenotificationReasonsVS",
@@ -218,6 +227,15 @@
     },
     {
       "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TBCSTreatmentOutcomeVS",
+      "title" : "TB CS - Treatment outcome value set",
+      "description" : "Value set for DHIS2 'Treatment outcome' option set.",
+      "systems" : ["http://example.org/CodeSystem/TBCSTreatmentOutcomeCS"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/TBCSTreatmentOutcomeVS",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "TBCSTreatmentOutcomeVS",
@@ -277,8 +295,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABFinalCultureResultCS"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABLPASpecimenVS",
@@ -350,8 +368,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSampleQualityCS"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSampleStatusVS",
@@ -381,8 +399,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSampleStatusCS"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     },
     {
       "url" : "http://example.org/ValueSet/TBLABSmearResultVS",
@@ -412,8 +430,8 @@
       "systems" : ["http://example.org/CodeSystem/TBLABSmearResultCS"],
       "uses" : {
       },
-      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results",
-      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results"
+      "StructureDefinition-DiagnosticLaboratoryResults.html" : "Diagnostic laboratory results",
+      "StructureDefinition-MonitoringLaboratoryResults.html" : "Monitoring laboratory results"
     }
   ]
 }
